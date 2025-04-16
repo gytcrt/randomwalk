@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on RandomWalk</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on RandomWalk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;p&gt;This is my first blog post! Welcome to my blog.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is where you can start writing your blog post content. Hugo supports Markdown formatting, which means you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create lists&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bold text&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Italicize text&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://example.com&#34;&gt;Add links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;And much more!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;adding-more-content&#34;&gt;Adding More Content&lt;/h2&gt;
+&lt;p&gt;You can organize your content using headings, paragraphs, and other Markdown elements.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This is my first blog post! Welcome to my blog.</p>
+<h2 id="introduction">Introduction</h2>
+<p>This is where you can start writing your blog post content. Hugo supports Markdown formatting, which means you can:</p>
+<ul>
+<li>Create lists</li>
+<li><strong>Bold text</strong></li>
+<li><em>Italicize text</em></li>
+<li><a href="https://example.com">Add links</a></li>
+<li>And much more!</li>
+</ul>
+<h2 id="adding-more-content">Adding More Content</h2>
+<p>You can organize your content using headings, paragraphs, and other Markdown elements.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
