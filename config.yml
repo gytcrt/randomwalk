@@ -47,11 +47,16 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    
+    # Basic favicon configurations
+    favicon: "/favicon.ico"
+    favicon_svg: "/favicon.svg"      # SVG version of favicon
+    
+    # Apple specific icons
+    apple_touch_icon: "/apple-touch-icon.png"
+    
+    # Web manifest for PWA support
+    manifest: "/site.webmanifest"    # Path to your web manifest file
 
   label:
     text: "Home"
