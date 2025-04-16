@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: "https://andreagao.com/"
 title: RandomWalk 
 pagination:
   pagerSize: 5
@@ -19,7 +19,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: RandomWalk
-  description: "ExampleSite description"
+  description: "Personal blog for Andrea Gao about her random walk in thoughts and steps"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
@@ -32,7 +32,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true 
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -65,31 +65,33 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    enabled: true # now enabled
+    title: "Random Walk" # your site title
+    subtitle: "A journey through thoughts and ideas 🚷"
+    imageUrl: "/apple-touch-icon.png" # using your existing favicon as profile picture for now
+    imageWidth: 180
+    imageHeight: 180
+    imageTitle: "Random Walk"
     buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+      - name: "Posts"
+        url: "/posts"
+      - name: "About Me"
+        url: "/about"
+      - name: "Tags"
+        url: "/tags"
 
-  # home-info mode
+  # home-info mode (will be disabled since profile mode is enabled)
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
       url: "https://github.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: x
+      url: "https://x.com/"
 
   analytics:
     google:
