@@ -22,6 +22,9 @@ params:
   author: Andrea Gao
   # author: ["Me", "You"] # multiple authors
   
+  mainSections:
+    - posts
+    
   # Footer configuration
   footer:
     since: 2024
@@ -74,28 +77,14 @@ params:
   # profile-mode
   profileMode:
     enabled: false # disabled profile mode
-    title: "Random Walk"
-    subtitle: "A journey through thoughts and ideas 🚷"
-    imageUrl: "/apple-touch-icon.png"
-    imageWidth: 180
-    imageHeight: 180
-    imageTitle: "Random Walk"
-    buttons:
-      - name: "Posts"
-        url: "/posts"
-      - name: "About Me"
-        url: "/about"
-      - name: "Tags"
-        url: "/tags"
 
   # home-info mode
   homeInfoParams:
-    Title: "Welcome to Random Walk 🚷"
+    Title: "Hi there! 👋"
     Content: >
-      A personal blog by Andrea Gao.
       
-      Here, I document my thoughts and ideas as they randomly walk through life.
-      Feel free to explore my posts, or learn more about me.
+      I document my thoughts and ideas as they randomly walk through.
+      Random walk appears in **[theory](https://en.wikipedia.org/wiki/Random_walk)** and daily life. I enjoy both thought experiments and long walks in [Prospect Park](https://www.prospectpark.org/).
 
   socialIcons:
     - name: github
