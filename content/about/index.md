@@ -1,12 +1,12 @@
 ---
 title: "About"
-date: 2024-03-19
 draft: false
+ShowWordCount: false
+ShowReadingTime: false
+ShowBreadCrumbs: false
 ---
 
-Welcome to my personal space! This is where you can share your story, experience, and interests.
-
-[Add your personal introduction here]
+Hi there! Welcome to my personal space.
 
 ## Skills
 - [Skill 1]

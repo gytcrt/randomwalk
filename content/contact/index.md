@@ -2,6 +2,9 @@
 title: "Contact Me"
 date: 2024-03-19
 draft: false
+ShowWordCount: false
+ShowReadingTime: false
+ShowBreadCrumbs: false
 ---
 
 Feel free to get in touch with me! Here are the best ways to reach out:

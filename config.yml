@@ -36,12 +36,12 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true 
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -67,7 +67,7 @@ params:
     manifest: "/site.webmanifest"    # Path to your web manifest file
 
   label:
-    text: "Home"
+    text: ""
     icon: /apple-touch-icon.png
     iconHeight: 35
 
