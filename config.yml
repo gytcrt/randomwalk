@@ -86,11 +86,16 @@ params:
       I document my thoughts and ideas as they randomly walk through.
       Random walk appears in **[theory](https://en.wikipedia.org/wiki/Random_walk)** and daily life. I enjoy both thought experiments and long walks in [Prospect Park](https://www.prospectpark.org/).
 
+
+      Feel free to contact me using channels below.
+
   socialIcons:
+    - name: email
+      url: "mailto:andrea.gao@pm.me"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/yuanandreagao/"
     - name: github
       url: "https://github.com/gytcrt"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: x
       url: "https://x.com/"
 
