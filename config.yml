@@ -1,7 +1,5 @@
 baseURL: "https://andreagao.com/"
-title: RandomWalk 
-pagination:
-  pagerSize: 5
+title: "Random Walk"
 theme: PaperModX
 
 enableRobotsTXT: true
@@ -18,11 +16,21 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: RandomWalk
+  title: "Random Walk"
   description: "Personal blog for Andrea Gao about her random walk in thoughts and steps"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: Andrea Gao
   # author: ["Me", "You"] # multiple authors
+  
+  # Footer configuration
+  footer:
+    since: 2024
+    customText: "A random walk through thoughts and ideas"
+    copyright: "© Andrea Gao"
+    powered: false # This will hide the "powered by" text
+    hideCredits: true # Additional parameter to hide credits
+    hideLicense: true # Additional parameter to hide license
+
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
@@ -65,10 +73,10 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # now enabled
-    title: "Random Walk" # your site title
+    enabled: false # disabled profile mode
+    title: "Random Walk"
     subtitle: "A journey through thoughts and ideas 🚷"
-    imageUrl: "/apple-touch-icon.png" # using your existing favicon as profile picture for now
+    imageUrl: "/apple-touch-icon.png"
     imageWidth: 180
     imageHeight: 180
     imageTitle: "Random Walk"
@@ -80,14 +88,18 @@ params:
       - name: "Tags"
         url: "/tags"
 
-  # home-info mode (will be disabled since profile mode is enabled)
+  # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Welcome to Random Walk 🚷"
+    Content: >
+      A personal blog by Andrea Gao.
+      
+      Here, I document my thoughts and ideas as they randomly walk through life.
+      Feel free to explore my posts, or learn more about me.
 
   socialIcons:
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/gytcrt"
     - name: stackoverflow
       url: "https://stackoverflow.com"
     - name: x
@@ -95,7 +107,6 @@ params:
 
   analytics:
     google:
-      # Replace G-MEASUREMENT_ID with your actual GA4 measurement ID when you have one
       ID: G-MEASUREMENT_ID
     bing:
       SiteVerificationTag: "XYZabc"
@@ -103,17 +114,15 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
 
   editPost:
     URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    Text: "Suggest Changes"
+    appendFilePath: true
 
-  # for search
-  # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -121,8 +130,9 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    limit: 10
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
     - identifier: about
@@ -141,13 +151,8 @@ menu:
       name: Contact Me
       url: /contact/
       weight: 40
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
 pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
