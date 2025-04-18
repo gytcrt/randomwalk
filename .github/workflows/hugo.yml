@@ -52,6 +52,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
+          HUGO_PARAMS_BASEURL: https://www.andreagao.com  # Replace with your actual domain
         run: |
           hugo \
             --minify \
