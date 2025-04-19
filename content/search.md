@@ -2,7 +2,7 @@
 title: "Search"
 layout: "search"
 url: "/search"
-description: "Search through blog posts and pages"
+# description: "Search through this site"
 summary: "search"
-placeholder: "Type here to search..."
+placeholder: "Type here to search through this site..."
 --- 
