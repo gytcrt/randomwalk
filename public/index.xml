@@ -6,15 +6,32 @@
     <description>Recent content on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Apr 2025 13:40:47 -0400</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Random Walk</title>
+      <link>http://localhost:1313/posts/random-walk/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, since I want it to represent my work and personal interest.&lt;/p&gt;
+&lt;p&gt;In modern statistical theory, machine learning and AI(Deep Learning) fields, randomness is prominent. In recent years, unpredictability of Large Language Model has been a major challenge for companies and individuals to adopt latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world too.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, since I want it to represent my work and personal interest.</p>
+<p>In modern statistical theory, machine learning and AI(Deep Learning) fields, randomness is prominent. In recent years, unpredictability of Large Language Model has been a major challenge for companies and individuals to adopt latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world too.</p>
+<p>Sometimes when debugging a technical issue, I might have a few ideas of potential solutions but I don’t know which one is optimal. I might randomly proceed with one of ideas if they all look viable to me. If it doesn’t work, I would roll back to previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.</p>
+<p>When I was a teenage, I was fascinated by <a href="https://en.wikipedia.org/wiki/Jorge_Luis_Borges">Jorge Luis Borges’s</a> short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional and intriguing. It visualizes our life (or world) as a giant labyrinth, whenever we make a decision, it leads to one of life paths. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html">Markov chain Monte Carlo method</a>? Or is I only 1 of my-selves in infinite number of universes?</p>
+<p>I like that theory, engineering, and art converge upon “Random Walk”. And I hope you enjoy a short walk on my site.</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>My Second Post</title>
       <link>http://localhost:1313/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
       <guid>http://localhost:1313/posts/my-second-post/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
+      <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
+]]></content:encoded>
     </item>
     
     <item>

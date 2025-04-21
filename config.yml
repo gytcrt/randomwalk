@@ -93,8 +93,7 @@ params:
     Title: "Hi there! 👋"
     Content: >
       
-      I document my thoughts and ideas as they randomly walk through my mind.
-      Random walk appears in **[theory](https://en.wikipedia.org/wiki/Random_walk)** and daily life. I enjoy both thought experiments and long walks in [Prospect Park](https://www.prospectpark.org/).
+      Documenting thoughts and ideas as they randomly walk through my mind. I enjoy thought experiments and long strolls in *[Prospect Park](https://www.prospectpark.org/)*.
 
 
       Feel free to contact me through the channels below.
@@ -106,8 +105,6 @@ params:
       url: "https://www.linkedin.com/in/yuanandreagao/"
     - name: github
       url: "https://github.com/gytcrt"
-    - name: x
-      url: "https://x.com/"
 
   analytics:
     google:
@@ -118,9 +115,9 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true
-    hiddenInList: true
-    hiddenInSingle: true
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
 
   editPost:
     URL: "https://github.com/<path_to_repo>/content"
