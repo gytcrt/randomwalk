@@ -44,7 +44,7 @@ params:
     hideCredits: true # Additional parameter to hide credits
     hideLicense: true # Additional parameter to hide license
 
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["/profile.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -80,15 +80,23 @@ params:
     manifest: "/site.webmanifest"    # Path to your web manifest file
 
   label:
-    text: ""
+    text: "Andrea Gao"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # disabled profile mode
+    enabled: true # enabled profile mode
+    # title: "You find me here" # Shown right below the image
+    subtitle: "Documenting thoughts and ideas as they randomly walk through my mind. 
+    
+    I enjoy thought experiments and long strolls in Prospect Park."
+    imageUrl: "/images/day_scene.png" # Path to image in static dir
+    imageTitle: "Andrea Gao"      # Alt text for image (recommended)
+    imageWidth: 200                       # Optional Image width
+    imageHeight: 200
 
-  # home-info mode
+  # home-info mode (this is disabled when profileMode is enabled)
   homeInfoParams:
     Title: "Hi there! 👋"
     Content: >
