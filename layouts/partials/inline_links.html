@@ -1,8 +1,0 @@
-{{- $scratch := newScratch }}
-{{- if not .IsHome }}
-<div class="inline-links">
-{{- if .Params.series }}
-<span><a href="/series/{{ (index .Params.series 0) | urlize }}">Series</a></span>
-{{- end }}
-</div>
-{{- end }} 
