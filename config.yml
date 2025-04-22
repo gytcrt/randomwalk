@@ -91,7 +91,7 @@ params:
     subtitle: "Documenting thoughts and ideas as they randomly walk through my mind. 
     
     I enjoy thought experiments and long strolls in Prospect Park."
-    imageUrl: "/images/day_scene.png" # Path to image in static dir
+    imageUrl: "/images/day_scene_optimized.gif" # Path to image in static dir
     imageTitle: "Andrea Gao"      # Alt text for image (recommended)
     imageWidth: 200                       # Optional Image width
     imageHeight: 200
