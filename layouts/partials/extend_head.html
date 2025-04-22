@@ -2,4 +2,39 @@
 <!-- Umami Analytics -->
 <script defer src="https://analytics.andreagao.com/script.js" data-website-id="ed7ec7e8-2075-46b6-8700-478959f60cfb"></script>
 <!-- Note: Overriding the theme's Manrope font loading to use theme defaults -->
+
+<!-- Theme-based profile image switcher -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to set the image based on the current theme
+    function setProfileImage() {
+      const isDark = document.body.classList.contains('dark');
+      const profileImg = document.querySelector('.profile_inner img');
+      
+      if (profileImg) {
+        if (isDark) {
+          profileImg.src = '/images/night_scene.png';
+        } else {
+          profileImg.src = '/images/day_scene.png';
+        }
+      }
+    }
+    
+    // Set image on page load
+    setProfileImage();
+    
+    // Add a callback to the theme toggle to update the image when theme changes
+    if (typeof toggleThemeCallbacks === 'object') {
+      toggleThemeCallbacks['profileImage'] = function() {
+        // Slight delay to ensure the theme has toggled before updating the image
+        setTimeout(setProfileImage, 50);
+      };
+    }
+    
+    // Listen for theme changes
+    window.addEventListener('toggle-theme', function() {
+      setTimeout(setProfileImage, 50);
+    });
+  });
+</script>
 {{- /* Head custom content area end */ -}}

@@ -1,0 +1,24 @@
+{{- /* Footer custom content area start */ -}}
+<script>
+  // Ensure the profile image is updated when the theme changes
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the theme toggle button
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    if (themeToggle) {
+      // Add an additional click handler to ensure the image is updated
+      themeToggle.addEventListener('click', function() {
+        // Small delay to ensure the theme has changed
+        setTimeout(function() {
+          const isDark = document.body.classList.contains('dark');
+          const profileImg = document.querySelector('.profile_inner img');
+          
+          if (profileImg) {
+            profileImg.src = isDark ? '/images/night_scene.png' : '/images/day_scene.png';
+          }
+        }, 50);
+      });
+    }
+  });
+</script>
+{{- /* Footer custom content area end */ -}} 
