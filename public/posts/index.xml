@@ -13,13 +13,20 @@
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/random-walk/</guid>
-      <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, since I want it to represent my work and personal interest.&lt;/p&gt;
-&lt;p&gt;In modern statistical theory, machine learning and AI(Deep Learning) fields, randomness is prominent. In recent years, unpredictability of Large Language Model has been a major challenge for companies and individuals to adopt latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world too.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, since I want it to represent my work and personal interest.</p>
-<p>In modern statistical theory, machine learning and AI(Deep Learning) fields, randomness is prominent. In recent years, unpredictability of Large Language Model has been a major challenge for companies and individuals to adopt latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world too.</p>
-<p>Sometimes when debugging a technical issue, I might have a few ideas of potential solutions but I don’t know which one is optimal. I might randomly proceed with one of ideas if they all look viable to me. If it doesn’t work, I would roll back to previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.</p>
-<p>When I was a teenage, I was fascinated by <a href="https://en.wikipedia.org/wiki/Jorge_Luis_Borges">Jorge Luis Borges’s</a> short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional and intriguing. It visualizes our life (or world) as a giant labyrinth, whenever we make a decision, it leads to one of life paths. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html">Markov chain Monte Carlo method</a>? Or is I only 1 of my-selves in infinite number of universes?</p>
-<p>I like that theory, engineering, and art converge upon “Random Walk”. And I hope you enjoy a short walk on my site.</p>
+      <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests .&lt;/p&gt;
+&lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests .</p>
+<p>Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.</p>
+<p>An example of this is my own process of debugging a technical issue: sometimes, I may think of a few potential solutions, but I don’t yet know which one is optimal l. I might randomly proceed with one of the ideas if they all look viable to me. If it doesn’t work, I would roll back to the previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.</p>
+<p>When I was a teenager, I was fascinated by Jorge Luis Borges’s short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life’s paths. In a way, it’s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html">Markov chain Monte Carlo method</a>? Or is my existence and selfhood only one of many  in an infinite number of universes?</p>
+<figure class="align-center ">
+    <img loading="lazy" src="gitflow.svg#center"
+         alt="A Gitflow visualization"/> <figcaption>
+            <p>A Gitflow visualization</p>
+        </figcaption>
+</figure>
+
+<p>I appreciate the ways in which theory, engineering, and art converge upon “Random Walk.” I hope you enjoy a short walk on my site.</p>
 ]]></content:encoded>
     </item>
     
@@ -31,39 +38,6 @@
       <guid>http://localhost:1313/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;This is my first blog post! Welcome to my blog.&lt;/p&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is where you can start writing your blog post content. Hugo supports Markdown formatting, which means you can:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create lists&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bold text&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Italicize text&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://example.com&#34;&gt;Add links&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;And much more!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;adding-more-content&#34;&gt;Adding More Content&lt;/h2&gt;
-&lt;p&gt;You can organize your content using headings, paragraphs, and other Markdown elements.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>This is my first blog post! Welcome to my blog.</p>
-<h2 id="introduction">Introduction</h2>
-<p>This is where you can start writing your blog post content. Hugo supports Markdown formatting, which means you can:</p>
-<ul>
-<li>Create lists</li>
-<li><strong>Bold text</strong></li>
-<li><em>Italicize text</em></li>
-<li><a href="https://example.com">Add links</a></li>
-<li>And much more!</li>
-</ul>
-<h2 id="adding-more-content">Adding More Content</h2>
-<p>You can organize your content using headings, paragraphs, and other Markdown elements.</p>
 ]]></content:encoded>
     </item>
     

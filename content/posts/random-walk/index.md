@@ -6,15 +6,17 @@ tags: ["non-tech", "blog"]
 cover:
     image: "randomwalk.png"
     alt: "Random Walk Visualization"
-    caption: "A 2D visualization of random walk"
+    caption: "A 2D random walk on white canvas"
 ---
 
-I chose "Random Walk" as the name of my website, since I want it to represent my work and personal interest. 
+I chose "Random Walk" as the name of my website, as both a representation of my work and personal interests .
 
-In modern statistical theory, machine learning and AI(Deep Learning) fields, randomness is prominent. In recent years, unpredictability of Large Language Model has been a major challenge for companies and individuals to adopt latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world too.  
+Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.  
 
-Sometimes when debugging a technical issue, I might have a few ideas of potential solutions but I don’t know which one is optimal. I might randomly proceed with one of ideas if they all look viable to me. If it doesn’t work, I would roll back to previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.
+An example of this is my own process of debugging a technical issue: sometimes, I may think of a few potential solutions, but I don’t yet know which one is optimal l. I might randomly proceed with one of the ideas if they all look viable to me. If it doesn’t work, I would roll back to the previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.
 
-When I was a teenage, I was fascinated by [Jorge Luis Borges’s](https://en.wikipedia.org/wiki/Jorge_Luis_Borges) short novel [The Garden of Forking Paths](https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf). The novel is very mysterious, multidimensional and intriguing. It visualizes our life (or world) as a giant labyrinth, whenever we make a decision, it leads to one of life paths. Do all paths converge to the same global optimal like random walk in [Markov chain Monte Carlo method](https://people.duke.edu/~ccc14/sta-663/mcmc.html)? Or is I only 1 of my-selves in infinite number of universes?  
+When I was a teenager, I was fascinated by Jorge Luis Borges’s short novel [The Garden of Forking Paths](https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf). The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life’s paths. In a way, it’s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in [Markov chain Monte Carlo method](https://people.duke.edu/~ccc14/sta-663/mcmc.html)? Or is my existence and selfhood only one of many  in an infinite number of universes?  
 
-I like that theory, engineering, and art converge upon “Random Walk”. And I hope you enjoy a short walk on my site.
+{{< figure src="gitflow.svg" alt="A Gitflow visualization" caption="A Gitflow visualization" align="center" >}}
+
+I appreciate the ways in which theory, engineering, and art converge upon “Random Walk.” I hope you enjoy a short walk on my site.
