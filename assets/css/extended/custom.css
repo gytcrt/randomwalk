@@ -6,8 +6,8 @@
 /* Apply Tinos to all elements */
 body {
   font-family: 'Tinos', serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.125rem; /* Increased from 1rem to 1.125rem (18px) */
+  line-height: 1.6; /* Slightly increased line height for better readability */
   margin: 0;
 }
 
@@ -24,16 +24,16 @@ h1, h2, h3, h4, h5, h6 {
 article .content,
 .post-content *:not(p):not(code):not(pre):not(kbd):not(samp) {
   font-family: 'Tinos', serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.125rem; /* Increased from 1rem */
+  line-height: 1.6;
   margin: 0;
 }
 
 /* Give paragraphs proper spacing */
 .post-content p {
   font-family: 'Tinos', serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.125rem; /* Increased from 1rem */
+  line-height: 1.6;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -41,6 +41,7 @@ article .content,
 code, pre, kbd, samp {
   /* Using monospace for code blocks */
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.9em; /* Slightly smaller than the body text */
 }
 
 /* Additional selectors for lists, footers, etc. */
@@ -55,13 +56,14 @@ footer,
 .post-footer,
 nav {
   font-family: 'Tinos', serif;
+  font-size: 1.125rem; /* Increased from inherited size */
 }
 
 /* Specifically target the profile subtitle text */
 .profile_inner span {
   font-family: 'Tinos', serif !important;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.25rem; /* Increased from 1.1rem */
+  line-height: 1.6;
   display: block;
   margin-bottom: 1rem;
 }
