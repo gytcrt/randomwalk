@@ -1,18 +1,18 @@
 /* ---- GOOGLE FONT IMPORT ---- */
 /* PASTE THIS AT THE VERY TOP! */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* ---- YOUR OTHER CUSTOM CSS RULES BELOW ---- */
 
-/* Apply Noto Sans to all elements */
+/* Apply Tinos to all elements */
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Tinos', serif;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Tinos', serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .post-content blockquote,
 article .content,
 .post-content *:not(p):not(code):not(pre):not(kbd):not(samp) {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Tinos', serif;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -31,7 +31,7 @@ article .content,
 
 /* Give paragraphs proper spacing */
 .post-content p {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Tinos', serif;
   font-size: 1rem;
   line-height: 1.5;
   margin-top: 0;
@@ -54,7 +54,7 @@ footer,
 .post-meta,
 .post-footer,
 nav {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Tinos', serif;
 }
 
 /* Style blockquotes */
