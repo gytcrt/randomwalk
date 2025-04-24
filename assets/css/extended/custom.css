@@ -1,0 +1,74 @@
+/* ---- GOOGLE FONT IMPORT ---- */
+/* PASTE THIS AT THE VERY TOP! */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* ---- YOUR OTHER CUSTOM CSS RULES BELOW ---- */
+
+/* Apply Tinos to all elements */
+body {
+  font-family: 'Tinos', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tinos', serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Specifically target post content */
+.post-content,
+.post-content li,
+.post-content blockquote,
+article .content,
+.post-content *:not(p):not(code):not(pre):not(kbd):not(samp) {
+  font-family: 'Tinos', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Give paragraphs proper spacing */
+.post-content p {
+  font-family: 'Tinos', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+code, pre, kbd, samp {
+  /* Using monospace for code blocks */
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Additional selectors for lists, footers, etc. */
+.entry-content,
+.entry-content p,
+.content, 
+.post-summary,
+.post-description,
+.post-item,
+footer,
+.post-meta,
+.post-footer,
+nav {
+  font-family: 'Tinos', serif;
+}
+
+/* Style blockquotes */
+blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Make sure lists have proper spacing */
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1rem;
+}
+
+/* ---- OTHER CUSTOM CSS RULES (if any) ---- */

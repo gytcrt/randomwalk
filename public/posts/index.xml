@@ -21,7 +21,7 @@
 <p>When I was a teenager, I was fascinated by Jorge Luis Borges’s short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life’s paths. In a way, it’s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html">Markov chain Monte Carlo method</a>? Or is my existence and selfhood only one of many  in an infinite number of universes?</p>
 <figure class="align-center ">
     <img loading="lazy" src="gitflow.svg#center"
-         alt="A Gitflow visualization"/> <figcaption>
+         alt="AGitflow visualization"/> <figcaption>
             <p>A Gitflow visualization</p>
         </figcaption>
 </figure>
