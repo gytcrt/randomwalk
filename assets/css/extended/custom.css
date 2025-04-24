@@ -57,6 +57,15 @@ nav {
   font-family: 'Tinos', serif;
 }
 
+/* Specifically target the profile subtitle text */
+.profile_inner span {
+  font-family: 'Tinos', serif !important;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 1rem;
+}
+
 /* Style blockquotes */
 blockquote {
   border-left: 3px solid #ccc;
