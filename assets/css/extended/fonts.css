@@ -1,0 +1,16 @@
+/* Font management for the site */
+
+/* Import Google Fonts using @import instead of <link> tags */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+/* Set the font variables */
+:root {
+  --main-font: "Didact Gothic", sans-serif;
+}
+
+/* Apply fonts to elements */
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: normal;
+} 
