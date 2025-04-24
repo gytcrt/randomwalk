@@ -66,6 +66,29 @@ nav {
   margin-bottom: 1rem;
 }
 
+/* Make logo/site title bigger */
+.logo a {
+  font-size: 28px !important; /* Increased from default 24px */
+  font-family: 'Tinos', serif;
+}
+
+/* Make navigation menu items bigger */
+#menu a {
+  font-size: 18px !important; /* Increased from default 16px */
+  padding: 4px 8px; /* Add some padding to make the clickable area larger */
+}
+
+/* Adjust active menu item to match new size */
+#menu .active {
+  box-shadow: 0 2px 0 var(--signature); /* Maintain the underline effect */
+}
+
+/* Optional: add a subtle hover effect */
+#menu a:hover {
+  transform: scale(1.05); /* Slightly grow on hover */
+  transition: transform 0.2s ease;
+}
+
 /* Style blockquotes */
 blockquote {
   border-left: 3px solid #ccc;
