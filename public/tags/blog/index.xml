@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blog on Random Walk</title>
-    <link>http://localhost:1313/tags/blog/</link>
+    <link>http://localhost:49602/tags/blog/</link>
     <description>Recent content in Blog on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
+      <link>http://localhost:49602/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <guid>http://localhost:49602/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests .&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests .</p>
 <p>Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.</p>
-<p>An example of this is my own process of debugging a technical issue: sometimes, I may think of a few potential solutions, but I don’t yet know which one is optimal l. I might randomly proceed with one of the ideas if they all look viable to me. If it doesn’t work, I would roll back to the previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.</p>
-<p>When I was a teenager, I was fascinated by Jorge Luis Borges’s short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life’s paths. In a way, it’s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html">Markov chain Monte Carlo method</a>? Or is my existence and selfhood only one of many  in an infinite number of universes?</p>
+<p>An example of this is my own process of debugging a technical issue: sometimes, I may think of a few potential solutions, but I don’t yet know which one is optimal. I might randomly proceed with one of the ideas if they all look viable to me. If it doesn’t work, I would roll back to the previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.</p>
+<p>When I was a teenager, I was fascinated by <a href="https://en.wikipedia.org/wiki/Jorge_Luis_Borges">Jorge Luis Borges</a>’s short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life’s paths. In a way, it’s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html">Markov chain Monte Carlo method</a>? Or is my existence and selfhood only one of many  in an infinite number of universes?</p>
 <figure class="align-center ">
     <img loading="lazy" src="gitflow.svg#center"
-         alt="A Gitflow visualization"/> <figcaption>
+         alt="AGitflow visualization"/> <figcaption>
             <p>A Gitflow visualization</p>
         </figcaption>
 </figure>

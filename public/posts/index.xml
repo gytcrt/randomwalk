@@ -2,17 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:49602/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rebuild my website with AI&#39;s assistant</title>
+      <link>http://localhost:49602/posts/blog-set-up/</link>
+      <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:49602/posts/blog-set-up/</guid>
+      <description>&lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;
+&lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://github.com/gytcrt/gytcrt.github.io&#34;&gt;personal blog&lt;/a&gt; to show case my project and share thoughts. I&amp;rsquo;ve planned to keep developing that site but it has taken a back seat ever since.&lt;/p&gt;
+&lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website.&lt;/p&gt;
+&lt;h1 id=&#34;choose-domain-name-and-domain-registrar&#34;&gt;Choose domain name and domain registrar&lt;/h1&gt;
+&lt;p&gt;Choosing a domain name is like choosing a &lt;a href=&#34;https://www.shopify.com/blog/domain-seo?term=&amp;amp;adid=647967866337&amp;amp;campaignid=19683492884&amp;amp;utm_medium=cpc&amp;amp;utm_source=google&amp;amp;gad_source=1&amp;amp;gclid=CjwKCAjwwqfABhBcEiwAZJjC3poWT02q2-7_BJRlCqsvGTnMw5UM1d8tee_OgW0UnffVvSXugolTdBoClrwQAvD_BwE#&#34;&gt;brand name&lt;/a&gt; for your website. Luckily, I don&amp;rsquo;t share name with some celebrities. I was able to register for andreagao.com in 2017 via Google Domain. I generally had a good experience with Google Domain. But unfortunately, they have been &lt;a href=&#34;https://www.theverge.com/2023/6/16/23763340/google-domains-sunset-sell-squarespace&#34;&gt;acquired by Squarespace&lt;/a&gt;. So I had to find another domain registrar.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="why">Why?</h1>
+<p>When I was in graduate school, I set up a <a href="https://github.com/gytcrt/gytcrt.github.io">personal blog</a> to show case my project and share thoughts. I&rsquo;ve planned to keep developing that site but it has taken a back seat ever since.</p>
+<p>I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website.</p>
+<h1 id="choose-domain-name-and-domain-registrar">Choose domain name and domain registrar</h1>
+<p>Choosing a domain name is like choosing a <a href="https://www.shopify.com/blog/domain-seo?term=&amp;adid=647967866337&amp;campaignid=19683492884&amp;utm_medium=cpc&amp;utm_source=google&amp;gad_source=1&amp;gclid=CjwKCAjwwqfABhBcEiwAZJjC3poWT02q2-7_BJRlCqsvGTnMw5UM1d8tee_OgW0UnffVvSXugolTdBoClrwQAvD_BwE#">brand name</a> for your website. Luckily, I don&rsquo;t share name with some celebrities. I was able to register for andreagao.com in 2017 via Google Domain. I generally had a good experience with Google Domain. But unfortunately, they have been <a href="https://www.theverge.com/2023/6/16/23763340/google-domains-sunset-sell-squarespace">acquired by Squarespace</a>. So I had to find another domain registrar.</p>
+<p>I quoted on both <a href="https://aboutus.godaddy.net/about-us/overview/default.aspx">GoDaddy</a> and <a href="https://www.namecheap.com/">Namecheap</a>, and figured the price on Namecheap is more sensible to me. From usability standpoint, I think Namecheap is not different from Google Domain.</p>
+<p>There is a <a href="https://www.reddit.com/r/webdev/comments/1bjfqse/whats_the_best_domain_registrar_in_2024/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button">reddit thread</a> about the best domain registrar in 2024. If you are thinking about getting a domain, you can consider the advice from the thread too.</p>
+<h1 id="framework-selection">Framework selection</h1>
+<p>There are millions of ways to build a personal website in 2025. If you want to be relieved from coding and deploying front-end, <a href="https://www.wix.com/">Wix</a>, <a href="https://wordpress.com/">Wordpress</a> and <a href="https://www.squarespace.com/">Squarespace</a> are all classic options. Or you can consider GenAI website builder like <a href="https://replit.com/">replit</a> too.</p>
+<p>I decided to</p>
+<h1 id="hosting-and-deployment">Hosting and deployment</h1>
+<p>Gitpage + Github Action</p>
+<h1 id="analytics-set-up">Analytics set up</h1>
+<p>Umami + Digital Ocean server</p>
+<h1 id="font-set-up">Font set up</h1>
+<h1 id="ai-tools-and-advice">AI Tools and advice</h1>
+<h1 id="festures-in-backlog">Festures in backlog</h1>
+<ul>
+<li>Enable comments section</li>
+<li>Add an archive tag</li>
+<li>Combine Tag and Search into one tag</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
+      <link>http://localhost:49602/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <guid>http://localhost:49602/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests .&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests .</p>
@@ -32,10 +68,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
+      <link>http://localhost:49602/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <guid>http://localhost:49602/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>
