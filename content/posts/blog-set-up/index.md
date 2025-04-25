@@ -1,5 +1,5 @@
 ---
-title: "Rebuild my website with AI's assistant"
+title: "Rebuild my website with AI's assistance"
 date: 2025-04-24
 draft: true
 tag: ["tech", "GenAI", "AI", "website"]
@@ -30,8 +30,8 @@ I decided to use [static website builder](https://en.wikipedia.org/wiki/Static_s
 
 Both Hugo and Jekyll provide a lot of themes(like PPT template) for you to build upon. Here are two good resources to find a theme for you:
 
-- Jekyll: https://jekyllthemes.io/jekyll-portfolio-themes
-- Hugo: https://themes.gohugo.io/tags/blog/
+- Jekyll themes: https://jekyllthemes.io/jekyll-portfolio-themes
+- Hugo themes: https://themes.gohugo.io/tags/blog/
 
 <!-- TODO: I want more space here -->
 **I also found it very helpful to browse other people's websites created from the themes.** Some of them serve as a great inspiration for me, and many folks wrote blogs about their website set-up and customization too. I will link some reference at the end of this post. 
@@ -45,20 +45,25 @@ In addition, [Github Actions](https://github.com/features/actions) has made depl
 
 If you are not familiar with deployment or CI/CD tools like Github Actions, don't get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be. 
 
-# Analytics set up: Umami + Digital Ocean
+# Analytics set up: Umami + DigitalOcean
 In modern product/software development, feedback is essential for improvement. My website aims to serve myself and my audience, so I'd love to take feedback from my audience. There are direct and indirect feedbacks. Website traffic is in direct feedback, and comments from visitor are direct feedback. In this section, I will talk about my analytics platform set up(indirect feedback).
 
 Hugo PaperMod provides very easy integration with [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en). I believe using Google Analytics would be the most straight forward and time-saving set up. However, I do want to have more control over my traffic data, and I did more research on potential analytics tools. 
 [Plausible Analytics](https://plausible.io/) and [Umami](https://umami.is/) are two of the popular tools. I picked Umami since it's open-source, free and self-hostable. 
 
+As for hosting, I prefer minimal set up and effort for Umami, since it's an internal tool for my website and I don't have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very [detailed tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04) on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.
 
+<!-- This part should be moved to AI tool and advice part -->
+<!-- # Font set up -->
 
-# Font set up
+# Vibe coding and advice
+I majored in mathematics and statistics in college and graduate school, and my major programming languages are Matlab and R. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself. 
 
-# AI Tools and advice
+When it comes to AI tools for coding, I'm so grateful of having them in 2025. Vibe/AI coding tools plus LLM have made solo web development experience easier this time.  
 
-# Festures in backlog
+# Features in backlog
 - [ ]Enable comments section
 - [ ]Add an archive tag
+- [ ]Add buttons to share to social media
 - [ ]Combine Tag and Search into one tag
 
