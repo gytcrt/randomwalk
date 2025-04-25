@@ -1,5 +1,5 @@
 ---
-title: "Rebuild my website with AI's assistance"
+title: "Rebuild my website with GenAI's assistance"
 date: 2025-04-24
 draft: true
 tag: ["tech", "GenAI", "AI", "website"]
@@ -12,8 +12,8 @@ cover:
     description: If anyone wants to set up a personal website, it's way easier to use AI tools now.
 ---
 
-# Introduction
-Building a personal website in 2025 has become significantly easier with modern tools and AI assistance. In this post, I'll share my experience rebuilding my personal website.
+<!-- ## Introduction (TODO: need update on this) -->
+Building a personal website in 2025 has become significantly easier with modern tools and GenAI assistance. In this post, I'll share my experience rebuilding my personal website.
 
 ## Why?
 When I was in graduate school, I set up a [personal blog](https://github.com/gytcrt/gytcrt.github.io) to show case my project and share thoughts. I've planned to keep developing that site but it has taken a back seat ever since. 
@@ -57,18 +57,29 @@ Hugo PaperMod provides very easy integration with [Google Analytics 4](https://s
 
 As for hosting, I prefer minimal set up and effort for Umami, since it's an internal tool for my website and I don't have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very [detailed tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04) on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.
 
-<!-- This part should be moved to AI tool and advice part -->
-<!-- # Font set up -->
 
-## Vibe coding and advice
-<!-- resources: https://www.deeplearning.ai/the-batch/issue-298/ -->
-I majored in mathematics and statistics in college and graduate school, and my major programming languages are Matlab and R. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself. 
+## AI coding tools: Cursor + Dall-E 3 + Runway + LLMs
+<!-- TODO: maybe i should move this section to the front -->
+I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself. 
 
-When it comes to AI tools for coding, I'm so grateful of having them in 2025. Vibe/AI coding tools plus LLM have made solo web development experience easier this time.  
+When it comes to AI tools for coding, I'm so grateful of having them in 2025. AI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using AI tool for this website.  
+
+### IDE
+#### Replit: AI app builder
+I'm not sure whether [Replit](https://replit.com/) should be bucketed into IDE section, but I will put it here. Replit is like a no-code GenAI based app builder platform. 
+
+#### Cursor
+
+### Image and video generation
+
+### LLMs: OpenAI + Gemini
+
+
 
 ## Features in backlog
 - [ ]Enable comments section
 - [ ]Add an archive tag
 - [ ]Add buttons to share to social media
 - [ ]Combine Tag and Search into one tag
+- [ ]Other advice? 
 
