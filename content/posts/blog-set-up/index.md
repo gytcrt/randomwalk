@@ -26,13 +26,27 @@ There is a [reddit thread](https://www.reddit.com/r/webdev/comments/1bjfqse/what
 # Framework selection
 There are millions of ways to build a personal website in 2025. If you want to be relieved from coding and deploying front-end, [Wix](https://www.wix.com/), [Wordpress](https://wordpress.com/) and [Squarespace](https://www.squarespace.com/) are all classic options. Or you can consider GenAI website builder like [replit](https://replit.com/) too. 
 
-I decided to 
+I decided to use [static website builder](https://en.wikipedia.org/wiki/Static_site_generator), since I want to code more and have more control over my website. Similar to no-code option in last paragraph, there are many static website builder frameworks too. [Hugo](https://gohugo.io/) and [Jekyll](https://jekyllrb.com/) are the most popular ones. Comparing to Jekyll, Hugo is relatively younger and way faster than Jekyll. I have used Jekyll to build my previous website, so I thought exploring Hugo would be interesting. For anyone who wants to try static website builder, I'd recommend both of them. There are a lot of templates and resources available online for both of them. You cannot go wrong either way. 
 
-# Hosting and deployment
-Gitpage + Github Action
+Both Hugo and Jekyll provide a lot of themes(like PPT template) for you to build upon. Here are two good resources to find a theme for you:
 
-# Analytics set up
-Umami + Digital Ocean server
+- Jekyll: https://jekyllthemes.io/jekyll-portfolio-themes
+- Hugo: https://themes.gohugo.io/tags/blog/
+
+<!-- TODO: I want more space here -->
+**I also found it very helpful to browse other people's websites created from the themes.** Some of them serve as a great inspiration for me, and many folks wrote blogs about their website set-up and customization too. I will link some reference at the end of this post. 
+
+# Hosting and deployment: Github Pages + Github Actions
+Since I'm building a static website, which doesn't contain dynamic content. The best and most economic place to host my website is [Github pages](https://pages.github.com/). It is free if you are using public repo or some premium version of Github account. 
+
+In addition, [Github Actions](https://github.com/features/actions) has made deployment so easy along with Github Page. Hugo has a page on [hosting on Github Pages with Github Actions](https://gohugo.io/host-and-deploy/host-on-github-pages/). I recommend following the page to deploy your static website. 
+
+If you are not familiar with deployment or CI/CD tools like Github Actions, don't get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be. 
+
+# Analytics set up: Umami + Digital Ocean
+In modern product/software development, feedback is essential for improvement. My website aims to serve myself and my audience, so I'd love to take feedback from my audience. There are direct and indirect feedbacks. Website traffic is in direct feedback, and comments from visitor are direct feedback. In this section, I will talk about my analytics platform set up(indirect feedback).
+
+Hugo framework 
 
 # Font set up
 

@@ -27,11 +27,20 @@
 <p>There is a <a href="https://www.reddit.com/r/webdev/comments/1bjfqse/whats_the_best_domain_registrar_in_2024/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button">reddit thread</a> about the best domain registrar in 2024. If you are thinking about getting a domain, you can consider the advice from the thread too.</p>
 <h1 id="framework-selection">Framework selection</h1>
 <p>There are millions of ways to build a personal website in 2025. If you want to be relieved from coding and deploying front-end, <a href="https://www.wix.com/">Wix</a>, <a href="https://wordpress.com/">Wordpress</a> and <a href="https://www.squarespace.com/">Squarespace</a> are all classic options. Or you can consider GenAI website builder like <a href="https://replit.com/">replit</a> too.</p>
-<p>I decided to</p>
-<h1 id="hosting-and-deployment">Hosting and deployment</h1>
-<p>Gitpage + Github Action</p>
-<h1 id="analytics-set-up">Analytics set up</h1>
-<p>Umami + Digital Ocean server</p>
+<p>I decided to use <a href="https://en.wikipedia.org/wiki/Static_site_generator">static website builder</a>, since I want to code more and have more control over my website. Similar to no-code option in last paragraph, there are many static website builder frameworks too. <a href="https://gohugo.io/">Hugo</a> and <a href="https://jekyllrb.com/">Jekyll</a> are the most popular ones. Comparing to Jekyll, Hugo is relatively younger and way faster than Jekyll. I have used Jekyll to build my previous website, so I thought exploring Hugo would be interesting. For anyone who wants to try static website builder, I&rsquo;d recommend both of them. There are a lot of templates and resources available online for both of them. You cannot go wrong either way.</p>
+<p>Both Hugo and Jekyll provide a lot of themes(like PPT template) for you to build upon. Here are two good resources to find a theme for you:</p>
+<ul>
+<li>Jekyll: <a href="https://jekyllthemes.io/jekyll-portfolio-themes">https://jekyllthemes.io/jekyll-portfolio-themes</a></li>
+<li>Hugo: <a href="https://themes.gohugo.io/tags/blog/">https://themes.gohugo.io/tags/blog/</a></li>
+</ul>
+<p><strong>I also found it very helpful to browse other people&rsquo;s websites created from the themes.</strong> Some of them serve as a great inspiration for me, and many folks wrote blogs about their website set-up and customization too. I will link some reference at the end of this post.</p>
+<h1 id="hosting-and-deployment-github-pages--github-actions">Hosting and deployment: Github Pages + Github Actions</h1>
+<p>Since I&rsquo;m building a static website, which doesn&rsquo;t contain dynamic content. The best and most economic place to host my website is <a href="https://pages.github.com/">Github pages</a>. It is free if you are using public repo or some premium version of Github account.</p>
+<p>In addition, <a href="https://github.com/features/actions">Github Actions</a> has made deployment so easy along with Github Page. Hugo has a page on <a href="https://gohugo.io/host-and-deploy/host-on-github-pages/">hosting on Github Pages with Github Actions</a>. I recommend following the page to deploy your static website.</p>
+<p>If you are not familiar with deployment or CI/CD tools like Github Actions, don&rsquo;t get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be.</p>
+<h1 id="analytics-set-up-umami--digital-ocean">Analytics set up: Umami + Digital Ocean</h1>
+<p>In modern product/software development, feedback is essential for improvement. My website aims to serve myself and my audience, so I&rsquo;d love to take feedback from my audience. There are direct and indirect feedbacks. Website traffic is in direct feedback, and comments from visitor are direct feedback. In this section, I will talk about my analytics platform set up(indirect feedback).</p>
+<p>Hugo framework</p>
 <h1 id="font-set-up">Font set up</h1>
 <h1 id="ai-tools-and-advice">AI Tools and advice</h1>
 <h1 id="festures-in-backlog">Festures in backlog</h1>
