@@ -61,7 +61,7 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  TocSide: "left"
+  # TocSide: "left"
   showtoc: true
   tocopen: true
 
