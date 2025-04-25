@@ -57,6 +57,7 @@ As for hosting, I prefer minimal set up and effort for Umami, since it's an inte
 <!-- # Font set up -->
 
 # Vibe coding and advice
+<!-- resources: https://www.deeplearning.ai/the-batch/issue-298/ -->
 I majored in mathematics and statistics in college and graduate school, and my major programming languages are Matlab and R. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself. 
 
 When it comes to AI tools for coding, I'm so grateful of having them in 2025. Vibe/AI coding tools plus LLM have made solo web development experience easier this time.  
