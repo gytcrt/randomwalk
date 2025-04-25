@@ -34,20 +34,22 @@
 <li>Hugo: <a href="https://themes.gohugo.io/tags/blog/">https://themes.gohugo.io/tags/blog/</a></li>
 </ul>
 <p><strong>I also found it very helpful to browse other people&rsquo;s websites created from the themes.</strong> Some of them serve as a great inspiration for me, and many folks wrote blogs about their website set-up and customization too. I will link some reference at the end of this post.</p>
+<p>After browsing 100+ websites, I picked <a href="https://reorx.github.io/hugo-PaperModX/">PaperModX</a> to start my website. PaperModX is an enhanced version of <a href="https://adityatelange.github.io/hugo-PaperMod/">PaperMod</a>. I like the clean aesthetic of the theme, and it is the <a href="https://github.com/QIN2DIM/awesome-hugo-themes">top stared GitHub theme</a> for Hugo. Similar to other design choice in software development, Choosing a popular framework with a mature community makes your life easier.</p>
 <h1 id="hosting-and-deployment-github-pages--github-actions">Hosting and deployment: Github Pages + Github Actions</h1>
 <p>Since I&rsquo;m building a static website, which doesn&rsquo;t contain dynamic content. The best and most economic place to host my website is <a href="https://pages.github.com/">Github pages</a>. It is free if you are using public repo or some premium version of Github account.</p>
 <p>In addition, <a href="https://github.com/features/actions">Github Actions</a> has made deployment so easy along with Github Page. Hugo has a page on <a href="https://gohugo.io/host-and-deploy/host-on-github-pages/">hosting on Github Pages with Github Actions</a>. I recommend following the page to deploy your static website.</p>
 <p>If you are not familiar with deployment or CI/CD tools like Github Actions, don&rsquo;t get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be.</p>
 <h1 id="analytics-set-up-umami--digital-ocean">Analytics set up: Umami + Digital Ocean</h1>
 <p>In modern product/software development, feedback is essential for improvement. My website aims to serve myself and my audience, so I&rsquo;d love to take feedback from my audience. There are direct and indirect feedbacks. Website traffic is in direct feedback, and comments from visitor are direct feedback. In this section, I will talk about my analytics platform set up(indirect feedback).</p>
-<p>Hugo framework</p>
+<p>Hugo PaperMod provides very easy integration with <a href="https://support.google.com/analytics/answer/10089681?hl=en">Google Analytics 4</a>. I believe using Google Analytics would be the most straight forward and time-saving set up. However, I do want to have more control over my traffic data, and I did more research on potential analytics tools.
+<a href="https://plausible.io/">Plausible Analytics</a> and <a href="https://umami.is/">Umami</a> are two of the popular tools. I picked Umami since it&rsquo;s open-source, free and self-hostable.</p>
 <h1 id="font-set-up">Font set up</h1>
 <h1 id="ai-tools-and-advice">AI Tools and advice</h1>
 <h1 id="festures-in-backlog">Festures in backlog</h1>
 <ul>
-<li>Enable comments section</li>
-<li>Add an archive tag</li>
-<li>Combine Tag and Search into one tag</li>
+<li><input disabled="" type="checkbox"> Enable comments section</li>
+<li><input disabled="" type="checkbox"> Add an archive tag</li>
+<li><input disabled="" type="checkbox"> Combine Tag and Search into one tag</li>
 </ul>
 ]]></content:encoded>
     </item>

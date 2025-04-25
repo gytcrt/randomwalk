@@ -36,6 +36,8 @@ Both Hugo and Jekyll provide a lot of themes(like PPT template) for you to build
 <!-- TODO: I want more space here -->
 **I also found it very helpful to browse other people's websites created from the themes.** Some of them serve as a great inspiration for me, and many folks wrote blogs about their website set-up and customization too. I will link some reference at the end of this post. 
 
+After browsing 100+ websites, I picked [PaperModX](https://reorx.github.io/hugo-PaperModX/) to start my website. PaperModX is an enhanced version of [PaperMod](https://adityatelange.github.io/hugo-PaperMod/). I like the clean aesthetic of the theme, and it is the [top stared GitHub theme](https://github.com/QIN2DIM/awesome-hugo-themes) for Hugo. Similar to other design choice in software development, Choosing a popular framework with a mature community makes your life easier. 
+
 # Hosting and deployment: Github Pages + Github Actions
 Since I'm building a static website, which doesn't contain dynamic content. The best and most economic place to host my website is [Github pages](https://pages.github.com/). It is free if you are using public repo or some premium version of Github account. 
 
@@ -46,13 +48,17 @@ If you are not familiar with deployment or CI/CD tools like Github Actions, don'
 # Analytics set up: Umami + Digital Ocean
 In modern product/software development, feedback is essential for improvement. My website aims to serve myself and my audience, so I'd love to take feedback from my audience. There are direct and indirect feedbacks. Website traffic is in direct feedback, and comments from visitor are direct feedback. In this section, I will talk about my analytics platform set up(indirect feedback).
 
-Hugo framework 
+Hugo PaperMod provides very easy integration with [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en). I believe using Google Analytics would be the most straight forward and time-saving set up. However, I do want to have more control over my traffic data, and I did more research on potential analytics tools. 
+[Plausible Analytics](https://plausible.io/) and [Umami](https://umami.is/) are two of the popular tools. I picked Umami since it's open-source, free and self-hostable. 
+
+
 
 # Font set up
 
 # AI Tools and advice
 
 # Festures in backlog
-- Enable comments section
-- Add an archive tag
-- Combine Tag and Search into one tag
+- [ ]Enable comments section
+- [ ]Add an archive tag
+- [ ]Combine Tag and Search into one tag
+
