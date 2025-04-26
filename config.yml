@@ -155,18 +155,14 @@ menu:
       name: Posts
       url: /posts/
       weight: 20
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
     - identifier: search
       name: Search
       url: /search/
-      weight: 40
+      weight: 30
     - identifier: home
       name: Home
       url: /home/
-      weight: 50
+      weight: 40
 
 pygmentsUseClasses: true
 markup:
