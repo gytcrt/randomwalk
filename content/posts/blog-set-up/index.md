@@ -58,19 +58,24 @@ Hugo PaperMod provides very easy integration with [Google Analytics 4](https://s
 As for hosting, I prefer minimal set up and effort for Umami, since it's an internal tool for my website and I don't have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very [detailed tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04) on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.
 
 
-## AI coding tools: Cursor + Dall-E 3 + Runway + LLMs
+## GenAI coding tools: Cursor + Dall-E 3 + Runway + LLMs
 <!-- TODO: maybe i should move this section to the front -->
 I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself. 
 
-When it comes to GenAI tools for coding, I'm so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using GenAI tool for this website.  
+When it comes to GenAI tools for coding, I'm so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. **Cursor and other GenAI tools free me from typing code, and enables me to focus on design, which include system design, web design, and UX design.**
+
+Therefore, I want to detail my experience with using GenAI tool for this website. This section is not meant to be a comprehensive review of GenAI IDEs, and I plan to write another article about programming with AI tools.
 
 ### IDE
 I have heard from friends and online community that Cursor + Claude is the best GenAI IDE in the marketing at this moment. Nevertheless, I looked into that options too. 
 
+**TL;DR: for anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one you like the most.**
+
+
 #### Replit: AI app builder
 [Replit](https://replit.com/) is like a no-code GenAI based app builder platform, and it allows user to use natural language prompt to build app. You can use it as an IDE if you have to access terminal and code. 
 
-I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. I think if someone without coding skills might be able to build a decent static website in Replit with more time. For people with programming experience, GenAI Editor makes more sense. 
+I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. **I think if someone without coding skills might be able to build a decent static website in Replit with more time.** For people with programming experience, GenAI Editor makes more sense. 
 
 #### Trae.ai
 [Trae.ai](https://www.trae.ai/) is a free GenAI editor, which provide unlimited free access to Claude 3.7 Sonnet model. It sounds very attractive, since Cursor requires $20 monthly subscription for.
@@ -84,9 +89,16 @@ However, as and old(internet) saying goes, "when a product is free, you are the 
 I didn't feel comfortable with the terms, and decided to not try it. 
 
 #### Cursor
+Before I started using [Cursor](https://www.cursor.com/), I have tried other GenAI coding tools like Github copilot, Colab with Gemini, etc. But Cursor is a game changer for me, and I'm paying $20 subscription for it. It means a lot since I'm a person with no Amazon Prime account 🙂.  
 
+I've been using Cursor + `Claude-3.5/3.7-sonnet` while developing this website. In my experience, `Claude-3.7-sonnet` and `Claude-3.7-sonnet-thinking` perform better than `Claude-3.5`. But I don't recommend sticking to this config, if you are considering using Cursor. The development of LLM moves so fast, that my current experience won't be relevant in 3 months.  
+
+For anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one fits your need the most. 
+
+Regarding privacy and data usage, [Cursor's privacy policy](https://www.cursor.com/privacy) is reasonable to me and I turn on "Privacy Mode" the whole time. 
 
 ### Image and video generation
+
 
 ### LLMs: OpenAI + Gemini
 

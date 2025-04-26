@@ -44,14 +44,16 @@
 <p>Hugo PaperMod provides very easy integration with <a href="https://support.google.com/analytics/answer/10089681?hl=en">Google Analytics 4</a>. I believe using Google Analytics would be the most straight forward and time-saving set up. However, I do want to have more control over my traffic data, and I did more research on potential analytics tools.
 <a href="https://plausible.io/">Plausible Analytics</a> and <a href="https://umami.is/">Umami</a> are two of the popular tools. I picked Umami since it&rsquo;s open-source, free and self-hostable.</p>
 <p>As for hosting, I prefer minimal set up and effort for Umami, since it&rsquo;s an internal tool for my website and I don&rsquo;t have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very <a href="https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04">detailed tutorial</a> on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.</p>
-<h2 id="ai-coding-tools-cursor--dall-e-3--runway--llms">AI coding tools: Cursor + Dall-E 3 + Runway + LLMs</h2>
+<h2 id="genai-coding-tools-cursor--dall-e-3--runway--llms">GenAI coding tools: Cursor + Dall-E 3 + Runway + LLMs</h2>
 <p>I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself.</p>
-<p>When it comes to GenAI tools for coding, I&rsquo;m so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using GenAI tool for this website.</p>
+<p>When it comes to GenAI tools for coding, I&rsquo;m so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. <strong>Cursor and other GenAI tools free me from typing code, and enables me to focus on design, which include system design, web design, and UX design.</strong></p>
+<p>Therefore, I want to detail my experience with using GenAI tool for this website. This section is not meant to be a comprehensive review of GenAI IDEs, and I plan to write another article about programming with AI tools.</p>
 <h3 id="ide">IDE</h3>
 <p>I have heard from friends and online community that Cursor + Claude is the best GenAI IDE in the marketing at this moment. Nevertheless, I looked into that options too.</p>
+<p><strong>TL;DR: for anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one you like the most.</strong></p>
 <h4 id="replit-ai-app-builder">Replit: AI app builder</h4>
 <p><a href="https://replit.com/">Replit</a> is like a no-code GenAI based app builder platform, and it allows user to use natural language prompt to build app. You can use it as an IDE if you have to access terminal and code.</p>
-<p>I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. I think if someone without coding skills might be able to build a decent static website in Replit with more time. For people with programming experience, GenAI Editor makes more sense.</p>
+<p>I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. <strong>I think if someone without coding skills might be able to build a decent static website in Replit with more time.</strong> For people with programming experience, GenAI Editor makes more sense.</p>
 <h4 id="traeai">Trae.ai</h4>
 <p><a href="https://www.trae.ai/">Trae.ai</a> is a free GenAI editor, which provide unlimited free access to Claude 3.7 Sonnet model. It sounds very attractive, since Cursor requires $20 monthly subscription for.</p>
 <p>However, as and old(internet) saying goes, &ldquo;when a product is free, you are the product&rdquo;. If you carefully read <a href="https://www.trae.ai/privacy-policy">Trae.ai&rsquo;s privacy policy</a> or ask a LLM to summarize it for you, you can infer that <strong>they will collect all your conversation and code and potentially use them for model training.</strong> Here are 2 quotes from the term:</p>
@@ -61,6 +63,10 @@
 <p>To review, improve, and develop the Platform, including by analyzing how you are using the Platform, conducting voluntary surveys and research, and training and improving our technology.</p></blockquote>
 <p>I didn&rsquo;t feel comfortable with the terms, and decided to not try it.</p>
 <h4 id="cursor">Cursor</h4>
+<p>Before I started using <a href="https://www.cursor.com/">Cursor</a>, I have tried other GenAI coding tools like Github copilot, Colab with Gemini, etc. But Cursor is a game changer for me, and I&rsquo;m paying $20 subscription for it. It means a lot since I&rsquo;m a person with no Amazon Prime account 🙂.</p>
+<p>I&rsquo;ve been using Cursor + <code>Claude-3.5/3.7-sonnet</code> while developing this website. In my experience, <code>Claude-3.7-sonnet</code> and <code>Claude-3.7-sonnet-thinking</code> perform better than <code>Claude-3.5</code>. But I don&rsquo;t recommend sticking to this config, if you are considering using Cursor. The development of LLM moves so fast, that my current experience won&rsquo;t be relevant in 3 months.</p>
+<p>For anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one fits your need the most.</p>
+<p>Regarding privacy and data usage, <a href="https://www.cursor.com/privacy">Cursor&rsquo;s privacy policy</a> is reasonable to me and I turn on &ldquo;Privacy Mode&rdquo; the whole time.</p>
 <h3 id="image-and-video-generation">Image and video generation</h3>
 <h3 id="llms-openai--gemini">LLMs: OpenAI + Gemini</h3>
 <h2 id="features-in-backlog">Features in backlog</h2>
