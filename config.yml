@@ -162,6 +162,10 @@ menu:
       name: Search
       url: /search/
       weight: 40
+    - identifier: home
+      name: Home
+      url: /index.html
+      weight: 50
 
 pygmentsUseClasses: true
 markup:
