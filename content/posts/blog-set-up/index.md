@@ -65,12 +65,26 @@ I majored in mathematics and statistics in college and graduate school, and my m
 When it comes to GenAI tools for coding, I'm so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using GenAI tool for this website.  
 
 ### IDE
+I have heard from friends and online community that Cursor + Claude is the best GenAI IDE in the marketing at this moment. Nevertheless, I looked into that options too. 
+
 #### Replit: AI app builder
-I'm not sure whether [Replit](https://replit.com/) should be bucketed into IDE section, but I will put it here. Replit is like a no-code GenAI based app builder platform, and it allows user to use natural language prompt to build app.
+[Replit](https://replit.com/) is like a no-code GenAI based app builder platform, and it allows user to use natural language prompt to build app. You can use it as an IDE if you have to access terminal and code. 
 
 I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. I think if someone without coding skills might be able to build a decent static website in Replit with more time. For people with programming experience, GenAI Editor makes more sense. 
 
+#### Trae.ai
+[Trae.ai](https://www.trae.ai/) is a free GenAI editor, which provide unlimited free access to Claude 3.7 Sonnet model. It sounds very attractive, since Cursor requires $20 monthly subscription for.
+
+However, as and old(internet) saying goes, "when a product is free, you are the product". If you carefully read [Trae.ai's privacy policy](https://www.trae.ai/privacy-policy) or ask a LLM to summarize it for you, you can infer that **they will collect all your conversation and code and potentially use them for model training.** Here are 2 quotes from the term:
+
+> When you interact with the Platform’s integrated AI-chatbot, we collect any information (including any code snippets) that you choose to input.
+
+> To review, improve, and develop the Platform, including by analyzing how you are using the Platform, conducting voluntary surveys and research, and training and improving our technology.
+
+I didn't feel comfortable with the terms, and decided to not try it. 
+
 #### Cursor
+
 
 ### Image and video generation
 
