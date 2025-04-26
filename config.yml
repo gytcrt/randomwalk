@@ -1,7 +1,7 @@
 baseURL: "https://andreagao.com/"
 title: "Random Walk"
 theme: PaperModX
-uglyURLs: true
+# uglyURLs: true
 
 enableRobotsTXT: true
 buildDrafts: false
