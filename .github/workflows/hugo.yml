@@ -56,8 +56,7 @@ jobs:
           hugo \
             --minify \
             --baseURL "https://andreagao.com/" \
-            --disableKinds=RSS \
-            --uglyURLs
+            --disableKinds=RSS
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
