@@ -132,12 +132,18 @@ code, pre, kbd, samp {
 }
 
 #menu .active {
+  color: var(--signature);
   box-shadow: 0 2px 0 var(--signature);
 }
 
 #menu a:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
+  transition: 0.15s;
+  color: black;
+}
+
+#menu .active:hover {
+  color: var(--signature);
+  box-shadow: 0 2px 0 var(--signature);
 }
 
 /* ---- CONTENT ELEMENTS ---- */
