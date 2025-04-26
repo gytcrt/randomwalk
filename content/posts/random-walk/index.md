@@ -9,7 +9,7 @@ cover:
     caption: "A 2D random walk on white canvas"
 ---
 
-I chose "Random Walk" as the name of my website, as both a representation of my work and personal interests .
+I chose "Random Walk" as the name of my website, as both a representation of my work and personal interests.
 
 Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.  
 
