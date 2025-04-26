@@ -165,7 +165,7 @@ menu:
       weight: 40
     - identifier: home
       name: Home
-      url: /index.html
+      url: /home/
       weight: 50
 
 pygmentsUseClasses: true
