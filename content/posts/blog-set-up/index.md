@@ -62,11 +62,13 @@ As for hosting, I prefer minimal set up and effort for Umami, since it's an inte
 <!-- TODO: maybe i should move this section to the front -->
 I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself. 
 
-When it comes to AI tools for coding, I'm so grateful of having them in 2025. AI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using AI tool for this website.  
+When it comes to GenAI tools for coding, I'm so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using GenAI tool for this website.  
 
 ### IDE
 #### Replit: AI app builder
-I'm not sure whether [Replit](https://replit.com/) should be bucketed into IDE section, but I will put it here. Replit is like a no-code GenAI based app builder platform. 
+I'm not sure whether [Replit](https://replit.com/) should be bucketed into IDE section, but I will put it here. Replit is like a no-code GenAI based app builder platform, and it allows user to use natural language prompt to build app.
+
+I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. I think if someone without coding skills might be able to build a decent static website in Replit with more time. For people with programming experience, GenAI Editor makes more sense. 
 
 #### Cursor
 

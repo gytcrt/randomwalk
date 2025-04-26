@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:49602/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rebuild my website with GenAI&#39;s assistance</title>
-      <link>http://localhost:1313/posts/blog-set-up/</link>
+      <link>http://localhost:49602/posts/blog-set-up/</link>
       <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-set-up/</guid>
+      <guid>http://localhost:49602/posts/blog-set-up/</guid>
       <description>&lt;p&gt;Building a personal website in 2025 has become significantly easier with modern tools and GenAI assistance. In this post, I&amp;rsquo;ll share my experience rebuilding my personal website.&lt;/p&gt;
 &lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;
 &lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://github.com/gytcrt/gytcrt.github.io&#34;&gt;personal blog&lt;/a&gt; to show case my project and share thoughts. I&amp;rsquo;ve planned to keep developing that site but it has taken a back seat ever since.&lt;/p&gt;
@@ -46,10 +46,11 @@
 <p>As for hosting, I prefer minimal set up and effort for Umami, since it&rsquo;s an internal tool for my website and I don&rsquo;t have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very <a href="https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04">detailed tutorial</a> on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.</p>
 <h2 id="ai-coding-tools-cursor--dall-e-3--runway--llms">AI coding tools: Cursor + Dall-E 3 + Runway + LLMs</h2>
 <p>I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself.</p>
-<p>When it comes to AI tools for coding, I&rsquo;m so grateful of having them in 2025. AI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using AI tool for this website.</p>
+<p>When it comes to GenAI tools for coding, I&rsquo;m so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. Therefore, I want to detail my experience with using GenAI tool for this website.</p>
 <h3 id="ide">IDE</h3>
 <h4 id="replit-ai-app-builder">Replit: AI app builder</h4>
-<p>I&rsquo;m not sure whether <a href="https://replit.com/">Replit</a> should be bucketed into IDE section, but I will put it here. Replit is like a no-code GenAI based app builder platform.</p>
+<p>I&rsquo;m not sure whether <a href="https://replit.com/">Replit</a> should be bucketed into IDE section, but I will put it here. Replit is like a no-code GenAI based app builder platform, and it allows user to use natural language prompt to build app.</p>
+<p>I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. I think if someone without coding skills might be able to build a decent static website in Replit with more time. For people with programming experience, GenAI Editor makes more sense.</p>
 <h4 id="cursor">Cursor</h4>
 <h3 id="image-and-video-generation">Image and video generation</h3>
 <h3 id="llms-openai--gemini">LLMs: OpenAI + Gemini</h3>
@@ -66,10 +67,10 @@
     
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
+      <link>http://localhost:49602/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <guid>http://localhost:49602/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests .&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests .</p>
@@ -89,10 +90,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
+      <link>http://localhost:49602/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <guid>http://localhost:49602/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>
