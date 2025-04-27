@@ -57,6 +57,7 @@ Hugo PaperMod provides very easy integration with [Google Analytics 4](https://s
 
 As for hosting, I prefer minimal set up and effort for Umami, since it's an internal tool for my website and I don't have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very [detailed tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04) on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.
 
+{{< figure src="umami.png" alt="Umami dashboard for a day's visit" caption="Umami dashboard for a day's visit" align="center" >}}
 
 ## GenAI coding tools: Cursor + Dall-E 3 + Runway + LLMs
 <!-- TODO: maybe i should move this section to the front -->
@@ -98,8 +99,23 @@ For anyone considering using a GenAI IDE, I recommend checking out latest discus
 Regarding privacy and data usage, [Cursor's privacy policy](https://www.cursor.com/privacy) is reasonable to me and I turn on "Privacy Mode" the whole time. 
 
 ### Image and video generation
+I always spend tons of time on finding the image I like for my post. Using GenAI model to create image or video for my website has been a great experience to me.
 
+I wanted to use some image relevant to my website and my interest. It occurred to me a labyrinthian and retro scientific art would be perfect, because someone can only walk randomly in a labyrinth and I love movies like [The Shining](https://www.imdb.com/title/tt0081505/) and [Blade Runner](https://www.imdb.com/title/tt0083658/?ref_=fn_all_ttl_1). 
 
+Initially, I want to use GenAI to create some pixel art version of nostalgic screen saver like the GIF below. When I was a kid, I could watch this for long time. [And I am not alone on this](https://www.theparisreview.org/blog/2017/05/23/salvation-mode/). 
+
+{{< figure src="maze_animation.gif" alt="90s Windows 3D Maze ScreenSaver" caption="90s Windows 3D Maze ScreenSaver" align="center" >}}
+
+I made a few attempts, and the outcomes were not ideal. So I pivoted to another idea: **a pixel art of Hong Kong street view.** Hong Kong is my all time favorite city and it is an iconic retro-sci-fi symbol. Hong Kong is a maze itself in many art work like [Chungking Express](https://en.wikipedia.org/wiki/Chungking_Express). 
+
+Then I used GPT 4.0 to generated some prompts for Dall-E 3, and input the prompts to Dall-E 3 for image generation. Here are selected outputs from Dall-E 3:
+
+{{< figure src="Hong_Kong_night_scene_1.gif" alt="90s Windows 3D Maze ScreenSaver" caption="90s Windows 3D Maze ScreenSaver" align="center" >}}
+
+{{< figure src="Hong_Kong_night_scene_2.png" alt="90s Windows 3D Maze ScreenSaver" caption="90s Windows 3D Maze ScreenSaver" align="center" >}}
+
+{{< figure src="Hong_Kong_night_scene_3.png" alt="90s Windows 3D Maze ScreenSaver" caption="90s Windows 3D Maze ScreenSaver" align="center" >}}
 ### LLMs: OpenAI + Gemini
 
 

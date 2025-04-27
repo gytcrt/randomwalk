@@ -44,6 +44,13 @@
 <p>Hugo PaperMod provides very easy integration with <a href="https://support.google.com/analytics/answer/10089681?hl=en">Google Analytics 4</a>. I believe using Google Analytics would be the most straight forward and time-saving set up. However, I do want to have more control over my traffic data, and I did more research on potential analytics tools.
 <a href="https://plausible.io/">Plausible Analytics</a> and <a href="https://umami.is/">Umami</a> are two of the popular tools. I picked Umami since it&rsquo;s open-source, free and self-hostable.</p>
 <p>As for hosting, I prefer minimal set up and effort for Umami, since it&rsquo;s an internal tool for my website and I don&rsquo;t have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very <a href="https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04">detailed tutorial</a> on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="umami.png#center"
+         alt="Umami dashboard for a day&#39;s visit"/> <figcaption>
+            <p>Umami dashboard for a day&rsquo;s visit</p>
+        </figcaption>
+</figure>
+
 <h2 id="genai-coding-tools-cursor--dall-e-3--runway--llms">GenAI coding tools: Cursor + Dall-E 3 + Runway + LLMs</h2>
 <p>I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself.</p>
 <p>When it comes to GenAI tools for coding, I&rsquo;m so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. <strong>Cursor and other GenAI tools free me from typing code, and enables me to focus on design, which include system design, web design, and UX design.</strong></p>
@@ -68,6 +75,39 @@
 <p>For anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one fits your need the most.</p>
 <p>Regarding privacy and data usage, <a href="https://www.cursor.com/privacy">Cursor&rsquo;s privacy policy</a> is reasonable to me and I turn on &ldquo;Privacy Mode&rdquo; the whole time.</p>
 <h3 id="image-and-video-generation">Image and video generation</h3>
+<p>I always spend tons of time on finding the image I like for my post. Using GenAI model to create image or video for my website has been a great experience to me.</p>
+<p>I wanted to use some image relevant to my website and my interest. It occurred to me a labyrinthian and retro scientific art would be perfect, because someone can only walk randomly in a labyrinth and I love movies like <a href="https://www.imdb.com/title/tt0081505/">The Shining</a> and <a href="https://www.imdb.com/title/tt0083658/?ref_=fn_all_ttl_1">Blade Runner</a>.</p>
+<p>Initially, I want to use GenAI to create some pixel art version of nostalgic screen saver like the GIF below. When I was a kid, I could watch this for long time. <a href="https://www.theparisreview.org/blog/2017/05/23/salvation-mode/">And I am not alone on this</a>.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="maze_animation.gif#center"
+         alt="90s Windows 3D Maze ScreenSaver"/> <figcaption>
+            <p>90s Windows 3D Maze ScreenSaver</p>
+        </figcaption>
+</figure>
+
+<p>I made a few attempts, and the outcomes were not ideal. So I pivoted to another idea: <strong>a pixel art of Hong Kong street view.</strong> Hong Kong is my all time favorite city and it is an iconic retro-sci-fi symbol. Hong Kong is a maze itself in many art work like <a href="https://en.wikipedia.org/wiki/Chungking_Express">Chungking Express</a>.</p>
+<p>Then I used GPT 4.0 to generated some prompts for Dall-E 3, and input the prompts to Dall-E 3 for image generation. Here are selected outputs from Dall-E 3:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="Hong_Kong_night_scene_1.gif#center"
+         alt="90s Windows 3D Maze ScreenSaver"/> <figcaption>
+            <p>90s Windows 3D Maze ScreenSaver</p>
+        </figcaption>
+</figure>
+
+<figure class="align-center ">
+    <img loading="lazy" src="Hong_Kong_night_scene_2.png#center"
+         alt="90s Windows 3D Maze ScreenSaver"/> <figcaption>
+            <p>90s Windows 3D Maze ScreenSaver</p>
+        </figcaption>
+</figure>
+
+<figure class="align-center ">
+    <img loading="lazy" src="Hong_Kong_night_scene_3.png#center"
+         alt="90s Windows 3D Maze ScreenSaver"/> <figcaption>
+            <p>90s Windows 3D Maze ScreenSaver</p>
+        </figcaption>
+</figure>
+
 <h3 id="llms-openai--gemini">LLMs: OpenAI + Gemini</h3>
 <h2 id="features-in-backlog">Features in backlog</h2>
 <ul>
