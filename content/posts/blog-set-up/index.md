@@ -8,7 +8,7 @@ cover:
     image: "images/day_scene.png"
     alt: "a day scene of Hong Kong in pixel"
     caption: "AI generated pixel art of Hong Kong"
-    width: 50% # Controls the image size, adjust as needed
+    width: 75% # Controls the image size, adjust as needed
     description: If anyone wants to set up a personal website, it's way easier to use AI tools now.
 ---
 
@@ -83,7 +83,7 @@ I experimented with Replit for a couple of hours. For example, I asked it to bui
 
 However, as and old(internet) saying goes, "when a product is free, you are the product". If you carefully read [Trae.ai's privacy policy](https://www.trae.ai/privacy-policy) or ask a LLM to summarize it for you, you can infer that **they will collect all your conversation and code and potentially use them for model training.** Here are 2 quotes from the term:
 
-> When you interact with the Platform’s integrated AI-chatbot, we collect any information (including any code snippets) that you choose to input.
+> When you interact with the Platform's integrated AI-chatbot, we collect any information (including any code snippets) that you choose to input.
 
 > To review, improve, and develop the Platform, including by analyzing how you are using the Platform, conducting voluntary surveys and research, and training and improving our technology.
 
@@ -101,7 +101,7 @@ Regarding privacy and data usage, [Cursor's privacy policy](https://www.cursor.c
 ### Image and video generation
 I always spend tons of time on finding the image I like for my post. Using GenAI model to create image or video for my website has been a great experience to me.
 
-I wanted to use some image relevant to my website and my interest. It occurred to me a labyrinthian and retro scientific art would be perfect, because someone can only walk randomly in a labyrinth and I love movies like [The Shining](https://www.imdb.com/title/tt0081505/) and [Blade Runner](https://www.imdb.com/title/tt0083658/?ref_=fn_all_ttl_1). 
+I want arts relevant to the website and my interest on the landing page. It occurred to me a labyrinthian and retro scientific art would be perfect, because someone can only walk randomly in a labyrinth and I love movies like [The Shining](https://www.imdb.com/title/tt0081505/) and [Blade Runner](https://www.imdb.com/title/tt0083658/?ref_=fn_all_ttl_1). 
 
 Initially, I want to use GenAI to create some pixel art version of nostalgic screen saver like the GIF below. When I was a kid, I could watch this for long time. [And I am not alone on this](https://www.theparisreview.org/blog/2017/05/23/salvation-mode/). 
 
@@ -111,11 +111,19 @@ I made a few attempts, and the outcomes were not ideal. So I pivoted to another 
 
 Then I used GPT 4.0 to generated some prompts for Dall-E 3, and input the prompts to Dall-E 3 for image generation. Here are selected outputs from Dall-E 3:
 
-{{< figure src="Hong_Kong_night_scene_1.gif" alt="90s Windows 3D Maze ScreenSaver" caption="90s Windows 3D Maze ScreenSaver" align="center" >}}
+| ![Hong Kong night scene 1](Hong_Kong_night_scene_1.gif) | ![Hong Kong night scene 2](Hong_Kong_night_scene_2.png) | ![Hong Kong night scene 3](Hong_Kong_night_scene_3.png) |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| *Hong Kong night scene 1* | *Hong Kong night scene 2* | *Hong Kong night scene 3* |
 
-{{< figure src="Hong_Kong_night_scene_2.png" alt="90s Windows 3D Maze ScreenSaver" caption="90s Windows 3D Maze ScreenSaver" align="center" >}}
+I really love the pixel arts Dall-E 3 created for me. Here is the prompt I used:
 
-{{< figure src="Hong_Kong_night_scene_3.png" alt="90s Windows 3D Maze ScreenSaver" caption="90s Windows 3D Maze ScreenSaver" align="center" >}}
+>Minimalist pixel art of a Hong Kong street at night for a personal website landing page, with simple, blocky buildings and glowing neon signs in pink, blue, and yellow. The scene has a dark background and features small pixel art people walking on the sidewalks and a few cars on the street. Use an 8-bit retro style with clean lines and minimal details. Leave open space at the top for a website title.
+
+After I got the pixel arts, I felt very pleased by the progress already. However, I went along and tried to animate the pixel art into GIF. 
+
+
+{{< figure src="/images/day_scene_optimized.gif" alt="Animated Hong Kong street scene pixel art" caption="Animated Hong Kong street scene pixel art" align="center" >}}
+
 ### LLMs: OpenAI + Gemini
 
 

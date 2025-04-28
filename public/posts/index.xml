@@ -65,7 +65,7 @@
 <p><a href="https://www.trae.ai/">Trae.ai</a> is a free GenAI editor, which provide unlimited free access to Claude 3.7 Sonnet model. It sounds very attractive, since Cursor requires $20 monthly subscription for.</p>
 <p>However, as and old(internet) saying goes, &ldquo;when a product is free, you are the product&rdquo;. If you carefully read <a href="https://www.trae.ai/privacy-policy">Trae.ai&rsquo;s privacy policy</a> or ask a LLM to summarize it for you, you can infer that <strong>they will collect all your conversation and code and potentially use them for model training.</strong> Here are 2 quotes from the term:</p>
 <blockquote>
-<p>When you interact with the Platform’s integrated AI-chatbot, we collect any information (including any code snippets) that you choose to input.</p></blockquote>
+<p>When you interact with the Platform&rsquo;s integrated AI-chatbot, we collect any information (including any code snippets) that you choose to input.</p></blockquote>
 <blockquote>
 <p>To review, improve, and develop the Platform, including by analyzing how you are using the Platform, conducting voluntary surveys and research, and training and improving our technology.</p></blockquote>
 <p>I didn&rsquo;t feel comfortable with the terms, and decided to not try it.</p>
@@ -76,7 +76,7 @@
 <p>Regarding privacy and data usage, <a href="https://www.cursor.com/privacy">Cursor&rsquo;s privacy policy</a> is reasonable to me and I turn on &ldquo;Privacy Mode&rdquo; the whole time.</p>
 <h3 id="image-and-video-generation">Image and video generation</h3>
 <p>I always spend tons of time on finding the image I like for my post. Using GenAI model to create image or video for my website has been a great experience to me.</p>
-<p>I wanted to use some image relevant to my website and my interest. It occurred to me a labyrinthian and retro scientific art would be perfect, because someone can only walk randomly in a labyrinth and I love movies like <a href="https://www.imdb.com/title/tt0081505/">The Shining</a> and <a href="https://www.imdb.com/title/tt0083658/?ref_=fn_all_ttl_1">Blade Runner</a>.</p>
+<p>I want arts relevant to the website and my interest on the landing page. It occurred to me a labyrinthian and retro scientific art would be perfect, because someone can only walk randomly in a labyrinth and I love movies like <a href="https://www.imdb.com/title/tt0081505/">The Shining</a> and <a href="https://www.imdb.com/title/tt0083658/?ref_=fn_all_ttl_1">Blade Runner</a>.</p>
 <p>Initially, I want to use GenAI to create some pixel art version of nostalgic screen saver like the GIF below. When I was a kid, I could watch this for long time. <a href="https://www.theparisreview.org/blog/2017/05/23/salvation-mode/">And I am not alone on this</a>.</p>
 <figure class="align-center ">
     <img loading="lazy" src="maze_animation.gif#center"
@@ -87,24 +87,30 @@
 
 <p>I made a few attempts, and the outcomes were not ideal. So I pivoted to another idea: <strong>a pixel art of Hong Kong street view.</strong> Hong Kong is my all time favorite city and it is an iconic retro-sci-fi symbol. Hong Kong is a maze itself in many art work like <a href="https://en.wikipedia.org/wiki/Chungking_Express">Chungking Express</a>.</p>
 <p>Then I used GPT 4.0 to generated some prompts for Dall-E 3, and input the prompts to Dall-E 3 for image generation. Here are selected outputs from Dall-E 3:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img loading="lazy" src="/posts/blog-set-up/Hong_Kong_night_scene_1.gif" type="" alt="Hong Kong night scene 1"  /></th>
+          <th style="text-align: center"><img loading="lazy" src="/posts/blog-set-up/Hong_Kong_night_scene_2.png" type="" alt="Hong Kong night scene 2"  /></th>
+          <th style="text-align: center"><img loading="lazy" src="/posts/blog-set-up/Hong_Kong_night_scene_3.png" type="" alt="Hong Kong night scene 3"  /></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><em>Hong Kong night scene 1</em></td>
+          <td style="text-align: center"><em>Hong Kong night scene 2</em></td>
+          <td style="text-align: center"><em>Hong Kong night scene 3</em></td>
+      </tr>
+  </tbody>
+</table>
+<p>I really love the pixel arts Dall-E 3 created for me. Here is the prompt I used:</p>
+<blockquote>
+<p>Minimalist pixel art of a Hong Kong street at night for a personal website landing page, with simple, blocky buildings and glowing neon signs in pink, blue, and yellow. The scene has a dark background and features small pixel art people walking on the sidewalks and a few cars on the street. Use an 8-bit retro style with clean lines and minimal details. Leave open space at the top for a website title.</p></blockquote>
+<p>After I got the pixel arts, I felt very pleased by the progress already. However, I went along and tried to animate the pixel art into GIF.</p>
 <figure class="align-center ">
-    <img loading="lazy" src="Hong_Kong_night_scene_1.gif#center"
-         alt="90s Windows 3D Maze ScreenSaver"/> <figcaption>
-            <p>90s Windows 3D Maze ScreenSaver</p>
-        </figcaption>
-</figure>
-
-<figure class="align-center ">
-    <img loading="lazy" src="Hong_Kong_night_scene_2.png#center"
-         alt="90s Windows 3D Maze ScreenSaver"/> <figcaption>
-            <p>90s Windows 3D Maze ScreenSaver</p>
-        </figcaption>
-</figure>
-
-<figure class="align-center ">
-    <img loading="lazy" src="Hong_Kong_night_scene_3.png#center"
-         alt="90s Windows 3D Maze ScreenSaver"/> <figcaption>
-            <p>90s Windows 3D Maze ScreenSaver</p>
+    <img loading="lazy" src="/images/day_scene_optimized.gif#center"
+         alt="Animated Hong Kong street scene pixel art"/> <figcaption>
+            <p>Animated Hong Kong street scene pixel art</p>
         </figcaption>
 </figure>
 
