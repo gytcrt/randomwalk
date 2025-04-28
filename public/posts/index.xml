@@ -115,6 +115,11 @@
 </figure>
 
 <h3 id="llms-openai--gemini">LLMs: OpenAI + Gemini</h3>
+<p>Besides Cursor + <code>Claude-3.5/3.7-sonnet</code>, I still use other LLMs including <code>Gemini 2.5 Pro</code> and <code>GPT-4</code> to help with my development. Because:</p>
+<ul>
+<li><strong>Comparing to using limited premium models request quota on Cursor, those LLMs are free.</strong> I can reserve my quota to more important questions that require access to my codebase.</li>
+<li>None of the GenAI tools or LLMs are silver bullet for coding. <strong>I found it critical to use my own engineering experience to direct the development process and take a second opinion from friends or another LLM/GenAI system.</strong></li>
+</ul>
 <h2 id="features-in-backlog">Features in backlog</h2>
 <ul>
 <li><input disabled="" type="checkbox"> Enable comments section</li>

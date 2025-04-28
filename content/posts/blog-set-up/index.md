@@ -93,7 +93,7 @@ I didn't feel comfortable with the terms, and decided to not try it.
 Before I started using [Cursor](https://www.cursor.com/), I have tried other GenAI coding tools like Github copilot, Colab with Gemini, etc. But Cursor is a game changer for me, and I'm paying $20 subscription for it. It means a lot since I'm a person with no Amazon Prime account 🙂.  
 
 I've been using Cursor + `Claude-3.5/3.7-sonnet` while developing this website. In my experience, `Claude-3.7-sonnet` and `Claude-3.7-sonnet-thinking` perform better than `Claude-3.5`. But I don't recommend sticking to this config, if you are considering using Cursor. The development of LLM moves so fast, that my current experience won't be relevant in 3 months.  
-
+<!-- maybe remove the following paragraph -->
 For anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one fits your need the most. 
 
 Regarding privacy and data usage, [Cursor's privacy policy](https://www.cursor.com/privacy) is reasonable to me and I turn on "Privacy Mode" the whole time. 
@@ -125,6 +125,9 @@ After I got the pixel arts, I felt very pleased by the progress already. However
 
 ### LLMs: OpenAI + Gemini
 
+Besides Cursor + `Claude-3.5/3.7-sonnet`, I still use other LLMs including `Gemini 2.5 Pro` and `GPT-4` to help with my development. Because:
+- **Comparing to using limited premium models request quota on Cursor, those LLMs are free.** I can reserve my quota to more important questions that require access to my codebase.
+- None of the GenAI tools or LLMs are silver bullet for coding. **I found it critical to use my own engineering experience to direct the development process and take a second opinion from friends or another LLM/GenAI system.**  
 
 
 ## Features in backlog
