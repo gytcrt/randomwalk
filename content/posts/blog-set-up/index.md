@@ -119,8 +119,7 @@ I really love the pixel arts Dall-E 3 created for me. Here is the prompt I used:
 
 >Minimalist pixel art of a Hong Kong street at night for a personal website landing page, with simple, blocky buildings and glowing neon signs in pink, blue, and yellow. The scene has a dark background and features small pixel art people walking on the sidewalks and a few cars on the street. Use an 8-bit retro style with clean lines and minimal details. Leave open space at the top for a website title.
 
-After I got the pixel arts, I felt very pleased by the progress already. However, I went along and tried to animate the pixel art into GIF. 
-
+After I got the pixel arts, I felt very pleased by the progress already. However, I went along and tried to animate the pixel art into GIF using GenAI tools. I tried 2 popular AI video generation tools: [Kaiber](https://www.kaiber.ai/superstudio) and [Runway](https://runwayml.com/). Kaiber is not intuitive to use and I was not able to generate a video with the trial credit for new user. However, Runway is quite impressive and I really like the animated video produced by them below. And this gif is my landing page cover picture now. 
 
 {{< figure src="/images/day_scene_optimized.gif" alt="Animated Hong Kong street scene pixel art" caption="Animated Hong Kong street scene pixel art" align="center" >}}
 
