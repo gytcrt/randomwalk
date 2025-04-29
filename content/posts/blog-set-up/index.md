@@ -5,20 +5,17 @@ draft: true
 tag: ["tech", "GenAI", "AI", "website"]
 ShowToc: true
 cover: 
-    image: "images/day_scene.png"
+    image: "Hong_Kong_day_scene.png"
     alt: "a day scene of Hong Kong in pixel"
     caption: "AI generated pixel art of Hong Kong"
     width: 75% # Controls the image size, adjust as needed
     description: If anyone wants to set up a personal website, it's way easier to use AI tools now.
 ---
 
-<!-- ## Introduction (TODO: need update on this) -->
-Building a personal website in 2025 has become significantly easier with modern tools and GenAI assistance. In this post, I'll share my experience rebuilding my personal website.
-
-## Why?
+## Introduction 
 When I was in graduate school, I set up a [personal blog](https://github.com/gytcrt/gytcrt.github.io) to show case my project and share thoughts. I've planned to keep developing that site but it has taken a back seat ever since. 
 
-I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website.
+I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. **If you are only interested in GenAI related part, check out [**GenAI coding tools section**](http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms).**
 
 ## Choose domain name and domain registrar
 Choosing a domain name is like choosing a [brand name](https://www.shopify.com/blog/domain-seo?term=&adid=647967866337&campaignid=19683492884&utm_medium=cpc&utm_source=google&gad_source=1&gclid=CjwKCAjwwqfABhBcEiwAZJjC3poWT02q2-7_BJRlCqsvGTnMw5UM1d8tee_OgW0UnffVvSXugolTdBoClrwQAvD_BwE#) for your website. Luckily, I don't share name with some celebrities. I was able to register for andreagao.com in 2017 via Google Domain. I generally had a good experience with Google Domain. But unfortunately, they have been [acquired by Squarespace](https://www.theverge.com/2023/6/16/23763340/google-domains-sunset-sell-squarespace). So I had to find another domain registrar.
@@ -40,17 +37,17 @@ Both Hugo and Jekyll provide a lot of themes(like PPT template) for you to build
 <!-- TODO: I want more space here -->
 **I also found it very helpful to browse other people's websites created from the themes.** Some of them serve as a great inspiration for me, and many folks wrote blogs about their website set-up and customization too. I will link some reference at the end of this post. 
 
-After browsing 100+ websites, I picked [PaperModX](https://reorx.github.io/hugo-PaperModX/) to start my website. PaperModX is an enhanced version of [PaperMod](https://adityatelange.github.io/hugo-PaperMod/). I like the clean aesthetic of the theme, and it is the [top stared GitHub theme](https://github.com/QIN2DIM/awesome-hugo-themes) for Hugo. Similar to other design choice in software development, Choosing a popular framework with a mature community makes your life easier. 
+After browsing 100+ websites, I picked [PaperModX](https://reorx.github.io/hugo-PaperModX/) to start my website. PaperModX is an enhanced version of [PaperMod](https://adityatelange.github.io/hugo-PaperMod/). I like the clean aesthetic of the theme, and it is the [top stared GitHub theme](https://github.com/QIN2DIM/awesome-hugo-themes) for Hugo. **Similar to other design choice in software development, Choosing a popular framework with a mature community makes your life easier.** 
 
 ## Hosting and deployment: Github Pages + Github Actions
 Since I'm building a static website, which doesn't contain dynamic content. The best and most economic place to host my website is [Github pages](https://pages.github.com/). It is free if you are using public repo or some premium version of Github account. 
 
 In addition, [Github Actions](https://github.com/features/actions) has made deployment so easy along with Github Page. Hugo has a page on [hosting on Github Pages with Github Actions](https://gohugo.io/host-and-deploy/host-on-github-pages/). I recommend following the page to deploy your static website. 
 
-If you are not familiar with deployment or CI/CD tools like Github Actions, don't get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be. 
+**If you are not familiar with deployment or CI/CD tools like Github Actions, don't get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be.** 
 
 ## Analytics set up: Umami + DigitalOcean
-In modern product/software development, feedback is essential for improvement. My website aims to serve myself and my audience, so I'd love to take feedback from my audience. There are direct and indirect feedbacks. Website traffic is in direct feedback, and comments from visitor are direct feedback. In this section, I will talk about my analytics platform set up(indirect feedback).
+In modern product/software development, feedback is essential for improvement. My website aims to serve myself and audience, so I'd love to take feedback from my audience. In this section, I will talk about my analytics platform set up(indirect feedback).
 
 Hugo PaperMod provides very easy integration with [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en). I believe using Google Analytics would be the most straight forward and time-saving set up. However, I do want to have more control over my traffic data, and I did more research on potential analytics tools. 
 [Plausible Analytics](https://plausible.io/) and [Umami](https://umami.is/) are two of the popular tools. I picked Umami since it's open-source, free and self-hostable. 
@@ -60,17 +57,20 @@ As for hosting, I prefer minimal set up and effort for Umami, since it's an inte
 {{< figure src="umami.png" alt="Umami dashboard for a day's visit" caption="Umami dashboard for a day's visit" align="center" >}}
 
 ## GenAI coding tools: Cursor + Dall-E 3 + Runway + LLMs
-<!-- TODO: maybe i should move this section to the front -->
+
+**TL;DR:** 
+- For anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one you like the most.
+- For anyone considering a non-trivial project, it's important to master one programming language and know the fundamentals of the language you are programming in like what Andrew Ng said his [post](https://www.deeplearning.ai/the-batch/issue-298/).  
+- Using image generation and video generation models to create visual content is amazing!
+---
 I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself. 
 
-When it comes to GenAI tools for coding, I'm so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. **Cursor and other GenAI tools free me from typing code, and enables me to focus on design, which include system design, web design, and UX design.**
+When it comes to GenAI tools for coding, I'm so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. **Cursor and other GenAI tools free me from typing code, and enable me to focus on design, which include system design, web design, and UX design.**
 
 Therefore, I want to detail my experience with using GenAI tool for this website. This section is not meant to be a comprehensive review of GenAI IDEs, and I plan to write another article about programming with AI tools.
 
 ### IDE
-I have heard from friends and online community that Cursor + Claude is the best GenAI IDE in the marketing at this moment. Nevertheless, I looked into that options too. 
-
-**TL;DR: for anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one you like the most.**
+I have heard from friends and online community that Cursor + Claude is the best GenAI IDE in the marketing at this moment. Nevertheless, I looked into other options too. 
 
 
 #### Replit: AI app builder
@@ -97,6 +97,8 @@ I've been using Cursor + `Claude-3.5/3.7-sonnet` while developing this website. 
 For anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one fits your need the most. 
 
 Regarding privacy and data usage, [Cursor's privacy policy](https://www.cursor.com/privacy) is reasonable to me and I turn on "Privacy Mode" the whole time. 
+
+<!-- Cursor enables me to build website with Hugo faster and easier, but **working on Cursor is not like manage a distinguished engineer.**  -->
 
 ### Image and video generation
 I always spend tons of time on finding the image I like for my post. Using GenAI model to create image or video for my website has been a great experience to me.
@@ -129,11 +131,13 @@ Besides Cursor + `Claude-3.5/3.7-sonnet`, I still use other LLMs including `Gemi
 - **Comparing to using limited premium models request quota on Cursor, those LLMs are free.** I can reserve my quota to more important questions that require access to my codebase.
 - None of the GenAI tools or LLMs are silver bullet for coding. **I found it critical to use my own engineering experience to direct the development process and take a second opinion from friends or another LLM/GenAI system.**  
 
+## Conclusion
+
+It has been an interesting journey for me to restart an old project and reflect on the changes. AI tools have totally changed how I code, but they still require my guidance and creativity at this moment. Like any other revolutionary moments in history, it could be scary or exciting. 
 
 ## Features in backlog
 - [ ]Enable comments section
 - [ ]Add an archive tag
 - [ ]Add buttons to share to social media
-- [ ]Combine Tag and Search into one tag
 - [ ]Other advice? 
 

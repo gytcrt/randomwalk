@@ -2,25 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:49602/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rebuild my website with GenAI&#39;s assistance</title>
-      <link>http://localhost:1313/posts/blog-set-up/</link>
+      <link>http://localhost:49602/posts/blog-set-up/</link>
       <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-set-up/</guid>
-      <description>&lt;p&gt;Building a personal website in 2025 has become significantly easier with modern tools and GenAI assistance. In this post, I&amp;rsquo;ll share my experience rebuilding my personal website.&lt;/p&gt;
-&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;
+      <guid>http://localhost:49602/posts/blog-set-up/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://github.com/gytcrt/gytcrt.github.io&#34;&gt;personal blog&lt;/a&gt; to show case my project and share thoughts. I&amp;rsquo;ve planned to keep developing that site but it has taken a back seat ever since.&lt;/p&gt;
-&lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>Building a personal website in 2025 has become significantly easier with modern tools and GenAI assistance. In this post, I&rsquo;ll share my experience rebuilding my personal website.</p>
-<h2 id="why">Why?</h2>
+&lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong&gt;If you are only interested in GenAI related part, check out &lt;a href=&#34;http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms&#34;&gt;&lt;strong&gt;GenAI coding tools section&lt;/strong&gt;&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>When I was in graduate school, I set up a <a href="https://github.com/gytcrt/gytcrt.github.io">personal blog</a> to show case my project and share thoughts. I&rsquo;ve planned to keep developing that site but it has taken a back seat ever since.</p>
-<p>I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website.</p>
+<p>I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. <strong>If you are only interested in GenAI related part, check out <a href="http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms"><strong>GenAI coding tools section</strong></a>.</strong></p>
 <h2 id="choose-domain-name-and-domain-registrar">Choose domain name and domain registrar</h2>
 <p>Choosing a domain name is like choosing a <a href="https://www.shopify.com/blog/domain-seo?term=&amp;adid=647967866337&amp;campaignid=19683492884&amp;utm_medium=cpc&amp;utm_source=google&amp;gad_source=1&amp;gclid=CjwKCAjwwqfABhBcEiwAZJjC3poWT02q2-7_BJRlCqsvGTnMw5UM1d8tee_OgW0UnffVvSXugolTdBoClrwQAvD_BwE#">brand name</a> for your website. Luckily, I don&rsquo;t share name with some celebrities. I was able to register for andreagao.com in 2017 via Google Domain. I generally had a good experience with Google Domain. But unfortunately, they have been <a href="https://www.theverge.com/2023/6/16/23763340/google-domains-sunset-sell-squarespace">acquired by Squarespace</a>. So I had to find another domain registrar.</p>
 <p>I quoted on both <a href="https://aboutus.godaddy.net/about-us/overview/default.aspx">GoDaddy</a> and <a href="https://www.namecheap.com/">Namecheap</a>, and figured the price on Namecheap is more sensible to me. From usability standpoint, I think Namecheap is not different from Google Domain.</p>
@@ -34,13 +32,13 @@
 <li>Hugo themes: <a href="https://themes.gohugo.io/tags/blog/">https://themes.gohugo.io/tags/blog/</a></li>
 </ul>
 <p><strong>I also found it very helpful to browse other people&rsquo;s websites created from the themes.</strong> Some of them serve as a great inspiration for me, and many folks wrote blogs about their website set-up and customization too. I will link some reference at the end of this post.</p>
-<p>After browsing 100+ websites, I picked <a href="https://reorx.github.io/hugo-PaperModX/">PaperModX</a> to start my website. PaperModX is an enhanced version of <a href="https://adityatelange.github.io/hugo-PaperMod/">PaperMod</a>. I like the clean aesthetic of the theme, and it is the <a href="https://github.com/QIN2DIM/awesome-hugo-themes">top stared GitHub theme</a> for Hugo. Similar to other design choice in software development, Choosing a popular framework with a mature community makes your life easier.</p>
+<p>After browsing 100+ websites, I picked <a href="https://reorx.github.io/hugo-PaperModX/">PaperModX</a> to start my website. PaperModX is an enhanced version of <a href="https://adityatelange.github.io/hugo-PaperMod/">PaperMod</a>. I like the clean aesthetic of the theme, and it is the <a href="https://github.com/QIN2DIM/awesome-hugo-themes">top stared GitHub theme</a> for Hugo. <strong>Similar to other design choice in software development, Choosing a popular framework with a mature community makes your life easier.</strong></p>
 <h2 id="hosting-and-deployment-github-pages--github-actions">Hosting and deployment: Github Pages + Github Actions</h2>
 <p>Since I&rsquo;m building a static website, which doesn&rsquo;t contain dynamic content. The best and most economic place to host my website is <a href="https://pages.github.com/">Github pages</a>. It is free if you are using public repo or some premium version of Github account.</p>
 <p>In addition, <a href="https://github.com/features/actions">Github Actions</a> has made deployment so easy along with Github Page. Hugo has a page on <a href="https://gohugo.io/host-and-deploy/host-on-github-pages/">hosting on Github Pages with Github Actions</a>. I recommend following the page to deploy your static website.</p>
-<p>If you are not familiar with deployment or CI/CD tools like Github Actions, don&rsquo;t get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be.</p>
+<p><strong>If you are not familiar with deployment or CI/CD tools like Github Actions, don&rsquo;t get scared by it. With Github Copilot and AI coding tools like Cursor, configuring the deployment files has been way easier than it used to be.</strong></p>
 <h2 id="analytics-set-up-umami--digitalocean">Analytics set up: Umami + DigitalOcean</h2>
-<p>In modern product/software development, feedback is essential for improvement. My website aims to serve myself and my audience, so I&rsquo;d love to take feedback from my audience. There are direct and indirect feedbacks. Website traffic is in direct feedback, and comments from visitor are direct feedback. In this section, I will talk about my analytics platform set up(indirect feedback).</p>
+<p>In modern product/software development, feedback is essential for improvement. My website aims to serve myself and audience, so I&rsquo;d love to take feedback from my audience. In this section, I will talk about my analytics platform set up(indirect feedback).</p>
 <p>Hugo PaperMod provides very easy integration with <a href="https://support.google.com/analytics/answer/10089681?hl=en">Google Analytics 4</a>. I believe using Google Analytics would be the most straight forward and time-saving set up. However, I do want to have more control over my traffic data, and I did more research on potential analytics tools.
 <a href="https://plausible.io/">Plausible Analytics</a> and <a href="https://umami.is/">Umami</a> are two of the popular tools. I picked Umami since it&rsquo;s open-source, free and self-hostable.</p>
 <p>As for hosting, I prefer minimal set up and effort for Umami, since it&rsquo;s an internal tool for my website and I don&rsquo;t have billions of visitors. I chose DigitalOcean to host my Umami server and managed database. DitialOcean provides very <a href="https://www.digitalocean.com/community/tutorials/how-to-install-umami-web-analytics-software-on-ubuntu-20-04">detailed tutorial</a> on setting up Umami on its Ubuntu machine. I found it almost effortless to set Umami on DigitalOcean.</p>
@@ -52,12 +50,18 @@
 </figure>
 
 <h2 id="genai-coding-tools-cursor--dall-e-3--runway--llms">GenAI coding tools: Cursor + Dall-E 3 + Runway + LLMs</h2>
+<p><strong>TL;DR:</strong></p>
+<ul>
+<li>For anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one you like the most.</li>
+<li>For anyone considering a non-trivial project, it&rsquo;s important to master one programming language and know the fundamentals of the language you are programming in like what Andrew Ng said his <a href="https://www.deeplearning.ai/the-batch/issue-298/">post</a>.</li>
+<li>Using image generation and video generation models to create visual content is amazing!</li>
+</ul>
+<hr>
 <p>I majored in mathematics and statistics in college and graduate school, and my major programming languages were Matlab and R then. When I built my first website with Python and Jekyll, it was challenging to pick up a new framework by myself.</p>
-<p>When it comes to GenAI tools for coding, I&rsquo;m so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. <strong>Cursor and other GenAI tools free me from typing code, and enables me to focus on design, which include system design, web design, and UX design.</strong></p>
+<p>When it comes to GenAI tools for coding, I&rsquo;m so grateful of having them in 2025. GenAI coding tools plus LLMs have made solo web development experience significantly easier this time. <strong>Cursor and other GenAI tools free me from typing code, and enable me to focus on design, which include system design, web design, and UX design.</strong></p>
 <p>Therefore, I want to detail my experience with using GenAI tool for this website. This section is not meant to be a comprehensive review of GenAI IDEs, and I plan to write another article about programming with AI tools.</p>
 <h3 id="ide">IDE</h3>
-<p>I have heard from friends and online community that Cursor + Claude is the best GenAI IDE in the marketing at this moment. Nevertheless, I looked into that options too.</p>
-<p><strong>TL;DR: for anyone considering using a GenAI IDE, I recommend checking out latest discussion on this online and experiment a bit with different IDEs and models. Pick the one you like the most.</strong></p>
+<p>I have heard from friends and online community that Cursor + Claude is the best GenAI IDE in the marketing at this moment. Nevertheless, I looked into other options too.</p>
 <h4 id="replit-ai-app-builder">Replit: AI app builder</h4>
 <p><a href="https://replit.com/">Replit</a> is like a no-code GenAI based app builder platform, and it allows user to use natural language prompt to build app. You can use it as an IDE if you have to access terminal and code.</p>
 <p>I experimented with Replit for a couple of hours. For example, I asked it to build a personal website based on Hugo PaperModX theme. <strong>I think if someone without coding skills might be able to build a decent static website in Replit with more time.</strong> For people with programming experience, GenAI Editor makes more sense.</p>
@@ -120,12 +124,13 @@
 <li><strong>Comparing to using limited premium models request quota on Cursor, those LLMs are free.</strong> I can reserve my quota to more important questions that require access to my codebase.</li>
 <li>None of the GenAI tools or LLMs are silver bullet for coding. <strong>I found it critical to use my own engineering experience to direct the development process and take a second opinion from friends or another LLM/GenAI system.</strong></li>
 </ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>It has been an interesting journey for me to restart an old project and reflect on the changes. AI tools have totally changed how I code, but they still require my guidance and creativity at this moment. Like any other revolutionary moments in history, it could be scary or exciting.</p>
 <h2 id="features-in-backlog">Features in backlog</h2>
 <ul>
 <li><input disabled="" type="checkbox"> Enable comments section</li>
 <li><input disabled="" type="checkbox"> Add an archive tag</li>
 <li><input disabled="" type="checkbox"> Add buttons to share to social media</li>
-<li><input disabled="" type="checkbox"> Combine Tag and Search into one tag</li>
 <li><input disabled="" type="checkbox"> Other advice?</li>
 </ul>
 ]]></content:encoded>
@@ -133,33 +138,32 @@
     
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
+      <link>http://localhost:49602/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <guid>http://localhost:49602/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
 <p>Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.</p>
 <p>An example of this is my own process of debugging a technical issue: sometimes, I may think of a few potential solutions, but I don&rsquo;t yet know which one is optimal. I might randomly proceed with one of the ideas if they all look viable to me. If it doesn&rsquo;t work, I would roll back to the previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.</p>
-<p>When I was a teenager, I was fascinated by <a href="https://en.wikipedia.org/wiki/Jorge_Luis_Borges" rel="noopener" target="_blank">Jorge Luis Borges</a>&rsquo;s short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf" rel="noopener" target="_blank">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life&rsquo;s paths. In a way, it&rsquo;s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html" rel="noopener" target="_blank">Markov chain Monte Carlo method</a>? Or is my existence and selfhood only one of many in an infinite number of universes?</p>
-<figure class="align-center ">
+<p>When I was a teenager, I was fascinated by {{&lt; newtabref href=&ldquo;<a href="https://en.wikipedia.org/wiki/Jorge_Luis_Borges%22">https://en.wikipedia.org/wiki/Jorge_Luis_Borges&quot;</a> title=&ldquo;Jorge Luis Borges&rdquo; &gt;}}&rsquo;s short novel {{&lt; newtabref href=&ldquo;<a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf%22">https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf&quot;</a> title=&ldquo;The Garden of Forking Paths&rdquo; &gt;}}. The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life&rsquo;s paths. In a way, it&rsquo;s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in {{&lt; newtabref href=&ldquo;<a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html%22">https://people.duke.edu/~ccc14/sta-663/mcmc.html&quot;</a> title=&ldquo;Markov chain Monte Carlo method&rdquo; &gt;}}? Or<figure class="align-center ">
     <img loading="lazy" src="gitflow.svg#center"
          alt="A Gitflow visualization"/> <figcaption>
             <p>A Gitflow visualization</p>
         </figcaption>
 </figure>
-
-<p>I appreciate the ways in which theory, engineering, and art converge upon &ldquo;Random Walk.&rdquo; I hope you enjoy a short walk on my site.</p>
+vg&rdquo; alt=&ldquo;A Gitflow visualization&rdquo; caption=&ldquo;A Gitflow visualization&rdquo; align=&ldquo;center&rdquo; &gt;}}</p>
+<p>I appreciate the ways in which theory, engineeri</p>
 ]]></content:encoded>
     </item>
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
+      <link>http://localhost:49602/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <guid>http://localhost:49602/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>
