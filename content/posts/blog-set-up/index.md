@@ -2,7 +2,7 @@
 title: "Rebuild my website with GenAI's assistance"
 date: 2025-04-29
 draft: false
-tag: ["tech", "GenAI", "AI", "Hugo"]
+tags: ["tech", "GenAI", "AI", "Hugo"]
 ShowToc: true
 cover: 
     image: "Hong_Kong_day_scene.png"
@@ -58,7 +58,7 @@ As for hosting, I prefer minimal setup and effort for Umami, since it's an inter
 
 **TL;DR:** 
 - **Choose the right tools for you:** for anyone considering using a GenAI IDE, I recommend checking out the latest discussions online and experimenting a bit with different IDEs and models. Pick the one you like the most.
-- **Programming skills are still valuable:** For anyone considering a non-trivial project, it's important to master one programming language and know the fundamentals of the language in which you are programming. {{< newtabref href="https://www.deeplearning.ai/the-batch/issue-298/" title="Andrew Ng's recent post" >}} gives an in-depth breakdown of what this means for developers. 
+- **Programming skills are still valuable:** for anyone considering a non-trivial project, it's important to master one programming language and know the fundamentals of the language in which you are programming. {{< newtabref href="https://www.deeplearning.ai/the-batch/issue-298/" title="Andrew Ng's recent post" >}} gives an in-depth breakdown of what this means for developers. 
 - **GenAI enhances creativity:** using image generation and video generation models to create visual content is amazing!
 ---
 

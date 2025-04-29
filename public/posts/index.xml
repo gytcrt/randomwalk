@@ -52,7 +52,7 @@
 <p><strong>TL;DR:</strong></p>
 <ul>
 <li><strong>Choose the right tools for you:</strong> for anyone considering using a GenAI IDE, I recommend checking out the latest discussions online and experimenting a bit with different IDEs and models. Pick the one you like the most.</li>
-<li><strong>Programming skills are still valuable:</strong> For anyone considering a non-trivial project, it&rsquo;s important to master one programming language and know the fundamentals of the language in which you are programming. <a href="https://www.deeplearning.ai/the-batch/issue-298/" rel="noopener" target="_blank">Andrew Ng&#39;s recent post</a> gives an in-depth breakdown of what this means for developers.</li>
+<li><strong>Programming skills are still valuable:</strong> for anyone considering a non-trivial project, it&rsquo;s important to master one programming language and know the fundamentals of the language in which you are programming. <a href="https://www.deeplearning.ai/the-batch/issue-298/" rel="noopener" target="_blank">Andrew Ng&#39;s recent post</a> gives an in-depth breakdown of what this means for developers.</li>
 <li><strong>GenAI enhances creativity:</strong> using image generation and video generation models to create visual content is amazing!</li>
 </ul>
 <hr>
