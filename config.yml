@@ -150,7 +150,7 @@ menu:
     - identifier: about
       name: About
       url: /about/
-      weight: 10
+      weight: 40
     - identifier: posts
       name: Posts
       url: /posts/
@@ -162,7 +162,7 @@ menu:
     - identifier: home
       name: Home
       url: /home/
-      weight: 40
+      weight: 10
 
 pygmentsUseClasses: true
 markup:
