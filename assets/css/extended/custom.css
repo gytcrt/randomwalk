@@ -161,4 +161,24 @@ blockquote {
   margin-bottom: 1rem;
 }
 
+/* ---- POST METADATA STYLING ---- */
+/* Date, tags, word count and reading time */
+.meta-item {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  letter-spacing: -0.02em;
+  color: var(--secondary);
+}
+
+.meta-item svg {
+  /* width: 0.85em; */
+  /* height: 0.85em; */
+  vertical-align: -0.05em;
+}
+
+.meta-item .post-tags a {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
 /* ---- OTHER CUSTOM CSS RULES (if any) ---- */

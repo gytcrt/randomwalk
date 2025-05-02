@@ -4,5 +4,5 @@ layout: "search"
 url: "/search"
 # description: "Search through this site"
 summary: "search"
-placeholder: "Type here to search through this site..."
+placeholder: "Type here"
 --- 
