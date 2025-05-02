@@ -182,3 +182,28 @@ blockquote {
 }
 
 /* ---- OTHER CUSTOM CSS RULES (if any) ---- */
+
+/* Custom CSS for image spacing */
+
+/* Adjust cover image spacing */
+.entry-cover {
+  margin-bottom: 1rem !important; /* Increase space after cover image */
+}
+
+/* Adjust figure shortcode spacing */
+.post-content figure {
+  margin: 1 auto !important; /* Increase space around figure elements */
+}
+
+/* Adjust spacing for regular images */
+.post-content p > img {
+  margin: 1 auto !important; /* Increase space around regular images */
+  display: block; /* Ensure proper centering */
+}
+
+/* Adjust spacing after figure caption */
+figure > figcaption, 
+.entry-cover p {
+  margin-bottom: 0.25rem !important; /* Add space after caption */
+  margin-top: 0.25rem !important; /* Space between image and caption */
+}
