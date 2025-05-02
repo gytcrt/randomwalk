@@ -114,6 +114,8 @@ params:
       url: "https://www.linkedin.com/in/yuanandreagao/"
     - name: github
       url: "https://github.com/gytcrt"
+    - name: twitter
+      url: "https://x.com/gytcrt"
 
   analytics:
     google:
