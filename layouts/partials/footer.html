@@ -5,8 +5,10 @@
   {{- else }}
   <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
   {{- end -}}
+  {{- if .IsHome }}
   <span class="footer-separator"> | </span>
   <span>The pixel arts on the landing page are Hong Kong, a perfect city for a walk.</span>
+  {{- end }}
 </footer>
 {{- end }}
 
