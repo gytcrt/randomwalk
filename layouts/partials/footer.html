@@ -1,13 +1,24 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+  {{- if .IsHome }}
   {{- if site.Copyright }}
   <span>{{ site.Copyright | markdownify }}</span>
   {{- else }}
   <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
   {{- end -}}
-  {{- if .IsHome }}
   <span class="footer-separator"> | </span>
   <span>The pixel arts on this page are Hong Kong, a perfect city for a walk.</span>
+  {{- else }}
+  <div class="footer-social-icons">
+    {{- partial "social_icons.html" (dict "icons" site.Params.socialIcons "svg" $.Site.Data.svg "MaskedEmail" site.Params.MaskedEmail "Email" site.Params.Email) -}}
+  </div>
+  <div class="footer-copyright">
+    {{- if site.Copyright }}
+    <span>{{ site.Copyright | markdownify }}</span>
+    {{- else }}
+    <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
+    {{- end -}}
+  </div>
   {{- end }}
 </footer>
 {{- end }}

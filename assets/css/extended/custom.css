@@ -256,3 +256,101 @@ figure > figcaption,
     display: none;
   }
 }
+
+/* Footer social icons styling - enhanced to remove all underscores */
+.footer-social-icons {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-social-icons .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Comprehensive rules to remove all underscores/underlines */
+.footer-social-icons .social-icons a,
+.footer-social-icons .social-icons a:hover,
+.footer-social-icons .social-icons a:focus,
+.footer-social-icons .social-icons a:active,
+.footer-social-icons .social-icons a:visited {
+  display: inline-flex;
+  margin: 0 8px;
+  color: var(--secondary);
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.footer-social-icons .social-icons a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.footer-social-icons .social-icons svg {
+  width: 1.8em;
+  height: 1.8em;
+  display: block;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Responsive footer adjustments for social icons */
+@media (max-width: 768px) {
+  .footer-social-icons {
+    margin-bottom: 8px;
+  }
+  
+  .footer-social-icons .social-icons {
+    flex-wrap: wrap;
+  }
+  
+  .footer-social-icons .social-icons a {
+    margin: 4px 8px;
+  }
+  
+  footer.footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer.footer .footer-social-icons {
+    order: 1; /* Display social icons first on mobile */
+  }
+  
+  footer.footer .footer-copyright {
+    order: 2; /* Display copyright second on mobile */
+  }
+}
+
+/* Additional specific rules to override theme styling */
+.social-icons a::before,
+.social-icons a::after {
+  display: none !important;
+}
+
+footer a, 
+footer a:hover, 
+footer a:focus,
+.social-icons a, 
+.social-icons a:hover, 
+.social-icons a:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove any pseudo-elements that might create visual underscores */
+.footer-social-icons .social-icons a::before,
+.footer-social-icons .social-icons a::after {
+  content: none !important;
+}
