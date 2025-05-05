@@ -161,10 +161,6 @@ menu:
       name: Search
       url: /search/
       weight: 30
-    - identifier: home
-      name: Home
-      url: /home/
-      weight: 10
 
 pygmentsUseClasses: true
 markup:

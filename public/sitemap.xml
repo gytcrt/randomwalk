@@ -38,8 +38,6 @@
     <loc>http://localhost:49602/posts/my-second-post/</loc>
     <lastmod>2025-04-17T13:40:47-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:49602/home/</loc>
-  </url><url>
     <loc>http://localhost:49602/about/</loc>
   </url><url>
     <loc>http://localhost:49602/categories/</loc>
