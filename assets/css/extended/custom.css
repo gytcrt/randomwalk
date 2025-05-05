@@ -140,7 +140,7 @@ code, pre, kbd, samp {
 /* Navigation Menu */
 #menu a {
   font-size: 18px;
-  padding: 4px 8px;
+  padding: 4px 4px;
 }
 
 #menu .active {
@@ -353,4 +353,28 @@ footer a:focus,
 .footer-social-icons .social-icons a::before,
 .footer-social-icons .social-icons a::after {
   content: none !important;
+}
+
+/*--------------------------------------------------------------
+# MOBILE HEADER ALIGNMENT FIX
+--------------------------------------------------------------*/
+/* Fix for mobile header alignment - ensures logo and menu items align to the left */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    margin-left: var(--gap);
+    margin-right: var(--gap);
+    padding-left: 5px;
+  }
+  
+  #menu {
+    margin-left: var(--gap);
+    padding-left: 0;
+    /* Add a small top margin to create some space between logo and menu */
+    margin-top: 1px;
+  }
 }
