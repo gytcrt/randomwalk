@@ -1,26 +1,68 @@
-<div class="comments-box">
-  <div class="giscus"></div>
+<div class="comments-section">
+  <button id="load-comments-button" class="load-comments-button">Load comments</button>
+  <div id="giscus-container" class="giscus" style="display: none;"></div>
 </div>
 
-<script src="https://giscus.app/client.js"
-        data-repo="gytcrt/giscus-rm"
-        data-repo-id="R_kgDOOlgU_g"
-        data-category="General"
-        data-category-id="DIC_kwDOOlgU_s4Cp1g8"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
+<script>
+  document.getElementById('load-comments-button').addEventListener('click', function() {
+    // Hide the button
+    this.style.display = 'none';
+    
+    // Show the comments container
+    document.getElementById('giscus-container').style.display = 'block';
+    
+    // Create and load the Giscus script
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.setAttribute('data-repo', "gytcrt/giscus-rm");
+    script.setAttribute('data-repo-id', "R_kgDOOlgU_g");
+    script.setAttribute('data-category', "General");
+    script.setAttribute('data-category-id', "DIC_kwDOOlgU_s4Cp1g8");
+    script.setAttribute('data-mapping', "pathname");
+    script.setAttribute('data-strict', "0");
+    script.setAttribute('data-reactions-enabled', "1");
+    script.setAttribute('data-emit-metadata', "0");
+    script.setAttribute('data-input-position', "bottom");
+    script.setAttribute('data-theme', "preferred_color_scheme");
+    script.setAttribute('data-lang', "en");
+    script.setAttribute('crossorigin', "anonymous");
+    script.async = true;
+    
+    document.getElementById('giscus-container').appendChild(script);
+  });
 </script>
 
 <style>
-  .comments-box {
+  /* OPTION 2: Elegant Bordered Button */
+  
+  .comments-section {
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .load-comments-button {
+    background: transparent;
+    color: var(--content);
+    border: 1px solid var(--border);
+    padding: 7px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    transition: all 0.25s ease;
+    letter-spacing: 0.5px;
+  }
+  
+  .load-comments-button:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    letter-spacing: 0.7px;
+  }
+  
+  .giscus {
+    width: 100%;
+    margin-top: 1rem;
   }
 </style> 
