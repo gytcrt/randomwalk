@@ -44,6 +44,17 @@ params:
     hideCredits: true # Additional parameter to hide credits
     hideLicense: true # Additional parameter to hide license
 
+  # Configure comment systems
+  commentSystems:
+    giscus:
+      repo: "gytcrt/giscus-rm"
+      repoId: "R_kgDOOlgU_g"
+      category: "General"
+      categoryId: "DIC_kwDOOlgU_s4Cp1g8"
+  
+  defaultCommentSystems:
+    giscus: true
+
   images: ["/profile.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
@@ -59,7 +70,7 @@ params:
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   # TocSide: "left"

@@ -5,6 +5,7 @@ ShowWordCount: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowToc: false
+noComments: true
 ---
 
 ![Andrea Gao](/images/profile.jpg)
