@@ -288,14 +288,9 @@ figure > figcaption,
   transition: color 0.2s, transform 0.2s;
 }
 
-.footer-social-icons .social-icons a:hover {
-  color: var(--primary);
-  transform: translateY(-3px);
-}
-
 .footer-social-icons .social-icons svg {
-  width: 1.8em;
-  height: 1.8em;
+  width: 2.5em;
+  height: 2.5em;
   display: block;
 }
 
@@ -378,3 +373,9 @@ footer a:focus,
     margin-top: 1px;
   }
 }
+
+.social-icons a svg {
+    height: 35px; 
+    width: 50px;  
+  } 
+
