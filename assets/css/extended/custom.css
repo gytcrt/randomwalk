@@ -288,11 +288,6 @@ figure > figcaption,
   transition: color 0.2s, transform 0.2s;
 }
 
-.footer-social-icons .social-icons a:hover {
-  color: var(--primary);
-  transform: translateY(-3px);
-}
-
 .footer-social-icons .social-icons svg {
   width: 3em;
   height: 3em;
