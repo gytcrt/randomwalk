@@ -294,8 +294,8 @@ figure > figcaption,
 }
 
 .footer-social-icons .social-icons svg {
-  width: 1.8em;
-  height: 1.8em;
+  width: 3em;
+  height: 3em;
   display: block;
 }
 
@@ -377,4 +377,97 @@ footer a:focus,
     /* Add a small top margin to create some space between logo and menu */
     margin-top: 1px;
   }
+}
+
+/*--------------------------------------------------------------
+# PROFILE SECTION CENTERING
+--------------------------------------------------------------*/
+/* Center the profile section elements */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 180px); /* Adjust for better vertical centering */
+}
+
+.profile_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 720px; /* Prevents overly wide content on large screens */
+  margin: 0 auto;
+}
+
+/* Center the profile image */
+.profile_inner img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Center the title and subtitle */
+.profile_inner h1, 
+.profile_inner span {
+  width: 100%;
+  text-align: center;
+}
+
+/* Center the social icons */
+.profile_inner .social-icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile_inner .social-icons a:last-child {
+  margin-right: 0; /* Remove right margin from last icon to maintain perfect centering */
+}
+
+/* Make sure it's responsive */
+@media (max-width: 768px) {
+  .profile {
+    min-height: calc(100vh - 160px); /* Adjust for mobile */
+  }
+  
+  .profile_inner {
+    padding: 0 20px; /* Add some padding on smaller screens */
+  }
+}
+
+/*--------------------------------------------------------------
+# PROFILE SOCIAL ICONS - LANDING PAGE
+--------------------------------------------------------------*/
+/* Specific style for profile social icons on the landing page */
+.profile_inner .social-icons a svg {
+  height: 2.3em;  /* Larger size for landing page icons */
+  width: 2.3em;   /* Larger size for landing page icons */
+}
+
+.profile_inner .social-icons a {
+  margin-right: 20px; /* Add more spacing between icons */
+  color: var(--primary); /* Solid color (primary) by default */
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.profile_inner .social-icons a:hover {
+  color: var(--secondary); /* Lighter color on hover */
+  opacity: 0.8; /* Additional lightness effect */
+  transform: translateY(-3px);
+  box-shadow: none !important;
+}
+
+.profile_inner .social-icons {
+  padding: 20px 0; /* Add more padding around the social icons section */
+}
+
+/* Remove underline effect for profile social icons */
+.profile_inner .social-icons a::before,
+.profile_inner .social-icons a::after {
+  content: none !important;
 }
