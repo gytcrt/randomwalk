@@ -436,8 +436,8 @@ footer a:focus,
 --------------------------------------------------------------*/
 /* Specific style for profile social icons on the landing page */
 .profile_inner .social-icons a svg {
-  height: 2.3em;  /* Larger size for landing page icons */
-  width: 2.3em;   /* Larger size for landing page icons */
+  height: 2em;  /* Larger size for landing page icons */
+  width: 2em;   /* Larger size for landing page icons */
 }
 
 .profile_inner .social-icons a {
