@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why Is It Hard To Evaluate GenAI Application?</title>
+      <title>Why Is It Hard To Evaluate AI Application?</title>
       <link>http://localhost:1313/posts/genai-evaluation-challenge/why-is-it-hard/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       
@@ -16,11 +16,19 @@
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, since I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;
-&lt;p&gt;Before I dive into evaluation of GenAI, I want to a few key terms for this article. These terms are used interchangeable and over-used in media, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms.&lt;/p&gt;</description>
+&lt;p&gt;Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
 <h2 id="introduction">Introduction</h2>
 <p>I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, since I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.</p>
-<p>Before I dive into evaluation of GenAI, I want to a few key terms for this article. These terms are used interchangeable and over-used in media, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms.</p>
+<p>Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/posts/GenAI-evaluation-challenge/AI-terms.svg#center"
+         alt="What AI, ML, GenAI and LLM mean in this article"/> <figcaption>
+            <p>What AI, ML, GenAI and LLM mean in this article</p>
+        </figcaption>
+</figure>
+
+<p><strong>Essentially, ML is what we are used to and have been evaluating in last decade, and GenAI and LLM are the new technology we want to evaluate against.</strong> AI is a umbrella term for everything🙃.</p>
 ]]></content:encoded>
     </item>
     
