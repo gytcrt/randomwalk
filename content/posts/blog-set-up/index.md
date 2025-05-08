@@ -1,5 +1,5 @@
 ---
-title: "Rebuild my website with GenAI's assistance"
+title: "Rebuild My Website With GenAI's Assistance"
 date: 2025-04-29
 draft: false
 tags: ["tech", "GenAI", "AI", "Hugo"]
@@ -8,7 +8,7 @@ cover:
     image: "Hong_Kong_day_scene.png"
     alt: "a day scene of Hong Kong in pixel"
     caption: "AI generated pixel art of Hong Kong"
-    width: 75% # Controls the image size, adjust as needed
+    width: 55% # Controls the image size, adjust as needed
     description: If anyone wants to set up a personal website, it's way easier to use AI tools now.
 ---
 

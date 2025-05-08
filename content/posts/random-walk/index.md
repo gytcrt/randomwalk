@@ -6,6 +6,7 @@ tags: ["non-tech", "blog"]
 cover:
     image: "randomwalk.png"
     alt: "Random Walk Visualization"
+    width: 60%
     caption: "A 2D random walk on white canvas"
 ---
 
