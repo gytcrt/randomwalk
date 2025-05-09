@@ -8,18 +8,18 @@
     <language>en</language>
     <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why Is It Hard To Evaluate AI Application?</title>
+      <title>Why Is It Hard To Evaluate GenAI Applications?</title>
       <link>http://localhost:1313/posts/genai-evaluation-challenge/why-is-it-hard/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/genai-evaluation-challenge/why-is-it-hard/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, since I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;
+&lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;
 &lt;p&gt;Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
 <h2 id="introduction">Introduction</h2>
-<p>I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, since I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.</p>
+<p>I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.</p>
 <p>Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:</p>
 <figure class="align-center ">
     <img loading="lazy" src="/posts/GenAI-evaluation-challenge/AI-terms.svg#center"
@@ -29,6 +29,13 @@
 </figure>
 
 <p><strong>Essentially, ML is what we are used to and have been evaluating in last decade, and GenAI and LLM are the new technology we want to evaluate against.</strong> AI is a umbrella term for everything🙃.</p>
+<h2 id="model-vs-application-evaluation">Model vs Application Evaluation</h2>
+<p>In my experience, when people talk about GenAI evaluation, they might not be aware that there is significant difference between GenAI foundation model evaluation and GenAI application evaluation. Both of them are on-going and evolving problems in industry and academia. However, GenAI application evaluation is less talked about comparing to GenAI foundation model evaluation.</p>
+<ul>
+<li><strong>GenAI foundation model evaluation</strong>: evaluation and benchmarking of foundation models like GPT-4, Dall_E, and Sora, etc.</li>
+<li><strong>GenAI application evaluation</strong>: evaluation and measurement of application enabled by GenAI foundation models like Cursor, a customized call center AI chatbot, etc.</li>
+</ul>
+<p>Not distinguishing the difference between GenAI foundation model and GenAI application is one of the reason leading to challenging GenAI application evaluation. For example, you might use the latest and best LLM model to build a customer service agent,</p>
 ]]></content:encoded>
     </item>
     
