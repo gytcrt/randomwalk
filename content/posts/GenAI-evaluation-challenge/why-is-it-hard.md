@@ -14,13 +14,26 @@ Before I dive into evaluation of GenAI, I want to define a few key terms for thi
 
 {{< figure src="/posts/GenAI-evaluation-challenge/AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article" caption="What AI, ML, GenAI and LLM mean in this article" align="center" >}}
 
-**Essentially, ML is what we are used to and have been evaluating in last decade, and GenAI and LLM are the new technology we want to evaluate against.** AI is a umbrella term for everything🙃. 
+**Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.** AI is a umbrella term for everything🙃. 
 
 ## Model vs Application Evaluation
 
 In my experience, when people talk about GenAI evaluation, they might not be aware that there is significant difference between GenAI foundation model evaluation and GenAI application evaluation. Both of them are on-going and evolving problems in industry and academia. However, GenAI application evaluation is less talked about comparing to GenAI foundation model evaluation. 
 
-- **GenAI foundation model evaluation**: evaluation and benchmarking of foundation models like GPT-4, Dall_E, and Sora, etc.
-- **GenAI application evaluation**: evaluation and measurement of application enabled by GenAI foundation models like Cursor, a customized call center AI chatbot, etc. 
+- **GenAI foundation model evaluation**: evaluation and benchmarking of foundation models like GPT-4, Dall-E, and Sora, etc.
+- **GenAI application evaluation**: 
+    - Evaluation and measurement of application enabled by GenAI foundation models like Cursor, a customized call center AI chatbot, etc. 
+    - Foundation models are critical part of the GenAI application, but other modules like a vector database or external tools in the application significantly impact the performance of the whole application as well. 
 
-Not distinguishing the difference between GenAI foundation model and GenAI application is one of the reason leading to challenging GenAI application evaluation. For example, you might use the latest and best LLM model to build a customer service agent, 
+**Not distinguishing the difference between GenAI foundation models and GenAI applications is one of the reasons leading to challenging GenAI application evaluation.** For example, you might use the latest and best LLM model to build a customer service chatbot using a RAG architecture. But if the knowledge base stored in the vector database is not well engineered, I'm confident that whole customer service chatbot will underperform your expectation. 
+
+There are many academic articles and blogs detailing GenAI foundation model evaluation already. I will link some helpful ones in references section, and focus this article on GenAI application evaluation.
+
+However, as the following architecture diagram shown below, a GenAI application is a software application built with GenAI foundation model/models. It usually contains some system logic layer and interface layer. 
+
+{{< figure src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" alt="An abstract architecture of GenAI applications" caption="An abstract architecture of GenAI applications" align="center" >}}
+
+## References:
+
+- [Anthropic's guide on GenAI foundation model evaluation](https://www.anthropic.com/news/evaluating-ai-systems): Anthropic shared the challenging they've faced when evaluating GenAI models. 
+- [Levels of AGI for Operationalizing Progress on the Path to AGI](https://arxiv.org/abs/2311.02462) <!-- tbd -->
