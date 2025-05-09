@@ -57,6 +57,9 @@
 </figure>
 
 <p>After I explained what GenAI application evaluation entails, I hope you&rsquo;ve realized it&rsquo;s an indeed complex problem. Therefore, it&rsquo;s inherently hard to tackle.</p>
+<h2 id="evaluating-text-image-or-other-media-as-output">Evaluating text, image, or other media as output</h2>
+<h2 id="genai-foundation-models-introduce-unpredictability">GenAI foundation models introduce unpredictability</h2>
+<h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
 <h2 id="references">References:</h2>
 <ul>
 <li><a href="https://www.anthropic.com/news/evaluating-ai-systems">Anthropic&rsquo;s guide on GenAI foundation model evaluation</a>: Anthropic shared the challenging they&rsquo;ve faced when evaluating GenAI models.</li>

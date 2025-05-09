@@ -4,6 +4,9 @@ draft: true
 title: 'Why Is It Hard To Evaluate GenAI Applications?'
 tags: ["tech", "GenAI", "AI", "testing"]
 ShowToc: true
+cover:
+    image: "/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg"
+    # width: 80%
 ---
 ## TL;DR
 
@@ -39,6 +42,12 @@ To evaluate a GenAI application end to end is to understand:
 {{< figure src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" alt="An abstract architecture of GenAI applications" caption="An abstract architecture of GenAI applications" align="center" >}}
 
 After I explained what GenAI application evaluation entails, I hope you've realized it's an indeed complex problem. Therefore, it's inherently hard to tackle. 
+
+## Evaluating text, image, or other media as output 
+
+## GenAI foundation models introduce unpredictability 
+
+## GenAI application evaluation is expensive and time consuming
 
 ## References:
 
