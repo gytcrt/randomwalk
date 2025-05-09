@@ -16,7 +16,7 @@ Before I dive into evaluation of GenAI, I want to define a few key terms for thi
 
 **Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.** AI is a umbrella term for everything🙃. 
 
-## Model vs Application Evaluation
+## GenAI Model vs GenAI Application Evaluation
 
 In my experience, when people talk about GenAI evaluation, they might not be aware that there is significant difference between GenAI foundation model evaluation and GenAI application evaluation. Both of them are on-going and evolving problems in industry and academia. However, GenAI application evaluation is less talked about comparing to GenAI foundation model evaluation. 
 
@@ -29,9 +29,16 @@ In my experience, when people talk about GenAI evaluation, they might not be awa
 
 There are many academic articles and blogs detailing GenAI foundation model evaluation already. I will link some helpful ones in references section, and focus this article on GenAI application evaluation.
 
-However, as the following architecture diagram shown below, a GenAI application is a software application built with GenAI foundation model/models. It usually contains some system logic layer and interface layer. 
+However, as the following architecture diagram shown below, a GenAI application is a software application built with GenAI foundation model/models along with other modules. Generally, the objective of a GenAI application is to make end user's life easier by improving their producibility or automate some processes. It usually contains some system logic layer and interface layer. The system logic layer contains internal and external tools, databases, pipeline, and business logic, etc. The interface layer is where the application communicates with the end users. It could be a chatbot UI or command line tool.
+
+To evaluate a GenAI application end to end is to understand:
+- **Quantifiable Benefit**: how much incremental gain the application brings to target end users. For example, if an AI coding tool can improve engineers productivity by 50%, it can (ideally) translate to 50% revenue gain. 
+- **Isolate and Evaluate**: Build a framework to independently evaluate the performance of each module in the architecture diagram, so that you can identify where the gaps are in the system and improve upon the result. 
+- **Cost of adopting GenAI**: Evaluate the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeller cost, and iteration opportunity cost, etc.
 
 {{< figure src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" alt="An abstract architecture of GenAI applications" caption="An abstract architecture of GenAI applications" align="center" >}}
+
+After I explained what GenAI application evaluation entails, I hope you've realized it's an indeed complex problem. Therefore, it's inherently hard to tackle. 
 
 ## References:
 
