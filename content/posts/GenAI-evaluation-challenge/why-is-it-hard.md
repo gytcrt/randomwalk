@@ -15,7 +15,7 @@ I have spent last 2.5 years on listening to what business wants from GenAI, buil
 
 Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:
 
-{{< figure src="/posts/GenAI-evaluation-challenge/AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article" caption="What AI, ML, GenAI and LLM mean in this article" align="center" >}}
+{{< figurelightbox src="/posts/GenAI-evaluation-challenge/AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article" caption="What AI, ML, GenAI and LLM mean in this article" align="center" >}}
 
 **Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.** AI is a umbrella term for everything🙃. 
 
@@ -32,7 +32,7 @@ In my experience, when people talk about GenAI evaluation, they might not be awa
 
 There are many academic articles and blogs detailing GenAI foundation model evaluation already. I will link some helpful ones in references section, and focus this article on GenAI application evaluation.
 
-However, as the following architecture diagram shown below, a GenAI application is a software application built with GenAI foundation model/models along with other modules. Generally, the objective of a GenAI application is to make end user's life easier by improving their producibility or automate some processes. It usually contains some system logic layer and interface layer. The system logic layer contains internal and external tools, databases, pipeline, and business logic, etc. The interface layer is where the application communicates with the end users. It could be a chatbot UI or command line tool.
+However, as the architecture diagram shown below, a GenAI application is a software application built with GenAI foundation model/models along with other modules. Generally, the objective of a GenAI application is to make end user's life easier by improving their producibility or automate some processes. It usually contains some system logic layer and interface layer. The system logic layer contains internal and external tools, databases, pipeline, and business logic, etc. The interface layer is where the application communicates with the end users. It could be a chatbot UI or command line tool.
 
 To evaluate a GenAI application end to end is to understand:
 - **Quantifiable Benefit**: how much incremental gain the application brings to target end users. For example, if an AI coding tool can improve engineers productivity by 50%, it can (ideally) translate to 50% revenue gain. 
@@ -41,15 +41,25 @@ To evaluate a GenAI application end to end is to understand:
 
 {{< figurelightbox src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" caption="An abstract architecture of GenAI applications" align="center" >}}
 
-After I explained what GenAI application evaluation entails, I hope you've realized it's an indeed complex problem. Therefore, it's inherently hard to tackle. 
+After I explained what GenAI application evaluation entails, I hope you've realized it's an inherently complex problem. This article aims to demystify the problem.
 
 ## Evaluating text, image, or other media as output 
+Most classic machine learning problems fall into 2 categories: **Classification** or **Regression**. When we encounter a real world problem, and want to use machine learning to solve it, we usually start with translating the problem to the classic machine learning framework. 
+
+Classification and regression have standard evaluation metrics like confusion matrix, accuracy, precision/recall, and R square, etc. If you are interested to read more, please refer to [ML cheatsheet reference](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks). There are more nuanced derivative metrics for different types of problems like precision@k and [NDCG@K](https://en.wikipedia.org/wiki/Discounted_cumulative_gain) for ranking problem. **The classic metrics all share one similarity: they are easily quantifiable via testing set. However, it's not the case for GenAI applications.**
+
+For many GenAI applications, their outputs are texts, images, or videos, etc. They are [**unstructured data**](https://www.mongodb.com/resources/basics/unstructured-data). On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use text output from LLM as an example to explain the reason.
+
+
 
 ## GenAI foundation models introduce unpredictability 
 
 ## GenAI application evaluation is expensive and time consuming
 
+## Conclusion 
+
 ## References:
 
 - [Anthropic's guide on GenAI foundation model evaluation](https://www.anthropic.com/news/evaluating-ai-systems): Anthropic shared the challenging they've faced when evaluating GenAI models. 
 - [Levels of AGI for Operationalizing Progress on the Path to AGI](https://arxiv.org/abs/2311.02462) <!-- tbd -->
+- [ML metrics cheatsheet by Stanford](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
