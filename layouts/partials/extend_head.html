@@ -7,6 +7,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!-- GLightbox resources -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+{{ $glightboxInit := resources.Get "js/glightbox-init.js" }}
+<script src="{{ $glightboxInit.RelPermalink }}"></script>
+{{ $glightboxCustom := resources.Get "css/glightbox-custom.css" }}
+<link rel="stylesheet" href="{{ $glightboxCustom.RelPermalink }}" />
+
 <!-- Theme-based profile image switcher -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {

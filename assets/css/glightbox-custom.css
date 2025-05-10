@@ -1,0 +1,229 @@
+/**
+ * Custom GLightbox Modal Styling
+ * ---------------------------------
+ * Custom styles for the GLightbox image/content modal
+ */
+
+/**
+ * 1. CORE ELEMENTS
+ * ----------------
+ */
+
+/* Main overlay background */
+.goverlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(2px);
+  transition: all 0.3s ease;
+}
+
+/* Main slide container */
+.gslide {
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/**
+ * 2. CONTENT & CAPTIONS
+ * ---------------------
+ */
+
+/* Caption container */
+.glightbox-clean .gslide-description {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 4px 8px;
+  margin-top: 4px;
+  border-radius: 3px;
+  box-shadow: none;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* Caption title text */
+.glightbox-clean .gslide-title {
+  font-weight: 400;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+/* Hide description text */
+.glightbox-clean .gslide-desc {
+  display: none;
+}
+
+/* Zoom behavior for images */
+.gzoomable .gslide-image img {
+  cursor: zoom-in;
+}
+
+/**
+ * 3. CONTROLS & NAVIGATION
+ * ------------------------
+ */
+
+/* Navigation arrows - base styles */
+.gnext, 
+.gprev {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+/* Navigation arrows - hover state */
+.gnext:hover, 
+.gprev:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Close button - base styles */
+.gclose {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease;
+}
+
+/* Close button - hover state */
+.gclose:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Loading spinner */
+.gloader {
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid #fff;
+}
+
+/**
+ * 4. MOBILE STYLES
+ * ----------------
+ * Applied for screens smaller than 768px width
+ */
+@media (max-width: 768px) {
+  /**
+   * 4.1 Core Structure & Layout
+   */
+  
+  /* Body modifications when lightbox is active */
+  body.glightbox-mobile {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Main container */
+  .glightbox-mobile .glightbox-container {
+    display: table !important;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Inner container (for vertical centering) */
+  .glightbox-mobile .ginner-container {
+    display: table-cell !important;
+    vertical-align: middle !important;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /**
+   * 4.2 Content & Slides
+   */
+  
+  /* Content wrapper */
+  .glightbox-mobile .gslide-content {
+    background: transparent;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 40px);
+  }
+  
+  /* Slide container */
+  .glightbox-mobile .gslide {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Image container */
+  .glightbox-mobile .gslide-image {
+    max-height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Image itself */
+  .glightbox-mobile .gslide-image img {
+    max-width: 100%;
+    max-height: 85vh;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 0 !important;
+    object-fit: contain;
+  }
+  
+  /* Mobile caption */
+  .glightbox-mobile .gslide-description {
+    max-width: 80%;
+    margin-top: -8px !important;
+    padding: 3px 8px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  
+  /**
+   * 4.3 Mobile Controls
+   */
+  
+  /* Close button */
+  .glightbox-mobile .gclose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Navigation arrows */
+  .glightbox-mobile .gnext,
+  .glightbox-mobile .gprev {
+    top: 45%;
+    width: 36px;
+    height: 36px;
+  }
+} 

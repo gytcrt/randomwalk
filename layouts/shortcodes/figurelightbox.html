@@ -1,0 +1,15 @@
+<figure {{ with .Get "align" }}class="align-{{ . }}"{{ end }}>
+    <a href="{{ .Get "src" }}" 
+       class="glightbox" 
+       data-gallery="gallery1" 
+       data-title="{{ .Get "caption" }}"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+    </a>
+    {{ with .Get "caption" }}
+      <figcaption>{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+  

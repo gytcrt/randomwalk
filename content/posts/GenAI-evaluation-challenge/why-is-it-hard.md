@@ -39,7 +39,7 @@ To evaluate a GenAI application end to end is to understand:
 - **Isolate and Evaluate**: Build a framework to independently evaluate the performance of each module in the architecture diagram, so that you can identify where the gaps are in the system and improve upon the result. 
 - **Cost of adopting GenAI**: Evaluate the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeller cost, and iteration opportunity cost, etc.
 
-{{< figure src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" alt="An abstract architecture of GenAI applications" caption="An abstract architecture of GenAI applications" align="center" >}}
+{{< figurelightbox src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" caption="An abstract architecture of GenAI applications" align="center" >}}
 
 After I explained what GenAI application evaluation entails, I hope you've realized it's an indeed complex problem. Therefore, it's inherently hard to tackle. 
 

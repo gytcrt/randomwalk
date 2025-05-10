@@ -49,13 +49,21 @@
 <li><strong>Isolate and Evaluate</strong>: Build a framework to independently evaluate the performance of each module in the architecture diagram, so that you can identify where the gaps are in the system and improve upon the result.</li>
 <li><strong>Cost of adopting GenAI</strong>: Evaluate the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeller cost, and iteration opportunity cost, etc.</li>
 </ul>
-<figure class="align-center ">
-    <img loading="lazy" src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg#center"
-         alt="An abstract architecture of GenAI applications"/> <figcaption>
-            <p>An abstract architecture of GenAI applications</p>
-        </figcaption>
-</figure>
-
+<figure class="align-center">
+    <a href="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" 
+       class="glightbox" 
+       data-gallery="gallery1" 
+       data-title="An abstract architecture of GenAI applications"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" alt="">
+    </a>
+    
+      <figcaption>An abstract architecture of GenAI applications</figcaption>
+    
+  </figure>
+  
 <p>After I explained what GenAI application evaluation entails, I hope you&rsquo;ve realized it&rsquo;s an indeed complex problem. Therefore, it&rsquo;s inherently hard to tackle.</p>
 <h2 id="evaluating-text-image-or-other-media-as-output">Evaluating text, image, or other media as output</h2>
 <h2 id="genai-foundation-models-introduce-unpredictability">GenAI foundation models introduce unpredictability</h2>
