@@ -48,7 +48,18 @@ Most classic machine learning problems fall into 2 categories: **Classification*
 
 Classification and regression have standard evaluation metrics like confusion matrix, accuracy, precision/recall, and R square, etc. If you are interested to read more, please refer to [ML cheatsheet reference](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks). There are more nuanced derivative metrics for different types of problems like precision@k and [NDCG@K](https://en.wikipedia.org/wiki/Discounted_cumulative_gain) for ranking problem. **The classic metrics all share one similarity: they are easily quantifiable via testing set. However, it's not the case for GenAI applications.**
 
-For many GenAI applications, their outputs are texts, images, or videos, etc. They are [**unstructured data**](https://www.mongodb.com/resources/basics/unstructured-data). On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use text output from LLM as an example to explain the reason.
+For many GenAI applications, their outputs are texts, images, or videos, etc. They are [**unstructured data**](https://www.mongodb.com/resources/basics/unstructured-data). On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use LLM applications as an example to explain it, since outputs of LLM applications are majorly texts. 
+
+The following table is a few selected and widely used LLM application metrics with examples. 
+
+      
+| Metric        |Definition                                                                                              | Example                                                                                                                               |
+|---------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| **Relevancy** | How on-topic and directly useful the LLM application's output is to a specific task.| You ask: "Marketing slogans for a new eco-friendly water bottle."  **Relevant:** "Hydrate Sustainably!" <br> **Irrelevant:** "The history of plastic manufacturing." |
+| **Bias**      | Whether the application outputs biases against certain gender, races or other protected groups.| You use a LLM application to generate descriptions for job roles. <br> **Bias:** If it consistently describes "nurses" with feminine pronouns and "engineers" with masculine pronouns. |
+| **Hallucination** | Whether the LLM application confidently states something as fact that is incorrect, nonsensical, or made-up.| You ask: "What was our company's Q3 revenue last year in the APAC region?" <br> **Hallucination:** The LLM replies "$5.7 million from our new Tokyo office," when your company has no Tokyo office and revenue was different. |
+
+    
 
 
 
@@ -58,7 +69,7 @@ For many GenAI applications, their outputs are texts, images, or videos, etc. Th
 
 ## Conclusion 
 
-## References:
+## References
 
 - [Anthropic's guide on GenAI foundation model evaluation](https://www.anthropic.com/news/evaluating-ai-systems): Anthropic shared the challenging they've faced when evaluating GenAI models. 
 - [Levels of AGI for Operationalizing Progress on the Path to AGI](https://arxiv.org/abs/2311.02462) <!-- tbd -->

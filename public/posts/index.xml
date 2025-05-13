@@ -76,11 +76,38 @@
 <h2 id="evaluating-text-image-or-other-media-as-output">Evaluating text, image, or other media as output</h2>
 <p>Most classic machine learning problems fall into 2 categories: <strong>Classification</strong> or <strong>Regression</strong>. When we encounter a real world problem, and want to use machine learning to solve it, we usually start with translating the problem to the classic machine learning framework.</p>
 <p>Classification and regression have standard evaluation metrics like confusion matrix, accuracy, precision/recall, and R square, etc. If you are interested to read more, please refer to <a href="https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks">ML cheatsheet reference</a>. There are more nuanced derivative metrics for different types of problems like precision@k and <a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain">NDCG@K</a> for ranking problem. <strong>The classic metrics all share one similarity: they are easily quantifiable via testing set. However, it&rsquo;s not the case for GenAI applications.</strong></p>
-<p>For many GenAI applications, their outputs are texts, images, or videos, etc. They are <a href="https://www.mongodb.com/resources/basics/unstructured-data"><strong>unstructured data</strong></a>. On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use text output from LLM as an example to explain the reason.</p>
+<p>For many GenAI applications, their outputs are texts, images, or videos, etc. They are <a href="https://www.mongodb.com/resources/basics/unstructured-data"><strong>unstructured data</strong></a>. On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use LLM applications as an example to explain it, since outputs of LLM applications are majorly texts.</p>
+<p>The following table is a few selected and widely used LLM application metrics with examples.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Metric</th>
+          <th>Definition</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Relevancy</strong></td>
+          <td>How on-topic and directly useful the LLM application&rsquo;s output is to a specific task.</td>
+          <td>You ask: &ldquo;Marketing slogans for a new eco-friendly water bottle.&rdquo;  <strong>Relevant:</strong> &ldquo;Hydrate Sustainably!&rdquo; <!-- raw HTML omitted --> <strong>Irrelevant:</strong> &ldquo;The history of plastic manufacturing.&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Bias</strong></td>
+          <td>Whether the application outputs biases against certain gender, races or other protected groups.</td>
+          <td>You use a LLM application to generate descriptions for job roles. <!-- raw HTML omitted --> <strong>Bias:</strong> If it consistently describes &ldquo;nurses&rdquo; with feminine pronouns and &ldquo;engineers&rdquo; with masculine pronouns.</td>
+      </tr>
+      <tr>
+          <td><strong>Hallucination</strong></td>
+          <td>Whether the LLM application confidently states something as fact that is incorrect, nonsensical, or made-up.</td>
+          <td>You ask: &ldquo;What was our company&rsquo;s Q3 revenue last year in the APAC region?&rdquo; <!-- raw HTML omitted --> <strong>Hallucination:</strong> The LLM replies &ldquo;$5.7 million from our new Tokyo office,&rdquo; when your company has no Tokyo office and revenue was different.</td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="genai-foundation-models-introduce-unpredictability">GenAI foundation models introduce unpredictability</h2>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
 <h2 id="conclusion">Conclusion</h2>
-<h2 id="references">References:</h2>
+<h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.anthropic.com/news/evaluating-ai-systems">Anthropic&rsquo;s guide on GenAI foundation model evaluation</a>: Anthropic shared the challenging they&rsquo;ve faced when evaluating GenAI models.</li>
 <li><a href="https://arxiv.org/abs/2311.02462">Levels of AGI for Operationalizing Progress on the Path to AGI</a> </li>
