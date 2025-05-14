@@ -177,3 +177,6 @@ pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true  # This enables raw HTML in markdown content

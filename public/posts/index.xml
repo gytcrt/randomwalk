@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:49602/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Is It Hard To Evaluate GenAI Applications?</title>
-      <link>http://localhost:1313/posts/genai-evaluation-challenge/why-is-it-hard/</link>
+      <link>http://localhost:49602/posts/genai-evaluation-challenge/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/genai-evaluation-challenge/why-is-it-hard/</guid>
+      <guid>http://localhost:49602/posts/genai-evaluation-challenge/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;
@@ -22,14 +22,14 @@
 <p>I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.</p>
 <p>Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:</p>
 <figure class="align-center">
-    <a href="/posts/GenAI-evaluation-challenge/AI-terms.svg" 
+    <a href="AI-terms.svg" 
        class="glightbox" 
        data-gallery="gallery1" 
        data-title="What AI, ML, GenAI and LLM mean in this article"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="/posts/GenAI-evaluation-challenge/AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article">
+      <img src="AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article">
     </a>
     
       <figcaption>What AI, ML, GenAI and LLM mean in this article</figcaption>
@@ -58,14 +58,14 @@
 <li><strong>Cost of adopting GenAI</strong>: Evaluate the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeller cost, and iteration opportunity cost, etc.</li>
 </ul>
 <figure class="align-center">
-    <a href="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" 
+    <a href="GenAI-abstract-architecture.svg" 
        class="glightbox" 
        data-gallery="gallery1" 
        data-title="An abstract architecture of GenAI applications"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" alt="">
+      <img src="GenAI-abstract-architecture.svg" alt="">
     </a>
     
       <figcaption>An abstract architecture of GenAI applications</figcaption>
@@ -90,29 +90,49 @@
       <tr>
           <td><strong>Relevancy</strong></td>
           <td>How on-topic and directly useful the LLM application&rsquo;s output is to a specific task.</td>
-          <td>You ask: &ldquo;Marketing slogans for a new eco-friendly water bottle.&rdquo;  <strong>Relevant:</strong> &ldquo;Hydrate Sustainably!&rdquo; <!-- raw HTML omitted --> <strong>Irrelevant:</strong> &ldquo;The history of plastic manufacturing.&rdquo;</td>
+          <td>You ask: &ldquo;Marketing slogans for a new eco-friendly water bottle.&rdquo;  <br> <strong>Relevant:</strong> &ldquo;Hydrate Sustainably!&rdquo; <br> <strong>Irrelevant:</strong> &ldquo;The history of plastic manufacturing.&rdquo;</td>
       </tr>
       <tr>
           <td><strong>Bias</strong></td>
           <td>Whether the application outputs biases against certain gender, races or other protected groups.</td>
-          <td>You use a LLM application to generate descriptions for job roles. <!-- raw HTML omitted --> <strong>Bias:</strong> If it consistently describes &ldquo;nurses&rdquo; with feminine pronouns and &ldquo;engineers&rdquo; with masculine pronouns.</td>
+          <td>You use a LLM application to generate descriptions for job roles. <br> <strong>Bias:</strong> If it consistently describes &ldquo;nurses&rdquo; with feminine pronouns and &ldquo;engineers&rdquo; with masculine pronouns.</td>
       </tr>
       <tr>
           <td><strong>Hallucination</strong></td>
           <td>Whether the LLM application confidently states something as fact that is incorrect, nonsensical, or made-up.</td>
-          <td>You ask: &ldquo;What was our company&rsquo;s Q3 revenue last year in the APAC region?&rdquo; <!-- raw HTML omitted --> <strong>Hallucination:</strong> The LLM replies &ldquo;$5.7 million from our new Tokyo office,&rdquo; when your company has no Tokyo office and revenue was different.</td>
+          <td>You ask: &ldquo;What was our company&rsquo;s Q3 revenue last year in the APAC region?&rdquo; <br> <strong>Hallucination:</strong> The LLM replies &ldquo;$5.7 million from our new Tokyo office,&rdquo; when your company has no Tokyo office and revenue was different.</td>
       </tr>
   </tbody>
 </table>
 <p>Given the complex nature of LLM application evaluation, many people started using LLMs to evaluate output of their LLM application. Many GenAI evaluation packages like <a href="https://www.deepeval.com/">DeepEval</a> and <a href="https://github.com/BCG-X-Official/artkit">ARTKIT</a> offer automated AI evaluation (I have participated in the development of ARTKIT). I do think using LLM to evaluate LLM applications is necessary and helpful, given the amount of output data can be beyond human&rsquo;s capacity to process and LLMs are generally good at language understanding. <strong>However, I think overly relying on LLMs to evaluate LLM application is not realistic and even dangerous.</strong> No matter whether you are using the same family of LLMs to evaluate your LLM application (OpenAI GPTs to evaluate application built on OpenAI GPTs), or using different LLMs to evaluate the LLM application(Google Gemini to evaluate application built on OpenAI GPTs), you are essentially introducing another LLM while evaluating the target LLM application. Would you assume the evaluator LLM&rsquo;s outputs are 100% correct or would you build another evaluation process to evaluate the evaluator LLM? :) The problem become more philosophical now.</p>
 <p>I think it&rsquo;s necessary to use LLMs to evaluate LLM applications, but through a carefully design process. I will elaborate on this maybe in another future article.</p>
 <h2 id="genai-foundation-models-introduce-unpredictability">GenAI foundation models introduce unpredictability</h2>
+<p>Unlike traditional ML models, GenAI models are non-deterministic. It means even for the same input, the GenAI models can return different results on different runs. The non-deterministic nature of GenAI models adds extra difficulty on GenAI application evaluations.</p>
+<p>For example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images below for my cat.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_2.png" type="" alt="British shorthair vs Kindle 1"  /></th>
+          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_3.png" type="" alt="British shorthair vs Kindle 2"  /></th>
+          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_4.png" type="" alt="British shorthair vs Kindle 3"  /></th>
+          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_5.png" type="" alt="British shorthair vs Kindle 4"  /></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><em>image 1</em></td>
+          <td style="text-align: center"><em>image 2</em></td>
+          <td style="text-align: center"><em>image 3</em></td>
+          <td style="text-align: center"><em>image 4</em></td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.anthropic.com/news/evaluating-ai-systems">Anthropic&rsquo;s guide on GenAI foundation model evaluation</a>: Anthropic shared the challenging they&rsquo;ve faced when evaluating GenAI models.</li>
-<li><a href="https://arxiv.org/abs/2311.02462">Levels of AGI for Operationalizing Progress on the Path to AGI</a> </li>
+<li><a href="https://arxiv.org/abs/2311.02462">Levels of AGI for Operationalizing Progress on the Path to AGI</a> <!-- tbd --></li>
 <li><a href="https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks">ML metrics cheatsheet by Stanford</a></li>
 </ul>
 ]]></content:encoded>
@@ -120,10 +140,10 @@
     
     <item>
       <title>Rebuild My Website With GenAI&#39;s Assistance</title>
-      <link>http://localhost:1313/posts/blog-set-up/</link>
+      <link>http://localhost:49602/posts/blog-set-up/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-set-up/</guid>
+      <guid>http://localhost:49602/posts/blog-set-up/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://gytcrt.github.io/&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;personal blog&lt;/a&gt; to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.&lt;/p&gt;
 &lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong&gt;If you are only interested in the part related to GenAI, check out the &lt;a href=&#34;http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms&#34;&gt;&lt;strong&gt;GenAI coding tools section&lt;/strong&gt;&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
@@ -248,10 +268,10 @@
     
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
+      <link>http://localhost:49602/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <guid>http://localhost:49602/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
@@ -271,10 +291,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
+      <link>http://localhost:49602/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <guid>http://localhost:49602/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>

@@ -5,7 +5,7 @@ title: 'Why Is It Hard To Evaluate GenAI Applications?'
 tags: ["tech", "GenAI", "AI", "testing"]
 ShowToc: true
 cover:
-    image: "/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg"
+    image: "GenAI-abstract-architecture.svg"
     # width: 80%
 ---
 ## TL;DR
@@ -15,7 +15,7 @@ I have spent last 2.5 years on listening to what business wants from GenAI, buil
 
 Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:
 
-{{< figurelightbox src="/posts/GenAI-evaluation-challenge/AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article" caption="What AI, ML, GenAI and LLM mean in this article" align="center" >}}
+{{< figurelightbox src="AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article" caption="What AI, ML, GenAI and LLM mean in this article" align="center" >}}
 
 **Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.** AI is a umbrella term for everything🙃. 
 
@@ -39,7 +39,7 @@ To evaluate a GenAI application end to end is to understand:
 - **Isolate and Evaluate**: Build a framework to independently evaluate the performance of each module in the architecture diagram, so that you can identify where the gaps are in the system and improve upon the result. 
 - **Cost of adopting GenAI**: Evaluate the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeller cost, and iteration opportunity cost, etc.
 
-{{< figurelightbox src="/posts/GenAI-evaluation-challenge/GenAI-abstract-architecture.svg" caption="An abstract architecture of GenAI applications" align="center" >}}
+{{< figurelightbox src="GenAI-abstract-architecture.svg" caption="An abstract architecture of GenAI applications" align="center" >}}
 
 After I explained what GenAI application evaluation entails, I hope you've realized it's an inherently complex problem. This article aims to demystify the problem.
 
@@ -54,7 +54,7 @@ The following table is a few selected and widely used LLM application metrics wi
       
 | Metric        |Definition                                                                                              | Example                                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| **Relevancy** | How on-topic and directly useful the LLM application's output is to a specific task.| You ask: "Marketing slogans for a new eco-friendly water bottle."  **Relevant:** "Hydrate Sustainably!" <br> **Irrelevant:** "The history of plastic manufacturing." |
+| **Relevancy** | How on-topic and directly useful the LLM application's output is to a specific task.| You ask: "Marketing slogans for a new eco-friendly water bottle."  <br> **Relevant:** "Hydrate Sustainably!" <br> **Irrelevant:** "The history of plastic manufacturing." |
 | **Bias**      | Whether the application outputs biases against certain gender, races or other protected groups.| You use a LLM application to generate descriptions for job roles. <br> **Bias:** If it consistently describes "nurses" with feminine pronouns and "engineers" with masculine pronouns. |
 | **Hallucination** | Whether the LLM application confidently states something as fact that is incorrect, nonsensical, or made-up.| You ask: "What was our company's Q3 revenue last year in the APAC region?" <br> **Hallucination:** The LLM replies "$5.7 million from our new Tokyo office," when your company has no Tokyo office and revenue was different. |
 
@@ -63,8 +63,15 @@ Given the complex nature of LLM application evaluation, many people started usin
 
 I think it's necessary to use LLMs to evaluate LLM applications, but through a carefully design process. I will elaborate on this maybe in another future article.
 
-
 ## GenAI foundation models introduce unpredictability 
+Unlike traditional ML models, GenAI models are non-deterministic. It means even for the same input, the GenAI models can return different results on different runs. The non-deterministic nature of GenAI models adds extra difficulty on GenAI application evaluations. 
+
+For example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images below for my cat.
+
+| ![British shorthair vs Kindle 1](british_shorthair_vs_kindle_2.png) | ![British shorthair vs Kindle 2](british_shorthair_vs_kindle_3.png) | ![British shorthair vs Kindle 3](british_shorthair_vs_kindle_4.png) | ![British shorthair vs Kindle 4](british_shorthair_vs_kindle_5.png) |
+|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| *image 1* | *image 2* | *image 3* | *image 4* |
+
 
 ## GenAI application evaluation is expensive and time consuming
 
