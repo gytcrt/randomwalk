@@ -51,7 +51,6 @@ Classification and regression have standard evaluation metrics like confusion ma
 For many GenAI applications, their outputs are texts, images, or videos, etc. They are [**unstructured data**](https://www.mongodb.com/resources/basics/unstructured-data). On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use LLM applications as an example to explain it, and outputs of LLM applications are majorly texts. 
 
 The following table is a few selected and widely used LLM application metrics with examples. Unlike metrics for classification or regression models, quantifying the LLM metrics is not a simple string comparison or arithmetical calculations. Evaluating metrics like Relevancy, Bias and Hallucination requires a lot of careful design, context understanding and even expertise. For example, if a LLM application is used for medical context, it would be difficult for someone without medical adequate training to evaluate relevancy and hallucination for the application.       
-
       
 | Metric        |Definition                                                                                              | Example                                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -59,8 +58,10 @@ The following table is a few selected and widely used LLM application metrics wi
 | **Bias**      | Whether the application outputs biases against certain gender, races or other protected groups.| You use a LLM application to generate descriptions for job roles. <br> **Bias:** If it consistently describes "nurses" with feminine pronouns and "engineers" with masculine pronouns. |
 | **Hallucination** | Whether the LLM application confidently states something as fact that is incorrect, nonsensical, or made-up.| You ask: "What was our company's Q3 revenue last year in the APAC region?" <br> **Hallucination:** The LLM replies "$5.7 million from our new Tokyo office," when your company has no Tokyo office and revenue was different. |
 
-    
 
+Given the complex nature of LLM application evaluation, many people started using LLMs to evaluate output of their LLM application. Many GenAI evaluation packages like [DeepEval](https://www.deepeval.com/) and [ARTKIT](https://github.com/BCG-X-Official/artkit) offer automated AI evaluation (I have participated in the development of ARTKIT). I do think using LLM to evaluate LLM applications is necessary and helpful, given the amount of output data can be beyond human's capacity to process and LLMs are generally good at language understanding. **However, I think overly relying on LLMs to evaluate LLM application is not realistic and even dangerous.** No matter whether you are using the same family of LLMs to evaluate your LLM application (OpenAI GPTs to evaluate application built on OpenAI GPTs), or using different LLMs to evaluate the LLM application(Google Gemini to evaluate application built on OpenAI GPTs), you are essentially introducing another LLM while evaluating the target LLM application. Would you assume the evaluator LLM's outputs are 100% correct or would you build another evaluation process to evaluate the evaluator LLM? :) The problem become more philosophical now.
+
+I think it's necessary to use LLMs to evaluate LLM applications, but through a carefully design process. I will elaborate on this maybe in another future article.
 
 
 ## GenAI foundation models introduce unpredictability 
