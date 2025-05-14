@@ -66,12 +66,23 @@ I think it's necessary to use LLMs to evaluate LLM applications, but through a c
 ## GenAI foundation models introduce unpredictability 
 Unlike traditional ML models, GenAI models are non-deterministic. It means even for the same input, the GenAI models can return different results on different runs. The non-deterministic nature of GenAI models adds extra difficulty on GenAI application evaluations. 
 
-For example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images below for my cat.
+For example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images for my cat. And the prompt is
+
+>**Pixel art illustration** of a silver-shaded British Shorthair cat playfully fighting with an Amazon Kindle e-reader. The scene is **charming and whimsical**, with the round, fluffy cat using its paws to swipe at or wrestle the sleek Kindle device. Render in detailed 8-bit pixel art style, using cool silver-gray tones for the cat and dark, glossy colors for the Kindle, with a simple, light-colored background.
 
 | ![British shorthair vs Kindle 1](british_shorthair_vs_kindle_2.png) | ![British shorthair vs Kindle 2](british_shorthair_vs_kindle_3.png) | ![British shorthair vs Kindle 3](british_shorthair_vs_kindle_4.png) | ![British shorthair vs Kindle 4](british_shorthair_vs_kindle_5.png) |
 |:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|
 | *image 1* | *image 2* | *image 3* | *image 4* |
 
+Among the 4 pixel images, I personally prefer image 2. Image 3 is too realistic and not like a pixel art. The cat in image 4 seems quite concerned and the scene is not charming or whimsical. As for image 1, it's obviously an incoherent image.
+
+Here come the questions for evaluation:
+
+- How do I evaluate the image outputs? 
+- Should I use the best output (image 2) or worst output (image 1)? 
+- Who's there to evaluate the quality of the outputs? 
+
+Even the pixel art generation example is trivial itself, the questions regarding evaluation are not trivial. **GenAI models introduce extra unpredictability to your application.**
 
 ## GenAI application evaluation is expensive and time consuming
 
