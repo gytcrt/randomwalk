@@ -57,7 +57,9 @@ The following table is a few selected and widely used LLM application metrics wi
 | **Relevancy** | How on-topic and directly useful the LLM application's output is to a specific task.| You ask: "Marketing slogans for a new eco-friendly water bottle."  <br> **Relevant:** "Hydrate Sustainably!" <br> **Irrelevant:** "The history of plastic manufacturing." |
 | **Bias**      | Whether the application outputs biases against certain gender, races or other protected groups.| You use a LLM application to generate descriptions for job roles. <br> **Bias:** If it consistently describes "nurses" with feminine pronouns and "engineers" with masculine pronouns. |
 | **Hallucination** | Whether the LLM application confidently states something as fact that is incorrect, nonsensical, or made-up.| You ask: "What was our company's Q3 revenue last year in the APAC region?" <br> **Hallucination:** The LLM replies "$5.7 million from our new Tokyo office," when your company has no Tokyo office and revenue was different. |
-
+<div style="text-align: center; margin-bottom: 20px;">
+<strong><em>Table 1: Common evaluation metrics for LLM applications with examples</em></strong>
+</div>
 
 Given the complex nature of LLM application evaluation, many people started using LLMs to evaluate output of their LLM application. Many GenAI evaluation packages like [DeepEval](https://www.deepeval.com/) and [ARTKIT](https://github.com/BCG-X-Official/artkit) offer automated AI evaluation (I have participated in the development of ARTKIT). I do think using LLM to evaluate LLM applications is necessary and helpful, given the amount of output data can be beyond human's capacity to process and LLMs are generally good at language understanding. **However, I think overly relying on LLMs to evaluate LLM application is not realistic and even dangerous.** No matter whether you are using the same family of LLMs to evaluate your LLM application (OpenAI GPTs to evaluate application built on OpenAI GPTs), or using different LLMs to evaluate the LLM application(Google Gemini to evaluate application built on OpenAI GPTs), you are essentially introducing another LLM while evaluating the target LLM application. Would you assume the evaluator LLM's outputs are 100% correct or would you build another evaluation process to evaluate the evaluator LLM? :) The problem become more philosophical now.
 
@@ -104,7 +106,7 @@ A grocery store called Food Coop used to use ML models to classify the category 
 | Round 10 | 88% | 91% | 94%|
 | Average |88%|91%|90%|
 <div style="text-align: center; margin-bottom: 20px;">
-<strong><em>Table 1: Accuracy comparison across multiple evaluations for ML models vs LLM classifier</em></strong>
+<strong><em>Table 2: Accuracy comparison across multiple evaluations for ML models vs LLM classifier</em></strong>
 </div>
 
 The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time. The fluctuating acc
@@ -129,7 +131,9 @@ In practice, the Food Coop might compare average accuracy of the 3 models and de
 However, when GenAI applications are introduced to the paradigm, I think the visualization should be updated as following:
 {{< figurelightbox src="new_bias_variance_paradigm.png" caption="Updated bias and variance as function of model complexity" align="center" width="80%" >}}
 
-The purple interval around the total error means total error is not a fixed number based on variance and bias anymore, the unpredictability(variance) of GenAI model makes the total error fluctuate within the interval.  
+The purple interval around the total error means total error is not a fixed number based on variance and bias anymore, the unpredictability(variance) of GenAI model makes the total error fluctuate within the interval. In Table 2 example, the purple interval represents the variance of accuracy of the same LLM classifier.
+
+By comparing the two paradigms, I hope the complexity of GenAI application evaluation is more clear to you. 
 
 ## GenAI application evaluation is expensive and time consuming
 

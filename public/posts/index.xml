@@ -104,6 +104,9 @@
       </tr>
   </tbody>
 </table>
+<div style="text-align: center; margin-bottom: 20px;">
+<strong><em>Table 1: Common evaluation metrics for LLM applications with examples</em></strong>
+</div>
 <p>Given the complex nature of LLM application evaluation, many people started using LLMs to evaluate output of their LLM application. Many GenAI evaluation packages like <a href="https://www.deepeval.com/">DeepEval</a> and <a href="https://github.com/BCG-X-Official/artkit">ARTKIT</a> offer automated AI evaluation (I have participated in the development of ARTKIT). I do think using LLM to evaluate LLM applications is necessary and helpful, given the amount of output data can be beyond human&rsquo;s capacity to process and LLMs are generally good at language understanding. <strong>However, I think overly relying on LLMs to evaluate LLM application is not realistic and even dangerous.</strong> No matter whether you are using the same family of LLMs to evaluate your LLM application (OpenAI GPTs to evaluate application built on OpenAI GPTs), or using different LLMs to evaluate the LLM application(Google Gemini to evaluate application built on OpenAI GPTs), you are essentially introducing another LLM while evaluating the target LLM application. Would you assume the evaluator LLM&rsquo;s outputs are 100% correct or would you build another evaluation process to evaluate the evaluator LLM? :) The problem become more philosophical now.</p>
 <p>I think it&rsquo;s necessary to use LLMs to evaluate LLM applications, but through a carefully design process. I will elaborate on this maybe in another future article.</p>
 <h2 id="genai-foundation-models-introduce-unpredictability">GenAI foundation models introduce unpredictability</h2>
@@ -220,7 +223,7 @@
   </tbody>
 </table>
 <div style="text-align: center; margin-bottom: 20px;">
-<strong><em>Table 1: Accuracy comparison across multiple evaluations for ML models vs LLM classifier</em></strong>
+<strong><em>Table 2: Accuracy comparison across multiple evaluations for ML models vs LLM classifier</em></strong>
 </div>
 <p>The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time. The fluctuating acc</p>
 <p><strong>How should the Food Coop compare the new LLM classifier with traditional ML models for this classification task?</strong></p>
@@ -263,7 +266,8 @@
     
   </figure>
   </p>
-<p>The purple interval around the total error means total error is not a fixed number based on variance and bias anymore, the unpredictability(variance) of GenAI model makes the total error fluctuate within the interval.</p>
+<p>The purple interval around the total error means total error is not a fixed number based on variance and bias anymore, the unpredictability(variance) of GenAI model makes the total error fluctuate within the interval. In Table 2 example, the purple interval represents the variance of accuracy of the same LLM classifier.</p>
+<p>By comparing the two paradigms, I hope the complexity of GenAI application evaluation is more clear to you.</p>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references">References</h2>
