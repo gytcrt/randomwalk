@@ -136,6 +136,25 @@ The purple interval around the total error means total error is not a fixed numb
 By comparing the two paradigms, I hope the complexity of GenAI application evaluation is more clear to you. 
 
 ## GenAI application evaluation is expensive and time consuming
+Besides the complexities elaborated above, building an proper process to evaluate a GenAI application is also expensive and time consuming. 
+
+The best practice of developing a machine learning system is to start from proof-of-concept and built towards [continuous delivery and automation pipelines](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) over time. The same framework can be adopted to GenAI application as well. **The modern MLOps practice requires you to test your application on data, improve your application, generate new test data, and iterate the process rapidly.**
+
+### Evaluation dataset building
+However, generating evaluation dataset or golden dataset for GenAI application and iterating on it is more complex than previous ML systems. For example, if you want to build an effective GenAI Q&A system, you have to build a list of golden Q&A dataset to test your system. Curating a high-quality golden Q&A dataset is significantly more difficult than labelling objects on an images, because reading texts requires more time and context understanding. Sometimes, only certain people with expertise are capable of curating a golden Q&A dataset, and the task cannot be out sourced to internal or external data labelers.
+
+Therefore, building proper an evaluation dataset for a GenAI application and updating the dataset can be expensive and slow.
+
+### Evaluation cost
+Even when a good evaluation dataset is built, running tests on it can be challenging. Conventionally, training a ML model can take long time and considerably amount of resources, but inference on the trained model is fast and cheap. However, when evaluating a GenAI application built upon a 3rd party foundation model provider, you will encounter:
+
+- **API latency**: GenAI foundation model APIs typically have much higher latency than traditional ML model inference. While a conventional ML model might return results in milliseconds, GenAI APIs can take seconds or even minutes for complex prompts. This latency significantly slows down the evaluation process, especially when testing hundreds or thousands of examples.
+
+- **API rate limit**: Most foundation model providers impose strict rate limits on their APIs to manage server load and prevent abuse. These rate limits force you to implement complex batch processing, asynchronous logic, queuing mechanisms, and retry logic in your evaluation pipeline. You may need to spread your evaluation over longer periods or request (and pay for) higher rate limits, further extending the time and cost of thorough testing.
+
+- **API cost**: Even though LLM like GPT4 has decreased significantly, it is still very costly comparing to traditional ML like OCR. Especially, when the input and output of the system contain large size of texts or high-resolution images, the cost of running tests continuously is not economically wise.   
+
+Hosting an open-source GenAI foundation model might help you avoid API related issue, but it still requires intense resources and expertise. You might finding your organization spending more money and time on cloud resources and debugging its configuration than using an API from a foundation model provider. 
 
 ## Conclusion 
 

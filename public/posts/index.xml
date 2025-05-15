@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:49602/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Is It Hard To Evaluate GenAI Applications?</title>
-      <link>http://localhost:1313/posts/genai-evaluation-challenge/</link>
+      <link>http://localhost:49602/posts/genai-evaluation-challenge/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/genai-evaluation-challenge/</guid>
+      <guid>http://localhost:49602/posts/genai-evaluation-challenge/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;
@@ -269,6 +269,25 @@
 <p>The purple interval around the total error means total error is not a fixed number based on variance and bias anymore, the unpredictability(variance) of GenAI model makes the total error fluctuate within the interval. In Table 2 example, the purple interval represents the variance of accuracy of the same LLM classifier.</p>
 <p>By comparing the two paradigms, I hope the complexity of GenAI application evaluation is more clear to you.</p>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
+<p>Besides the complexities elaborated above, building an proper process to evaluate a GenAI application is also expensive and time consuming.</p>
+<p>The best practice of developing a machine learning system is to start from proof-of-concept and built towards <a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">continuous delivery and automation pipelines</a> over time. The same framework can be adopted to GenAI application as well. <strong>The modern MLOps practice requires you to test your application on data, improve your application, generate new test data, and iterate the process rapidly.</strong></p>
+<h3 id="evaluation-dataset-building">Evaluation dataset building</h3>
+<p>However, generating evaluation dataset or golden dataset for GenAI application and iterating on it is more complex than previous ML systems. For example, if you want to build an effective GenAI Q&amp;A system, you have to build a list of golden Q&amp;A dataset to test your system. Curating a high-quality golden Q&amp;A dataset is significantly more difficult than labelling objects on an images, because reading texts requires more time and context understanding. Sometimes, only certain people with expertise are capable of curating a golden Q&amp;A dataset, and the task cannot be out sourced to internal or external data labelers.</p>
+<p>Therefore, building proper an evaluation dataset for a GenAI application and updating the dataset can be expensive and slow.</p>
+<h3 id="evaluation-cost">Evaluation cost</h3>
+<p>Even when a good evaluation dataset is built, running tests on it can be challenging. Conventionally, training a ML model can take long time and considerably amount of resources, but inference on the trained model is fast and cheap. However, when evaluating a GenAI application built upon a 3rd party foundation model provider, you will encounter:</p>
+<ul>
+<li>
+<p><strong>API latency</strong>: GenAI foundation model APIs typically have much higher latency than traditional ML model inference. While a conventional ML model might return results in milliseconds, GenAI APIs can take seconds or even minutes for complex prompts. This latency significantly slows down the evaluation process, especially when testing hundreds or thousands of examples.</p>
+</li>
+<li>
+<p><strong>API rate limit</strong>: Most foundation model providers impose strict rate limits on their APIs to manage server load and prevent abuse. These rate limits force you to implement complex batch processing, asynchronous logic, queuing mechanisms, and retry logic in your evaluation pipeline. You may need to spread your evaluation over longer periods or request (and pay for) higher rate limits, further extending the time and cost of thorough testing.</p>
+</li>
+<li>
+<p><strong>API cost</strong>: Even though LLM like GPT4 has decreased significantly, it is still very costly comparing to traditional ML like OCR. Especially, when the input and output of the system contain large size of texts or high-resolution images, the cost of running tests continuously is not economically wise.</p>
+</li>
+</ul>
+<p>Hosting an open-source GenAI foundation model might help you avoid API related issue, but it still requires intense resources and expertise. You might finding your organization spending more money and time on cloud resources and debugging its configuration than using an API from a foundation model provider.</p>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references">References</h2>
 <ul>
@@ -281,10 +300,10 @@
     
     <item>
       <title>Rebuild My Website With GenAI&#39;s Assistance</title>
-      <link>http://localhost:1313/posts/blog-set-up/</link>
+      <link>http://localhost:49602/posts/blog-set-up/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-set-up/</guid>
+      <guid>http://localhost:49602/posts/blog-set-up/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://gytcrt.github.io/&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;personal blog&lt;/a&gt; to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.&lt;/p&gt;
 &lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong&gt;If you are only interested in the part related to GenAI, check out the &lt;a href=&#34;http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms&#34;&gt;&lt;strong&gt;GenAI coding tools section&lt;/strong&gt;&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
@@ -409,10 +428,10 @@
     
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
+      <link>http://localhost:49602/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <guid>http://localhost:49602/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
@@ -432,10 +451,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
+      <link>http://localhost:49602/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <guid>http://localhost:49602/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>
