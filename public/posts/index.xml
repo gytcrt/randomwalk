@@ -138,7 +138,7 @@
 </ul>
 <p>Even the pixel art generation example is trivial itself, the questions regarding evaluation are not trivial. <strong>GenAI models introduce extra unpredictability to your application.</strong></p>
 <p>Besides generative tasks like image generation above, I&rsquo;ve seen GenAI models applied to classification problems by business. Applying GenAI models to classic ML problems also face challenge from unpredictability in evaluation phase. I created following example based on my observation on how businesses have tried to adopt GenAI applications into their workflow.</p>
-<p>A grocery store called Food Coop used to use ML models to classify the category of a new product based on its meta information and description. For example, a new product named &ldquo;cucumber favored Doritos&rdquo; should be classified into &ldquo;Food &gt; Snack Food &gt; Chips&rdquo; category manually or by ML models. Using ML models to process most of new products has saved a lot of manual work from Food Coop&rsquo;s staff. Recently, Food Coop started exploring using LLM to classify new product category, meaning giving product taxonomy and new product information and asking LLM to return the most appropriate category for the new product. Suppose Food Coop&rsquo;s engineer uses the same validation set from previous ML model to test their new LLM classification model, and run the evaluation 10 times on ML models and LLM model, the engineer will get following model score table:</p>
+<p>A grocery store called Food Coop used to use ML models to classify the category of a new product based on its meta information and description. For example, a new product named &ldquo;cucumber favored Doritos&rdquo; should be classified into &ldquo;Food &gt; Snack Food &gt; Chips&rdquo; category manually or by ML models. Using ML models to process most of new products has saved a lot of manual work from the Food Coop&rsquo;s staff. Recently, the Food Coop started exploring using LLM to classify new product category, meaning giving product taxonomy and new product information and asking LLM to return the most appropriate category for the new product. Suppose the Food Coop&rsquo;s engineer uses the same validation set from previous ML model to test their new LLM classification model, and run the evaluation 10 times on ML models and LLM model, the engineer will get following model score table:</p>
 <table>
   <thead>
       <tr>
@@ -152,67 +152,76 @@
       <tr>
           <td>Round 1</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>87%</td>
       </tr>
       <tr>
           <td>Round 2</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>88%</td>
       </tr>
       <tr>
           <td>Round 3</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>92%</td>
       </tr>
       <tr>
           <td>Round 4</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>89%</td>
       </tr>
       <tr>
           <td>Round 5</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>86%</td>
       </tr>
       <tr>
           <td>Round 6</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>93%</td>
       </tr>
       <tr>
           <td>Round 7</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>91%</td>
       </tr>
       <tr>
           <td>Round 8</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>92%</td>
       </tr>
       <tr>
           <td>Round 9</td>
           <td>88%</td>
-          <td>90%</td>
+          <td>91%</td>
           <td>95%</td>
       </tr>
       <tr>
           <td>Round 10</td>
           <td>88%</td>
+          <td>91%</td>
+          <td>94%</td>
+      </tr>
+      <tr>
+          <td>Average</td>
+          <td>88%</td>
+          <td>91%</td>
           <td>90%</td>
-          <td>95%</td>
       </tr>
   </tbody>
 </table>
 <p>The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time.</p>
-<p>How should the Food Coop compare the new LLM classifier with traditional ML models for this classification task?</p>
+<p><strong>How should the Food Coop compare the new LLM classifier with traditional ML models for this classification task?</strong></p>
+<p>In theory, the Food Coop needs to model accuracy of LLM classifier as:</p>
+<p><code>Observed accuracy = Accuracy + variance of the LLM application</code></p>
+<p>In practice, the Food Coop might compare average accuracy of the 3 models and decide the SVM model preforms better than the LLM classifier. However, this is not an ideal approach since many businesses are required to provide expandability to their model outcomes.</p>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references">References</h2>
