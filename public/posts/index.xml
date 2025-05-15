@@ -108,6 +108,7 @@
 <p>I think it&rsquo;s necessary to use LLMs to evaluate LLM applications, but through a carefully design process. I will elaborate on this maybe in another future article.</p>
 <h2 id="genai-foundation-models-introduce-unpredictability">GenAI foundation models introduce unpredictability</h2>
 <p>Unlike traditional ML models, GenAI models are non-deterministic. It means even for the same input, the GenAI models can return different results on different runs. The non-deterministic nature of GenAI models adds extra difficulty on GenAI application evaluations.</p>
+<h3 id="image-generation-example">Image generation example</h3>
 <p>For example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images for my cat. And the prompt is</p>
 <blockquote>
 <p><strong>Pixel art illustration</strong> of a silver-shaded British Shorthair cat playfully fighting with an Amazon Kindle e-reader. The scene is <strong>charming and whimsical</strong>, with the round, fluffy cat using its paws to swipe at or wrestle the sleek Kindle device. Render in detailed 8-bit pixel art style, using cool silver-gray tones for the cat and dark, glossy colors for the Kindle, with a simple, light-colored background.</p></blockquote>
@@ -137,6 +138,7 @@
 <li>Who&rsquo;s there to evaluate the quality of the outputs?</li>
 </ul>
 <p>Even the pixel art generation example is trivial itself, the questions regarding evaluation are not trivial. <strong>GenAI models introduce extra unpredictability to your application.</strong></p>
+<h3 id="classification-example">Classification example</h3>
 <p>Besides generative tasks like image generation above, I&rsquo;ve seen GenAI models applied to classification problems by business. Applying GenAI models to classic ML problems also face challenge from unpredictability in evaluation phase. I created following example based on my observation on how businesses have tried to adopt GenAI applications into their workflow.</p>
 <p>A grocery store called Food Coop used to use ML models to classify the category of a new product based on its meta information and description. For example, a new product named &ldquo;cucumber favored Doritos&rdquo; should be classified into &ldquo;Food &gt; Snack Food &gt; Chips&rdquo; category manually or by ML models. Using ML models to process most of new products has saved a lot of manual work from the Food Coop&rsquo;s staff. Recently, the Food Coop started exploring using LLM to classify new product category, meaning giving product taxonomy and new product information and asking LLM to return the most appropriate category for the new product. Suppose the Food Coop&rsquo;s engineer uses the same validation set from previous ML model to test their new LLM classification model, and run the evaluation 10 times on ML models and LLM model, the engineer will get following model score table:</p>
 <table>
@@ -217,11 +219,51 @@
       </tr>
   </tbody>
 </table>
-<p>The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time.</p>
+<div style="text-align: center; margin-bottom: 20px;">
+<strong><em>Table 1: Accuracy comparison across multiple evaluations for ML models vs LLM classifier</em></strong>
+</div>
+<p>The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time. The fluctuating acc</p>
 <p><strong>How should the Food Coop compare the new LLM classifier with traditional ML models for this classification task?</strong></p>
 <p>In theory, the Food Coop needs to model accuracy of LLM classifier as:</p>
 <p><code>Observed accuracy = Accuracy + variance of the LLM application</code></p>
 <p>In practice, the Food Coop might compare average accuracy of the 3 models and decide the SVM model preforms better than the LLM classifier. However, this is not an ideal approach since many businesses are required to provide expandability to their model outcomes.</p>
+<h3 id="new-bias-variance-paradigm">New bias-variance paradigm</h3>
+<p><a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff">The bias-variance tradeoff</a> is a classic paradigm in supervised machine learning. One of major tasks of ML evaluation is to find the optimal model complexity for a ML problem. The image below is a text-book visualization of the paradigm.</p>
+<figure class="align-center">
+    <a href="Bias_and_variance_contributing_to_total_error.png" 
+       class="glightbox" 
+       data-gallery="gallery1" 
+       data-title="Bias and variance as function of model complexity"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img src="Bias_and_variance_contributing_to_total_error.png" alt="">
+    </a>
+    
+      <figcaption>Bias and variance as function of model complexity</figcaption>
+    
+  </figure>
+  
+<div style="text-align: center; margin-bottom: 20px;">
+<em>Image by Bigbossfarin - Own work, CC0, via <a href="https://commons.wikimedia.org/w/index.php?curid=105307219">Wikimedia Commons</a></em>
+</div>
+<p>However, when GenAI applications are introduced to the paradigm, I think the visualization should be updated as following:
+<figure class="align-center">
+    <a href="new_bias_variance_paradigm.png" 
+       class="glightbox" 
+       data-gallery="gallery1" 
+       data-title="Updated bias and variance as function of model complexity"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img src="new_bias_variance_paradigm.png" alt="">
+    </a>
+    
+      <figcaption>Updated bias and variance as function of model complexity</figcaption>
+    
+  </figure>
+  </p>
+<p>The purple interval around the total error means total error is not a fixed number based on variance and bias anymore, the unpredictability(variance) of GenAI model makes the total error fluctuate within the interval.</p>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references">References</h2>
