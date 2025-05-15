@@ -84,6 +84,26 @@ Here come the questions for evaluation:
 
 Even the pixel art generation example is trivial itself, the questions regarding evaluation are not trivial. **GenAI models introduce extra unpredictability to your application.**
 
+Besides generative tasks like image generation above, I've seen GenAI models applied to classification problems by business. Applying GenAI models to classic ML problems also face challenge from unpredictability in evaluation phase. I created following example based on my observation on how businesses have tried to adopt GenAI applications into their workflow.
+
+A grocery store called Food Coop used to use ML models to classify the category of a new product based on its meta information and description. For example, a new product named "cucumber favored Doritos" should be classified into "Food > Snack Food > Chips" category manually or by ML models. Using ML models to process most of new products has saved a lot of manual work from Food Coop's staff. Recently, Food Coop started exploring using LLM to classify new product category, meaning giving product taxonomy and new product information and asking LLM to return the most appropriate category for the new product. Suppose Food Coop's engineer uses the same validation set from previous ML model to test their new LLM classification model, and run the evaluation 10 times on ML models and LLM model, the engineer will get following model score table:
+| Accuracy | Logistic Regression | SVM | LLM classifier |
+|-----------------|---------------------|-----------------|-----------------|
+| Round 1 | 88% | 90% | 87% |
+| Round 2 | 88% | 90% | 88% |
+| Round 3 | 88% | 90% | 92% |
+| Round 4 | 88% | 90% | 89% |
+| Round 5 | 88% | 90% | 86% |
+| Round 6 | 88% | 90% | 93% |
+| Round 7 | 88% | 90% | 91% |
+| Round 8 | 88% | 90% | 92% |
+| Round 9 | 88% | 90% | 95% |
+| Round 10 | 88% | 90% | 95% |
+
+The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time. 
+
+How should the Food Coop compare the new LLM classifier with traditional ML models for this classification task?  
+
 ## GenAI application evaluation is expensive and time consuming
 
 ## Conclusion 

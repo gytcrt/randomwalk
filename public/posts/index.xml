@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:49602/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Is It Hard To Evaluate GenAI Applications?</title>
-      <link>http://localhost:49602/posts/genai-evaluation-challenge/</link>
+      <link>http://localhost:1313/posts/genai-evaluation-challenge/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49602/posts/genai-evaluation-challenge/</guid>
+      <guid>http://localhost:1313/posts/genai-evaluation-challenge/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;
@@ -137,6 +137,82 @@
 <li>Who&rsquo;s there to evaluate the quality of the outputs?</li>
 </ul>
 <p>Even the pixel art generation example is trivial itself, the questions regarding evaluation are not trivial. <strong>GenAI models introduce extra unpredictability to your application.</strong></p>
+<p>Besides generative tasks like image generation above, I&rsquo;ve seen GenAI models applied to classification problems by business. Applying GenAI models to classic ML problems also face challenge from unpredictability in evaluation phase. I created following example based on my observation on how businesses have tried to adopt GenAI applications into their workflow.</p>
+<p>A grocery store called Food Coop used to use ML models to classify the category of a new product based on its meta information and description. For example, a new product named &ldquo;cucumber favored Doritos&rdquo; should be classified into &ldquo;Food &gt; Snack Food &gt; Chips&rdquo; category manually or by ML models. Using ML models to process most of new products has saved a lot of manual work from Food Coop&rsquo;s staff. Recently, Food Coop started exploring using LLM to classify new product category, meaning giving product taxonomy and new product information and asking LLM to return the most appropriate category for the new product. Suppose Food Coop&rsquo;s engineer uses the same validation set from previous ML model to test their new LLM classification model, and run the evaluation 10 times on ML models and LLM model, the engineer will get following model score table:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Accuracy</th>
+          <th>Logistic Regression</th>
+          <th>SVM</th>
+          <th>LLM classifier</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Round 1</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>87%</td>
+      </tr>
+      <tr>
+          <td>Round 2</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>88%</td>
+      </tr>
+      <tr>
+          <td>Round 3</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>92%</td>
+      </tr>
+      <tr>
+          <td>Round 4</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>89%</td>
+      </tr>
+      <tr>
+          <td>Round 5</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>86%</td>
+      </tr>
+      <tr>
+          <td>Round 6</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>93%</td>
+      </tr>
+      <tr>
+          <td>Round 7</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>91%</td>
+      </tr>
+      <tr>
+          <td>Round 8</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>92%</td>
+      </tr>
+      <tr>
+          <td>Round 9</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>95%</td>
+      </tr>
+      <tr>
+          <td>Round 10</td>
+          <td>88%</td>
+          <td>90%</td>
+          <td>95%</td>
+      </tr>
+  </tbody>
+</table>
+<p>The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time.</p>
+<p>How should the Food Coop compare the new LLM classifier with traditional ML models for this classification task?</p>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references">References</h2>
@@ -150,10 +226,10 @@
     
     <item>
       <title>Rebuild My Website With GenAI&#39;s Assistance</title>
-      <link>http://localhost:49602/posts/blog-set-up/</link>
+      <link>http://localhost:1313/posts/blog-set-up/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49602/posts/blog-set-up/</guid>
+      <guid>http://localhost:1313/posts/blog-set-up/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://gytcrt.github.io/&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;personal blog&lt;/a&gt; to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.&lt;/p&gt;
 &lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong&gt;If you are only interested in the part related to GenAI, check out the &lt;a href=&#34;http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms&#34;&gt;&lt;strong&gt;GenAI coding tools section&lt;/strong&gt;&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
@@ -278,10 +354,10 @@
     
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:49602/posts/random-walk/</link>
+      <link>http://localhost:1313/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49602/posts/random-walk/</guid>
+      <guid>http://localhost:1313/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
@@ -301,10 +377,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:49602/posts/my-second-post/</link>
+      <link>http://localhost:1313/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:49602/posts/my-second-post/</guid>
+      <guid>http://localhost:1313/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>
