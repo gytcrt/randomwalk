@@ -14,10 +14,21 @@
       
       <guid>http://localhost:49602/posts/genai-evaluation-challenge/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lack of framework&lt;/strong&gt;: GenAI application is not GenAI foundation model; it requires different framework to evaluate them. People are not clear about the difference between the two tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unstructured data&lt;/strong&gt;: Unstructured output of GenAI application makes evaluation more difficult than traditional ML system.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Foundation model unpredictability&lt;/strong&gt;: GeanAI foundation model usually brings extra unpredictability into evaluation process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Longer and more costly iteration&lt;/strong&gt;: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;
-&lt;p&gt;Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:&lt;/p&gt;</description>
+&lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
+<ul>
+<li><strong>Lack of framework</strong>: GenAI application is not GenAI foundation model; it requires different framework to evaluate them. People are not clear about the difference between the two tasks.</li>
+<li><strong>Unstructured data</strong>: Unstructured output of GenAI application makes evaluation more difficult than traditional ML system.</li>
+<li><strong>Foundation model unpredictability</strong>: GeanAI foundation model usually brings extra unpredictability into evaluation process.</li>
+<li><strong>Longer and more costly iteration</strong>: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources.</li>
+</ul>
 <h2 id="introduction">Introduction</h2>
 <p>I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.</p>
 <p>Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:</p>

@@ -9,6 +9,10 @@ cover:
     # width: 80%
 ---
 ## TL;DR
+- **Lack of framework**: GenAI application is not GenAI foundation model; it requires different framework to evaluate them. People are not clear about the difference between the two tasks.
+- **Unstructured data**: Unstructured output of GenAI application makes evaluation more difficult than traditional ML system.
+- **Foundation model unpredictability**: GeanAI foundation model usually brings extra unpredictability into evaluation process. 
+- **Longer and more costly iteration**: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources. 
 
 ## Introduction
 I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.
