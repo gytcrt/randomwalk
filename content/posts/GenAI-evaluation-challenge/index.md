@@ -9,19 +9,22 @@ cover:
     # width: 80%
 ---
 ## TL;DR
+Following bullet points summarize the main challenges that make GenAI application evaluation uniquely difficult: 
 - **Lack of framework**: GenAI application is not GenAI foundation model; it requires different framework to evaluate them. 
 - **Unstructured and subjective outputs**: GenAI apps produce unstructured data (text, images, etc.), making objective, automated evaluation far more challenging than for classic ML models.
 - **Foundation model unpredictability**: Foundation models are not deterministic, so repeated runs can yield different results, complicating GenAI application evaluation.
 - **High cost and slow iteration**: Building high-quality evaluation datasets and running continuous and large-scale tests is resource-intensive, both in terms of time and money. 
 
-## Introduction
-I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.
+I will explain each of them in the article below. Feel free to continue if you want to know more details. 
 
-Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:
+## Introduction
+Over the past 2.5 years, I’ve worked closely with businesses to understand their needs, build GenAI applications, and deliver real-world value. This journey has convinced me that the advent of ChatGPT marks a true paradigm shift for ML/AI practitioners—on par with the rise of the personal computer in the 1990s or the modern search engine in the 2000s.”
+
+Before I dive into evaluation of GenAI, I want to clarify a few key terms for this article. These terms are used interchangeable(and sometimes imprecisely), but I found it difficult to have meaningful discussion in the field of AI without clear definitions. Here is how I define them in this article:
 
 {{< figurelightbox src="AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article" caption="What AI, ML, GenAI and LLM mean in this article" align="center" >}}
 
-**Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.** AI is a umbrella term for everything🙃. 
+**Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.** AI is a umbrella term for everything now🙃. 
 
 ## GenAI Model vs GenAI Application Evaluation
 

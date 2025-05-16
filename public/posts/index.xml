@@ -2,36 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:49602/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Is It Hard To Evaluate GenAI Applications?</title>
-      <link>http://localhost:1313/posts/genai-evaluation-challenge/</link>
+      <link>http://localhost:49602/posts/genai-evaluation-challenge/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/genai-evaluation-challenge/</guid>
+      <guid>http://localhost:49602/posts/genai-evaluation-challenge/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Following bullet points summarize the main challenges that make GenAI application evaluation uniquely difficult:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Lack of framework&lt;/strong&gt;: GenAI application is not GenAI foundation model; it requires different framework to evaluate them.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Unstructured and subjective outputs&lt;/strong&gt;: GenAI apps produce unstructured data (text, images, etc.), making objective, automated evaluation far more challenging than for classic ML models.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Foundation model unpredictability&lt;/strong&gt;: Foundation models are not deterministic, so repeated runs can yield different results, complicating GenAI application evaluation.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;High cost and slow iteration&lt;/strong&gt;: Building high-quality evaluation datasets and running continuous and large-scale tests is resource-intensive, both in terms of time and money.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.&lt;/p&gt;</description>
+&lt;p&gt;I will explain each of them in the article below. Feel free to continue if you want to know more details.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
+<p>Following bullet points summarize the main challenges that make GenAI application evaluation uniquely difficult:</p>
 <ul>
 <li><strong>Lack of framework</strong>: GenAI application is not GenAI foundation model; it requires different framework to evaluate them.</li>
 <li><strong>Unstructured and subjective outputs</strong>: GenAI apps produce unstructured data (text, images, etc.), making objective, automated evaluation far more challenging than for classic ML models.</li>
 <li><strong>Foundation model unpredictability</strong>: Foundation models are not deterministic, so repeated runs can yield different results, complicating GenAI application evaluation.</li>
 <li><strong>High cost and slow iteration</strong>: Building high-quality evaluation datasets and running continuous and large-scale tests is resource-intensive, both in terms of time and money.</li>
 </ul>
+<p>I will explain each of them in the article below. Feel free to continue if you want to know more details.</p>
 <h2 id="introduction">Introduction</h2>
-<p>I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.</p>
-<p>Before I dive into evaluation of GenAI, I want to define a few key terms for this article. These terms are used interchangeable and over-used nowadays, but I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definition below:</p>
+<p>Over the past 2.5 years, I’ve worked closely with businesses to understand their needs, build GenAI applications, and deliver real-world value. This journey has convinced me that the advent of ChatGPT marks a true paradigm shift for ML/AI practitioners—on par with the rise of the personal computer in the 1990s or the modern search engine in the 2000s.”</p>
+<p>Before I dive into evaluation of GenAI, I want to clarify a few key terms for this article. These terms are used interchangeable(and sometimes imprecisely), but I found it difficult to have meaningful discussion in the field of AI without clear definitions. Here is how I define them in this article:</p>
 <figure class="align-center">
     <a href="AI-terms.svg" 
        class="glightbox" 
@@ -47,7 +49,7 @@
     
   </figure>
   
-<p><strong>Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.</strong> AI is a umbrella term for everything🙃.</p>
+<p><strong>Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.</strong> AI is a umbrella term for everything now🙃.</p>
 <h2 id="genai-model-vs-genai-application-evaluation">GenAI Model vs GenAI Application Evaluation</h2>
 <p>In my experience, when people talk about GenAI evaluation, they might not be aware that there is significant difference between GenAI foundation model evaluation and GenAI application evaluation. Both of them are on-going and evolving problems in industry and academia. However, GenAI application evaluation is less talked about comparing to GenAI foundation model evaluation.</p>
 <ul>
@@ -313,10 +315,10 @@
     
     <item>
       <title>Rebuild My Website With GenAI&#39;s Assistance</title>
-      <link>http://localhost:1313/posts/blog-set-up/</link>
+      <link>http://localhost:49602/posts/blog-set-up/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-set-up/</guid>
+      <guid>http://localhost:49602/posts/blog-set-up/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://gytcrt.github.io/&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;personal blog&lt;/a&gt; to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.&lt;/p&gt;
 &lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong&gt;If you are only interested in the part related to GenAI, check out the &lt;a href=&#34;http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms&#34;&gt;&lt;strong&gt;GenAI coding tools section&lt;/strong&gt;&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
@@ -441,10 +443,10 @@
     
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
+      <link>http://localhost:49602/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/random-walk/</guid>
+      <guid>http://localhost:49602/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
@@ -464,10 +466,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
+      <link>http://localhost:49602/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <guid>http://localhost:49602/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>
