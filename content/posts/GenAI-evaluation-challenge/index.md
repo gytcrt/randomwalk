@@ -9,10 +9,10 @@ cover:
     # width: 80%
 ---
 ## TL;DR
-- **Lack of framework**: GenAI application is not GenAI foundation model; it requires different framework to evaluate them. People are not clear about the difference between the two tasks.
-- **Unstructured data**: Unstructured output of GenAI application makes evaluation more difficult than traditional ML system.
-- **Foundation model unpredictability**: GeanAI foundation model usually brings extra unpredictability into evaluation process. 
-- **Longer and more costly iteration**: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources. 
+- **Lack of framework**: GenAI application is not GenAI foundation model; it requires different framework to evaluate them. 
+- **Unstructured and subjective outputs**: GenAI apps produce unstructured data (text, images, etc.), making objective, automated evaluation far more challenging than for classic ML models.
+- **Foundation model unpredictability**: Foundation models are not deterministic, so repeated runs can yield different results, complicating GenAI application evaluation.
+- **High cost and slow iteration**: Building high-quality evaluation datasets and running continuous and large-scale tests is resource-intensive, both in terms of time and money. 
 
 ## Introduction
 I have spent last 2.5 years on listening to what business wants from GenAI, building GenAI applications and delivering value from the applications. It has been interesting journey for me, and I realized the advent of ChatGPT is a paradigm shift for ML/AI practitioners like me. I started believe GenAI would change our lives like personal computer in 90s or modern search engine in 2000s.
@@ -161,6 +161,9 @@ Even when a good evaluation dataset is built, running tests on it can be challen
 Hosting an open-source GenAI foundation model might help you avoid API related issue, but it still requires intense resources and expertise. You might finding your organization spending more money and time on cloud resources and debugging its configuration than using an API from a foundation model provider. 
 
 ## Conclusion 
+Evaluating GenAI applications is a different challenge than evaluating traditional machine learning systems or even GenAI foundation models themselves. The unstructured nature of GenAI outputs, the inherent unpredictability of foundation models, and the high cost and effort required to build robust evaluation datasets all contribute to this complexity. While automated tools and LLM-based evaluators can help, they are not a panacea and must be used thoughtfully to avoid introducing new sources of error or bias.
+
+In future articles, I would love to deep dive into my advice on GenAI application evaluation. 
 
 ## References
 
