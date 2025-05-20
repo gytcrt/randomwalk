@@ -81,6 +81,10 @@ In this example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images
 
 > **Pixel art illustration** of a silver-shaded British Shorthair cat playfully fighting with an Amazon Kindle e-reader. The scene is **charming and whimsical**, with the round, fluffy cat using its paws to swipe at or wrestle the sleek Kindle device. Render in detailed 8-bit pixel art style, using cool silver-gray tones for the cat and dark, glossy colors for the Kindle, with a simple, light-colored background.
 
+| ![British shorthair vs Kindle 1](british_shorthair_vs_kindle_2.png) | ![British shorthair vs Kindle 2](british_shorthair_vs_kindle_3.png) | ![British shorthair vs Kindle 3](british_shorthair_vs_kindle_4.png) | ![British shorthair vs Kindle 4](british_shorthair_vs_kindle_5.png) |
+|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| *image 1* | *image 2* | *image 3* | *image 4* |
+
 Among the 4 pixel images, I personally prefer image 2. I find Image 3 too realistic and unlike actual pixel art. The cat in image 4 seems quite concerned and the scene is not charming or whimsical. Image 1 is obviously incoherent.
 
 Here are the questions for evaluation:
