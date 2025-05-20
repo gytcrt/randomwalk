@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Random Walk</title>
-    <link>http://localhost:49602/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:49602/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Is It Hard To Evaluate GenAI Applications?</title>
-      <link>http://localhost:49602/posts/genai-evaluation-challenge/</link>
+      <link>http://localhost:1313/posts/genai-evaluation-challenge/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49602/posts/genai-evaluation-challenge/</guid>
+      <guid>http://localhost:1313/posts/genai-evaluation-challenge/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;Following bullet points summarize the main challenges that make GenAI application evaluation uniquely difficult:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Lack of framework&lt;/strong&gt;: GenAI application is not GenAI foundation model; it requires different framework to evaluate them.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Unstructured and subjective outputs&lt;/strong&gt;: GenAI apps produce unstructured data (text, images, etc.), making objective, automated evaluation far more challenging than for classic ML models.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Foundation model unpredictability&lt;/strong&gt;: Foundation models are not deterministic, so repeated runs can yield different results, complicating GenAI application evaluation.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;High cost and slow iteration&lt;/strong&gt;: Building high-quality evaluation datasets and running continuous and large-scale tests is resource-intensive, both in terms of time and money.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lack of framework&lt;/strong&gt;: A GenAI application is not a GenAI foundation model; different frameworks are required to evaluate them. There may be a lack of clarity on the difference between the two tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unstructured data&lt;/strong&gt;: The unstructured output of a GenAI application makes evaluation more difficult than a traditional ML system.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Foundation model unpredictability&lt;/strong&gt;: GenAI foundation model usually introduces extra unpredictability into the evaluation process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Longer and more costly iteration&lt;/strong&gt;: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I will explain each of them in the article below. Feel free to continue if you want to know more details.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
 <p>Following bullet points summarize the main challenges that make GenAI application evaluation uniquely difficult:</p>
 <ul>
-<li><strong>Lack of framework</strong>: GenAI application is not GenAI foundation model; it requires different framework to evaluate them.</li>
-<li><strong>Unstructured and subjective outputs</strong>: GenAI apps produce unstructured data (text, images, etc.), making objective, automated evaluation far more challenging than for classic ML models.</li>
-<li><strong>Foundation model unpredictability</strong>: Foundation models are not deterministic, so repeated runs can yield different results, complicating GenAI application evaluation.</li>
-<li><strong>High cost and slow iteration</strong>: Building high-quality evaluation datasets and running continuous and large-scale tests is resource-intensive, both in terms of time and money.</li>
+<li><strong>Lack of framework</strong>: A GenAI application is not a GenAI foundation model; different frameworks are required to evaluate them. There may be a lack of clarity on the difference between the two tasks.</li>
+<li><strong>Unstructured data</strong>: The unstructured output of a GenAI application makes evaluation more difficult than a traditional ML system.</li>
+<li><strong>Foundation model unpredictability</strong>: GenAI foundation model usually introduces extra unpredictability into the evaluation process.</li>
+<li><strong>Longer and more costly iteration</strong>: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources.</li>
 </ul>
 <p>I will explain each of them in the article below. Feel free to continue if you want to know more details.</p>
 <h2 id="introduction">Introduction</h2>
-<p>Over the past 2.5 years, I’ve worked closely with businesses to understand their needs, build GenAI applications, and deliver real-world value. This journey has convinced me that the advent of ChatGPT marks a true paradigm shift for ML/AI practitioners—on par with the rise of the personal computer in the 1990s or the modern search engine in the 2000s.”</p>
-<p>Before I dive into evaluation of GenAI, I want to clarify a few key terms for this article. These terms are used interchangeable(and sometimes imprecisely), but I found it difficult to have meaningful discussion in the field of AI without clear definitions. Here is how I define them in this article:</p>
+<p>I have spent the last two and a half years listening to what businesses want from GenAI, building GenAI applications, and delivering value from the applications. It has been an interesting journey, as I realized the advent of ChatGPT constitutes a paradigm shift for ML/AI practitioners like me. I started to believe that GenAI would change our lives, similar to personal computers in the 90s or the modern search engine in the 2000s.</p>
+<p>Before I dive into the evaluation of GenAI, I want to define a few key terms. Considering how these terms are often over-used or used interchangeably in recent discussions, I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definitions below:</p>
 <figure class="align-center">
     <a href="AI-terms.svg" 
        class="glightbox" 
@@ -49,26 +49,26 @@
     
   </figure>
   
-<p><strong>Essentially, ML is what we are used to and have been evaluating in last decades, and GenAI and LLM are the new technology we want to evaluate against.</strong> AI is a umbrella term for everything now🙃.</p>
+<p>Essentially, ML is what we are used to and have been evaluating over the past decades, and GenAI and LLM are the new technologies we want to evaluate against. AI is a umbrella term for everything🙃.</p>
 <h2 id="genai-model-vs-genai-application-evaluation">GenAI Model vs GenAI Application Evaluation</h2>
-<p>In my experience, when people talk about GenAI evaluation, they might not be aware that there is significant difference between GenAI foundation model evaluation and GenAI application evaluation. Both of them are on-going and evolving problems in industry and academia. However, GenAI application evaluation is less talked about comparing to GenAI foundation model evaluation.</p>
+<p>In my experience, when people talk about GenAI evaluation, they might not be aware that there is a significant difference between GenAI foundation model evaluation and GenAI application evaluation. Both of them are ongoing and evolving problems in industry and academia. However, GenAI application evaluation is discussed less in comparison to GenAI foundation model evaluation.</p>
 <ul>
 <li><strong>GenAI foundation model evaluation</strong>: evaluation and benchmarking of foundation models like GPT-4, Dall-E, and Sora, etc.</li>
 <li><strong>GenAI application evaluation</strong>:
 <ul>
 <li>Evaluation and measurement of application enabled by GenAI foundation models like Cursor, a customized call center AI chatbot, etc.</li>
-<li>Foundation models are critical part of the GenAI application, but other modules like a vector database or external tools in the application significantly impact the performance of the whole application as well.</li>
+<li>Foundation models are a critical part of the GenAI application, but other modules like a vector database or external tools in the application significantly impact the performance of the whole application as well.</li>
 </ul>
 </li>
 </ul>
-<p><strong>Not distinguishing the difference between GenAI foundation models and GenAI applications is one of the reasons leading to challenging GenAI application evaluation.</strong> For example, you might use the latest and best LLM model to build a customer service chatbot using a RAG architecture. But if the knowledge base stored in the vector database is not well engineered, I&rsquo;m confident that whole customer service chatbot will underperform your expectation.</p>
-<p>There are many academic articles and blogs detailing GenAI foundation model evaluation already. I will link some helpful ones in references section, and focus this article on GenAI application evaluation.</p>
-<p>However, as the architecture diagram shown below, a GenAI application is a software application built with GenAI foundation model/models along with other modules. Generally, the objective of a GenAI application is to make end user&rsquo;s life easier by improving their producibility or automate some processes. It usually contains some system logic layer and interface layer. The system logic layer contains internal and external tools, databases, pipeline, and business logic, etc. The interface layer is where the application communicates with the end users. It could be a chatbot UI or command line tool.</p>
-<p>To evaluate a GenAI application end to end is to understand:</p>
+<p><strong>Not distinguishing the difference between GenAI foundation models and GenAI applications is one of the reasons leading to challenging GenAI application evaluation.</strong> For example, you might use the latest and best LLM model to build a customer service chatbot using a RAG architecture. But if the knowledge base stored in the vector database is not well engineered, I&rsquo;m confident that the whole customer service chatbot will underperform your expectations.</p>
+<p>There are already plenty of academic articles and blogs detailing GenAI foundation model evaluation. I will link some helpful ones in the references section, and focus this article on GenAI application evaluation.</p>
+<p>However, as the architecture diagram shows below, a GenAI application is a software application built with GenAI foundation model/models along with other modules. Generally, the objective of a GenAI application is to make end user&rsquo;s life easier by improving their producibility or automating some processes. It usually contains some system logic layer and interface layer. The system logic layer contains internal and external tools, databases, pipeline, and business logic, etc. The interface layer is where the application communicates with the end users. It could be a chatbot UI or command line tool.</p>
+<p>To evaluate a GenAI application end-to-end is to understand:</p>
 <ul>
-<li><strong>Quantifiable Benefit</strong>: how much incremental gain the application brings to target end users. For example, if an AI coding tool can improve engineers productivity by 50%, it can (ideally) translate to 50% revenue gain.</li>
-<li><strong>Isolate and Evaluate</strong>: Build a framework to independently evaluate the performance of each module in the architecture diagram, so that you can identify where the gaps are in the system and improve upon the result.</li>
-<li><strong>Cost of adopting GenAI</strong>: Evaluate the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeller cost, and iteration opportunity cost, etc.</li>
+<li><strong>Quantifiable benefit</strong>: how much incremental gain the application brings to target end users. For example, if an AI coding tool can improve engineers productivity by 50%, it can (ideally) translate to 50% revenue gain.</li>
+<li><strong>Isolating and evaluating</strong>: building a framework to independently evaluate the performance of each module in the architecture diagram, so that you can identify gaps in the system and improve upon the result.</li>
+<li><strong>Cost of adopting GenAI</strong>: evaluating the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeller cost, and iteration opportunity cost, etc.</li>
 </ul>
 <figure class="align-center">
     <a href="GenAI-abstract-architecture.svg" 
@@ -87,10 +87,10 @@
   
 <p>After I explained what GenAI application evaluation entails, I hope you&rsquo;ve realized it&rsquo;s an inherently complex problem. This article aims to demystify the problem.</p>
 <h2 id="evaluating-text-image-or-other-media-as-output">Evaluating text, image, or other media as output</h2>
-<p>Most classic machine learning problems fall into 2 categories: <strong>Classification</strong> or <strong>Regression</strong>. When we encounter a real world problem, and want to use machine learning to solve it, we usually start with translating the problem to the classic machine learning framework.</p>
-<p>Classification and regression have standard evaluation metrics like confusion matrix, accuracy, precision/recall, and R square, etc. If you are interested to read more, please refer to <a href="https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks">ML cheatsheet reference</a>. There are more nuanced derivative metrics for different types of problems like precision@k and <a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain">NDCG@K</a> for ranking problem. <strong>The classic metrics all share one similarity: they are easily quantifiable via testing set. However, it&rsquo;s not the case for GenAI applications.</strong></p>
-<p>For many GenAI applications, their outputs are texts, images, or videos, etc. They are <a href="https://www.mongodb.com/resources/basics/unstructured-data"><strong>unstructured data</strong></a>. On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use LLM applications as an example to explain it, and outputs of LLM applications are majorly texts.</p>
-<p>The following table is a few selected and widely used LLM application metrics with examples. Unlike metrics for classification or regression models, quantifying the LLM metrics is not a simple string comparison or arithmetical calculations. Evaluating metrics like Relevancy, Bias and Hallucination requires a lot of careful design, context understanding and even expertise. For example, if a LLM application is used for medical context, it would be difficult for someone without medical adequate training to evaluate relevancy and hallucination for the application.</p>
+<p>Most classic machine learning problems fall into two categories: <strong>Classification</strong> or <strong>Regression</strong>. When we encounter a real world problem and want to use machine learning to solve it, we usually start with translating the problem to the classic machine learning framework.</p>
+<p>Classification and regression have standard evaluation metrics like confusion matrix, accuracy, precision/recall, and R square, etc. If you are interested to read more, please refer to <a href="https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks">ML cheatsheet reference</a>. There are more nuanced derivative metrics for different types of problems like precision@k and <a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain">NDCG@K</a> for ranking problems. <strong>The classic metrics all share one similarity: they are easily quantifiable via testing sets. However, it&rsquo;s not the case for GenAI applications.</strong></p>
+<p>For many GenAI applications, their outputs are texts, images, or videos, etc. They are <a href="https://www.mongodb.com/resources/basics/unstructured-data"><strong>unstructured data</strong></a>. On the one hand, the new types of output format are part of GenAI magic. People can easily use natural language to interact with ML/AI technology now. On the other hand, the unstructured data formats make GenAI application evaluation more challenging than traditional ML models. For simplicity, I will use LLM applications as an example to explain the complexity of evaluating unstructured data, and outputs of LLM applications are majorly texts.</p>
+<p>The following table is a few selected and widely used LLM application metrics with examples. Unlike metrics for classification or regression models, quantifying the LLM metrics is not a simple string comparison or arithmetical calculations. Evaluating metrics like Relevancy, Bias, and Hallucination requires a lot of careful design, context understanding, and even domain expertise. For example, if a LLM application is used within a medical context, it would be difficult for someone without adequate medical training to evaluate relevancy and hallucination for the application.</p>
 <table>
   <thead>
       <tr>
@@ -107,56 +107,41 @@
       </tr>
       <tr>
           <td><strong>Bias</strong></td>
-          <td>Whether the application outputs biases against certain gender, races or other protected groups.</td>
+          <td>Whether the application outputs biases against certain gender, races, or other protected groups.</td>
           <td>You use a LLM application to generate descriptions for job roles. <br> <strong>Bias:</strong> If it consistently describes &ldquo;nurses&rdquo; with feminine pronouns and &ldquo;engineers&rdquo; with masculine pronouns.</td>
       </tr>
       <tr>
           <td><strong>Hallucination</strong></td>
-          <td>Whether the LLM application confidently states something as fact that is incorrect, nonsensical, or made-up.</td>
-          <td>You ask: &ldquo;What was our company&rsquo;s Q3 revenue last year in the APAC region?&rdquo; <br> <strong>Hallucination:</strong> The LLM replies &ldquo;$5.7 million from our new Tokyo office,&rdquo; when your company has no Tokyo office and revenue was different.</td>
+          <td>Whether the LLM application confidently states as fact something that is incorrect, nonsensical, or made-up.</td>
+          <td>You ask: &ldquo;What was our company&rsquo;s Q3 revenue last year in the APAC region?&rdquo; <br> <strong>Hallucination:</strong> The LLM replies &ldquo;$5.7 million from our new Tokyo office,&rdquo; even though your company has no Tokyo office and different revenue.</td>
       </tr>
   </tbody>
 </table>
 <div style="text-align: center; margin-bottom: 20px;">
 <strong><em>Table 1: Common evaluation metrics for LLM applications with examples</em></strong>
 </div>
-<p>Given the complex nature of LLM application evaluation, many people started using LLMs to evaluate output of their LLM application. Many GenAI evaluation packages like <a href="https://www.deepeval.com/">DeepEval</a> and <a href="https://github.com/BCG-X-Official/artkit">ARTKIT</a> offer automated AI evaluation (I have participated in the development of ARTKIT). I do think using LLM to evaluate LLM applications is necessary and helpful, given the amount of output data can be beyond human&rsquo;s capacity to process and LLMs are generally good at language understanding. <strong>However, I think overly relying on LLMs to evaluate LLM application is not realistic and even dangerous.</strong> No matter whether you are using the same family of LLMs to evaluate your LLM application (OpenAI GPTs to evaluate application built on OpenAI GPTs), or using different LLMs to evaluate the LLM application(Google Gemini to evaluate application built on OpenAI GPTs), you are essentially introducing another LLM while evaluating the target LLM application. Would you assume the evaluator LLM&rsquo;s outputs are 100% correct or would you build another evaluation process to evaluate the evaluator LLM? :) The problem become more philosophical now.</p>
-<p>I think it&rsquo;s necessary to use LLMs to evaluate LLM applications, but through a carefully design process. I will elaborate on this maybe in another future article.</p>
+<p>Given the complex nature of LLM application evaluation, many people have started using LLMs to evaluate the output of their LLM application. Many GenAI evaluation packages like <a href="https://www.deepeval.com/">DeepEval</a> and <a href="https://github.com/BCG-X-Official/artkit">ARTKIT</a> offer automated AI evaluation (Disclaimer: I have participated in the development of ARTKIT). I do think using LLMs to evaluate LLM applications is necessary and helpful, given the high amount of output data to process and LLM&rsquo;s adept language understanding.</p>
+<p>However, I think overly relying on LLMs to evaluate LLM applications is not realistic and even potentially dangerous. Whether you are using the same family of LLMs to evaluate your LLM application (OpenAI GPTs to evaluate application built on OpenAI GPTs), or using different LLMs to evaluate the LLM application (Google Gemini to evaluate application built on OpenAI GPTs), you are essentially introducing another LLM while evaluating the target LLM application. Would you assume the evaluator LLM&rsquo;s outputs are 100% correct or would you build another evaluation process to evaluate the evaluator LLM? :) The problem becomes more philosophical now.</p>
+<p>I do think it&rsquo;s necessary to use LLMs to evaluate LLM applications, but through a carefully designed process (this may be the topic of a future article!).</p>
 <h2 id="genai-foundation-models-introduce-unpredictability">GenAI foundation models introduce unpredictability</h2>
-<p>Unlike traditional ML models, GenAI models are non-deterministic. It means even for the same input, the GenAI models can return different results on different runs. The non-deterministic nature of GenAI models adds extra difficulty on GenAI application evaluations.</p>
+<p>Unlike traditional ML models, GenAI models are non-deterministic. This means that even for the same input, the GenAI models can return different results on different runs. The non-deterministic nature of GenAI models adds extra difficulty to GenAI application evaluations.</p>
 <h3 id="image-generation-example">Image generation example</h3>
-<p>For example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images for my cat. And the prompt is</p>
+<p>In this example, I used the same prompt and OpenAI Dall-E 3 to generate 4 images for my cat. The prompt is as follows:</p>
 <blockquote>
 <p><strong>Pixel art illustration</strong> of a silver-shaded British Shorthair cat playfully fighting with an Amazon Kindle e-reader. The scene is <strong>charming and whimsical</strong>, with the round, fluffy cat using its paws to swipe at or wrestle the sleek Kindle device. Render in detailed 8-bit pixel art style, using cool silver-gray tones for the cat and dark, glossy colors for the Kindle, with a simple, light-colored background.</p></blockquote>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_2.png" type="" alt="British shorthair vs Kindle 1"  /></th>
-          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_3.png" type="" alt="British shorthair vs Kindle 2"  /></th>
-          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_4.png" type="" alt="British shorthair vs Kindle 3"  /></th>
-          <th style="text-align: center"><img loading="lazy" src="/posts/genai-evaluation-challenge/british_shorthair_vs_kindle_5.png" type="" alt="British shorthair vs Kindle 4"  /></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: center"><em>image 1</em></td>
-          <td style="text-align: center"><em>image 2</em></td>
-          <td style="text-align: center"><em>image 3</em></td>
-          <td style="text-align: center"><em>image 4</em></td>
-      </tr>
-  </tbody>
-</table>
-<p>Among the 4 pixel images, I personally prefer image 2. Image 3 is too realistic and not like a pixel art. The cat in image 4 seems quite concerned and the scene is not charming or whimsical. As for image 1, it&rsquo;s obviously an incoherent image.</p>
-<p>Here come the questions for evaluation:</p>
+<p>Among the 4 pixel images, I personally prefer image 2. I find Image 3 too realistic and unlike actual pixel art. The cat in image 4 seems quite concerned and the scene is not charming or whimsical. Image 1 is obviously incoherent.</p>
+<p>Here are the questions for evaluation:</p>
 <ul>
-<li>How do I evaluate the image outputs?</li>
-<li>Should I use the best output (image 2) or worst output (image 1)?</li>
+<li>What is the process and metrics to evaluate the outputs?</li>
+<li>What are the dimensions to consider when evaluating the images? (E.g. how is the image close to the description in the prompt?)</li>
+<li>How should I evaluate the output if I only generate one image, and the output is image 1?</li>
 <li>Who&rsquo;s there to evaluate the quality of the outputs?</li>
 </ul>
-<p>Even the pixel art generation example is trivial itself, the questions regarding evaluation are not trivial. <strong>GenAI models introduce extra unpredictability to your application.</strong></p>
+<p>Though the pixel art generation example itself may be trivial, the questions regarding evaluation are not. When the number of outputs grows from 4 images to 10K images in a business setting, a robust and reproducible evaluation process is required. <strong>GenAI models introduce extra unpredictability to your application.</strong></p>
 <h3 id="classification-example">Classification example</h3>
-<p>Besides generative tasks like image generation above, I&rsquo;ve seen GenAI models applied to classification problems by business. Applying GenAI models to classic ML problems also face challenge from unpredictability in evaluation phase. I created following example based on my observation on how businesses have tried to adopt GenAI applications into their workflow.</p>
-<p>A grocery store called Food Coop used to use ML models to classify the category of a new product based on its meta information and description. For example, a new product named &ldquo;cucumber favored Doritos&rdquo; should be classified into &ldquo;Food &gt; Snack Food &gt; Chips&rdquo; category manually or by ML models. Using ML models to process most of new products has saved a lot of manual work from the Food Coop&rsquo;s staff. Recently, the Food Coop started exploring using LLM to classify new product category, meaning giving product taxonomy and new product information and asking LLM to return the most appropriate category for the new product. Suppose the Food Coop&rsquo;s engineer uses the same validation set from previous ML model to test their new LLM classification model, and run the evaluation 10 times on ML models and LLM model, the engineer will get following model score table:</p>
+<p>Besides generative tasks like image generation, I&rsquo;ve seen GenAI models applied to classification problems by business. Applying GenAI models to classic ML problems also poses challenges from unpredictability in the evaluation phase. I created the following example based on my observation on how businesses have tried to adopt GenAI applications into their workflow.</p>
+<p>A grocery store called Food Coop previously used ML models to classify the category of a new product based on its meta information and description. For example, a new product named &ldquo;cucumber flavored Doritos&rdquo; should be classified as &ldquo;Food &gt; Snack Food &gt; Chips&rdquo; manually or by ML models. Using ML models to process most new products has saved the Food Coop&rsquo;s staff from having to input it manually.</p>
+<p>Recently, the Food Coop has started exploring using LLM to classify new products, by giving product taxonomy and new product information and asking the LLM to return the most appropriate category for the new product. If the Food Coop&rsquo;s engineer uses the same validation set from previous ML model to test their new LLM classification model, and runs the evaluation 10 times on both types of models, the engineer will get following model score table:</p>
 <table>
   <thead>
       <tr>
@@ -238,13 +223,13 @@
 <div style="text-align: center; margin-bottom: 20px;">
 <strong><em>Table 2: Accuracy comparison across multiple evaluations for ML models vs LLM classifier</em></strong>
 </div>
-<p>The accuracy stays consistent for logistic regression model and SVM, since they are deterministic models and the validation set is unchanged through out 10 rounds. However, the accuracy of LLM classifier fluctuates over time. The fluctuating acc</p>
+<p>The accuracy stays consistent for the logistic regression model and SVM, since they are deterministic models and the validation set is unchanged across 10 rounds. However, the accuracy of the LLM classifier fluctuates over time.</p>
 <p><strong>How should the Food Coop compare the new LLM classifier with traditional ML models for this classification task?</strong></p>
-<p>In theory, the Food Coop needs to model accuracy of LLM classifier as:</p>
+<p>In theory, the Food Coop needs to model the accuracy of the LLM classifier as:</p>
 <p><code>Observed accuracy = Accuracy + variance of the LLM application</code></p>
-<p>In practice, the Food Coop might compare average accuracy of the 3 models and decide the SVM model preforms better than the LLM classifier. However, this is not an ideal approach since many businesses are required to provide expandability to their model outcomes.</p>
+<p>In practice, the Food Coop might compare the average accuracy of the three models and decide that the SVM model performs better than the LLM classifier. However, this approach is not ideal since many businesses are required to provide expandability to their model outcomes and the public don&rsquo;t appreciate randomness on critical tasks.</p>
 <h3 id="new-bias-variance-paradigm">New bias-variance paradigm</h3>
-<p><a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff">The bias-variance tradeoff</a> is a classic paradigm in supervised machine learning. One of major tasks of ML evaluation is to find the optimal model complexity for a ML problem. The image below is a text-book visualization of the paradigm.</p>
+<p><a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff">The bias-variance tradeoff</a> is a classic paradigm in supervised machine learning. One of the major tasks of ML evaluation is to find the optimal model complexity for a ML problem. The image below is a text-book visualization of the paradigm.</p>
 <figure class="align-center">
     <a href="Bias_and_variance_contributing_to_total_error.png" 
        class="glightbox" 
@@ -263,7 +248,7 @@
 <div style="text-align: center; margin-bottom: 20px;">
 <em>Image by Bigbossfarin - Own work, CC0, via <a href="https://commons.wikimedia.org/w/index.php?curid=105307219">Wikimedia Commons</a></em>
 </div>
-<p>However, when GenAI applications are introduced to the paradigm, I think the visualization should be updated as following:
+<p>However, when GenAI applications are introduced to the paradigm, I think the visualization should be updated as follows:
 <figure class="align-center">
     <a href="new_bias_variance_paradigm.png" 
        class="glightbox" 
@@ -279,30 +264,24 @@
     
   </figure>
   </p>
-<p>The purple interval around the total error means total error is not a fixed number based on variance and bias anymore, the unpredictability(variance) of GenAI model makes the total error fluctuate within the interval. In Table 2 example, the purple interval represents the variance of accuracy of the same LLM classifier.</p>
+<p>The purple interval around the total error means the total error is not a fixed number based on variance and bias anymore; the unpredictability (variance) of the GenAI model makes the total error fluctuate within the interval. In Table 2, the purple interval represents the variance in accuracy of the same LLM classifier.</p>
 <p>By comparing the two paradigms, I hope the complexity of GenAI application evaluation is more clear to you.</p>
 <h2 id="genai-application-evaluation-is-expensive-and-time-consuming">GenAI application evaluation is expensive and time consuming</h2>
-<p>Besides the complexities elaborated above, building an proper process to evaluate a GenAI application is also expensive and time consuming.</p>
-<p>The best practice of developing a machine learning system is to start from proof-of-concept and built towards <a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">continuous delivery and automation pipelines</a> over time. The same framework can be adopted to GenAI application as well. <strong>The modern MLOps practice requires you to test your application on data, improve your application, generate new test data, and iterate the process rapidly.</strong> If one iteration of evaluation is costly and slow, continuous iteration is naturally challenging.</p>
+<p>Besides the complexities elaborated above, building a proper process to evaluate a GenAI application is also expensive and time consuming.</p>
+<p>The best practice of developing a machine learning system is to start from proof-of-concept and build towards <a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">continuous delivery and automation pipelines</a> over time. The same framework can be adopted to GenAI applications as well. <strong>The modern MLOps practice requires that you test your application on data, improve your application, generate new test data, and iterate the process rapidly.</strong> If one iteration of evaluation is costly and slow, continuous iteration naturally becomes challenging.</p>
 <h3 id="evaluation-dataset-building">Evaluation dataset building</h3>
-<p>However, generating evaluation dataset or golden dataset for GenAI application and iterating on it is more complex than previous ML systems. For example, if you want to build an effective GenAI Q&amp;A system, you have to build a list of golden Q&amp;A dataset to test your system. Curating a high-quality golden Q&amp;A dataset is significantly more difficult than labelling objects on an images, because reading texts requires more time and context understanding. Sometimes, only certain people with expertise are capable of curating a golden Q&amp;A dataset, and the task cannot be out sourced to internal or external data labelers.</p>
-<p>Therefore, building proper an evaluation dataset for a GenAI application and updating the dataset can be expensive and slow.</p>
+<p>However, generating evaluation datasets or golden datasets for GenAI applications and iterating upon them is more complex than previous ML systems. For example, if you want to build an effective GenAI Q&amp;A system, you must build a list of golden Q&amp;A datasets to test your system. Curating a high-quality golden Q&amp;A dataset is significantly more difficult than labelling objects on images, because reading text requires more time and context understanding. Sometimes, only certain people with expertise are capable of curating a golden Q&amp;A dataset, and the task cannot be outsourced to internal or external data labelers.</p>
+<p>Therefore, building a proper evaluation dataset for a GenAI application and updating the dataset can be expensive and slow.</p>
 <h3 id="evaluation-cost">Evaluation cost</h3>
-<p>Even when a good evaluation dataset is built, running tests on it can be challenging. Conventionally, training a ML model can take long time and considerably amount of resources, but inference on the trained model is fast and cheap. However, when evaluating a GenAI application built upon a 3rd party foundation model provider, you will encounter:</p>
+<p>Even when a good evaluation dataset is built, running tests on it can be challenging. Conventionally training a ML model can take a long time and a considerable amount of resources, but inference on the trained model is fast and cheap. However, when evaluating a GenAI application built upon a third party foundation model provider, you will encounter:</p>
 <ul>
-<li>
-<p><strong>API latency</strong>: GenAI foundation model APIs typically have much higher latency than traditional ML model inference. While a conventional ML model might return results in milliseconds, GenAI APIs can take seconds or even minutes for complex prompts. This latency significantly slows down the evaluation process, especially when testing hundreds or thousands of examples.</p>
-</li>
-<li>
-<p><strong>API rate limit</strong>: Most foundation model providers impose strict rate limits on their APIs to manage server load and prevent abuse. These rate limits force you to implement complex batch processing, asynchronous logic, queuing mechanisms, and retry logic in your evaluation pipeline. You may need to spread your evaluation over longer periods or request (and pay for) higher rate limits, further extending the time and cost of thorough testing.</p>
-</li>
-<li>
-<p><strong>API cost</strong>: Even though LLM like GPT4 has decreased significantly, it is still very costly comparing to traditional ML like OCR. Especially, when the input and output of the system contain large size of texts or high-resolution images, the cost of running tests continuously is not economically wise.</p>
-</li>
+<li><strong>API latency</strong>: GenAI foundation model APIs typically have much higher latency than traditional ML model inference. While a conventional ML model might return results in milliseconds, GenAI APIs can take seconds or even minutes for complex prompts. This latency significantly slows down the evaluation process, especially when testing hundreds or thousands of examples.</li>
+<li><strong>API rate limit</strong>: Most foundation model providers impose strict rate limits on their APIs to manage server load and prevent abuse. These rate limits force you to implement complex batch processing, asynchronous logic, queuing mechanisms, and retry logic in your evaluation pipeline. You may need to spread your evaluation over longer periods or request (and pay for) higher rate limits, further extending the time and cost of thorough testing.</li>
+<li><strong>API cost</strong>: Even though a LLM like GPT4 has decreased significantly, it is still very costly compared to a traditional ML like OCR. Especially when the input and output of the system contain large amounts of text or high-resolution images, the cost of running tests continuously is not economically wise.</li>
 </ul>
-<p>Hosting an open-source GenAI foundation model might help you avoid API related issue, but it still requires intense resources and expertise. You might finding your organization spending more money and time on cloud resources and debugging its configuration than using an API from a foundation model provider.</p>
+<p>Hosting an open-source GenAI foundation model might help you avoid API-related issues, but it still requires intense resources and expertise. You might find your organization spending more money and time on cloud resources and debugging its configuration than using an API from a foundation model provider.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Evaluating GenAI applications is a different challenge than evaluating traditional machine learning systems or even GenAI foundation models themselves. The unstructured nature of GenAI outputs, the inherent unpredictability of foundation models, and the high cost and effort required to build robust evaluation datasets all contribute to this complexity. While automated tools and LLM-based evaluators can help, they are not a panacea and must be used thoughtfully to avoid introducing new sources of error or bias.</p>
+<p>Evaluating GenAI applications is a different challenge than evaluating traditional machine learning systems or even GenAI foundation models themselves. The unstructured nature of GenAI outputs, the inherent unpredictability of foundation models, and the high cost and effort required to build robust evaluation datasets all contribute to this complexity. While automated tools and LLM-based evaluators can help, they are not a silver bullet and must be used thoughtfully to avoid introducing new sources of error or bias.</p>
 <p>In future articles, I would love to deep dive into my advice on GenAI application evaluation.</p>
 <h2 id="references">References</h2>
 <ul>
@@ -315,10 +294,10 @@
     
     <item>
       <title>Rebuild My Website With GenAI&#39;s Assistance</title>
-      <link>http://localhost:49602/posts/blog-set-up/</link>
+      <link>http://localhost:1313/posts/blog-set-up/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49602/posts/blog-set-up/</guid>
+      <guid>http://localhost:1313/posts/blog-set-up/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://gytcrt.github.io/&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;personal blog&lt;/a&gt; to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.&lt;/p&gt;
 &lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong&gt;If you are only interested in the part related to GenAI, check out the &lt;a href=&#34;http://localhost:1313/posts/blog-set-up/#genai-coding-tools-cursor--dall-e-3--runway--llms&#34;&gt;&lt;strong&gt;GenAI coding tools section&lt;/strong&gt;&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
@@ -443,10 +422,10 @@
     
     <item>
       <title>A Random Walk</title>
-      <link>http://localhost:49602/posts/random-walk/</link>
+      <link>http://localhost:1313/posts/random-walk/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49602/posts/random-walk/</guid>
+      <guid>http://localhost:1313/posts/random-walk/</guid>
       <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p&gt;
 &lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
@@ -466,10 +445,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:49602/posts/my-second-post/</link>
+      <link>http://localhost:1313/posts/my-second-post/</link>
       <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
       
-      <guid>http://localhost:49602/posts/my-second-post/</guid>
+      <guid>http://localhost:1313/posts/my-second-post/</guid>
       <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
 ]]></content:encoded>
