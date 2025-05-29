@@ -1,7 +1,7 @@
 ---
 date: 2025-05-28
-draft: true 
-title: 'Will our next generation lose their own writing voice because of growing up with LLMs?'
+draft: false 
+title: 'Will our next generation lose their own writing voice because of LLMs?'
 tags: ["non-tech", "GenAI", "AI", "writing"]
 ShowToc: true
 cover:
