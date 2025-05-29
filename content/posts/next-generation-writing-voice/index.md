@@ -5,7 +5,7 @@ title: 'Will our next generation lose their own writing voice because of LLMs?'
 tags: ["non-tech", "GenAI", "AI", "writing"]
 ShowToc: true
 cover:
-    image: "typewriter_2.jpg"
+    image: "typewriter.jpg"
     # width: 70%
 ---
 
