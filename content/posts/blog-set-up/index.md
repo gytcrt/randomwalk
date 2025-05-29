@@ -1,5 +1,5 @@
 ---
-title: "Rebuild My Website With GenAI's Assistance"
+title: "Rebuild my website with GenAI's assistance"
 date: 2025-04-29
 draft: false
 tags: ["tech", "GenAI", "AI", "Hugo"]

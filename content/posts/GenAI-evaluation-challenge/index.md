@@ -1,7 +1,7 @@
 ---
 date: 2025-05-20
 draft: false
-title: 'Why Is It Hard To Evaluate GenAI Applications?'
+title: 'Why is it hard to evaluate GenAI applications?'
 tags: ["tech", "GenAI", "AI", "testing"]
 ShowToc: true
 cover:
