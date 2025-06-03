@@ -6,7 +6,72 @@
     <description>Recent content in Posts on Random Walk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get out of personalized movie recommendation</title>
+      <link>http://localhost:1313/posts/random-movie/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/random-movie/</guid>
+      <description>&lt;div class=&#34;gradio-embed-container&#34;&gt;
+&lt;iframe
+	src=&#34;https://gytcrt-random-movie-hf.hf.space&#34;
+	frameborder=&#34;0&#34;
+	width=&#34;100%&#34;
+	height=&#34;1000&#34;
+&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  /* Break out of content constraints and use full width */
+  .gradio-embed-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .gradio-embed-container iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    display: block;
+  }
+&lt;/style&gt;</description>
+      <content:encoded><![CDATA[<div class="gradio-embed-container">
+<iframe
+	src="https://gytcrt-random-movie-hf.hf.space"
+	frameborder="0"
+	width="100%"
+	height="1000"
+></iframe>
+</div>
+<style>
+  /* Break out of content constraints and use full width */
+  .gradio-embed-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .gradio-embed-container iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    display: block;
+  }
+</style>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Will our next generation lose their own writing voice because of LLMs?</title>
       <link>http://localhost:1313/posts/next-generation-writing-voice/</link>
