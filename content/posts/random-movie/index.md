@@ -1,6 +1,6 @@
 ---
 date: 2025-06-04
-draft: true
+draft: false
 title: 'Get out of mainstream and personalized movie recommendation'
 tags: ["movie", "personalization"]
 ShowToc: true
