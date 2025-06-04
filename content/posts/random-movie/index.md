@@ -1,5 +1,5 @@
 ---
-date: 2025-06-03
+date: 2025-06-04
 draft: true
 title: 'Get out of mainstream and personalized movie recommendation'
 tags: ["movie", "personalization"]
