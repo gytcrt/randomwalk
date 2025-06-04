@@ -8,17 +8,19 @@
     <language>en</language>
     <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Get out of personalized movie recommendation</title>
+      <title>Get out of mainstream and personalized movie recommendation</title>
       <link>http://localhost:1313/posts/random-movie/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/random-movie/</guid>
-      <description>&lt;p&gt;If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what&amp;rsquo;s going on in independent movie theaters(I will them in reference section) in NYC, go to the &lt;a href=&#34;https://www.filmlinc.org/about-us/new-york-film-festival/&#34;&gt;New York Film Festival&lt;/a&gt;, and watch some movies over and over again.&lt;/p&gt;
-&lt;p&gt;I don&amp;rsquo;t watch as many movie as I hope in recent years, since I frequently find myself in the following situation:
-Open a streaming service app, browse for 10 mins, but find nothing interesting to watch and cannot find any interesting movie to start
-Switch to another streaming service app, continue step 1
-Close the TV after 30 minutes of searching and exhausting my streaming services End and close the TV until I exhaust all my streaming services after 30 minutes search&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what&rsquo;s going on in independent movie theaters(I will them in reference section) in NYC, go to the <a href="https://www.filmlinc.org/about-us/new-york-film-festival/">New York Film Festival</a>, and watch some movies over and over again.</p>
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app &lt;a href=&#34;#try-it-out&#34;&gt;here&lt;/a&gt; or on &lt;a href=&#34;https://huggingface.co/spaces/gytcrt/random-movie-hf&#34;&gt;hugging face space&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;my-frustration-with-streaming-services&#34;&gt;My frustration with streaming services&lt;/h2&gt;
+&lt;p&gt;If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what&amp;rsquo;s going on in independent movie theaters(I will them in reference section) in NYC, go to the &lt;a href=&#34;https://www.filmlinc.org/about-us/new-york-film-festival/&#34;&gt;New York Film Festival&lt;/a&gt;, and watch some movies over and over again.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
+<p>As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app <a href="#try-it-out">here</a> or on <a href="https://huggingface.co/spaces/gytcrt/random-movie-hf">hugging face space</a>.</p>
+<h2 id="my-frustration-with-streaming-services">My frustration with streaming services</h2>
+<p>If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what&rsquo;s going on in independent movie theaters(I will them in reference section) in NYC, go to the <a href="https://www.filmlinc.org/about-us/new-york-film-festival/">New York Film Festival</a>, and watch some movies over and over again.</p>
 <p>I don&rsquo;t watch as many movie as I hope in recent years, since I frequently find myself in the following situation:
 Open a streaming service app, browse for 10 mins, but find nothing interesting to watch and cannot find any interesting movie to start
 Switch to another streaming service app, continue step 1
@@ -36,58 +38,16 @@ Close the TV after 30 minutes of searching and exhausting my streaming services 
 <li>Tell me where I can stream the movie if it&rsquo;s on a streaming platform.</li>
 </ul>
 <p>I spent a few hours coding up the idea and I&rsquo;ve landed an MVP. I have been using the app for the last few days and happily discovered many unknown and interesting movies. Feel free to play and let me know if you find it helpful or have feedback.</p>
+<h2 id="try-it-out">Try it out</h2>
 <div class="gradio-embed-container">
 <iframe
-	id="gradio-frame"
-	src="https://gytcrt-random-movie-hf.hf.space?__theme=light&embed=true"
+	src="https://gytcrt-random-movie-hf.hf.space"
 	frameborder="0"
 	width="100%"
-	height="600"
+	height="800"
 ></iframe>
 </div>
-<script>
-// Dynamic height resizing for Gradio iframe
-(function() {
-    const iframe = document.getElementById('gradio-frame');
-    
-    // Listen for postMessage from Gradio app
-    window.addEventListener('message', function(event) {
-        // Verify origin for security
-        if (event.origin !== 'https://gytcrt-random-movie-hf.space') return;
-        
-        // Check if it's a height update message
-        if (event.data && event.data.type === 'resize' && event.data.height) {
-            iframe.style.height = event.data.height + 'px';
-        }
-    });
-    
-    // Fallback: Progressive height increase as content loads
-    let currentHeight = 600;
-    const maxHeight = 1200;
-    const heightIncrement = 100;
-    
-    function adjustHeight() {
-        try {
-            // Try to access iframe content (will fail due to CORS, but triggers fallback)
-            iframe.contentDocument;
-        } catch (e) {
-            // Expected CORS error - use fallback sizing
-            if (currentHeight < maxHeight) {
-                currentHeight += heightIncrement;
-                iframe.style.height = currentHeight + 'px';
-                setTimeout(adjustHeight, 2000); // Check again in 2 seconds
-            }
-        }
-    }
-    
-    // Start height adjustment after initial load
-    iframe.onload = function() {
-        setTimeout(adjustHeight, 1000); // Wait 1 second after load
-    };
-})();
-</script>
 <style>
-  /* Align with post content width instead of breaking out */
   .gradio-embed-container {
     width: 100%;
     margin: 30px 0;
@@ -95,23 +55,24 @@ Close the TV after 30 minutes of searching and exhausting my streaming services 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3px;
   }
   
   .gradio-embed-container iframe {
     width: 100%;
     border: none;
     display: block;
-    transition: height 0.3s ease; /* Smooth height transitions */
   }
 </style>
-<p>Reference:</p>
+<h2 id="beloved-independent-movie-theaters-in-nyc">Beloved independent movie theaters in NYC</h2>
 <ul>
-<li>Metrograph</li>
-<li>Film Forum</li>
-<li>IFC</li>
-<li>Angelika</li>
-<li>Nitehawk</li>
-<li>BAM</li>
+<li><a href="https://metrograph.com/"><strong>Metrograph</strong></a>: locating in Two Bridges neighborhood, they show a lot of classic Asian movies.</li>
+<li><a href="https://filmforum.org"><strong>Film Forum</strong></a>: best artistic selection in the city</li>
+<li><a href="https://www.filmlinc.org/"><strong>Film at Lincoln Center</strong></a>: NYFF is hosted here every year, so it&rsquo;s a special place in NYC.</li>
+<li><a href="https://www.ifccenter.com/"><strong>IFC</strong></a>: very convenient location with unique selection at times</li>
+<li><a href="https://angelikafilmcenter.com/nyc"><strong>Angelika</strong></a>: go there if you happen to be in So-Ho</li>
+<li><a href="https://nitehawkcinema.com/"><strong>Nitehawk</strong></a>: the definition of hipster movie theater in Brooklyn</li>
+<li><a href="https://www.bam.org/"><strong>BAM</strong></a>: I go there for both independent and commercial movies when I prefer staying in Brooklyn.</li>
 </ul>
 ]]></content:encoded>
     </item>
