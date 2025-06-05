@@ -12,24 +12,24 @@ cover:
 As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app [here](#try-it-out) or on [hugging face space](https://huggingface.co/spaces/gytcrt/random-movie-hf).
 
 ## My frustration with streaming services
-If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what's going on in independent movie theaters(I will them in reference section) in NYC, go to the [New York Film Festival](https://www.filmlinc.org/about-us/new-york-film-festival/), and watch some movies over and over again. 
+If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what's going on in independent movie theaters ([checkout this section](#beloved-independent-movie-theaters-in-nyc)) in NYC, go to the [New York Film Festival](https://www.filmlinc.org/about-us/new-york-film-festival/), and watch some movies over and over again. 
 
 I don't watch as many movie as I hope in recent years, since I frequently find myself in the following situation: 
-Open a streaming service app, browse for 10 mins, but find nothing interesting to watch and cannot find any interesting movie to start
-Switch to another streaming service app, continue step 1
-Close the TV after 30 minutes of searching and exhausting my streaming services End and close the TV until I exhaust all my streaming services after 30 minutes search
+- Open a streaming service app, browse for 10 mins, but find nothing interesting to watch
+- Switch to another streaming service app, repeat step 1
+- Close the TV after 30 minutes of searching and exhausting my streaming services
 
 Not surprisingly, I feel very disappointed and annoyed at the end of the loop. I have been thinking about this question for a long time: **Why is it so hard for me to find an interesting movie at home?** And I have a few hypotheses:
 - **Market saturation**: unlike 10 years ago, the streaming service market is overly saturated now. Interesting movies (old and new) are distributed across different platforms. The situation hurts the user's experience and wallet.
 - **Personalized recommendations**: almost all streaming platforms present their contents to users via a personalization system. I think personalization systems are brilliant and helpful in many ways, but often prevent us from discovering movies outside of our comfort zone. 
 - **Content skewing**: streaming platforms tend to onboard mainstream or critically acclaimed films, because those contents generally serve a large audience. For a movie snob like me, it's hard to find edgy or cult movies on the streaming platforms.  
 
-Therefore, I decided to build something to help me discover movies that are unknown and interesting to me. Here is what I want:
+Therefore, I decided to build something to help me discover movies that are unknown and interesting to me. Here is what I want from an app:
 - Show me movies that would not normally show up on my feeds.
 - Include the movie's meta information and some reviews from critics and audience.
 - Tell me where I can stream the movie if it's on a streaming platform.
 
-I spent a few hours coding up the idea and I've landed an MVP. I have been using the app for the last few days and happily discovered many unknown and interesting movies. Feel free to play and let me know if you find it helpful or have feedback.
+I spent a few hours coding up the idea and I've landed an MVP. The main function of the app is to recommend a list of movies to a user based on time period, region, and genre. I intentionally made it simple and random to mimic movie discovering experience in a physical movie rental store. I have been using the app for the last few days and happily discovered many unknown and interesting movies. Feel free to play and let me know if you find it helpful or have feedback.
 
 ## Try it out
 <div class="gradio-embed-container">
