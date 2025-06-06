@@ -9,10 +9,10 @@ cover:
     width: 70%
 ---
 ## TL;DR
-As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app [here](#try-it-out) or on [hugging face space](https://huggingface.co/spaces/gytcrt/random-movie-hf).
+As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app [here](#try-it-out) or on {{< newtabref href="https://huggingface.co/spaces/gytcrt/random-movie-hf" title="hugging face space" >}}.
 
 ## My frustration with streaming services
-If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what's going on in independent movie theaters ([checkout this section](#beloved-independent-movie-theaters-in-nyc)) in NYC, go to the [New York Film Festival](https://www.filmlinc.org/about-us/new-york-film-festival/), and watch some movies over and over again. 
+If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what's going on in independent movie theaters ([checkout this section](#beloved-independent-movie-theaters-in-nyc)) in NYC, go to the {{< newtabref href="https://www.filmlinc.org/about-us/new-york-film-festival/" title="New York Film Festival" >}}, and watch some movies over and over again. 
 
 I don't watch as many movie as I hope in recent years, since I frequently find myself in the following situation: 
 - Open a streaming service app, browse for 10 mins, but find nothing interesting to watch
@@ -60,10 +60,10 @@ I spent a few hours coding up the idea and I've landed an MVP. The main function
 </style>
 
 ## Beloved independent movie theaters in NYC
-- [**Metrograph**](https://metrograph.com/): locating in Two Bridges neighborhood, they show a lot of classic Asian movies.
-- [**Film Forum**](https://filmforum.org): best artistic selection in the city
-- [**Film at Lincoln Center**](https://www.filmlinc.org/): NYFF is hosted here every year, so it's a special place in NYC.
-- [**IFC**](https://www.ifccenter.com/): very convenient location with unique selection at times
-- [**Angelika**](https://angelikafilmcenter.com/nyc): go there if you happen to be in So-Ho
-- [**Nitehawk**](https://nitehawkcinema.com/): the definition of hipster movie theater in Brooklyn
-- [**BAM**](https://www.bam.org/): I go there for both independent and commercial movies when I prefer staying in Brooklyn. 
+- {{< newtabref href="https://metrograph.com/" title="**Metrograph**" >}}: locating in Two Bridges neighborhood, they show a lot of classic Asian movies.
+- {{< newtabref href="https://filmforum.org" title="**Film Forum**" >}}: best artistic selection in the city
+- {{< newtabref href="https://www.filmlinc.org/" title="**Film at Lincoln Center**" >}}: NYFF is hosted here every year, so it's a special place in NYC.
+- {{< newtabref href="https://www.ifccenter.com/" title="**IFC**" >}}: very convenient location with unique selection at times
+- {{< newtabref href="https://angelikafilmcenter.com/nyc" title="**Angelika**" >}}: go there if you happen to be in So-Ho
+- {{< newtabref href="https://nitehawkcinema.com/" title="**Nitehawk**" >}}: the definition of hipster movie theater in Brooklyn
+- {{< newtabref href="https://www.bam.org/" title="**BAM**" >}}: I go there for both independent and commercial movies when I prefer staying in Brooklyn. 
