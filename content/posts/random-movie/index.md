@@ -60,10 +60,10 @@ I spent a few hours coding up the idea and I've landed an MVP. The main function
 </style>
 
 ## Beloved independent movie theaters in NYC
-- {{< newtabref href="https://metrograph.com/" title="**Metrograph**" >}}: locating in Two Bridges neighborhood, they show a lot of classic Asian movies.
-- {{< newtabref href="https://filmforum.org" title="**Film Forum**" >}}: best artistic selection in the city
-- {{< newtabref href="https://www.filmlinc.org/" title="**Film at Lincoln Center**" >}}: NYFF is hosted here every year, so it's a special place in NYC.
-- {{< newtabref href="https://www.ifccenter.com/" title="**IFC**" >}}: very convenient location with unique selection at times
-- {{< newtabref href="https://angelikafilmcenter.com/nyc" title="**Angelika**" >}}: go there if you happen to be in So-Ho
-- {{< newtabref href="https://nitehawkcinema.com/" title="**Nitehawk**" >}}: the definition of hipster movie theater in Brooklyn
-- {{< newtabref href="https://www.bam.org/" title="**BAM**" >}}: I go there for both independent and commercial movies when I prefer staying in Brooklyn. 
+- {{< newtabref href="https://metrograph.com/" title="Metrograph" >}}: locating in Two Bridges neighborhood, they show a lot of classic Asian movies.
+- {{< newtabref href="https://filmforum.org" title="Film Forum" >}}: best artistic selection in the city
+- {{< newtabref href="https://www.filmlinc.org/" title="Film at Lincoln Center" >}}: NYFF is hosted here every year, so it's a special place in NYC.
+- {{< newtabref href="https://www.ifccenter.com/" title="IFC" >}}: very convenient location with unique selection at times
+- {{< newtabref href="https://angelikafilmcenter.com/nyc" title="Angelika" >}}: go there if you happen to be in So-Ho
+- {{< newtabref href="https://nitehawkcinema.com/" title="Nitehawk" >}}: the definition of hipster movie theater in Brooklyn
+- {{< newtabref href="https://www.bam.org/" title="BAM" >}}: I go there for both independent and commercial movies when I prefer staying in Brooklyn. 
