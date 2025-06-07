@@ -28,7 +28,7 @@ outputs:
 googleAnalytics: "" # Leave empty if you don't have GA4 yet
 
 minify:
-  disableXML: true
+  disableXML: false
   minifyOutput: true
 
 # RSS Configuration

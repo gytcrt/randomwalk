@@ -1,24 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Random Walk</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Random Walk</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>© 2024 Andrea Gao</copyright>
-    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Get out of mainstream and personalized movie recommendation</title>
-      <link>http://localhost:1313/posts/random-movie/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/random-movie/</guid>
-      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app &lt;a href=&#34;#try-it-out&#34;&gt;here&lt;/a&gt; or on &lt;a href=&#34;https://huggingface.co/spaces/gytcrt/random-movie-hf&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;hugging face space&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;my-frustration-with-streaming-services&#34;&gt;My frustration with streaming services&lt;/h2&gt;
-&lt;p&gt;If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what&amp;rsquo;s going on in independent movie theaters (&lt;a href=&#34;#beloved-independent-movie-theaters-in-nyc&#34;&gt;checkout this section&lt;/a&gt;) in NYC, go to the &lt;a href=&#34;https://www.filmlinc.org/about-us/new-york-film-festival/&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;New York Film Festival&lt;/a&gt;, and watch some movies over and over again.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Random Walk</title><link>https://andreagao.com/posts/</link><description>Recent content in Posts on Random Walk</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Andrea Gao</copyright><lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://andreagao.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Get out of mainstream and personalized movie recommendation</title><link>https://andreagao.com/posts/random-movie/</link><pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate><guid>https://andreagao.com/posts/random-movie/</guid><description>&lt;h2 id="tldr">TL;DR&lt;/h2>
+&lt;p>As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app &lt;a href="#try-it-out">here&lt;/a> or on &lt;a href="https://huggingface.co/spaces/gytcrt/random-movie-hf" rel="noopener" target="_blank">hugging face space&lt;/a>.&lt;/p>
+&lt;h2 id="my-frustration-with-streaming-services">My frustration with streaming services&lt;/h2>
+&lt;p>If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what&amp;rsquo;s going on in independent movie theaters (&lt;a href="#beloved-independent-movie-theaters-in-nyc">checkout this section&lt;/a>) in NYC, go to the &lt;a href="https://www.filmlinc.org/about-us/new-york-film-festival/" rel="noopener" target="_blank">New York Film Festival&lt;/a>, and watch some movies over and over again.&lt;/p></description><content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
 <p>As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app <a href="#try-it-out">here</a> or on <a href="https://huggingface.co/spaces/gytcrt/random-movie-hf" rel="noopener" target="_blank">hugging face space</a>.</p>
 <h2 id="my-frustration-with-streaming-services">My frustration with streaming services</h2>
 <p>If you know me as a friend, most likely you have noticed that I am a big movie fan. I track what&rsquo;s going on in independent movie theaters (<a href="#beloved-independent-movie-theaters-in-nyc">checkout this section</a>) in NYC, go to the <a href="https://www.filmlinc.org/about-us/new-york-film-festival/" rel="noopener" target="_blank">New York Film Festival</a>, and watch some movies over and over again.</p>
@@ -77,18 +60,8 @@
 <li><a href="https://nitehawkcinema.com/" rel="noopener" target="_blank">Nitehawk</a>: the definition of hipster movie theater in Brooklyn</li>
 <li><a href="https://www.bam.org/" rel="noopener" target="_blank">BAM</a>: I go there for both independent and commercial movies when I prefer staying in Brooklyn.</li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Will our next generation lose their own writing voice because of LLMs?</title>
-      <link>http://localhost:1313/posts/next-generation-writing-voice/</link>
-      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/next-generation-writing-voice/</guid>
-      <description>&lt;p&gt;I loved writing a lot as a teenager and college student, since it was the easiest and most natural way to express myself and connect with others. Even now, years later, I can read my old writing and feel connected with my past self and derive something new from it.&lt;/p&gt;
-&lt;p&gt;I’ve been writing less in the last ten years because I’ve been busy with adulthood and juggling between English and Chinese. I used to write in Chinese, and now mostly write and communicate in English. However, I hadn’t given much thought to my own “writing voice” in either language till recently.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I loved writing a lot as a teenager and college student, since it was the easiest and most natural way to express myself and connect with others. Even now, years later, I can read my old writing and feel connected with my past self and derive something new from it.</p>
+]]></content:encoded></item><item><title>Will our next generation lose their own writing voice because of LLMs?</title><link>https://andreagao.com/posts/next-generation-writing-voice/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://andreagao.com/posts/next-generation-writing-voice/</guid><description>&lt;p>I loved writing a lot as a teenager and college student, since it was the easiest and most natural way to express myself and connect with others. Even now, years later, I can read my old writing and feel connected with my past self and derive something new from it.&lt;/p>
+&lt;p>I’ve been writing less in the last ten years because I’ve been busy with adulthood and juggling between English and Chinese. I used to write in Chinese, and now mostly write and communicate in English. However, I hadn’t given much thought to my own “writing voice” in either language till recently.&lt;/p></description><content:encoded><![CDATA[<p>I loved writing a lot as a teenager and college student, since it was the easiest and most natural way to express myself and connect with others. Even now, years later, I can read my old writing and feel connected with my past self and derive something new from it.</p>
 <p>I’ve been writing less in the last ten years because I’ve been busy with adulthood and juggling between English and Chinese. I used to write in Chinese, and now mostly write and communicate in English. However, I hadn’t given much thought to my own “writing voice” in either language till recently.</p>
 <p>I started writing more in English on this blog a few month ago, and my girlfriend Laura has been a very supportive editor and writing tutor for me. The process of writing, researching, thinking, and editing can be painful, but it is almost always rewarding. My goal with writing now is to continue developing my own voice in my areas of interest.</p>
 <p>During the process of writing my <a href="https://andreagao.com/posts/genai-evaluation-challenge/">last article</a>, it occurred to me that I could ask ChatGPT or any other LLM to generate content, as long as I provided my key messages. Given my intensive use of AI coding tools, I knew that AI could significantly affect my writing flow. So, I tried two tasks:</p>
@@ -111,26 +84,16 @@
 <em>Finally, we ask our phone to journal for us</em><br>
 <em>Now, what is left for free will?</em></p></blockquote>
 <p>Photos by <a href="https://unsplash.com/@florianklauer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Florian Klauer</a> on <a href="https://unsplash.com/photos/black-fayorit-typewriter-with-printer-paper-mk7D-4UCfmg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Why is it hard to evaluate GenAI applications?</title>
-      <link>http://localhost:1313/posts/genai-evaluation-challenge/</link>
-      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/genai-evaluation-challenge/</guid>
-      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;If you don&amp;rsquo;t have time to read the whole article, the following four takeaways are a concise version. You can navigate to the corresponding section in the article for details.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Lack of framework&lt;/strong&gt;: A GenAI application is not a GenAI foundation model; different frameworks are required to evaluate them. There may be a lack of clarity on the difference between the two tasks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Unstructured data&lt;/strong&gt;: The unstructured output of a GenAI application makes evaluation more difficult than a traditional ML system.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Foundation model unpredictability&lt;/strong&gt;: GenAI foundation model usually introduces extra unpredictability into the evaluation process.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Longer and more costly iteration&lt;/strong&gt;: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;I have spent the last two and a half years listening to what businesses want from GenAI, building GenAI applications, and delivering value from the applications. It has been an interesting journey, as I realized the advent of ChatGPT constitutes a paradigm shift for ML/AI practitioners like me. I started to believe that GenAI would change our lives, similar to personal computers in the 90s or the modern search engine in the 2000s.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
+]]></content:encoded></item><item><title>Why is it hard to evaluate GenAI applications?</title><link>https://andreagao.com/posts/genai-evaluation-challenge/</link><pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate><guid>https://andreagao.com/posts/genai-evaluation-challenge/</guid><description>&lt;h2 id="tldr">TL;DR&lt;/h2>
+&lt;p>If you don&amp;rsquo;t have time to read the whole article, the following four takeaways are a concise version. You can navigate to the corresponding section in the article for details.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Lack of framework&lt;/strong>: A GenAI application is not a GenAI foundation model; different frameworks are required to evaluate them. There may be a lack of clarity on the difference between the two tasks.&lt;/li>
+&lt;li>&lt;strong>Unstructured data&lt;/strong>: The unstructured output of a GenAI application makes evaluation more difficult than a traditional ML system.&lt;/li>
+&lt;li>&lt;strong>Foundation model unpredictability&lt;/strong>: GenAI foundation model usually introduces extra unpredictability into the evaluation process.&lt;/li>
+&lt;li>&lt;strong>Longer and more costly iteration&lt;/strong>: GenAI application evaluation is expensive and time consuming, because building evaluation dataset and running tests on GenAI application require more resources.&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>I have spent the last two and a half years listening to what businesses want from GenAI, building GenAI applications, and delivering value from the applications. It has been an interesting journey, as I realized the advent of ChatGPT constitutes a paradigm shift for ML/AI practitioners like me. I started to believe that GenAI would change our lives, similar to personal computers in the 90s or the modern search engine in the 2000s.&lt;/p></description><content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
 <p>If you don&rsquo;t have time to read the whole article, the following four takeaways are a concise version. You can navigate to the corresponding section in the article for details.</p>
 <ul>
 <li><strong>Lack of framework</strong>: A GenAI application is not a GenAI foundation model; different frameworks are required to evaluate them. There may be a lack of clarity on the difference between the two tasks.</li>
@@ -414,19 +377,9 @@
 <li><a href="https://ravinkumar.com/GenAiGuidebook/language_models/evaluation.html">LLM foundation model evaluation</a></li>
 <li><a href="https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks">ML metrics cheatsheet by Stanford</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Rebuild my website with GenAI&#39;s assistance</title>
-      <link>http://localhost:1313/posts/blog-set-up/</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/blog-set-up/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;When I was in graduate school, I set up a &lt;a href=&#34;https://gytcrt.github.io/&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;personal blog&lt;/a&gt; to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.&lt;/p&gt;
-&lt;p&gt;I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong&gt;If you are only interested in the part related to GenAI, check out the &lt;a href=&#34;#genai-coding-tools-cursor--dall-e-3--runway--llms&#34;&gt;&lt;strong&gt;GenAI coding tools section&lt;/strong&gt;&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+]]></content:encoded></item><item><title>Rebuild my website with GenAI's assistance</title><link>https://andreagao.com/posts/blog-set-up/</link><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><guid>https://andreagao.com/posts/blog-set-up/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>When I was in graduate school, I set up a &lt;a href="https://gytcrt.github.io/" rel="noopener" target="_blank">personal blog&lt;/a> to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.&lt;/p>
+&lt;p>I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. &lt;strong>If you are only interested in the part related to GenAI, check out the &lt;a href="#genai-coding-tools-cursor--dall-e-3--runway--llms">&lt;strong>GenAI coding tools section&lt;/strong>&lt;/a>.&lt;/strong>&lt;/p></description><content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>When I was in graduate school, I set up a <a href="https://gytcrt.github.io/" rel="noopener" target="_blank">personal blog</a> to showcase my project and share thoughts. I planned to keep developing that site but it has since then taken a backseat while I became busy with work.</p>
 <p>I have got more time lately and decided to pick up this project. It turned out to be so much fun, and I want to share how I have re-built this website with GenAI tools. <strong>If you are only interested in the part related to GenAI, check out the <a href="#genai-coding-tools-cursor--dall-e-3--runway--llms"><strong>GenAI coding tools section</strong></a>.</strong></p>
 <h2 id="choosing-and-registering-a-domain-name">Choosing and registering a domain name</h2>
@@ -542,18 +495,8 @@
 <li><input disabled="" type="checkbox"> Add buttons to share to social media</li>
 <li><input disabled="" type="checkbox"> Other advice?</li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>A Random Walk</title>
-      <link>http://localhost:1313/posts/random-walk/</link>
-      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/random-walk/</guid>
-      <description>&lt;p&gt;I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p&gt;
-&lt;p&gt;Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
+]]></content:encoded></item><item><title>A Random Walk</title><link>https://andreagao.com/posts/random-walk/</link><pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate><guid>https://andreagao.com/posts/random-walk/</guid><description>&lt;p>I chose &amp;ldquo;Random Walk&amp;rdquo; as the name of my website, as both a representation of my work and personal interests.&lt;/p>
+&lt;p>Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.&lt;/p></description><content:encoded><![CDATA[<p>I chose &ldquo;Random Walk&rdquo; as the name of my website, as both a representation of my work and personal interests.</p>
 <p>Randomness is prominent in the fields of modern statistical theory, machine learning, and AI (Deep Learning). In recent years, the unpredictability of the Large Language Model(LLM) has presented a  major challenge for companies and individuals looking to adopt the latest AI in their business and daily life. However, I think randomness brings a lot of opportunities and beauty to the world, too.</p>
 <p>An example of this is my own process of debugging a technical issue: sometimes, I may think of a few potential solutions, but I don&rsquo;t yet know which one is optimal. I might randomly proceed with one of the ideas if they all look viable to me. If it doesn&rsquo;t work, I would roll back to the previous version and try another approach. Random seeds(np.random.seed(1234)😉) or random experiments can lead to solutions and innovations.</p>
 <p>When I was a teenager, I was fascinated by <a href="https://en.wikipedia.org/wiki/Jorge_Luis_Borges" rel="noopener" target="_blank">Jorge Luis Borges</a>&rsquo;s short novel <a href="https://mycours.es/gamedesign2012/files/2012/08/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941.pdf" rel="noopener" target="_blank">The Garden of Forking Paths</a>. The novel is very mysterious, multidimensional, and intriguing. It visualizes our life (or world) as a giant labyrinth; whenever we make a decision, it leads to one of life&rsquo;s paths. In a way, it&rsquo;s similar to Github forking and branching. Do all paths converge to the same global optimal like random walk in <a href="https://people.duke.edu/~ccc14/sta-663/mcmc.html" rel="noopener" target="_blank">Markov chain Monte Carlo method</a>? Or is my existence and selfhood only one of many in an infinite number of universes?</p>
@@ -565,19 +508,4 @@
 </figure>
 
 <p>I appreciate the ways in which theory, engineering, and art converge upon &ldquo;Random Walk.&rdquo; I hope you enjoy a short walk on my site.</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>My Second Post</title>
-      <link>http://localhost:1313/posts/my-second-post/</link>
-      <pubDate>Thu, 17 Apr 2025 13:40:47 -0400</pubDate>
-      
-      <guid>http://localhost:1313/posts/my-second-post/</guid>
-      <description>&lt;p&gt;This is a test link: &lt;a href=&#34;https://www.prospectpark.org/&#34;&gt;Prospect Park&lt;/a&gt;.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>This is a test link: <a href="https://www.prospectpark.org/">Prospect Park</a>.</p>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>
