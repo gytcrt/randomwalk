@@ -350,6 +350,31 @@ footer a:focus,
   content: none !important;
 }
 
+/* Custom image icons support - ensures proper sizing and styling */
+.social-icons img {
+  display: inline-block;
+  vertical-align: middle;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-icons a:hover img {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+/* Footer social icons - custom image support */
+.footer-social-icons .social-icons img {
+  width: 3em;
+  height: 3em;
+  display: block;
+}
+
+/* Profile social icons - custom image support */
+.profile_inner .social-icons img {
+  height: 2em;
+  width: 2em;
+}
+
 /*--------------------------------------------------------------
 # MOBILE HEADER ALIGNMENT FIX
 --------------------------------------------------------------*/

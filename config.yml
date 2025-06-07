@@ -3,6 +3,10 @@ title: "Random Walk"
 theme: PaperModX
 # uglyURLs: true
 
+# URL Configuration
+canonifyURLs: false
+relativeURLs: false
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -138,6 +142,11 @@ params:
       url: "https://github.com/gytcrt"
     - name: twitter
       url: "https://x.com/gytcrt"
+    - name: rss
+      url: "index.xml"
+      icon: "/icons8-rss-50.png"
+      iconSize: 38
+    
 
   analytics:
     google:
@@ -183,10 +192,6 @@ menu:
       name: Search
       url: /search/
       weight: 20
-    - identifier: rss
-      name: RSS
-      url: /index.xml
-      weight: 30
 
 pygmentsUseClasses: true
 markup:
