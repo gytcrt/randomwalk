@@ -1,4 +1,9 @@
 {{- /* Head custom content area start */ -}}
+<!-- RSS Feed Discovery -->
+{{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
 <!-- Umami Analytics -->
 <script defer src="https://analytics.andreagao.com/script.js" data-website-id="ed7ec7e8-2075-46b6-8700-478959f60cfb"></script>
 

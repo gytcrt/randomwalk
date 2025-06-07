@@ -15,7 +15,14 @@ caches:
 outputs:
     home:
         - HTML
+        - RSS
         - JSON # necessary for search
+    section:
+        - HTML
+        - RSS
+    taxonomy:
+        - HTML
+        - RSS
 
 # Remove old GA configuration and add new GA4 configuration
 googleAnalytics: "" # Leave empty if you don't have GA4 yet
@@ -23,6 +30,10 @@ googleAnalytics: "" # Leave empty if you don't have GA4 yet
 minify:
   disableXML: true
   minifyOutput: true
+
+# RSS Configuration
+rssLimit: 20  # Number of entries in RSS feed
+copyright: "© 2024 Andrea Gao"
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -66,7 +77,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true 
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: false
+  ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -167,10 +178,14 @@ menu:
     - identifier: posts
       name: Posts
       url: /posts/
-      weight: 20
+      weight: 10
     - identifier: search
       name: Search
       url: /search/
+      weight: 20
+    - identifier: rss
+      name: RSS
+      url: /index.xml
       weight: 30
 
 pygmentsUseClasses: true
