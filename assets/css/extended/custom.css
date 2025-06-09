@@ -149,6 +149,7 @@ samp {
 #menu a {
   font-size: 18px;
   padding: 4px 4px;
+  transition: 0.15s;
 }
 
 #menu .active {
@@ -157,7 +158,6 @@ samp {
 }
 
 #menu a:hover {
-  transition: 0.15s;
   color: black;
 }
 
@@ -237,46 +237,12 @@ figure > figcaption,
 /*--------------------------------------------------------------
 # RESPONSIVE FOOTER
 --------------------------------------------------------------*/
-/* Mobile-specific footer styling (screens 768px and below) */
-@media (max-width: 768px) {
-  /* Footer container */
-  footer.footer {
-    white-space: normal !important; /* Allow text to wrap */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
 
-  /* Footer text elements */
-  footer.footer span {
-    display: block;
-    text-align: center;
-    margin: 3px 0; /* Increased spacing between lines */
-  }
-
-  /* Change display order: copyright text displays second */
-  footer.footer span:first-of-type {
-    order: 2;
-  }
-
-  /* Change display order: pixel arts text displays first */
-  footer.footer span:last-of-type {
-    order: 1;
-  }
-
-  /* Hide the separator on mobile */
-  footer.footer .footer-separator {
-    display: none;
-  }
-}
-
-/* Footer social icons styling - enhanced to remove all underscores */
-.footer-social-icons {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.footer-social-icons .social-icons {
+/*--------------------------------------------------------------
+# SOCIAL ICONS - CONSOLIDATED
+--------------------------------------------------------------*/
+/* Base social icons styling - applies to all social icon containers */
+.social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,20 +251,43 @@ figure > figcaption,
   list-style: none;
 }
 
-/* Comprehensive rules to remove all underscores/underlines */
-.footer-social-icons .social-icons a,
-.footer-social-icons .social-icons a:hover,
-.footer-social-icons .social-icons a:focus,
-.footer-social-icons .social-icons a:active,
-.footer-social-icons .social-icons a:visited {
+/* Universal social icon link styling */
+.social-icons a {
   display: inline-flex;
-  margin: 0 8px;
   color: var(--secondary);
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
   outline: none !important;
   transition: color 0.2s, transform 0.2s;
+}
+
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active,
+.social-icons a:visited {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove all pseudo-elements from social icons and header icons */
+.social-icons a::before,
+.social-icons a::after,
+.header-icon::before,
+.header-icon::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Footer-specific social icons */
+.footer-social-icons {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-social-icons .social-icons a {
+  margin: 0 8px;
 }
 
 .footer-social-icons .social-icons svg {
@@ -312,55 +301,39 @@ figure > figcaption,
   margin-top: 5px;
 }
 
-/* Responsive footer adjustments for social icons */
-@media (max-width: 768px) {
-  .footer-social-icons {
-    margin-bottom: 8px;
-  }
-
-  .footer-social-icons .social-icons {
-    flex-wrap: wrap;
-  }
-
-  .footer-social-icons .social-icons a {
-    margin: 4px 8px;
-  }
-
-  footer.footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer.footer .footer-social-icons {
-    order: 1; /* Display social icons first on mobile */
-  }
-
-  footer.footer .footer-copyright {
-    order: 2; /* Display copyright second on mobile */
-  }
+/* Profile page social icons */
+.profile_inner .social-icons {
+  padding: 20px 0;
+  width: 100%;
 }
 
-/* Additional specific rules to override theme styling */
-.social-icons a::before,
-.social-icons a::after {
-  display: none !important;
+.profile_inner .social-icons a {
+  margin-right: 20px;
+  color: var(--primary);
 }
 
+.profile_inner .social-icons a:last-child {
+  margin-right: 0;
+}
+
+.profile_inner .social-icons a:hover {
+  color: var(--secondary);
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+
+.profile_inner .social-icons a svg {
+  height: 2em;
+  width: 2em;
+}
+
+/* Footer link styling override */
 footer a,
 footer a:hover,
-footer a:focus,
-.social-icons a,
-.social-icons a:hover,
-.social-icons a:focus {
+footer a:focus {
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
-}
-
-/* Remove any pseudo-elements that might create visual underscores */
-.footer-social-icons .social-icons a::before,
-.footer-social-icons .social-icons a::after {
-  content: none !important;
 }
 
 /*--------------------------------------------------------------
@@ -415,14 +388,11 @@ body.dark .nav-separator {
   text-decoration: none !important;
   border: none;
   box-shadow: none !important;
+  transition: 0.15s;
 }
 
 .header-icon:hover {
-  transition: 0.15s;
   color: black;
-  text-decoration: none !important;
-  border: none;
-  box-shadow: none !important;
 }
 
 /* Dark mode header icon hover effect */
@@ -434,53 +404,6 @@ body.dark .header-icon:hover {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-/* Remove any default link styling for header icons */
-.header-icon::before,
-.header-icon::after {
-  display: none !important;
-}
-
-/*--------------------------------------------------------------
-# MOBILE HEADER ALIGNMENT FIX
---------------------------------------------------------------*/
-/* Fix for mobile header alignment - ensures logo and menu items align to the left */
-@media screen and (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo {
-    margin-left: var(--gap);
-    margin-right: var(--gap);
-    padding-left: 5px;
-  }
-
-  /* Navigation section adjustments for mobile */
-  .nav-section {
-    margin-left: var(--gap);
-    margin-right: var(--gap);
-    margin-top: 1px;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  #menu {
-    padding-left: 0;
-    margin: 0;
-  }
-
-  /* Reduce separator gap on mobile */
-  .nav-separator {
-    height: 16px;
-  }
-
-  /* Ensure icons stay inline on mobile */
-  .header-icons {
-    gap: 6px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -525,53 +448,96 @@ body.dark .header-icon:hover {
   margin: 0 auto;
 }
 
-.profile_inner .social-icons a:last-child {
-  margin-right: 0; /* Remove right margin from last icon to maintain perfect centering */
-}
-
-/* Make sure it's responsive */
+/*--------------------------------------------------------------
+# RESPONSIVE DESIGN - MOBILE (768px and below)
+--------------------------------------------------------------*/
 @media (max-width: 768px) {
+  /* Footer mobile styling */
+  footer.footer {
+    white-space: normal !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer.footer span {
+    display: block;
+    text-align: center;
+    margin: 3px 0;
+  }
+
+  footer.footer span:first-of-type {
+    order: 2;
+  }
+
+  footer.footer span:last-of-type {
+    order: 1;
+  }
+
+  footer.footer .footer-separator {
+    display: none;
+  }
+
+  /* Footer social icons mobile adjustments */
+  .footer-social-icons {
+    margin-bottom: 8px;
+  }
+
+  .footer-social-icons .social-icons {
+    flex-wrap: wrap;
+  }
+
+  .footer-social-icons .social-icons a {
+    margin: 4px 8px;
+  }
+
+  footer.footer .footer-social-icons {
+    order: 1;
+  }
+
+  footer.footer .footer-copyright {
+    order: 2;
+  }
+
+  /* Header navigation mobile alignment */
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-left: var(--gap);
+    margin-right: var(--gap);
+    padding-left: 5px;
+  }
+
+  .nav-section {
+    margin-left: var(--gap);
+    margin-right: var(--gap);
+    margin-top: 1px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #menu {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .nav-separator {
+    height: 16px;
+  }
+
+  .header-icons {
+    gap: 6px;
+  }
+
+  /* Profile section mobile adjustments */
   .profile {
-    min-height: calc(100vh - 160px); /* Adjust for mobile */
+    min-height: calc(100vh - 160px);
   }
 
   .profile_inner {
-    padding: 0 20px; /* Add some padding on smaller screens */
+    padding: 0 20px;
   }
-}
-
-/*--------------------------------------------------------------
-# PROFILE SOCIAL ICONS - LANDING PAGE
---------------------------------------------------------------*/
-/* Specific style for profile social icons on the landing page */
-.profile_inner .social-icons a svg {
-  height: 2em; /* Larger size for landing page icons */
-  width: 2em; /* Larger size for landing page icons */
-}
-
-.profile_inner .social-icons a {
-  margin-right: 20px; /* Add more spacing between icons */
-  color: var(--primary); /* Solid color (primary) by default */
-  text-decoration: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  transition: color 0.2s, transform 0.2s;
-}
-
-.profile_inner .social-icons a:hover {
-  color: var(--secondary); /* Lighter color on hover */
-  opacity: 0.8; /* Additional lightness effect */
-  transform: translateY(-3px);
-  box-shadow: none !important;
-}
-
-.profile_inner .social-icons {
-  padding: 20px 0; /* Add more padding around the social icons section */
-}
-
-/* Remove underline effect for profile social icons */
-.profile_inner .social-icons a::before,
-.profile_inner .social-icons a::after {
-  content: none !important;
 }
