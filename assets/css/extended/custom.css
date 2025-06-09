@@ -1,15 +1,15 @@
 /*--------------------------------------------------------------
 # FONT IMPORTS
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /*--------------------------------------------------------------
 # GLOBAL VARIABLES
 --------------------------------------------------------------*/
 :root {
-  --font-serif: 'Tinos', serif;
-  --font-mono: 'Space Mono', monospace;
+  --font-serif: "Tinos", serif;
+  --font-mono: "Space Mono", monospace;
   --code-font: Menlo, Monaco, Consolas, "Courier New", monospace;
   --base-font-size: 1.125rem;
   --line-height: 1.6;
@@ -29,7 +29,12 @@ body {
 # TYPOGRAPHY
 --------------------------------------------------------------*/
 /* Global Heading Styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   line-height: 1.3;
   margin: 0;
@@ -95,7 +100,10 @@ nav {
 }
 
 /* Code Elements */
-code, pre, kbd, samp {
+code,
+pre,
+kbd,
+samp {
   font-family: var(--code-font);
   font-size: 0.9em;
 }
@@ -107,7 +115,7 @@ code, pre, kbd, samp {
   font-family: var(--font-mono);
 }
 
-.toc .details, 
+.toc .details,
 .toc details summary span.details {
   font-family: var(--font-mono);
   font-size: 1.1rem;
@@ -151,6 +159,11 @@ code, pre, kbd, samp {
 #menu a:hover {
   transition: 0.15s;
   color: black;
+}
+
+/* Dark mode menu hover effect */
+body.dark #menu a:hover {
+  color: white;
 }
 
 #menu .active:hover {
@@ -215,7 +228,7 @@ blockquote {
 }
 
 /* Figure captions */
-figure > figcaption, 
+figure > figcaption,
 .entry-cover p {
   margin-bottom: 0.25rem !important;
   margin-top: 1rem !important;
@@ -233,24 +246,24 @@ figure > figcaption,
     display: flex;
     flex-direction: column;
   }
-  
+
   /* Footer text elements */
   footer.footer span {
     display: block;
     text-align: center;
     margin: 3px 0; /* Increased spacing between lines */
   }
-  
+
   /* Change display order: copyright text displays second */
   footer.footer span:first-of-type {
     order: 2;
   }
-  
+
   /* Change display order: pixel arts text displays first */
   footer.footer span:last-of-type {
     order: 1;
   }
-  
+
   /* Hide the separator on mobile */
   footer.footer .footer-separator {
     display: none;
@@ -304,24 +317,24 @@ figure > figcaption,
   .footer-social-icons {
     margin-bottom: 8px;
   }
-  
+
   .footer-social-icons .social-icons {
     flex-wrap: wrap;
   }
-  
+
   .footer-social-icons .social-icons a {
     margin: 4px 8px;
   }
-  
+
   footer.footer {
     display: flex;
     flex-direction: column;
   }
-  
+
   footer.footer .footer-social-icons {
     order: 1; /* Display social icons first on mobile */
   }
-  
+
   footer.footer .footer-copyright {
     order: 2; /* Display copyright second on mobile */
   }
@@ -333,11 +346,11 @@ figure > figcaption,
   display: none !important;
 }
 
-footer a, 
-footer a:hover, 
+footer a,
+footer a:hover,
 footer a:focus,
-.social-icons a, 
-.social-icons a:hover, 
+.social-icons a,
+.social-icons a:hover,
 .social-icons a:focus {
   text-decoration: none !important;
   border-bottom: none !important;
@@ -351,6 +364,85 @@ footer a:focus,
 }
 
 /*--------------------------------------------------------------
+# HEADER NAVIGATION SECTION
+--------------------------------------------------------------*/
+/* Group navigation menu and icons together */
+.nav-section {
+  display: flex;
+  align-items: center;
+  margin: auto var(--gap);
+  gap: 16px;
+}
+
+/* Override theme's menu margin since it's now in nav-section */
+.nav-section #menu {
+  margin: 0;
+}
+
+/* Separator line between menu and icons */
+.nav-separator {
+  width: 1px;
+  height: 24px;
+  background-color: var(--secondary);
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+/* Ensure separator is visible in both light and dark modes */
+body:not(.dark) .nav-separator {
+  background-color: #666;
+}
+
+body.dark .nav-separator {
+  background-color: #999;
+}
+
+/* Custom header icons styling */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: var(--secondary);
+  text-decoration: none !important;
+  border: none;
+  box-shadow: none !important;
+}
+
+.header-icon:hover {
+  transition: 0.15s;
+  color: black;
+  text-decoration: none !important;
+  border: none;
+  box-shadow: none !important;
+}
+
+/* Dark mode header icon hover effect */
+body.dark .header-icon:hover {
+  color: white;
+}
+
+.header-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Remove any default link styling for header icons */
+.header-icon::before,
+.header-icon::after {
+  display: none !important;
+}
+
+/*--------------------------------------------------------------
 # MOBILE HEADER ALIGNMENT FIX
 --------------------------------------------------------------*/
 /* Fix for mobile header alignment - ensures logo and menu items align to the left */
@@ -359,18 +451,35 @@ footer a:focus,
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .logo {
     margin-left: var(--gap);
     margin-right: var(--gap);
     padding-left: 5px;
   }
-  
-  #menu {
+
+  /* Navigation section adjustments for mobile */
+  .nav-section {
     margin-left: var(--gap);
-    padding-left: 0;
-    /* Add a small top margin to create some space between logo and menu */
+    margin-right: var(--gap);
     margin-top: 1px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #menu {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  /* Reduce separator gap on mobile */
+  .nav-separator {
+    height: 16px;
+  }
+
+  /* Ensure icons stay inline on mobile */
+  .header-icons {
+    gap: 6px;
   }
 }
 
@@ -402,7 +511,7 @@ footer a:focus,
 }
 
 /* Center the title and subtitle */
-.profile_inner h1, 
+.profile_inner h1,
 .profile_inner span {
   width: 100%;
   text-align: center;
@@ -425,7 +534,7 @@ footer a:focus,
   .profile {
     min-height: calc(100vh - 160px); /* Adjust for mobile */
   }
-  
+
   .profile_inner {
     padding: 0 20px; /* Add some padding on smaller screens */
   }
@@ -436,8 +545,8 @@ footer a:focus,
 --------------------------------------------------------------*/
 /* Specific style for profile social icons on the landing page */
 .profile_inner .social-icons a svg {
-  height: 2em;  /* Larger size for landing page icons */
-  width: 2em;   /* Larger size for landing page icons */
+  height: 2em; /* Larger size for landing page icons */
+  width: 2em; /* Larger size for landing page icons */
 }
 
 .profile_inner .social-icons a {
