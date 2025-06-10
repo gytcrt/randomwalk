@@ -142,10 +142,6 @@ params:
       url: "https://github.com/gytcrt"
     - name: twitter
       url: "https://x.com/gytcrt"
-    - name: rss
-      url: "index.xml"
-      icon: "/icons8-rss-50.png"
-      iconSize: 38
     
 
   analytics:
