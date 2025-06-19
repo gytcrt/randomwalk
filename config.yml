@@ -41,8 +41,9 @@ copyright: "© 2024 Andrea Gao"
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Random Walk"
-  description: "Personal blog for Andrea Gao about her random walk in thoughts and steps"
+  title: "Random Walk | Andrea Gao"
+  description: "My name is Andrea Gao (she/her). I am a full-stack AI practitioner. This blog is a space for me to write and share my thoughts on 
+  technology, daily life, and things in between."
   keywords: [Blog, Portfolio, PaperMod]
   author: Andrea Gao
   # author: ["Me", "You"] # multiple authors
@@ -52,7 +53,7 @@ params:
     
   # Footer configuration
   footer:
-    since: 2024
+    since: 2025
     customText: "A random walk through thoughts and ideas"
     copyright: "© Andrea Gao"
     powered: false # This will hide the "powered by" text
@@ -119,7 +120,7 @@ params:
     
     I enjoy thought experiments and long strolls in Prospect Park."
     imageUrl: "/images/day_scene_optimized.gif" # Path to image in static dir
-    imageTitle: "Andrea Gao"      # Alt text for image (recommended)
+    imageTitle: "Pixel art of a day scene in Hong Kong"      # Alt text for image (recommended)
     imageWidth: 200                       # Optional Image width
     imageHeight: 200
 
