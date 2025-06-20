@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Random Walk</title><link>http://localhost:1313/posts/</link><description>Recent content in Posts on Random Walk</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Andrea Gao</copyright><lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>How do LLMs and AI coding tools solve new problems when Stack Overflow is dead?</title><link>http://localhost:1313/posts/ai-challenge-after-stack-overflow-died/</link><pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/ai-challenge-after-stack-overflow-died/</guid><description>&lt;h2 id="tldr">TL;DR&lt;/h2>
 &lt;h2 id="stack-overflow-was-essential-for-coders">Stack overflow WAS essential for coders&lt;/h2>
-&lt;h2 id="new-bugs-are-uncharted-areas-for-ai-companies">New bugs are uncharted areas for AI companies&lt;/h2>
-&lt;h2 id="how-can-this-challenge-play-out">How can this challenge play out?&lt;/h2>
-&lt;h2 id="reference">Reference&lt;/h2>
-&lt;ul>
-&lt;li>Cover picture is from &lt;a href="https://orlybooks.com/">Search O&amp;rsquo;RLY Covers&lt;/a>, and I just love the site.&lt;/li>
-&lt;/ul></description><content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
+&lt;p>As someone starting coding in the 2010s, Stack Overflow was my best buddy. When I just started my career as a data scientist, 50% of my coding skills were learned from working itself, 30% were from Stack Overflow, and 20% were from university or structured courses. I don’t remember how many times I encountered a configuration issue and it subsequently led to a Stack Overflow rabbit hole journey for hours – especially early in my career.&lt;/p></description><content:encoded><![CDATA[<h2 id="tldr">TL;DR</h2>
 <h2 id="stack-overflow-was-essential-for-coders">Stack overflow WAS essential for coders</h2>
+<p>As someone starting coding in the 2010s, Stack Overflow was my best buddy. When I just started my career as a data scientist, 50% of my coding skills were learned from working itself, 30% were from Stack Overflow, and 20% were from university or structured courses. I don’t remember how many times I encountered a configuration issue and it subsequently led to a Stack Overflow rabbit hole journey for hours – especially early in my career.</p>
+<figure class="align-center">
+    <a href="stack-overflow-is-dead.png" 
+       class="glightbox" 
+       data-gallery="gallery1" 
+       data-title="Bias and variance as function of model complexity"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img src="stack-overflow-is-dead.png" alt="">
+    </a>
+    
+      <figcaption>Bias and variance as function of model complexity</figcaption>
+    
+  </figure>
+  
+<div style="text-align: center; margin-bottom: 20px;">
+<em>Number of questions asked per month on StackOverflow. Data source: <a href="https://gist.github.com/hopeseekr/f522e380e35745bd5bdc3269a9f0b132?ref=blog.pragmaticengineer.com#file-stackoverflow-new-questions-over-time-2009-2024-csv">this Gist</a></em>
+</div>
+<p>Stack Overflow was the essential website for whoever codes or wants to code in the last 10-15 years. However, <a href="https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/">Stack Overflow is almost dead</a> at this point for a few reasons:</p>
+<ul>
+<li>
+<p><strong>The advent of LLMs</strong>: nowadays, coders can easily ask LLMs like ChatGPT or Gemini to debug most issues. I personally have not used Stack Overflow for debugging anymore. The number of questions asked on Stack Overflow has dropped sharply after ChatGPT’s launch at the end of 2022.</p>
+</li>
+<li>
+<p><strong>Rigid Moderation</strong>: Stack Overflow has incredibly rigid moderation, which has led to bad user experience. <a href="https://news.ycombinator.com/item?id=41364798">Many users complained about the difficulty of updating their own answers or asking similar questions on Stack Overflow</a>. Significant number of solved questions are over 5 years old. Although, technical packages and frameworks are constantly updated and 5 years are forever in the modern technology universe.</p>
+</li>
+<li>
+<p><strong>Toxic community</strong>: Stack Overflow has been an unfriendly place to users (especially new users). Although the vibe varies across sub-communities on Stack Overflow, the comment section can be hostile and dismissive.</p>
+</li>
+</ul>
+<p>I don’t remember when was the last time I fixed a bug via Stack Overflow, but I feel nostalgic about it already. LLMs and AI coding tools have changed my coding workflow, but they are not the key to all coding solutions.</p>
 <h2 id="new-bugs-are-uncharted-areas-for-ai-companies">New bugs are uncharted areas for AI companies</h2>
 <h2 id="how-can-this-challenge-play-out">How can this challenge play out?</h2>
 <h2 id="reference">Reference</h2>
 <ul>
 <li>Cover picture is from <a href="https://orlybooks.com/">Search O&rsquo;RLY Covers</a>, and I just love the site.</li>
+<li><a href="https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/">Stack overflow is almost dead</a></li>
+<li><a href="https://news.ycombinator.com/item?id=41364798">Ask HN: Why Is Stack Overflow Fading Away?</a></li>
 </ul>
 ]]></content:encoded></item><item><title>Get out of mainstream and personalized movie recommendation</title><link>http://localhost:1313/posts/random-movie/</link><pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/random-movie/</guid><description>&lt;h2 id="tldr">TL;DR&lt;/h2>
 &lt;p>As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app &lt;a href="#try-it-out">here&lt;/a> or on &lt;a href="https://huggingface.co/spaces/gytcrt/random-movie-hf" rel="noopener" target="_blank">hugging face space&lt;/a>.&lt;/p>
