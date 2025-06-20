@@ -40,7 +40,9 @@ Large Language Models(LLMs) are impressively good at coding because:
 
 However, new releases and bugs are shipped daily, and the training schedule of LLM providers cannot catch up with the speed of collective coding of the internet. In my view, the new releases and bugs after a LLM’s latest update are an uncharted area, we don't know whether LLM can solve it since it’s not trained on the new code.
 
-Recently, I tried to ask Cursor to guide me on a custom MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major releases almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.
+Recently, I tried to ask Cursor to guide me on a PostgresSQL MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major releases almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.
+
+{{< figurelightbox src="cusor-mcp.png" caption="The instructions from Cursor didn't lead me to a smooth set up " align="center" width="80%" >}}
 
 Moever, if all questions and answers on coding go down 95% on the internet like Stack Overflow over time, do LLM providers have enough new data to update their LLMs to solve our coding problems in future?
 

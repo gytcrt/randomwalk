@@ -39,7 +39,22 @@
 <li>Most coding problems/bugs have appeared and been solved by developers online. LLMs can easily leverage its endless memory to come up with solutions created by someone in the past.</li>
 </ul>
 <p>However, new releases and bugs are shipped daily, and the training schedule of LLM providers cannot catch up with the speed of collective coding of the internet. In my view, the new releases and bugs after a LLM’s latest update are an uncharted area, we don&rsquo;t know whether LLM can solve it since it’s not trained on the new code.</p>
-<p>Recently, I tried to ask Cursor to guide me on a custom MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major releases almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.</p>
+<p>Recently, I tried to ask Cursor to guide me on a PostgresSQL MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major releases almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.</p>
+<figure class="align-center">
+    <a href="cusor-mcp.png" 
+       class="glightbox" 
+       data-gallery="gallery1" 
+       data-title="The instructions from Cursor didn&#39;t lead me to a smooth set up "
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img src="cusor-mcp.png" alt="">
+    </a>
+    
+      <figcaption>The instructions from Cursor didn&#39;t lead me to a smooth set up </figcaption>
+    
+  </figure>
+  
 <p>Moever, if all questions and answers on coding go down 95% on the internet like Stack Overflow over time, do LLM providers have enough new data to update their LLMs to solve our coding problems in future?</p>
 <h2 id="how-can-this-challenge-play-out">How can this challenge play out?</h2>
 <p>Even though LLM has been the crown jewel of the entire tech industry in the last 3 years, LLM providers like OpenAI, Google, Meta and Microsoft are still trying to find a way to monetize the magic.</p>
