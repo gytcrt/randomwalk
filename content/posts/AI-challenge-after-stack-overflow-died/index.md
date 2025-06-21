@@ -35,12 +35,12 @@ I don’t remember when was the last time I fixed a bug via Stack Overflow, but 
 
 Large Language Models(LLMs) are impressively good at coding because:
 
-- LLMs are trained on a large corpus of online content including Stack Overflow, Reddit, and various coding forums. The training process enables LLMs to “memorize” the content, which is almost infinite for the human brain.
-- Most coding problems/bugs have appeared and been solved by developers online. LLMs can easily leverage its endless memory to come up with solutions created by someone in the past.
+- **LLMs come with limitless memory:** LLMs are trained on a large corpus of online content including Stack Overflow, Reddit, and various coding forums. The training process enables LLMs to “memorize” the content, which is almost infinite for the human brain.
+- **Most bugs come with a pattern:** Most coding problems/bugs have appeared and been solved by developers online. LLMs can easily leverage its endless memory to come up with solutions created by someone in the past.
 
 However, new releases and bugs are shipped daily, and the training schedule of LLM providers cannot catch up with the speed of collective coding of the internet. In my view, the new releases and bugs after a LLM’s latest update are an uncharted area, we don't know whether LLM can solve it since it’s not trained on the new code.
 
-Recently, I tried to ask Cursor to guide me on a PostgresSQL MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major releases almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.
+Recently, I asked Cursor to guide me on a PostgresSQL MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major release almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.
 
 {{< figurelightbox src="cusor-mcp.png" caption="The instructions from Cursor didn't lead me to a smooth set up " align="center" width="80%" >}}
 
@@ -66,6 +66,8 @@ For LLMs specialized in coding, their providers need to rigorously collect techn
 
 Developers still ask questions, but maybe not on Stack Overflow anymore. In my personal experience, I rely more on online forums like Reddit, Github, Hugging Face forum, and Discord groups, etc besides AI coding tools. Questions about new releases or new bugs can be found in those spaces.
 
+{{< figurelightbox src="question-hugging-face.png" caption="Question about error caused by new release is asked on Hugging Face Forum" align="center" width="80%" >}}
+
 Similar to collecting documentation and source code, LLM providers need to source and clean content from different technical communities and forums for better model performance. It sounds tedious, but from what I know, data sourcing is a significant part of an LLM provider’s job. Otherwise, Meta would not pay nearly [$15 Billion](https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html) for Scale AI in recent weeks
 
 #### Data from users
@@ -74,7 +76,13 @@ Currently, many paid AI coding tools like Cursor allow its users to turn on `Pri
 
 Therefore, when terms permitted, I think LLM providers will collect user interaction data from IDE or Slack or Github to train their coding LLMs.
 
-### Stack Overflow 2.0 in AI era
+### New product – Stack Overflow 2.0 in AI era
+
+Stack Overflow was in decline before developers started using LLMs and AI coding tools, because of its own management. Now with the advent of endless AI coding tools, developers are voluntarily or involuntarily learning new ways of coding. I believe there will be a new paradigm for developers in the near future. Or I should say, the best coding practice is always evolving, but the changes brought by LLMs are faster and more dramatic.
+
+A new product similar to Stack Overflow but tailored to the AI era with better user experience might emerge to bridge the gaps – developers can ask questions at a centralized place and LLM providers can access difficult coding questions on it.
+
+I look forward to seeing a product like this emerging soon. If not, maybe I should build it myself🤔.
 
 ## Reference
 
@@ -84,3 +92,4 @@ Therefore, when terms permitted, I think LLM providers will collect user interac
 - [Ask HN: Why Is Stack Overflow Fading Away?](https://news.ycombinator.com/item?id=41364798)
 - [Tech layoffs since 2023](https://news.crunchbase.com/startups/tech-layoffs/)
 - [Meta Invests $14.3 Billion in Scale AI to Kick-Start Superintelligence Lab](https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html)
+- New bug question on Hugging Face Forum: https://discuss.huggingface.co/t/js-gradio-error/160152

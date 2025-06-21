@@ -35,11 +35,11 @@
 <h2 id="new-bugs-are-uncharted-areas-for-ai-companies">New bugs are uncharted areas for AI companies</h2>
 <p>Large Language Models(LLMs) are impressively good at coding because:</p>
 <ul>
-<li>LLMs are trained on a large corpus of online content including Stack Overflow, Reddit, and various coding forums. The training process enables LLMs to “memorize” the content, which is almost infinite for the human brain.</li>
-<li>Most coding problems/bugs have appeared and been solved by developers online. LLMs can easily leverage its endless memory to come up with solutions created by someone in the past.</li>
+<li><strong>LLMs come with limitless memory:</strong> LLMs are trained on a large corpus of online content including Stack Overflow, Reddit, and various coding forums. The training process enables LLMs to “memorize” the content, which is almost infinite for the human brain.</li>
+<li><strong>Most bugs come with a pattern:</strong> Most coding problems/bugs have appeared and been solved by developers online. LLMs can easily leverage its endless memory to come up with solutions created by someone in the past.</li>
 </ul>
 <p>However, new releases and bugs are shipped daily, and the training schedule of LLM providers cannot catch up with the speed of collective coding of the internet. In my view, the new releases and bugs after a LLM’s latest update are an uncharted area, we don&rsquo;t know whether LLM can solve it since it’s not trained on the new code.</p>
-<p>Recently, I tried to ask Cursor to guide me on a PostgresSQL MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major releases almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.</p>
+<p>Recently, I asked Cursor to guide me on a PostgresSQL MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major release almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.</p>
 <figure class="align-center">
     <a href="cusor-mcp.png" 
        class="glightbox" 
@@ -66,11 +66,29 @@
 <h3 id="alternative-data-sources">Alternative data sources</h3>
 <h4 id="reddit-and-other-forums">Reddit and other forums</h4>
 <p>Developers still ask questions, but maybe not on Stack Overflow anymore. In my personal experience, I rely more on online forums like Reddit, Github, Hugging Face forum, and Discord groups, etc besides AI coding tools. Questions about new releases or new bugs can be found in those spaces.</p>
+<figure class="align-center">
+    <a href="question-hugging-face.png" 
+       class="glightbox" 
+       data-gallery="gallery1" 
+       data-title="Question about error caused by new release is asked on Hugging Face Forum"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img src="question-hugging-face.png" alt="">
+    </a>
+    
+      <figcaption>Question about error caused by new release is asked on Hugging Face Forum</figcaption>
+    
+  </figure>
+  
 <p>Similar to collecting documentation and source code, LLM providers need to source and clean content from different technical communities and forums for better model performance. It sounds tedious, but from what I know, data sourcing is a significant part of an LLM provider’s job. Otherwise, Meta would not pay nearly <a href="https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html">$15 Billion</a> for Scale AI in recent weeks</p>
 <h4 id="data-from-users">Data from users</h4>
 <p>Currently, many paid AI coding tools like Cursor allow its users to turn on <code>Privacy Mode</code>, and Cursor promises to retain zero data for LLM training. However, as I mentioned in <a href="http://andreagao.com/posts/blog-set-up/#traeai">my previous post</a>, editors like Trae.ai are likely to use users’ code for LLM training. This is not a piece of news on the Internet. When users are not paying for a product, they are the product.</p>
 <p>Therefore, when terms permitted, I think LLM providers will collect user interaction data from IDE or Slack or Github to train their coding LLMs.</p>
-<h3 id="stack-overflow-20-in-ai-era">Stack Overflow 2.0 in AI era</h3>
+<h3 id="new-product--stack-overflow-20-in-ai-era">New product – Stack Overflow 2.0 in AI era</h3>
+<p>Stack Overflow was in decline before developers started using LLMs and AI coding tools, because of its own management. Now with the advent of endless AI coding tools, developers are voluntarily or involuntarily learning new ways of coding. I believe there will be a new paradigm for developers in the near future. Or I should say, the best coding practice is always evolving, but the changes brought by LLMs are faster and more dramatic.</p>
+<p>A new product similar to Stack Overflow but tailored to the AI era with better user experience might emerge to bridge the gaps – developers can ask questions at a centralized place and LLM providers can access difficult coding questions on it.</p>
+<p>I look forward to seeing a product like this emerging soon. If not, maybe I should build it myself🤔.</p>
 <h2 id="reference">Reference</h2>
 <ul>
 <li>Cover picture is from <a href="https://orlybooks.com/">Search O&rsquo;RLY Covers</a>, and I just love the site.</li>
@@ -79,6 +97,7 @@
 <li><a href="https://news.ycombinator.com/item?id=41364798">Ask HN: Why Is Stack Overflow Fading Away?</a></li>
 <li><a href="https://news.crunchbase.com/startups/tech-layoffs/">Tech layoffs since 2023</a></li>
 <li><a href="https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html">Meta Invests $14.3 Billion in Scale AI to Kick-Start Superintelligence Lab</a></li>
+<li>New bug question on Hugging Face Forum: <a href="https://discuss.huggingface.co/t/js-gradio-error/160152">https://discuss.huggingface.co/t/js-gradio-error/160152</a></li>
 </ul>
 ]]></content:encoded></item><item><title>Get out of mainstream and personalized movie recommendation</title><link>http://localhost:1313/posts/random-movie/</link><pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/random-movie/</guid><description>&lt;h2 id="tldr">TL;DR&lt;/h2>
 &lt;p>As a movie lover, I have got frustrated by my experience with streaming services in the last few years. I developed an app to help me discover hidden gems. You can check out the app &lt;a href="#try-it-out">here&lt;/a> or on &lt;a href="https://huggingface.co/spaces/gytcrt/random-movie-hf" rel="noopener" target="_blank">hugging face space&lt;/a>.&lt;/p>
