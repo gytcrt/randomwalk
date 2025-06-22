@@ -2,7 +2,7 @@
 date: 2025-06-20
 draft: true
 title: "How do LLMs and AI coding tools solve new problems when Stack Overflow is dead?"
-tags: ["tech", "GenAI", "data"]
+tags: ["tech", "GenAI", "data", "vibe coding"]
 ShowToc: true
 cover:
   image: "copying-and-pasting-2.png"
@@ -56,15 +56,15 @@ Moreover, if all questions and answers on coding go down 95% on the Internet lik
 
 Even though LLM has been the crown jewel of the entire tech industry in the last 3 years, LLM providers like OpenAI, Google, Meta and Microsoft are still trying to find a way to monetize the magic.
 
-AI coding tools so far are the most successful use case of LLMs, but developers have a love and hate relationship with them. After [rounds and rounds of lay-offs](https://news.crunchbase.com/startups/tech-layoffs/), developers are insecure about their jobs and scared of AI replacing them. However, AI coding tools have boosted developer’s productivity as well. For example, for Python coders like [Andrew Ng](https://www.deeplearning.ai/the-batch/issue-298/) and me, now we can easily work on frontend using JavaScript and TypeScript with the help of AI coding tools. Developers are nevertheless the earliest adopter of this AI wave.
+AI coding tools are the most successful use case of LLMs so far, and many tech companies and developers themselve are embracing the tools. As a developer myself, I do find AI coding tools revolutionary for this profession: I can focus on high priority design and leave some tedious typing to AI. I don’t think the AI coding tools are in a mature stage yet, and the developer community is still navigating the new ways of coding and adopting the technology.
 
-Therefore, I think the market will adapt for developers’ needs and catch up on the uncharted areas. I think the challenge will play out in the following ways.
+Despite imperfections of existing AI coding tools, developers are nevertheless the earliest and earnest adopter of this AI wave. Therefore, I think the market will prioritize developers’ needs and catch up on the uncharted areas. I think the challenge will play out in the following ways.
 
 ### Frequent update on model
 
-I believe LLMs will be more specialized in the coming years. A generalist model like GPT-4 is equipped with knowledge irrelevant to coding, and developers don’t need to pay the price for that. A specialty model is optimized for limited use cases like coding, content generation, and customer service, etc regarding its size, price, latency and performance. With a specialty model, clients or customers can pay a more reasonable price for their specific needs.
-
 For LLMs specialized in coding, their providers need to rigorously collect technical documentation and source code for major languages and frameworks, and update their LLMs frequently. By doing so, the coding LLMs or the AI tools hooked with them can help developers by leveraging the latest documentation and source code. Hopefully, the coding LLM can recognize the latest information and past bug patterns to infer a solution to a new bug. Although my wishful hope still requires empirical experiment’s support.
+
+This approach is similar to addressing data drifting(changes in the distribution of input data over time) and model staleness(when a model becomes outdated) in ML model development and MLOps. However, training and serving LLMs is a specialized subset of machine learning that requires a distinct workflow, pipeline and infrastructure. This is now often referred to as AIOps.
 
 ### Alternative data sources
 
@@ -100,6 +100,6 @@ Quality data are the foundation of LLMs, and they are as important as innovative
 - [Stack overflow is almost dead](https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/)
 - [Which topics on Stack OverFlow are affected the most? ](https://tomazweiss.github.io/blog/stackoverflow_decline/)
 - [Ask HN: Why Is Stack Overflow Fading Away?](https://news.ycombinator.com/item?id=41364798)
-- [Tech layoffs since 2023](https://news.crunchbase.com/startups/tech-layoffs/)
+- [30% of Microsoft code is written by AI](https://www.cnbc.com/2025/04/29/satya-nadella-says-as-much-as-30percent-of-microsoft-code-is-written-by-ai.html)
 - [Meta Invests $14.3 Billion in Scale AI to Kick-Start Superintelligence Lab](https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html)
 - New bug question on Hugging Face Forum: https://discuss.huggingface.co/t/js-gradio-error/160152
