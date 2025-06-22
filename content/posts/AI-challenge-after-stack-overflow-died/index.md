@@ -5,13 +5,19 @@ title: "How do LLMs and AI coding tools solve new problems when Stack Overflow i
 tags: ["tech", "GenAI", "data"]
 ShowToc: true
 cover:
-  image: "copying-and-pasting.jpg"
+  image: "copying-and-pasting-2.png"
   width: 70%
 ---
 
 ## TL;DR
 
-## Stack overflow WAS essential for coders
+Stack Overflow used to be the place to search for solutions, when developers encounter bugs. But Stack Overflow is almost dead now. LLMs might enter uncharted areas when new frameworks and bugs are released. LLM providers need to navigate the uncharted areas via:
+
+- Frequently collect tech documents and source code to update their models
+- Source alternative data from other technical forums(Reddit, Github, and Hugging Face, etc) and user interactions
+- Adapt to a new product – Stack Overflow 2.0 in AI era
+
+## Stack Overflow WAS essential for coders
 
 As someone starting coding in the 2010s, Stack Overflow was my best buddy. When I just started my career as a data scientist, 50% of my coding skills were learned from working itself, 30% were from Stack Overflow, and 20% were from university or structured courses. I don’t remember how many times I encountered a configuration issue and it subsequently led to a Stack Overflow rabbit hole journey for hours – especially early in my career.
 
@@ -42,23 +48,23 @@ However, new releases and bugs are shipped daily, and the training schedule of L
 
 Recently, I asked Cursor to guide me on a PostgresSQL MCP set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major release almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instruction to set up the custom MCP, and I went the route of Google, Reddit, and Cursor’s latest documentation.
 
-{{< figurelightbox src="cusor-mcp.png" caption="The instructions from Cursor didn't lead me to a smooth set up " align="center" width="80%" >}}
+{{< figurelightbox src="cusor-mcp-2.png" caption="The instructions from Cursor didn't lead me to a smooth set up " align="center" width="80%" >}}
 
-Moever, if all questions and answers on coding go down 95% on the internet like Stack Overflow over time, do LLM providers have enough new data to update their LLMs to solve our coding problems in future?
+Moreover, if all questions and answers on coding go down 95% on the Internet like Stack Overflow over time, do LLM providers have enough new data to update their LLMs to solve our coding problems in future?
 
 ## How can this challenge play out?
 
 Even though LLM has been the crown jewel of the entire tech industry in the last 3 years, LLM providers like OpenAI, Google, Meta and Microsoft are still trying to find a way to monetize the magic.
 
-AI coding tools so far are the most successful use case of LLMs, and developers have a love and hate relationship with AI coding tools. After [rounds and rounds of lay-offs](https://news.crunchbase.com/startups/tech-layoffs/), developers are insecure about their jobs and scared of AI replacing them. However, AI coding tools have boosted developer’s productivity as well. For example, for Python coders like [Andrew Ng](https://www.deeplearning.ai/the-batch/issue-298/) and me, we can easily work on frontend using JavaScript and TypeScript with the help of AI coding tools. Developers are nevertheless the earliest adopter of this AI wave.
+AI coding tools so far are the most successful use case of LLMs, but developers have a love and hate relationship with them. After [rounds and rounds of lay-offs](https://news.crunchbase.com/startups/tech-layoffs/), developers are insecure about their jobs and scared of AI replacing them. However, AI coding tools have boosted developer’s productivity as well. For example, for Python coders like [Andrew Ng](https://www.deeplearning.ai/the-batch/issue-298/) and me, now we can easily work on frontend using JavaScript and TypeScript with the help of AI coding tools. Developers are nevertheless the earliest adopter of this AI wave.
 
-Therefore, I think the market will adapt for developers’ needs and catch up on the uncharted areas. I think the challenge will play out in following ways.
+Therefore, I think the market will adapt for developers’ needs and catch up on the uncharted areas. I think the challenge will play out in the following ways.
 
 ### Frequent update on model
 
-I believe LLMs will be more specialized in the coming years. A generalist model like GPT-4 equipped knowledge irrelevant to coding, and developers don’t need to pay the price for that. A specialty model is optimized for limited use cases like coding, content generation, and customer service, etc. With a specialty model, clients or customers can pay a more reasonable price for their specific needs.
+I believe LLMs will be more specialized in the coming years. A generalist model like GPT-4 is equipped with knowledge irrelevant to coding, and developers don’t need to pay the price for that. A specialty model is optimized for limited use cases like coding, content generation, and customer service, etc regarding its size, price, latency and performance. With a specialty model, clients or customers can pay a more reasonable price for their specific needs.
 
-For LLMs specialized in coding, their providers need to rigorously collect technical documentation and source code for major languages and frameworks, and update their LLMs frequently. By doing so, the coding LLMs or the AI tools hooked with them can help developers by leveraging the latest documentation and source code. Hopefully, the coding LLM can recognize the latest information and past bug patterns to infer a solution to a new bug. Though my wishful hope requires empirical experiment’s support.
+For LLMs specialized in coding, their providers need to rigorously collect technical documentation and source code for major languages and frameworks, and update their LLMs frequently. By doing so, the coding LLMs or the AI tools hooked with them can help developers by leveraging the latest documentation and source code. Hopefully, the coding LLM can recognize the latest information and past bug patterns to infer a solution to a new bug. Although my wishful hope still requires empirical experiment’s support.
 
 ### Alternative data sources
 
@@ -66,7 +72,7 @@ For LLMs specialized in coding, their providers need to rigorously collect techn
 
 Developers still ask questions, but maybe not on Stack Overflow anymore. In my personal experience, I rely more on online forums like Reddit, Github, Hugging Face forum, and Discord groups, etc besides AI coding tools. Questions about new releases or new bugs can be found in those spaces.
 
-{{< figurelightbox src="question-hugging-face.png" caption="Question about error caused by new release is asked on Hugging Face Forum" align="center" width="80%" >}}
+{{< figurelightbox src="question-hugging-face-2.png" caption="Question about error caused by new release is asked on Hugging Face Forum" align="center" width="80%" >}}
 
 Similar to collecting documentation and source code, LLM providers need to source and clean content from different technical communities and forums for better model performance. It sounds tedious, but from what I know, data sourcing is a significant part of an LLM provider’s job. Otherwise, Meta would not pay nearly [$15 Billion](https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html) for Scale AI in recent weeks
 
@@ -83,6 +89,10 @@ Stack Overflow was in decline before developers started using LLMs and AI coding
 A new product similar to Stack Overflow but tailored to the AI era with better user experience might emerge to bridge the gaps – developers can ask questions at a centralized place and LLM providers can access difficult coding questions on it.
 
 I look forward to seeing a product like this emerging soon. If not, maybe I should build it myself🤔.
+
+## Conclusion
+
+Quality data are the foundation of LLMs, and they are as important as innovative model architecture like [Transformer](https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/) and computing resources like Nvidia chips. As traditional Q&A forums like Stack Overflow die down and developers change their work flow, LLM providers need to continue inventing new ways to address new problems in programming. This article discussed a few approaches, and I believe more approaches will come.
 
 ## Reference
 
