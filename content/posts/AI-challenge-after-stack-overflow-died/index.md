@@ -1,6 +1,6 @@
 ---
-date: 2025-06-20
-draft: true
+date: 2025-06-23
+draft: false
 title: "How do LLMs and AI coding tools solve new problems when Stack Overflow is dead?"
 tags: ["tech", "GenAI", "data", "vibe coding"]
 ShowToc: true
@@ -26,10 +26,10 @@ As someone who began coding in the 2010s, Stack Overflow was my best buddy. When
 {{< figurelightbox src="stack-overflow-is-dead.png" align="center" width="80%" >}}
 
 <div style="text-align: center; margin-bottom: 20px;">
-<em>Number of questions asked per month on StackOverflow. Data source: <a href="https://gist.github.com/hopeseekr/f522e380e35745bd5bdc3269a9f0b132?ref=blog.pragmaticengineer.com#file-stackoverflow-new-questions-over-time-2009-2024-csv">this Gist</a></em>
+<em>Number of questions asked per month on StackOverflow. Data source: {{< newtabref href="https://gist.github.com/hopeseekr/f522e380e35745bd5bdc3269a9f0b132?ref=blog.pragmaticengineer.com#file-stackoverflow-new-questions-over-time-2009-2024-csv" title="this Gist" >}}</em>
 </div>
 
-For the last 10-15 years, Stack Overflow has been the essential website for whoever codes or wants to code. But now, [Stack Overflow is almost dead](https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/), and I think it's due to a few key reasons after [some research](https://news.ycombinator.com/item?id=41364798) online:
+For the last 10-15 years, Stack Overflow has been the essential website for whoever codes or wants to code. But now, {{< newtabref href="https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/" title="Stack Overflow is almost dead" >}}, and I think it's due to a few key reasons after {{< newtabref href="https://news.ycombinator.com/item?id=41364798" title="some research" >}} online:
 
 - **The advent of LLMs**: Nowadays, coders can easily ask LLMs like ChatGPT or Gemini to debug most issues. I personally have not used Stack Overflow for debugging anymore. The number of questions asked on Stack Overflow has dropped sharply after ChatGPT's launch at the end of 2022.
 
@@ -60,7 +60,7 @@ Hypothetically, if the number of coding questions and answers on other forums li
 
 Even though LLM has been the crown jewel of the entire tech industry in the last three years, LLM providers like OpenAI, Google, Meta and Microsoft are still trying to find a way to monetize the magic.
 
-AI coding tools are the most successful use case of LLMs so far, and many tech companies and developers themselves are [embracing the tools](https://www.cnbc.com/2025/04/29/satya-nadella-says-as-much-as-30percent-of-microsoft-code-is-written-by-ai.html). As a developer myself, I do find AI coding tools revolutionary for this profession; I can focus on high priority design and leave some tedious typing to AI. I don't think the AI coding tools are in a mature stage yet, and the developer community is still navigating the new ways of coding and adopting the technology.
+AI coding tools are the most successful use case of LLMs so far, and many tech companies and developers themselves are {{< newtabref href="https://www.cnbc.com/2025/04/29/satya-nadella-says-as-much-as-30percent-of-microsoft-code-is-written-by-ai.html" title="embracing the tools" >}}. As a developer myself, I do find AI coding tools revolutionary for this profession; I can focus on high priority design and leave some tedious typing to AI. I don't think the AI coding tools are in a mature stage yet, and the developer community is still navigating the new ways of coding and adopting the technology.
 
 Despite the imperfections of existing AI coding tools, developers are nevertheless the earliest and earnest adopters of this AI wave. Therefore, the market will surely prioritize developers' needs and catch up on the uncharted areas. I think the challenge will play out in the following ways.
 
@@ -78,7 +78,7 @@ Developers still ask questions, just maybe not on Stack Overflow anymore. In my 
 
 {{< figurelightbox src="question-hugging-face-2.png" caption="Question about error caused by new release is asked on Hugging Face Forum" align="center" width="80%" >}}
 
-Similar to collecting documentation and source code, LLM providers need to source and clean content from different technical communities and forums for better model performance. It sounds tedious, but from what I know, data sourcing is a significant part of a LLM provider's job. Otherwise, Meta would not pay nearly [$15 Billion for Scale AI](https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html) in recent weeks.
+Similar to collecting documentation and source code, LLM providers need to source and clean content from different technical communities and forums for better model performance. It sounds tedious, but from what I know, data sourcing is a significant part of a LLM provider's job. Otherwise, Meta would not pay nearly {{< newtabref href="https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html" title="$15 Billion for Scale AI" >}} in recent weeks.
 
 #### Data from users
 
@@ -96,16 +96,16 @@ I look forward to seeing a product like this emerging soon. If not, maybe I shou
 
 ## Conclusion
 
-Quality data are the foundation of LLMs, and they are as important as innovative model architecture like [Transformer](https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/) and computing resources like Nvidia chips. As traditional Q&A forums like Stack Overflow die down and developers change their workflow, LLM providers need to continue inventing new ways to address new problems in programming. This article discussed a few approaches, and I believe more approaches will come.
+Quality data are the foundation of LLMs, and they are as important as innovative model architecture like {{< newtabref href="https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/" title="Transformer" >}} and computing resources like Nvidia chips. As traditional Q&A forums like Stack Overflow die down and developers change their workflow, LLM providers need to continue inventing new ways to address new problems in programming. This article discussed a few approaches, and I believe more approaches will come.
 
 ## Reference
 
-- Cover picture is from [Search O'RLY Covers](https://orlybooks.com/), and I just love the site.
-- [Stack overflow is almost dead](https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/)
-- [Which topics on Stack OverFlow are affected the most? ](https://tomazweiss.github.io/blog/stackoverflow_decline/)
-- [Ask HN: Why Is Stack Overflow Fading Away?](https://news.ycombinator.com/item?id=41364798)
-- [Model Context Protocol](https://modelcontextprotocol.io/introduction)
-- [PostgresSQL MCP set up on Cursor](https://cursor.directory/mcp/postgresql)
-- [30% of Microsoft code is written by AI](https://www.cnbc.com/2025/04/29/satya-nadella-says-as-much-as-30percent-of-microsoft-code-is-written-by-ai.html)
-- [Meta Invests $14.3 Billion in Scale AI to Kick-Start Superintelligence Lab](https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html)
+- Cover picture is from {{< newtabref href="https://orlybooks.com/" title="Search O'RLY Covers" >}}, and I just love the site.
+- {{< newtabref href="https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/" title="Stack overflow is almost dead" >}}
+- {{< newtabref href="https://tomazweiss.github.io/blog/stackoverflow_decline/" title="Which topics on Stack OverFlow are affected the most?" >}}
+- {{< newtabref href="https://news.ycombinator.com/item?id=41364798" title="Ask HN: Why Is Stack Overflow Fading Away?" >}}
+- {{< newtabref href="https://modelcontextprotocol.io/introduction" title="Model Context Protocol" >}}
+- {{< newtabref href="https://cursor.directory/mcp/postgresql" title="PostgresSQL MCP set up on Cursor" >}}
+- {{< newtabref href="https://www.cnbc.com/2025/04/29/satya-nadella-says-as-much-as-30percent-of-microsoft-code-is-written-by-ai.html" title="30% of Microsoft code is written by AI" >}}
+- {{< newtabref href="https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html" title="Meta Invests $14.3 Billion in Scale AI to Kick-Start Superintelligence Lab" >}}
 - New bug question on Hugging Face Forum: https://discuss.huggingface.co/t/js-gradio-error/160152
