@@ -439,6 +439,18 @@ body.dark .header-icon:hover {
   display: block;
 }
 
+/* Make profile image link interactive */
+.profile-image-link {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-image-link:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
+}
+
 /* Center the title and subtitle */
 .profile_inner h1,
 .profile_inner span {
