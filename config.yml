@@ -197,3 +197,12 @@ markup:
   goldmark:
     renderer:
       unsafe: true  # This enables raw HTML in markdown content
+
+sitemap:
+  changeFreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
+
+disableKinds:
+  - taxonomy
+  - term

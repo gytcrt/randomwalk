@@ -6,6 +6,9 @@ ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowToc: false
 noComments: true
+sitemap:
+    priority: 0.8
+    changefreq: yearly
 ---
 
 <img src="images/profile.jpg" alt="about me" width="600"/>
