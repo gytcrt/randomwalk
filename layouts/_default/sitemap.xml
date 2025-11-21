@@ -1,7 +1,8 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{ range where .Data.Pages "Sitemap.Disable" "ne" true }}
+  {{ range .Data.Pages }}
+    {{- if and (ne .Sitemap.Disable true) (ne .Kind "taxonomy") (ne .Kind "term") -}}
     <url>
       <loc>{{ .Permalink }}</loc>
       {{ if not .Lastmod.IsZero }}
@@ -14,5 +15,6 @@
       <priority>{{ .Sitemap.Priority }}</priority>
       {{ end }}
     </url>
+    {{- end -}}
   {{ end }}
 </urlset>
