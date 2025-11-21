@@ -20,6 +20,10 @@ However, when my peers went into the workforce after college, 996 became a norm 
 
 I worked in the intersection of tech and consulting in China during Covid for a year, and operated under the 007 mode. In multiple work group chats, coworkers said they had a  fever or were about to go through a surgery, but they would be back in a few hours. It was an unsustainable and painful experience for me, and I left for a better work culture in the US in 2021. 
 
+{{< figurelightbox src="996-in-China.JPG" caption="My laptop needed to work during our commute from client site to hotel" align="center" width="100%" >}}
+
+
+
 In 2025, I found the 996 and 007 work schedules have also become more prominent in the US tech sector, though Silicon Valley used to be proud of its laidback culture. When I interviewed with OpenAI, Meta, and other AI focused companies this year, most interviewers avoided  sharing their work hours and told me they prioritized moving fast and getting things done. Major news outlets like {{< newtabref href="https://www.nytimes.com/2025/10/22/business/china-tech-silicon-valley.html" title="The New York Times" >}} and {{< newtabref href="https://www.wsj.com/tech/ai/ai-race-tech-workers-schedule-1ea9a116?mod=saved_content" title="The Wall Street Journal" >}} have published articles about how Silicon Valley and AI startups admire the 996 schedule and are determined to win the AI race by putting in 100-hour workweeks. One of the startup executives even pushes 007 to another level: “002", meaning midnight to midnight, with a two-hour break on weekends. This environment sounds so toxic to me, as someone who experienced competitive education and work culture in China, and worked in the fast-paced consulting industry for years. 
 
 Reading the news and observing the culture shift in the tech industry makes me sad. Shouldn’t AI be the one that works 24/7 and enables humans to focus on more enjoyable and creative tasks? If AI can work 24/7 without any break, how could working 996 or 007 be a competitive advantage? 
