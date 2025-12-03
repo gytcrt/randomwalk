@@ -458,6 +458,58 @@ body.dark .nav-separator {
 }
 
 /*--------------------------------------------------------------
+# NOTES SECTION
+--------------------------------------------------------------*/
+/* Notes page specific styling */
+.notes-page .notes-content blockquote {
+  position: relative;
+  border-left: 3px solid var(--secondary);
+  padding: 1rem 1rem 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  background-color: var(--code-bg);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.notes-page .notes-content blockquote:hover {
+  background-color: var(--theme);
+}
+
+/* Timestamp styling within blockquotes */
+.notes-page .notes-content blockquote::after {
+  content: '';
+  display: block;
+}
+
+/* Make the timestamp appear on the right */
+.notes-page .notes-content blockquote p {
+  margin-bottom: 0;
+}
+
+/* Style timestamps that end with date format (- YYYY.MM.DD) */
+.notes-page .notes-content blockquote {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark mode adjustments */
+body.dark .notes-page .notes-content blockquote {
+  border-left-color: var(--secondary);
+}
+
+/* Mobile responsive adjustments for notes */
+@media (max-width: 768px) {
+  .notes-page .notes-content blockquote {
+    padding: 0.875rem 1rem;
+    margin: 1.25rem 0;
+    font-size: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
 # RESPONSIVE DESIGN - MOBILE (768px and below)
 --------------------------------------------------------------*/
 @media (max-width: 768px) {

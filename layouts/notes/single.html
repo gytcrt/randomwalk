@@ -1,0 +1,21 @@
+{{- define "main" }}
+
+<article class="post-single notes-page">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{- .Title -}}
+      {{- if .Draft -}}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end -}}
+    </h1>
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content notes-content">
+    {{- .Content -}}
+  </div>
+  {{- end }}
+
+</article>
+
+{{- end }}{{/* end main */}}
+
