@@ -10,7 +10,7 @@ ShowToc: false
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
 
-> I recently noticed that the word "algorithm" has lost its original meaning in daily life: most non-tech people use "algorithm" as a synonym for recommendation system in conversations or in the news media. Unfortunately, recommendation systems are so pervasive and addictive nowadays, that it makes "algorithm" a native word.  - 2025-12-03
+> I recently noticed that the word "algorithm" has lost its original meaning in daily life: most non-tech people use "algorithm" as a synonym for recommendation system in conversations or in the news media. Unfortunately, recommendation systems are so pervasive and addictive nowadays, that it makes "algorithm" a native word.  - 2025.12.03
 
 > "Alternative data offers the opportunity to work with truly unique,hard-to-process
 datasets. Remember, data that is hard to store, manipulate, and operate is always the
