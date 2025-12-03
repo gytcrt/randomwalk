@@ -380,36 +380,27 @@ body.dark .nav-separator {
 .header-icons {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
 
 .header-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  color: var(--secondary);
   text-decoration: none !important;
   border: none;
   box-shadow: none !important;
   transition: 0.15s;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .header-icon:hover {
-  color: black;
+  transform: scale(1.1);
 }
 
-/* Dark mode header icon hover effect */
-body.dark .header-icon:hover {
-  color: white;
-}
-
-.header-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+.header-icon span {
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -547,7 +538,7 @@ body.dark .header-icon:hover {
   }
 
   .header-icons {
-    gap: 6px;
+    gap: 12px;
   }
 
   /* Profile section mobile adjustments */

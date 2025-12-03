@@ -185,10 +185,6 @@ menu:
       name: Posts
       url: /posts/
       weight: 10
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 20
 
 pygmentsUseClasses: true
 markup:
