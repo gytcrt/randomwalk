@@ -1,0 +1,56 @@
+# Random Walk (https://andreagao.com/)
+
+> Welcome to the personal blog of Andrea Gao, a full-stack AI practitioner sharing insights on technology, GenAI, work culture, and life. This blog is a space to document thoughts and ideas as they randomly walk through my mind.
+
+## About author
+
+My name is Andrea Gao (she/her). I am a full-stack AI practitioner.
+
+I am interested in bringing data and ML/AI systems together to solve valuable problems. Over the past two years, I have been particularly focused on developing GenAI use cases and their iterations.
+
+I have worked on every step in modern ML/AI systems, from proof-of-concept to pilot to production, as both an engineer and a leader. I find it thrilling to innovate and change the status quo with cutting-edge or mature technologies.
+
+As I stepped into leadership roles, I found myself a bit rusty in coding in recent years. So I decided to rebuild my personal website to brush up on the latest tools and frameworks. I believe it's important for leaders to stay close to their domain when they guide their team and organization.
+
+This blog covers topics including:
+- Artificial Intelligence and GenAI applications
+- AI/ML system development and deployment
+- Responsible AI and data bias
+- Tech industry work culture and startup insights
+- Writing and creative pursuits
+- Personal essays and reflections
+
+## Licensing
+
+© 2025 Andrea Gao.
+ 
+## Languages supported
+
+English
+
+## Main Navigation Links
+
+- [Home](https://andreagao.com/): Main page with latest posts and articles
+- [Posts](https://andreagao.com/posts/): Blog posts on AI, technology, work culture, and personal reflections
+- [Notes](https://andreagao.com/notes/): Quick thoughts and shorter notes
+- [Archives](https://andreagao.com/archives/): Complete list of all articles with links
+- [About](https://andreagao.com/about/): Background, selected works, and projects
+- [Categories](https://andreagao.com/categories): Taxonomy page with all Categories
+- [Tags](https://andreagao.com/tags): Taxonomy page with all Tags
+
+## Sitemap
+
+https://andreagao.com/sitemap.xml
+
+## RSS/Atom feed
+
+https://andreagao.com/index.xml
+
+## Contact
+
+Feel free to reach out with feedback, questions, or just to connect.
+
+- [Email](mailto:andrea.gao@pm.me)
+- [LinkedIn](https://www.linkedin.com/in/yuanandreagao/)
+- [X (Twitter)](https://x.com/gytcrt)
+- [GitHub](https://github.com/gytcrt)

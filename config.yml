@@ -16,11 +16,27 @@ caches:
   images:
     dir: :cacheDir/images
 
+mediaTypes:
+  text/llms:
+    suffixes: ["txt"]
+
+outputFormats:
+  llms:
+    name: llms
+    mediaType: text/llms
+    baseName: llms
+    isPlainText: true
+    rel: alternate
+    isHTML: false
+    noUgly: true
+    permalinkable: false
+
 outputs:
     home:
         - HTML
         - RSS
         - JSON # necessary for search
+        - llms # generative engine optimization
     section:
         - HTML
         - RSS
@@ -37,7 +53,7 @@ minify:
 
 # RSS Configuration
 rssLimit: 20  # Number of entries in RSS feed
-copyright: "© 2024 Andrea Gao"
+copyright: "© 2025 Andrea Gao"
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.

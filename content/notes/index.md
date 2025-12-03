@@ -10,8 +10,6 @@ ShowToc: false
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
 
-When a note is quoted, it's from somewhere/someone else. Otherwise, it's from me.
-
 > "Alternative data offers the opportunity to work with truly unique,hard-to-process
 datasets. Remember, data that is hard to store, manipulate, and operate is always the
 most promising. You will recognize that a dataset may be useful if it annoys your data
