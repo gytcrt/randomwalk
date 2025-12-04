@@ -13,7 +13,7 @@ sitemap:
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
 
-> "Annuities" are not often discussed in personal finance comparing with 401K. Based on a [WSJ article](https://www.wsj.com/personal-finance/vanguard-401k-regular-payout-170fd8f6?st=SYc1Df&reflink=desktopwebshare_permalink), major providers like Vanguard have started offering annuity payouts along with their 401k plans. Annuities still don’t seem to be a mainstream retirement vehicle in the US, and I’m very curious about the historical and societal reasons behind that.  - 2025-12-04
+> "Annuities" are not often discussed in personal finance comparing with 401K. Based on a [WSJ article](https://www.wsj.com/personal-finance/vanguard-401k-regular-payout-170fd8f6?st=SYc1Df&reflink=desktopwebshare_permalink), major providers like Vanguard have started offering annuity payouts along with their 401k plans. Annuities still don’t seem to be a mainstream retirement vehicle in the US, and I’m very curious about the historical and societal reasons behind that.  - 2025.12.04
 
 > I recently noticed that the word "algorithm" has lost its original meaning in daily life: most non-tech people use "algorithm" as a synonym for recommendation system in conversations or in the news media. Unfortunately, recommendation systems are so pervasive and addictive nowadays, that it makes "algorithm" a native word.  - 2025.12.03
 

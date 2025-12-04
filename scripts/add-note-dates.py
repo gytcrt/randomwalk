@@ -11,8 +11,8 @@ from pathlib import Path
 
 
 def get_current_date():
-    """Get current date in YYYY-MM-DD format"""
-    return datetime.now().strftime("%Y-%m-%d")
+    """Get current date in YYYY.MM.DD format"""
+    return datetime.now().strftime("%Y.%m.%d")
 
 
 def has_date_suffix(line):
