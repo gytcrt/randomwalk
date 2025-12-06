@@ -13,6 +13,10 @@ sitemap:
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
 
+> NYC is still full of serendipity after years...  
+<img src="chappell roan ads.jpg" alt="Chappell Roan ads in NYC" width="100%" style="margin: 10px 0;"/>
+<img src="sunset.jpg" alt="NYC Sunset" width="100%" style="margin: 10px 0;"/>  - 2025.12.06
+
 > I've found myself "read" faster with audio book than with paper book or kindle, because I can listen while walking, running or doing errands. Though I think audio book still works better for casual content like popular novel, "reading" something is better than nothing.  - 2025.12.06
 
 > "Annuities" are not often discussed in personal finance comparing with 401K. Based on a [WSJ article](https://www.wsj.com/personal-finance/vanguard-401k-regular-payout-170fd8f6?st=SYc1Df&reflink=desktopwebshare_permalink), major providers like Vanguard have started offering annuity payouts along with their 401k plans. Annuities still don’t seem to be a mainstream retirement vehicle in the US, and I’m very curious about the historical and societal reasons behind that.  - 2025.12.04
