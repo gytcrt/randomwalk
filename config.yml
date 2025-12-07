@@ -45,7 +45,7 @@ outputs:
         - RSS
 
 # Remove old GA configuration and add new GA4 configuration
-googleAnalytics: "" # Leave empty if you don't have GA4 yet
+googleAnalytics: "G-RYKYMVK6VG"
 
 minify:
   disableXML: false
@@ -163,7 +163,7 @@ params:
 
   analytics:
     google:
-      ID: G-MEASUREMENT_ID
+      ID: G-RYKYMVK6VG
     bing:
       SiteVerificationTag: "XYZabc"
     yandex:
