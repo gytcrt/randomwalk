@@ -2,6 +2,7 @@
 date: 2025-09-30
 draft: false
 title: "Updates from September"
+description: "September updates: getting married, starting a business, and dealing with AI coding assistants. Personal reflections on life changes and technology."
 tags: ["essay", "personal"]
 ShowToc: true
 cover:

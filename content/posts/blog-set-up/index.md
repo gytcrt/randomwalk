@@ -2,6 +2,7 @@
 title: "Rebuild my website with GenAI's assistance"
 date: 2025-04-29
 draft: false
+description: "How I rebuilt my personal website using Hugo, Cursor, Claude, and GenAI tools. A guide to modern web development with AI assistance in 2025."
 tags: ["tech", "GenAI", "AI", "Hugo"]
 ShowToc: true
 cover: 

@@ -2,6 +2,7 @@
 date: 2025-05-20
 draft: false
 title: 'Why is it hard to evaluate GenAI applications?'
+description: "Why evaluating GenAI applications is harder than traditional ML systems. Understanding challenges from unstructured outputs to foundation model unpredictability."
 tags: ["tech", "GenAI", "AI", "testing"]
 ShowToc: true
 cover:
