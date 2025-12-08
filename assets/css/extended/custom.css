@@ -520,6 +520,19 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 /*--------------------------------------------------------------
+# POST NAVIGATION & COMMENTS SPACING
+--------------------------------------------------------------*/
+/* Add spacing between post navigation and comments separator */
+.paginav {
+  margin-bottom: 2rem;
+}
+
+.comments-separator {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/*--------------------------------------------------------------
 # RESPONSIVE DESIGN - MOBILE (768px and below)
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
