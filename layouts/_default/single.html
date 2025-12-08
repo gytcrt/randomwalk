@@ -26,27 +26,31 @@
     </div>
     {{- end }}
   </header>
+
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+
   {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
+    {{- partial "toc.html" . }}
   {{- end }}
 
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
+      {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}
+      {{ .Content }}
+    {{- end }}
   </div>
   {{- end }}
 
   <footer class="post-footer">
     {{- if (.Param "socialLinks") }}
-    {{- partial "social_links.html" . }}
+      {{- partial "social_links.html" . }}
     {{- end }}
 
     {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
+      {{- partial "post_nav_links.html" . }}
     {{- end }}
 
     {{- if $isNewsletter }}
@@ -61,13 +65,78 @@
         {{- partial "newsletter_sub_form.html"}}
       </div>
     {{- end }}
+
+    {{/* --- Author box for E-E-A-T style signals --- */}}
+    <section class="post-author">
+      <h2>About the author</h2>
+      <p>
+        <strong>Andrea Gao</strong> is a founder, builder, and engineer. She writes about startups, engineering, and the personal side of building things.
+      </p>
+      <p>
+        <a href="/about/">More about Andrea</a>
+        {{/* Replace these with your actual profiles */}}
+        · <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        · <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
   </footer>
 
   {{- if not (.Param "noComments") }}
     <div class="comments-separator"></div>
     {{- partial "comments.html" . }}
   {{- end }}
+
+  {{/* --- Related posts section for internal linking & SEO --- */}}
+  {{- $related := site.RegularPages }}
+  {{- if .Params.tags }}
+    {{- $related = where $related "Params.tags" "intersect" .Params.tags }}
+  {{- end }}
+  {{- $related = where $related "Permalink" "ne" .Permalink | first 3 }}
+
+  {{- if gt (len $related) 0 }}
+  <section class="post-related">
+    <h2>Related posts</h2>
+    <ul>
+      {{- range $related }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="post-related-meta">
+          {{ .Date.Format "2006-01-02" }} · {{ .ReadingTime }} min read
+        </span>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+
 </article>
 
-{{- end }}{{/* end main */}}
+{{/* --- Article structured data (JSON-LD) for SEO --- */}}
+{{- if .IsPage }}
+  {{- $image := "" -}}
+  {{- with .Params.cover.image }}
+    {{- $image = . | absURL -}}
+  {{- end }}
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ .Title | jsonify }},
+    "description": {{ .Description | default (.Summary | plainify | truncate 160) | jsonify }},
+    "image": {{ if $image }}{{ $image | jsonify }}{{ else }}null{{ end }},
+    "datePublished": "{{ with .PublishDate }}{{ . }}{{ else }}{{ .Date }}{{ end }}",
+    "dateModified": "{{ .Lastmod }}",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Gao"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    }
+  }
+  </script>
+{{- end }}
+
+{{- end }}{{/* end main */}}
