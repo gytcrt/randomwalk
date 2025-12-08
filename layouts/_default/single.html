@@ -72,26 +72,28 @@
   {{- end }}
 
   {{/* --- Related posts section for internal linking & SEO --- */}}
-  {{- $related := site.RegularPages }}
-  {{- if .Params.tags }}
-    {{- $related = where $related "Params.tags" "intersect" .Params.tags }}
-  {{- end }}
-  {{- $related = where $related "Permalink" "ne" .Permalink | first 3 }}
+  {{- if eq .Type "posts" }}
+    {{- $related := site.RegularPages }}
+    {{- if .Params.tags }}
+      {{- $related = where $related "Params.tags" "intersect" .Params.tags }}
+    {{- end }}
+    {{- $related = where $related "Permalink" "ne" .Permalink | first 3 }}
 
-  {{- if gt (len $related) 0 }}
-  <section class="post-related">
-    <h2>Related posts</h2>
-    <ul>
-      {{- range $related }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span class="post-related-meta">
-          {{ .Date.Format "2006-01-02" }} · {{ .ReadingTime }} min read
-        </span>
-      </li>
-      {{- end }}
-    </ul>
-  </section>
+    {{- if gt (len $related) 0 }}
+    <section class="post-related">
+      <h2>Related posts</h2>
+      <ul>
+        {{- range $related }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="post-related-meta">
+            {{ .Date.Format "2006-01-02" }} · {{ .ReadingTime }} min read
+          </span>
+        </li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
   {{- end }}
 
 </article>
