@@ -13,7 +13,7 @@ sitemap:
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
 
-> Even as a solo developer in a start-up environment, writing technical tutorials/documents is critical. It's so easy to forget what I did and why I did something 2 weeks ago.  - 2025.12.08
+> Even as a solo developer in a start-up environment, writing technical tutorials/documents is critical for efficiency. It's so easy to forget what(a technical implementation) I did and why I did it just 2 weeks ago.  - 2025.12.08
 
 > NYC is still full of serendipity after years...  
 <img src="chappell roan ads.jpg" alt="Chappell Roan ads in NYC" width="100%" style="margin: 10px 0;"/>
