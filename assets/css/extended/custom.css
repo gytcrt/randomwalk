@@ -734,33 +734,46 @@ body.dark .custom-homepage .post-category.career {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0;
   }
 
   .logo {
-    margin-left: var(--gap);
-    margin-right: var(--gap);
-    padding-left: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    width: 100%;
   }
 
   .nav-section {
-    margin-left: var(--gap);
-    margin-right: var(--gap);
-    margin-top: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    margin-top: 8px;
     flex-wrap: wrap;
-    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
   }
 
   #menu {
     padding-left: 0;
     margin: 0;
-    gap: 3px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  #menu li {
+    margin: 0;
   }
 
   .nav-separator {
     height: 15px;
+    margin: 0;
   }
 
   .header-icons {
     gap: 12px;
+    margin: 0;
   }
 }
