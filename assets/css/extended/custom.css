@@ -449,8 +449,24 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 .custom-homepage .intro-content p {
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   font-family: var(--font-serif);
+}
+
+.custom-homepage .intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+.custom-homepage .intro-content a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.custom-homepage .intro-content a:hover {
+  color: var(--tertiary);
 }
 
 /* Recent posts section */
