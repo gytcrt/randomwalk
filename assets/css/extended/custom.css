@@ -557,10 +557,12 @@ body.dark .notes-page .notes-content blockquote {
 .custom-homepage .intro-content {
   font-size: 1.125rem;
   line-height: 1.7;
+  font-family: var(--font-serif);
 }
 
 .custom-homepage .intro-content p {
   margin: 0;
+  font-family: var(--font-serif);
 }
 
 /* Recent posts section */
@@ -583,8 +585,8 @@ body.dark .notes-page .notes-content blockquote {
 .custom-homepage .post-item {
   display: flex !important;
   align-items: baseline !important;
-  margin-bottom: 0.75rem !important;
-  line-height: 1.6 !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.4 !important;
   flex-wrap: wrap !important;
   gap: 0.5rem !important;
   padding: 0 !important;
@@ -593,7 +595,7 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 .custom-homepage .post-date {
-  font-family: var(--font-mono);
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   color: var(--secondary);
   flex-shrink: 0;
@@ -605,6 +607,7 @@ body.dark .notes-page .notes-content blockquote {
   color: var(--secondary);
   margin: 0 0.25rem;
   flex-shrink: 0;
+  font-family: var(--font-serif);
 }
 
 .custom-homepage .post-title {
@@ -622,8 +625,8 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 .custom-homepage .post-category {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
   padding: 0.15rem 0.5rem;
   border-radius: 3px;
   text-transform: lowercase;
@@ -655,7 +658,7 @@ body.dark .custom-homepage .post-category {
 }
 
 .custom-homepage .view-all {
-  font-family: var(--font-mono);
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   text-decoration: none;
   color: var(--secondary);
@@ -668,6 +671,7 @@ body.dark .custom-homepage .post-category {
 
 .custom-homepage .view-all-links .separator {
   color: var(--secondary);
+  font-family: var(--font-serif);
 }
 
 /*--------------------------------------------------------------
