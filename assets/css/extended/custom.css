@@ -530,23 +530,45 @@ body.dark .custom-homepage .post-category {
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
   /* Homepage mobile adjustments */
+  .custom-homepage {
+    padding: 0 1rem;
+  }
+  
+  .custom-homepage .home-intro {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  
   .custom-homepage .home-intro h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
   }
   
   .custom-homepage .intro-content {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .custom-homepage .recent-posts h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
   
   .custom-homepage .post-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
-    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem 0.5rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border);
   }
   
   .custom-homepage .post-date {
-    min-width: auto;
+    flex-basis: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    opacity: 0.8;
   }
   
   .custom-homepage .post-separator {
@@ -554,11 +576,20 @@ body.dark .custom-homepage .post-category {
   }
   
   .custom-homepage .post-title {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-weight: 500;
+    flex: 1 1 auto;
+    min-width: 0;
   }
   
   .custom-homepage .post-category {
-    margin-left: 0;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.4rem;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 
   /* Notes page mobile adjustments */
