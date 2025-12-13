@@ -567,6 +567,31 @@ body.dark .custom-homepage .post-category.career {
   color: #B3F5B3;  /* lighter green text */
 }
 
+/* Home social links - subtle text links */
+.custom-homepage .home-social-links {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+.custom-homepage .home-social-links a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.custom-homepage .home-social-links a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
 /*--------------------------------------------------------------
 # RESPONSIVE DESIGN - MOBILE (768px and below)
 --------------------------------------------------------------*/
@@ -626,6 +651,13 @@ body.dark .custom-homepage .post-category.career {
     padding: 0.1rem 0.4rem;
     flex-shrink: 0;
     white-space: nowrap;
+  }
+
+  /* Home social links mobile adjustments */
+  .custom-homepage .home-social-links {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 0.875rem;
   }
 
   /* Notes page mobile adjustments */
@@ -715,3 +747,4 @@ body.dark .custom-homepage .post-category.career {
   .header-icons {
     gap: 12px;
   }
+}
