@@ -84,7 +84,6 @@ h6 {
 .content,
 .post-summary,
 .post-description,
-.post-item,
 footer,
 .post-meta,
 .post-footer,
@@ -130,15 +129,6 @@ samp {
 /*--------------------------------------------------------------
 # HEADER & NAVIGATION
 --------------------------------------------------------------*/
-/* Profile Section */
-.profile_inner span {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  line-height: var(--line-height);
-  display: block;
-  margin-bottom: 1rem;
-}
-
 /* Site Logo */
 .logo a {
   font-size: 28px;
@@ -179,6 +169,63 @@ body.dark #menu a:hover {
 #menu .active:hover {
   color: var(--signature);
   box-shadow: 0 2px 0 var(--signature);
+}
+
+/* Navigation Section - Groups menu and icons together */
+.nav-section {
+  display: flex;
+  align-items: center;
+  margin: auto var(--gap);
+  gap: 25px;
+}
+
+.nav-section #menu {
+  margin: 0;
+}
+
+/* Separator line between menu and icons */
+.nav-separator {
+  width: 1px;
+  height: 24px;
+  background-color: var(--secondary);
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+/* Dark mode separator visibility */
+body:not(.dark) .nav-separator {
+  background-color: #666;
+}
+
+body.dark .nav-separator {
+  background-color: #999;
+}
+
+/* Header icons styling */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  border: none;
+  box-shadow: none !important;
+  transition: 0.15s;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.header-icon:hover {
+  transform: scale(1.1);
+}
+
+.header-icon span {
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -245,11 +292,7 @@ figure > figcaption,
 }
 
 /*--------------------------------------------------------------
-# RESPONSIVE FOOTER
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# SOCIAL ICONS - CONSOLIDATED
+# SOCIAL ICONS
 --------------------------------------------------------------*/
 /* Base social icons styling - applies to all social icon containers */
 .social-icons {
@@ -311,32 +354,6 @@ figure > figcaption,
   margin-top: 5px;
 }
 
-/* Profile page social icons */
-.profile_inner .social-icons {
-  padding: 20px 0;
-  width: 100%;
-}
-
-.profile_inner .social-icons a {
-  margin-right: 20px;
-  color: var(--primary);
-}
-
-.profile_inner .social-icons a:last-child {
-  margin-right: 0;
-}
-
-.profile_inner .social-icons a:hover {
-  color: var(--secondary);
-  opacity: 0.8;
-  transform: translateY(-3px);
-}
-
-.profile_inner .social-icons a svg {
-  height: 2em;
-  width: 2em;
-}
-
 /* Footer link styling override */
 footer a,
 footer a:hover,
@@ -346,133 +363,14 @@ footer a:focus {
   box-shadow: none !important;
 }
 
-/* Remove any pseudo-elements that might create visual underscores */
-.footer-social-icons .social-icons a::before,
-.footer-social-icons .social-icons a::after {
-  content: none !important;
-}
-
-/*--------------------------------------------------------------
-# HEADER NAVIGATION SECTION
---------------------------------------------------------------*/
-/* Group navigation menu and icons together */
-.nav-section {
-  display: flex;
-  align-items: center;
-  margin: auto var(--gap);
-  gap: 25px;
-}
-
-/* Override theme's menu margin since it's now in nav-section */
-.nav-section #menu {
-  margin: 0;
-}
-
-/* Separator line between menu and icons */
-.nav-separator {
-  width: 1px;
-  height: 24px;
-  background-color: var(--secondary);
-  opacity: 0.4;
-  flex-shrink: 0;
-}
-
-/* Ensure separator is visible in both light and dark modes */
-body:not(.dark) .nav-separator {
-  background-color: #666;
-}
-
-body.dark .nav-separator {
-  background-color: #999;
-}
-
-/* Custom header icons styling */
-.header-icons {
-  display: flex;
-  align-items: center;
-  gap: 23px;
-}
-
-.header-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none !important;
-  border: none;
-  box-shadow: none !important;
-  transition: 0.15s;
-  font-size: 20px;
-  line-height: 1;
-}
-
-.header-icon:hover {
-  transform: scale(1.1);
-}
-
-.header-icon span {
-  display: block;
-}
-
-/*--------------------------------------------------------------
-# PROFILE SECTION CENTERING
---------------------------------------------------------------*/
-/* Center the profile section elements */
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 180px); /* Adjust for better vertical centering */
-}
-
-.profile_inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  max-width: 720px; /* Prevents overly wide content on large screens */
-  margin: 0 auto;
-}
-
-/* Center the profile image */
-.profile_inner img {
-  margin: 0 auto;
-  display: block;
-}
-
-/* Make profile image link interactive */
-.profile-image-link {
-  display: inline-block;
-  cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.profile-image-link:hover {
-  transform: scale(1.01);
-  opacity: 0.9;
-}
-
-/* Center the title and subtitle */
-.profile_inner h1,
-.profile_inner span {
-  width: 100%;
-  text-align: center;
-}
-
-/* Center the social icons */
-.profile_inner .social-icons {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /*--------------------------------------------------------------
 # NOTES SECTION
 --------------------------------------------------------------*/
 /* Notes page specific styling */
 .notes-page .notes-content blockquote {
   position: relative;
+  display: flex;
+  flex-direction: column;
   border-left: 3px solid var(--secondary);
   padding: 1rem 1rem 1rem 1.5rem;
   margin: 1.5rem 0;
@@ -488,21 +386,8 @@ body.dark .nav-separator {
   background-color: var(--theme);
 }
 
-/* Timestamp styling within blockquotes */
-.notes-page .notes-content blockquote::after {
-  content: '';
-  display: block;
-}
-
-/* Make the timestamp appear on the right */
 .notes-page .notes-content blockquote p {
   margin-bottom: 0;
-}
-
-/* Style timestamps that end with date format (- YYYY.MM.DD) */
-.notes-page .notes-content blockquote {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Dark mode adjustments */
@@ -510,19 +395,10 @@ body.dark .notes-page .notes-content blockquote {
   border-left-color: var(--secondary);
 }
 
-/* Mobile responsive adjustments for notes */
-@media (max-width: 768px) {
-  .notes-page .notes-content blockquote {
-    padding: 0.875rem 1rem;
-    margin: 1.25rem 0;
-    font-size: 1rem;
-  }
-}
-
 /*--------------------------------------------------------------
-# POST NAVIGATION & COMMENTS SPACING
+# POST NAVIGATION & COMMENTS
 --------------------------------------------------------------*/
-/* Add spacing between post navigation and comments separator */
+/* Spacing between post navigation and comments */
 .paginav {
   margin-bottom: 2rem;
 }
@@ -644,34 +520,9 @@ body.dark .notes-page .notes-content blockquote {
   color: var(--primary);
 }
 
+/* Dark mode category tags */
 body.dark .custom-homepage .post-category {
   opacity: 0.8;
-}
-
-/* View all links */
-.custom-homepage .view-all-links {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.custom-homepage .view-all {
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
-  text-decoration: none;
-  color: var(--secondary);
-  transition: color 0.2s;
-}
-
-.custom-homepage .view-all:hover {
-  color: var(--primary);
-}
-
-.custom-homepage .view-all-links .separator {
-  color: var(--secondary);
-  font-family: var(--font-serif);
 }
 
 /*--------------------------------------------------------------
@@ -679,47 +530,43 @@ body.dark .custom-homepage .post-category {
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
   /* Homepage mobile adjustments */
-  .home-intro h1 {
+  .custom-homepage .home-intro h1 {
     font-size: 1.75rem;
   }
   
-  .intro-content {
+  .custom-homepage .intro-content {
     font-size: 1rem;
   }
   
-  .post-item {
+  .custom-homepage .post-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
     margin-bottom: 1.25rem;
   }
   
-  .post-date {
+  .custom-homepage .post-date {
     min-width: auto;
   }
   
-  .post-separator {
+  .custom-homepage .post-separator {
     display: none;
   }
   
-  .post-title {
+  .custom-homepage .post-title {
     margin-bottom: 0.25rem;
   }
   
-  .post-category {
+  .custom-homepage .post-category {
     margin-left: 0;
   }
-  
-  .view-all-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  
-  .view-all-links .separator {
-    display: none;
-  }
 
+  /* Notes page mobile adjustments */
+  .notes-page .notes-content blockquote {
+    padding: 0.875rem 1rem;
+    margin: 1.25rem 0;
+    font-size: 1rem;
+  }
 
   /* Footer mobile styling */
   footer.footer {
@@ -801,13 +648,3 @@ body.dark .custom-homepage .post-category {
   .header-icons {
     gap: 12px;
   }
-
-  /* Profile section mobile adjustments */
-  .profile {
-    min-height: calc(100vh - 160px);
-  }
-
-  .profile_inner {
-    padding: 0 20px;
-  }
-}
