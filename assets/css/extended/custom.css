@@ -453,35 +453,35 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 .custom-homepage .post-list {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  list-style: none ;
+  padding: 0 ;
+  margin: 0 ;
 }
 
 .custom-homepage .post-item {
-  display: flex !important;
-  align-items: baseline !important;
-  margin-bottom: 0.5rem !important;
-  line-height: 1.4 !important;
-  flex-wrap: wrap !important;
-  gap: 0.5rem !important;
-  padding: 0 !important;
-  border: none !important;
-  background: none !important;
+  display: flex ;
+  align-items: baseline ;
+  margin-bottom: 0rem ;
+  line-height: 1 ;
+  flex-wrap: wrap ;
+  gap: 0.5rem ;
+  padding: 0 ;
+  border: none ;
+  background: none ;
 }
 
 .custom-homepage .post-date {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--secondary);
   flex-shrink: 0;
-  min-width: 6rem;
+  min-width: 0rem;
   font-weight: normal;
 }
 
 .custom-homepage .post-separator {
   color: var(--secondary);
-  margin: 0 0.25rem;
+  margin: 0 0.05rem;
   flex-shrink: 0;
   font-family: var(--font-serif);
 }
@@ -502,7 +502,7 @@ body.dark .notes-page .notes-content blockquote {
 
 .custom-homepage .post-category {
   font-family: var(--font-serif);
-  font-size: 0.85rem;
+  font-size: 1rem;
   padding: 0.15rem 0.5rem;
   border-radius: 3px;
   text-transform: lowercase;
