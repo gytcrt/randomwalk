@@ -130,7 +130,7 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # enabled profile mode
+    enabled: false # enabled profile mode
     # title: "You find me here" # Shown right below the image
     subtitle: "Documenting thoughts and ideas as they randomly walk through my mind. 
     

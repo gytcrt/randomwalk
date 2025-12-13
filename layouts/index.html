@@ -1,0 +1,40 @@
+{{- define "main" }}
+
+<div class="custom-homepage">
+  <div class="home-intro">
+    <h1>Andrea Gao</h1>
+    <div class="intro-content">
+      <p>I'm Andrea Gao, a full-stack AI practitioner interested in bringing data and ML/AI systems together to solve valuable problems. Over the past two years, I've focused on developing GenAI use cases from proof-of-concept to production. I enjoy thought experiments and long strolls in Prospect Park.</p>
+    </div>
+  </div>
+
+  <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    
+    {{- $pages := where site.RegularPages "Type" "in" (slice "posts" "notes") }}
+    {{- $pages = where $pages "Params.hidden" "!=" true }}
+    {{- $pages = first 10 $pages }}
+    
+    <ul class="post-list">
+      {{- range $pages }}
+      <li class="post-item">
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{- .Date.Format "2006-01-02" -}}
+        </time>
+        <span class="post-separator">:</span>
+        <a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a>
+        <span class="post-category {{ .Section }}">{{ .Section }}</span>
+      </li>
+      {{- end }}
+    </ul>
+    
+    <div class="view-all-links">
+      <a href="/posts/" class="view-all">View all posts →</a>
+      <span class="separator">•</span>
+      <a href="/notes/" class="view-all">View all notes →</a>
+    </div>
+  </section>
+</div>
+
+{{- end }}{{- /* end main */ -}}
+

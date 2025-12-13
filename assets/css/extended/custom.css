@@ -533,9 +533,190 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 /*--------------------------------------------------------------
+# HOMEPAGE LAYOUT
+--------------------------------------------------------------*/
+/* Custom homepage wrapper */
+.custom-homepage {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Home intro section */
+.custom-homepage .home-intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.custom-homepage .home-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.custom-homepage .intro-content {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.custom-homepage .intro-content p {
+  margin: 0;
+}
+
+/* Recent posts section */
+.custom-homepage .recent-posts {
+  margin-top: 2rem;
+}
+
+.custom-homepage .recent-posts h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.custom-homepage .post-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.custom-homepage .post-item {
+  display: flex !important;
+  align-items: baseline !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.6 !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+.custom-homepage .post-date {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--secondary);
+  flex-shrink: 0;
+  min-width: 6rem;
+  font-weight: normal;
+}
+
+.custom-homepage .post-separator {
+  color: var(--secondary);
+  margin: 0 0.25rem;
+  flex-shrink: 0;
+}
+
+.custom-homepage .post-title {
+  flex-grow: 1;
+  text-decoration: none;
+  color: var(--primary);
+  transition: color 0.2s;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: var(--font-serif);
+}
+
+.custom-homepage .post-title:hover {
+  color: var(--tertiary);
+}
+
+.custom-homepage .post-category {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  text-transform: lowercase;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.custom-homepage .post-category.posts {
+  background-color: var(--code-bg);
+  color: var(--primary);
+}
+
+.custom-homepage .post-category.notes {
+  background-color: var(--code-bg);
+  color: var(--primary);
+}
+
+body.dark .custom-homepage .post-category {
+  opacity: 0.8;
+}
+
+/* View all links */
+.custom-homepage .view-all-links {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.custom-homepage .view-all {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--secondary);
+  transition: color 0.2s;
+}
+
+.custom-homepage .view-all:hover {
+  color: var(--primary);
+}
+
+.custom-homepage .view-all-links .separator {
+  color: var(--secondary);
+}
+
+/*--------------------------------------------------------------
 # RESPONSIVE DESIGN - MOBILE (768px and below)
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
+  /* Homepage mobile adjustments */
+  .home-intro h1 {
+    font-size: 1.75rem;
+  }
+  
+  .intro-content {
+    font-size: 1rem;
+  }
+  
+  .post-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .post-date {
+    min-width: auto;
+  }
+  
+  .post-separator {
+    display: none;
+  }
+  
+  .post-title {
+    margin-bottom: 0.25rem;
+  }
+  
+  .post-category {
+    margin-left: 0;
+  }
+  
+  .view-all-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .view-all-links .separator {
+    display: none;
+  }
+
+
   /* Footer mobile styling */
   footer.footer {
     white-space: normal !important;
