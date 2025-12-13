@@ -4,6 +4,7 @@ draft: false
 title: 'Get out of mainstream and personalized movie recommendation'
 description: "Escape mainstream streaming algorithms with this random movie discovery app. Find hidden gems across genres, regions, and eras without personalization filters."
 tags: ["movie", "personalization"]
+category: "essay"
 ShowToc: true
 cover:
     image: "metrograph.png"

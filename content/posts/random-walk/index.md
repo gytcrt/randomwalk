@@ -4,6 +4,7 @@ date: 2025-04-19
 draft: false
 description: "Why 'Random Walk' perfectly captures the intersection of statistics, AI, life choices, and Borges' labyrinth. An introduction to this blog."
 tags: ["non-tech", "blog"]
+category: "essay"
 cover:
     image: "randomwalk.png"
     alt: "Random Walk Visualization"

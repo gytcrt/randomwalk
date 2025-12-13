@@ -4,6 +4,7 @@ draft: false
 title: "Updates from September"
 description: "September updates: getting married, starting a business, and dealing with AI coding assistants. Personal reflections on life changes and technology."
 tags: ["essay", "personal"]
+category: "essay"
 ShowToc: true
 cover:
   image: "event.jpeg"

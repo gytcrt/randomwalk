@@ -4,6 +4,7 @@ draft: false
 title: "Reflections on LeetCode and LSAT in my 30s"
 description: "Reflections on LeetCode interviews and LSAT preparation in my 30s. Finding value in standardized tests despite their limitations."
 tags: ["essay", "learning", "interview"]
+category: "career"
 ShowToc: true
 cover:
   image: "leetcode.png"

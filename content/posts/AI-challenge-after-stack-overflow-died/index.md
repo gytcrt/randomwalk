@@ -4,6 +4,7 @@ draft: false
 title: "How do LLMs and AI coding tools solve new problems when Stack Overflow is dead?"
 description: "Exploring how LLMs and AI coding tools navigate new problems as Stack Overflow declines. How can AI providers adapt when traditional Q&A forums are dying?"
 tags: ["tech", "GenAI", "data", "vibe coding"]
+category: "engineering"
 ShowToc: true
 cover:
   image: "copying-and-pasting-2.png"

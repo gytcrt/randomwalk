@@ -4,6 +4,7 @@ draft: false
 title: 'Will our next generation lose their own writing voice because of LLMs?'
 description: "Will the next generation lose their unique writing voice because of LLMs? Reflections on creativity, self-expression, and AI's impact on writing."
 tags: ["non-tech", "GenAI", "AI", "writing"]
+category: "essay"
 ShowToc: true
 cover:
     image: "typewriter.jpg"

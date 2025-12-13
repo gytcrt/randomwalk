@@ -479,15 +479,7 @@ body.dark .notes-page .notes-content blockquote {
   font-weight: normal;
 }
 
-.custom-homepage .post-separator {
-  color: var(--secondary);
-  margin: 0 0.05rem;
-  flex-shrink: 0;
-  font-family: var(--font-serif);
-}
-
 .custom-homepage .post-title {
-  flex-grow: 1;
   text-decoration: none;
   color: var(--primary);
   transition: color 0.2s;
@@ -510,11 +502,29 @@ body.dark .notes-page .notes-content blockquote {
   margin-left: 0.5rem;
 }
 
-.custom-homepage .post-category.posts {
-  background-color: var(--code-bg);
-  color: var(--primary);
+/* Category colors - light candy theme */
+.custom-homepage .post-category.essay {
+  background-color: #FFB3D9;  /* light candy pink */
+  color: #8B0040;  /* darker pink for text */
 }
 
+.custom-homepage .post-category.start-up {
+  background-color: #FFF4A3;  /* light candy yellow */
+  color: #806B00;  /* darker yellow/gold for text */
+}
+
+.custom-homepage .post-category.engineering {
+  background-color: #A3D5FF;  /* light candy blue */
+  color: #003D7A;  /* darker blue for text */
+}
+
+.custom-homepage .post-category.career {
+  background-color: #B3F5B3;  /* light candy green */
+  color: #006B00;  /* darker green for text */
+}
+
+/* Fallback for posts/notes sections */
+.custom-homepage .post-category.posts,
 .custom-homepage .post-category.notes {
   background-color: var(--code-bg);
   color: var(--primary);
@@ -522,7 +532,27 @@ body.dark .notes-page .notes-content blockquote {
 
 /* Dark mode category tags */
 body.dark .custom-homepage .post-category {
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+body.dark .custom-homepage .post-category.essay {
+  background-color: #8B0040;  /* darker pink background */
+  color: #FFB3D9;  /* lighter pink text */
+}
+
+body.dark .custom-homepage .post-category.start-up {
+  background-color: #806B00;  /* darker yellow background */
+  color: #FFF4A3;  /* lighter yellow text */
+}
+
+body.dark .custom-homepage .post-category.engineering {
+  background-color: #003D7A;  /* darker blue background */
+  color: #A3D5FF;  /* lighter blue text */
+}
+
+body.dark .custom-homepage .post-category.career {
+  background-color: #006B00;  /* darker green background */
+  color: #B3F5B3;  /* lighter green text */
 }
 
 /*--------------------------------------------------------------
@@ -571,17 +601,11 @@ body.dark .custom-homepage .post-category {
     opacity: 0.8;
   }
   
-  .custom-homepage .post-separator {
-    display: none;
-  }
-  
   .custom-homepage .post-title {
     margin-bottom: 0;
     font-size: 0.95rem;
     line-height: 1.4;
     font-weight: 500;
-    flex: 1 1 auto;
-    min-width: 0;
   }
   
   .custom-homepage .post-category {

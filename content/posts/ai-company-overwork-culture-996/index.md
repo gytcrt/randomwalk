@@ -4,6 +4,7 @@ draft: false
 title: "Working 996 or 007 is not a competitive advantage for AI companies"
 description: "Why the 996 and 007 overwork culture spreading from China to Silicon Valley AI companies undermines innovation. Creativity, not long hours, drives competitive advantage."
 tags: ["tech", "AI", "essay", "work culture"]
+category: "start-up"
 ShowToc: true
 cover:
   image: "nyt-headline-AI.png"

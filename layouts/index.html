@@ -21,9 +21,12 @@
         <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
           {{- .Date.Format "2006-01-02" -}}
         </time>
-        <span class="post-separator">:</span>
         <a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a>
+        {{- if .Params.category }}
+        <span class="post-category {{ .Params.category }}">{{ .Params.category }}</span>
+        {{- else }}
         <span class="post-category {{ .Section }}">{{ .Section }}</span>
+        {{- end }}
       </li>
       {{- end }}
     </ul>
