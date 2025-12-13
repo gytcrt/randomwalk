@@ -13,6 +13,7 @@
   --code-font: Menlo, Monaco, Consolas, "Courier New", monospace;
   --base-font-size: 1.125rem;
   --line-height: 1.6;
+  --main-width: 900px;
 }
 
 /*--------------------------------------------------------------
@@ -411,10 +412,21 @@ body.dark .notes-page .notes-content blockquote {
 /*--------------------------------------------------------------
 # HOMEPAGE LAYOUT
 --------------------------------------------------------------*/
+/* Override theme's default content width for homepage */
+.home {
+  --main-width: 1100px !important;
+}
+
+.home main,
+.home .main {
+  max-width: 900px !important;
+}
+
 /* Custom homepage wrapper */
 .custom-homepage {
-  max-width: 900px;
+  max-width: 900px !important;
   margin: 0 auto;
+  width: 100%;
 }
 
 /* Home intro section */

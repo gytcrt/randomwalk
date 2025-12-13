@@ -132,9 +132,6 @@ params:
   profileMode:
     enabled: false # enabled profile mode
     # title: "You find me here" # Shown right below the image
-    subtitle: "Documenting thoughts and ideas as they randomly walk through my mind. 
-    
-    I enjoy thought experiments and long strolls in Prospect Park."
     imageUrl: "/images/day_scene_optimized.gif" # Path to image in static dir
     imageTitle: "Pixel art of a day scene in Hong Kong"      # Alt text for image (recommended)
     imageWidth: 200                       # Optional Image width

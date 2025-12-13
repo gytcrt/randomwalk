@@ -6,8 +6,6 @@
   {{- else }}
   <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
   {{- end -}}
-  <span class="footer-separator"> | </span>
-  <span>The pixel arts on this page are Hong Kong, a perfect city for a walk.</span>
   {{- else }}
   <div class="footer-social-icons">
     {{- partial "social_icons.html" (dict "icons" site.Params.socialIcons "svg" $.Site.Data.svg "MaskedEmail" site.Params.MaskedEmail "Email" site.Params.Email) -}}
