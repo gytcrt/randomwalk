@@ -1,14 +1,148 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Random Walk</title><link>http://localhost:1313/posts/</link><description>Recent content in Posts on Random Walk</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025 Andrea Gao</copyright><lastBuildDate>Fri, 21 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Working 996 or 007 is not a competitive advantage for AI companies</title><link>http://localhost:1313/posts/ai-company-overwork-culture-996/</link><pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/ai-company-overwork-culture-996/</guid><description>Why the 996 and 007 overwork culture spreading from China to Silicon Valley AI companies undermines innovation. Creativity, not long hours, drives competitive advantage.</description><content:encoded><![CDATA[<h2 id="the-996007-problem-from-china-to-silicon-valley">The 996/007 problem: from China to Silicon Valley</h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Random Walk</title><link>http://localhost:1313/posts/</link><description>Recent content in Posts on Random Walk</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025 Andrea Gao</copyright><lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Can I minimize my dependence on Google, Meta, Amazon and other big platforms?</title><link>http://localhost:1313/posts/minimize-my-usage-google-instagram-amazon-netflix/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/minimize-my-usage-google-instagram-amazon-netflix/</guid><description>Why the 996 and 007 overwork culture spreading from China to Silicon Valley AI companies undermines innovation. Creativity, not long hours, drives competitive advantage.</description><content:encoded><![CDATA[<p>I’ve been minimizing my dependence on big platforms like Google, Amazon, and Meta in the last few years, because I want to be mindful of my daily interactions with modern society. It sounds philosophical, but I think even minor decisions and daily interactions can reflect our agency as individuals.</p>
+<p>If you are interested in my experience, please continue with this article or jump to the platform of your interest.</p>
+<h2 id="cancel-amazon-prime">Cancel Amazon Prime</h2>
+<p>A couple of years ago, I realized I only used Amazon Prime for one or two purchases a month, on average. This did not justify the cost of the Prime subscription, and I subsequently cancelled it. After that, I proved that I could survive without Prime with the privilege of living in NYC.</p>
+<figure class="align-center">
+    <a href="amazon.PNG"
+       class="glightbox"
+       data-gallery="gallery1"
+       data-title="My order history page of Amazon app"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img
+        src="amazon.PNG"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:50%;">
+    </a>
+    
+      <figcaption>My order history page of Amazon app</figcaption>
+    
+  </figure>
+  
+<p>I then started paying closer attention to my use of Google, Meta, Netflix, and other dominant platforms. I enjoyed the convenience brought by them, but as a data scientist, I knew that collecting my data and interactions are part of their business model. Gradually, I began uprooting myself from those dominant platforms, because I wanted to experiment with my independence and privacy.</p>
+<h2 id="off-netflix">Off Netflix</h2>
+<p>I used to be a fan of Netflix’s shows, including <em>The Crown</em> and <em>Mindhunter</em>. However, due to competition between different streaming platforms and the declining quality of Netflix’s original programming, I struggled to find good shows or movies on Netflix. I even wrote multiple posts about this. <em>(TODO: link my previous post here.)</em></p>
+<p>My household is currently subscribed to Max and Hulu (free subscription through the Spotify deal), and we are satisfied with it. When possible, I also prioritize theater experiences over streaming, so we have a membership at <a href="https://metrograph.com/">Metrograph</a>.</p>
+<figure class="align-center">
+    <a href="metrograph.jpg"
+       class="glightbox"
+       data-gallery="gallery1"
+       data-title="my latest visit to Metrograph: they show arthouse movies"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img
+        src="metrograph.jpg"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
+    </a>
+    
+      <figcaption>my latest visit to Metrograph: they show arthouse movies</figcaption>
+    
+  </figure>
+  
+<p>Unfortunately, the recent news about Netflix acquiring Warner Bros. Discovery makes me quite worried that the movie theater experience will change over time. The entertainment industry will be further consolidated, and Netflix is likely to deprioritize Warner Bros. Discovery’s theater-centered business; Ted Sarandos, the CEO of Netflix, even said:</p>
+<blockquote>
+<p>“I believe it (theatrical moviegoing) is an outdated idea, for most people—not for everybody.”</p></blockquote>
+<p>(See: <a href="https://variety.com/2025/film/news/netflix-ceo-ted-sarandos-movie-theaters-outdated-1236376565/">Variety coverage</a>.)</p>
+<h2 id="delete-instagram">Delete Instagram</h2>
+<p>As a millennial and an immigrant, I used to rely on Instagram to keep track of friends’ life updates. Even though I&rsquo;ve been annoyed by excessive advertisements in recent years, I hesitated to delete Instagram due to FOMO — I don’t want to miss out on family and friends’ updates when I’m already so far away from them.</p>
+<p>Nevertheless, Instagram gradually became unusable in the last year or so, since my feeds were full of commercials and short-form content and I could barely dig out posts from my actual friends. The recommendation systems of social media sites like Instagram and Rednote have also been meticulously trained and optimized to keep me doomscrolling as long as possible, which I’m vulnerable to. It is awful to experience guilt, anger, restlessness, and shame whenever I mindlessly spend an hour on those platforms.</p>
+<p>Therefore, I decided to change my approach to keeping up with friends: I deleted Instagram from my phone; when I miss my friends or their names occur to me, I text them and ask for their updates.</p>
+<p>I have deleted my Instagram for over a year by now, and I love it. I enjoy 1-on-1 quality time with people I care about (ideally in person) more than virtual likes.</p>
+<h2 id="minimize-google">Minimize Google</h2>
+<p>Before I explain what I did to minimize my Google usage, I have to admit it’s very hard—and I drafted this article in a Google Doc.</p>
+<h3 id="search">Search</h3>
+<p>I cannot switch from Google to alternative search engines like DuckDuckGo and Brave. When I enter a query on a search engine, 80% of the time I’m looking for some quick and convenient results like the URL to a website. I think DuckDuckGo or Brave can get me there, but it might take twice as much time for me to go through the top results and find my answer.</p>
+<p>For example, when I want to check the open hours of my gym, I only need 10 seconds to get the answer on Google search, but I might need 1 minute to find the same information on DuckDuckGo.</p>
+<figure class="align-center">
+    <a href="google.png"
+       class="glightbox"
+       data-gallery="gallery1"
+       data-title="the open hours show up as the first result on Google by using my zipcode"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img
+        src="google.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
+    </a>
+    
+      <figcaption>the open hours show up as the first result on Google by using my zipcode</figcaption>
+    
+  </figure>
+  
+<figure class="align-center">
+    <a href="duckduckgo.png"
+       class="glightbox"
+       data-gallery="gallery1"
+       data-title="I need to actually go to YMCA page to find the information when using DuckDuckGo"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img
+        src="duckduckgo.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
+    </a>
+    
+      <figcaption>I need to actually go to YMCA page to find the information when using DuckDuckGo</figcaption>
+    
+  </figure>
+  
+<p>However, I’ve spent more time asking ChatGPT or Gemini questions instead of using Google. AI is taking a significant share of user attention from traditional search engines.</p>
+<h3 id="gmail">Gmail</h3>
+<p>I migrated my key personal email from Gmail to Proton in early 2024 as a step to minimize exposure of my privacy to big platforms.</p>
+<p>I debated with myself (and friends) for a while before I started migration: even if I move to Proton, Google still knows what I’m sending to other Gmails, and Apple controls my phone. Does migrating to Proton really bring me more agency?</p>
+<p>Eventually, I realized I could only change what’s in my control and comfort level, which means migrating out of Gmail is manageable—but using a phone operating outside of Apple or Google is not feasible.</p>
+<p>Proton is not as powerful or user friendly as Gmail or Microsoft Outlook, but I’m happy that I have the option to choose.</p>
+<figure class="align-center">
+    <a href="proton.png"
+       class="glightbox"
+       data-gallery="gallery1"
+       data-title="Proton search bar doesn&#39;t work as smooth as gmail"
+       data-type="image"
+       data-effect="fade"
+       data-zoomable="true">
+      <img
+        src="proton.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
+    </a>
+    
+      <figcaption>Proton search bar doesn&#39;t work as smooth as gmail</figcaption>
+    
+  </figure>
+  
+<h3 id="chrome">Chrome</h3>
+<p>I stopped using Chrome a few years ago, and have been using Firefox on my laptop since then. Unlike search or email, I didn’t experience any discomfort with the switch. Firefox plus any extension I need is sufficient for my work and life.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.newyorker.com/culture/the-front-row/what-the-warner-bros-sale-means-for-the-art-of-movies">What the Warner Bros. sale means for the art of movies (The New Yorker)</a></li>
+<li><a href="https://proton.me/mail">Proton Mail</a></li>
+</ul>
+]]></content:encoded></item><item><title>Working 996 or 007 is not a competitive advantage for AI companies</title><link>http://localhost:1313/posts/ai-company-overwork-culture-996/</link><pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/ai-company-overwork-culture-996/</guid><description>Why the 996 and 007 overwork culture spreading from China to Silicon Valley AI companies undermines innovation. Creativity, not long hours, drives competitive advantage.</description><content:encoded><![CDATA[<h2 id="the-996007-problem-from-china-to-silicon-valley">The 996/007 problem: from China to Silicon Valley</h2>
 <p>I was born and grew up in China, and have taken the infamous <a href="https://en.wikipedia.org/wiki/Gaokao">Gaokao(national college entrance exam)</a> to enter college there. Gaokao is known for its competitiveness – in my year, <a href="https://www.gotohui.com/edu/topic-2875" rel="noopener" target="_blank">9.3 million students took part in the exam</a>, and only <a href="https://zhuanlan.zhihu.com/p/21490892400" rel="noopener" target="_blank">2% of the students were admitted to the 39 top tier universities</a>. My peers and I were promised by parents, teachers, and society that if we got to the top tier universities, we wouldn&rsquo;t have to work hard for the rest of our lives. Therefore, we woke up at 6:45AM and studied at school till 10PM with only one day off during our senior year in high school.</p>
 <figure class="align-center">
-    <a href="high-school-class-room.jpg" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="high-school-class-room.jpg"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="My high school class room: crowded with students and wall of books"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="high-school-class-room.jpg" alt="">
+      <img
+        src="high-school-class-room.jpg"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
     </a>
     
       <figcaption>My high school class room: crowded with students and wall of books</figcaption>
@@ -18,14 +152,18 @@
 <p>However, when my peers went into the workforce after college, 996 became a norm in many industries, especially the tech sector in China. “996” means working from 9AM to 9PM, 6 days a week. As the 996 schedule drove the tech sector to be more competitive, the 007 work schedule(midnight to midnight, seven days a week) started to gain popularity among employers.</p>
 <p>I worked in the intersection of tech and consulting in China during Covid for a year, and operated under the 007 mode. In multiple work group chats, coworkers said they had a  fever or were about to go through a surgery, but they would be back in a few hours. It was an unsustainable and painful experience for me, and I left for a better work culture in the US in 2021.</p>
 <figure class="align-center">
-    <a href="996-in-China.JPG" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="996-in-China.JPG"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="My laptop needed to work during our commute from client site to hotel"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="996-in-China.JPG" alt="">
+      <img
+        src="996-in-China.JPG"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
     </a>
     
       <figcaption>My laptop needed to work during our commute from client site to hotel</figcaption>
@@ -37,14 +175,18 @@
 <h2 id="investment-anxiety-drives-overwork">Investment anxiety drives overwork</h2>
 <p>I think the overworking culture is driven by insecurity and anxiety: tech companies and investors have invested heavily in AI and they want to see the returns. Some estimates say <a href="https://finance.yahoo.com/news/ai-led-investments-driving-us-100000690.html" rel="noopener" target="_blank">the AI related investment accounted for more than half of America&#39;s 1.6% growth rate over the first six months of 2025</a>. The investment in the advanced chips, data center, and frontier AI model has outpaced any other industry, but we haven’t seen a magic return yet.</p>
 <figure class="align-center">
-    <a href="AI-GDP-growth-US-2025.jpg" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="AI-GDP-growth-US-2025.jpg"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title=""
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="AI-GDP-growth-US-2025.jpg" alt="">
+      <img
+        src="AI-GDP-growth-US-2025.jpg"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
     </a>
     
   </figure>
@@ -59,14 +201,18 @@
 <li>When I feel stuck at work, I simply take a walk in Prospect Park, go to the gym, or call it a day. New ideas usually pop up when I step away and get out of my office.</li>
 </ul>
 <figure class="align-center">
-    <a href="trail-prospect-park.jpg" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="trail-prospect-park.jpg"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="I discovered new trails in Prospect Park"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="trail-prospect-park.jpg" alt="">
+      <img
+        src="trail-prospect-park.jpg"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
     </a>
     
       <figcaption>I discovered new trails in Prospect Park</figcaption>
@@ -88,14 +234,18 @@
 <p>Guess what could go wrong in such a lovely month? <em>My AI coding assistant.</em></p>
 <p>Below is a screenshot of a code snippet generated by ChatGPT when I tried to pick up an unfamiliar package. The function <code>expected_freqtrade_path</code> makes zero sense, though I found it very funny.</p>
 <figure class="align-center">
-    <a href="ai-coding-output.png" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="ai-coding-output.png"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="AI generated code by ChatGPT based my instructions"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="ai-coding-output.png" alt="">
+      <img
+        src="ai-coding-output.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:70%;">
     </a>
     
       <figcaption>AI generated code by ChatGPT based my instructions</figcaption>
@@ -121,14 +271,18 @@
 <h2 id="sometimes-we-need-to-take-the-tests">Sometimes we need to take the tests</h2>
 <p>In 2024 and 2025, nevertheless, I have encountered a few prospective jobs that require a candidate to pass a LeetCode style interview. I was initially hesitant to consider accepting a LeetCode style interview since it requires me to invest a decent amount of time to prepare. However, I later accepted the interviews given how bleak the job market has been since 2023 and how much I was interested in the roles.</p>
 <figure class="align-center">
-    <a href="lsat" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="lsat"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="7Sage LSAT prep dashboard looks very similar to LeetCode dashboard"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="lsat" alt="">
+      <img
+        src="lsat"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:100%;">
     </a>
     
       <figcaption>7Sage LSAT prep dashboard looks very similar to LeetCode dashboard</figcaption>
@@ -167,14 +321,18 @@
 <h2 id="stack-overflow-was-essential-for-developers">Stack Overflow was essential for developers</h2>
 <p>As someone who began coding in the 2010s, Stack Overflow was my best buddy. When I just started my career as a data scientist, 50% of my coding skills were learned from working itself, 30% were from Stack Overflow, and 20% were from university or structured courses. I can&rsquo;t remember how many times I encountered a configuration issue and subsequently went down a Stack Overflow rabbit hole journey for hours – especially early in my career.</p>
 <figure class="align-center">
-    <a href="stack-overflow-is-dead.png" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="stack-overflow-is-dead.png"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title=""
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="stack-overflow-is-dead.png" alt="">
+      <img
+        src="stack-overflow-is-dead.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:80%;">
     </a>
     
   </figure>
@@ -207,14 +365,18 @@
 <p>However, new releases and bugs are shipped daily, and the training schedule of LLM providers cannot catch up with the speed of collective coding of the internet. In my view, the new releases and bugs after a LLM&rsquo;s latest update are uncharted areas, and we don&rsquo;t yet know whether LLMs can solve problems in the uncharted areas since they are not trained on the new code.</p>
 <p>I recently asked Cursor to guide me on a custom MCP(a standard for sharing user context with AI models to improve personalization and continuity) set up on Cursor, but the experience was not ideal. On the one hand, Cursor is a fast growing AI coding IDE, and they have major releases almost every month. On the other hand, MCP is a new and quickly evolving part of the GenAI ecosystem. Cursor chat was not able to provide me with the correct instructions to set up the custom MCP, and I went the route of Google, Reddit, and Cursor&rsquo;s latest documentation.</p>
 <figure class="align-center">
-    <a href="cusor-mcp-2.png" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="cusor-mcp-2.png"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="The instructions from Cursor didn&#39;t lead me to a smooth set up "
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="cusor-mcp-2.png" alt="">
+      <img
+        src="cusor-mcp-2.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:80%;">
     </a>
     
       <figcaption>The instructions from Cursor didn&#39;t lead me to a smooth set up </figcaption>
@@ -233,14 +395,18 @@
 <h4 id="reddit-and-other-forums">Reddit and other forums</h4>
 <p>Developers still ask questions, just maybe not on Stack Overflow anymore. In my personal experience, I rely more on online platforms like Reddit, Github, Hugging Face forums, and Discord groups, etc. along with AI coding tools. Questions about new releases or new bugs can be found in those spaces.</p>
 <figure class="align-center">
-    <a href="question-hugging-face-2.png" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="question-hugging-face-2.png"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="Question about error caused by new release is asked on Hugging Face Forum"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="question-hugging-face-2.png" alt="">
+      <img
+        src="question-hugging-face-2.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:80%;">
     </a>
     
       <figcaption>Question about error caused by new release is asked on Hugging Face Forum</figcaption>
@@ -363,14 +529,18 @@
 <p>I have spent the last two and a half years listening to what businesses want from GenAI, building GenAI applications, and delivering value from the applications. It has been an interesting journey, as I realized the advent of ChatGPT constitutes a paradigm shift for ML/AI practitioners like me. I started to believe that GenAI would change our lives, similar to personal computers in the 90s or the modern search engine in the 2000s.</p>
 <p>Before I dive into the evaluation of GenAI, I want to define a few key terms. Considering how these terms are often over-used or used interchangeably in recent discussions, I found it difficult to discuss any AI related topic without clearly defining the scope of these terms. Please find my definitions below:</p>
 <figure class="align-center">
-    <a href="AI-terms.svg" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="AI-terms.svg"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="What AI, ML, GenAI and LLM mean in this article"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="AI-terms.svg" alt="What AI, ML, GenAI and LLM mean in this article">
+      <img
+        src="AI-terms.svg"
+        alt="What AI, ML, GenAI and LLM mean in this article"
+        loading="lazy"
+        decoding="async">
     </a>
     
       <figcaption>What AI, ML, GenAI and LLM mean in this article</figcaption>
@@ -399,14 +569,18 @@
 <li><strong>Cost of adopting GenAI</strong>: evaluating the operation cost of the GenAI application including engineer effort, external GenAI API cost, human labeler cost, and iteration opportunity cost, etc.</li>
 </ul>
 <figure class="align-center">
-    <a href="GenAI-abstract-architecture.svg" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="GenAI-abstract-architecture.svg"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="An abstract architecture of GenAI applications"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="GenAI-abstract-architecture.svg" alt="">
+      <img
+        src="GenAI-abstract-architecture.svg"
+        alt=""
+        loading="lazy"
+        decoding="async">
     </a>
     
       <figcaption>An abstract architecture of GenAI applications</figcaption>
@@ -577,14 +751,18 @@
 <h3 id="new-bias-variance-paradigm">New bias-variance paradigm</h3>
 <p><a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff">The bias-variance tradeoff</a> is a classic paradigm in supervised machine learning. One of the major tasks of ML evaluation is to find the optimal model complexity for a ML problem. The image below is a text-book visualization of the paradigm.</p>
 <figure class="align-center">
-    <a href="Bias_and_variance_contributing_to_total_error.png" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="Bias_and_variance_contributing_to_total_error.png"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="Bias and variance as function of model complexity"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="Bias_and_variance_contributing_to_total_error.png" alt="">
+      <img
+        src="Bias_and_variance_contributing_to_total_error.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:80%;">
     </a>
     
       <figcaption>Bias and variance as function of model complexity</figcaption>
@@ -596,14 +774,18 @@
 </div>
 <p>However, when GenAI applications are introduced to the paradigm, I think the visualization should be updated as follows:
 <figure class="align-center">
-    <a href="new_bias_variance_paradigm.png" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="new_bias_variance_paradigm.png"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="Updated bias and variance as function of model complexity"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="new_bias_variance_paradigm.png" alt="">
+      <img
+        src="new_bias_variance_paradigm.png"
+        alt=""
+        loading="lazy"
+        decoding="async" style="width:80%;">
     </a>
     
       <figcaption>Updated bias and variance as function of model complexity</figcaption>

@@ -1,12 +1,26 @@
+{{- $imgStyle := slice -}}
+{{- with .Get "width" -}}
+  {{- $imgStyle = $imgStyle | append (printf "width:%s" .) -}}
+{{- end -}}
+{{- with .Get "height" -}}
+  {{- $imgStyle = $imgStyle | append (printf "height:%s" .) -}}
+{{- end -}}
+
 <figure {{ with .Get "align" }}class="align-{{ . }}"{{ end }}>
-    <a href="{{ .Get "src" }}" 
-       class="glightbox" 
-       data-gallery="gallery1" 
+    <a href="{{ .Get "src" }}"
+       class="glightbox"
+       data-gallery="gallery1"
        data-title="{{ .Get "caption" }}"
        data-type="image"
        data-effect="fade"
        data-zoomable="true">
-      <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+      <img
+        src="{{ .Get "src" }}"
+        alt="{{ .Get "alt" }}"
+        loading="lazy"
+        decoding="async"
+        {{- if gt (len $imgStyle) 0 }} style="{{ delimit $imgStyle ";" }};"{{- end -}}
+      >
     </a>
     {{ with .Get "caption" }}
       <figcaption>{{ . }}</figcaption>
