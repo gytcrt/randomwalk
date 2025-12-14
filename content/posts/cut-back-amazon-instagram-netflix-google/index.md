@@ -26,7 +26,7 @@ I then started paying closer attention to my use of Google, Meta, Netflix, and o
 
 ## Off Netflix
 
-I used to be a fan of Netflix’s shows, including *The Crown* and *Mindhunter*. However, due to competition between different streaming platforms and the declining quality of Netflix’s original programming, I struggled to find good shows or movies on Netflix. I even wrote multiple posts about this. *(TODO: link my previous post here.)*
+I used to be a fan of Netflix’s shows, including *The Crown* and *Mindhunter*. However, due to competition between different streaming platforms and the declining quality of Netflix’s original programming, I struggled to find good shows or movies on Netflix. I even wrote multiple posts about this. *(See also: [Get out of mainstream and personalized movie recommendation](/posts/random-movie/).)*
 
 My household is currently subscribed to Max and Hulu (free subscription through the Spotify deal), and we are satisfied with it. When possible, I also prioritize theater experiences over streaming, so we have a membership at [Metrograph](https://metrograph.com/).
 
@@ -81,7 +81,10 @@ Proton is not as powerful or user friendly as Gmail or Microsoft Outlook, but I�
 
 ### Chrome
 
-I stopped using Chrome a few years ago, and have been using Firefox on my laptop since then. Unlike search or email, I didn’t experience any discomfort with the switch. Firefox plus any extension I need is sufficient for my work and life.
+I stopped using Chrome a few years ago, and have been using Firefox on my laptop since then. Unlike search or email, I didn’t experience any discomfort with the switch. Firefox plus any extension I need is sufficient for my work and life. I'd say this is the easiest part of this journey.
+
+## Conclusion
+Cutting back usage on the platforms is not about protesting against the platforms, but to train my intentionality 
 
 ## References
 
