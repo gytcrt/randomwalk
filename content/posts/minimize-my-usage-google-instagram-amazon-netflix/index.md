@@ -1,8 +1,8 @@
 ---
 date: 2025-12-13
 draft: true
-title: "Can I minimize my dependence on Google, Meta, Amazon and other big platforms?"
-description: "Why the 996 and 007 overwork culture spreading from China to Silicon Valley AI companies undermines innovation. Creativity, not long hours, drives competitive advantage."
+title: "Convenience vs agency: I cut back on Amazon, Instagram, Netflix, and Google"
+description: "On stepping back from Big Tech: why I minimized Amazon Prime, Netflix, Instagram, and parts of Google—and what I learned about convenience, privacy, and agency."
 tags: ["tech", "essay", "personal"]
 category: "essay"
 ShowToc: true
