@@ -8,6 +8,7 @@ category: "essay"
 ShowToc: true
 cover:
   image: "farewell.png"
+  width: 100%
 ---
 
 I’ve been minimizing my dependence on big platforms like Google, Amazon, and Meta in the last few years, because I want to be mindful of my daily interactions with modern society. It sounds philosophical, but I think even minor decisions and daily interactions can reflect our agency as individuals.
@@ -18,9 +19,7 @@ If you are interested in my experience, please continue with this article or jum
 
 A couple of years ago, I realized I only used Amazon Prime for one or two purchases a month, on average. This did not justify the cost of the Prime subscription, and I subsequently cancelled it. After that, I proved that I could survive without Prime with the privilege of living in NYC.
 
-
 {{< figurelightbox src="amazon.PNG" caption="My order history page of Amazon app" align="center" width="50%" >}}
-
 
 I then started paying closer attention to my use of Google, Meta, Netflix, and other dominant platforms. I enjoyed the convenience brought by them, but as a data scientist, I knew that collecting my data and interactions are part of their business model. Gradually, I began uprooting myself from those dominant platforms, because I wanted to experiment with my independence and privacy.
 
@@ -37,8 +36,6 @@ My household is currently subscribed to Max and Hulu (free subscription through 
 Unfortunately, the recent news about Netflix acquiring Warner Bros. Discovery makes me quite worried that the movie theater experience will change over time. The entertainment industry will be further consolidated, and Netflix is likely to deprioritize Warner Bros. Discovery’s theater-centered business; Ted Sarandos, the CEO of Netflix, even said:
 
 > “I believe it (theatrical moviegoing) is an outdated idea, for most people—not for everybody.”
-
-(See: [Variety coverage](https://variety.com/2025/film/news/netflix-ceo-ted-sarandos-movie-theaters-outdated-1236376565/).)
 
 ## Delete Instagram
 
@@ -63,7 +60,6 @@ For example, when I want to check the open hours of my gym, I only need 10 secon
 {{< figurelightbox src="google.png" caption="the open hours show up as the first result on Google by using my zipcode" align="center" width="100%" >}}
 
 {{< figurelightbox src="duckduckgo.png" caption="I need to actually go to YMCA page to find the information when using DuckDuckGo" align="center" width="100%" >}}
-
 
 However, I’ve spent more time asking ChatGPT or Gemini questions instead of using Google. AI is taking a significant share of user attention from traditional search engines.
 
@@ -91,4 +87,5 @@ In a future post, I will continue with this topic and deep dive into Google Anal
 ## References
 
 - [What the Warner Bros. sale means for the art of movies (The New Yorker)](https://www.newyorker.com/culture/the-front-row/what-the-warner-bros-sale-means-for-the-art-of-movies)
+- [Netflix CEO Ted Sarandos calls movie theaters 'outdated' (Variety)](https://variety.com/2025/film/news/netflix-ceo-ted-sarandos-movie-theaters-outdated-1236376565/)
 - [Proton Mail](https://proton.me/mail)
