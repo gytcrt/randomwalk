@@ -84,7 +84,9 @@ Proton is not as powerful or user friendly as Gmail or Microsoft Outlook, but Iâ
 I stopped using Chrome a few years ago, and have been using Firefox on my laptop since then. Unlike search or email, I didnâ€™t experience any discomfort with the switch. Firefox plus any extension I need is sufficient for my work and life. I'd say this is the easiest part of this journey.
 
 ## Conclusion
-Cutting back usage on the platforms is not about protesting against the platforms, but to train my intentionality 
+Cutting back on the major platforms over the years has helped me view products from a different perspective and become more aware of my real needs. Living in a time when almost everything can be handled` via a smartphone, I encourage everyone to experiment with a more mindful approach to apps.
+
+In a future post, I will continue with this topic and deep dive into Google Analytics and Gemini. 
 
 ## References
 
