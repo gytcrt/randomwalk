@@ -1,6 +1,6 @@
 ---
-date: 2025-12-13
-draft: true
+date: 2025-12-14
+draft: false
 title: "Convenience vs agency: I cut back on Amazon, Instagram, Netflix, and Google"
 description: "On stepping back from Big Tech: why I minimized Amazon Prime, Netflix, Instagram, and parts of Google—and what I learned about convenience, privacy, and agency."
 tags: ["tech", "essay", "personal"]
