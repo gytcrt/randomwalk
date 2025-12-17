@@ -11,9 +11,9 @@
   --font-serif: "Tinos", serif;
   --font-mono: "Space Mono", monospace;
   --code-font: Menlo, Monaco, Consolas, "Courier New", monospace;
-  --base-font-size: 1.125rem;
-  --line-height: 1.6;
-  --main-width: 900px;
+  --base-font-size: 1.25rem;
+  --line-height: 1.7;
+  --main-width: 800px;
 }
 
 /*--------------------------------------------------------------
@@ -96,7 +96,7 @@ nav {
 .post-content p {
   line-height: var(--line-height);
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 /* Code Elements */
