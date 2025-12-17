@@ -413,13 +413,13 @@ body.dark .notes-page .notes-content blockquote {
 # HOMEPAGE LAYOUT
 --------------------------------------------------------------*/
 /* Override theme's default content width for homepage */
-.home {
-  --main-width: 1100px !important;
+body.kind-home {
+  --main-width: 900px !important;
 }
 
-.home main,
-.home .main {
-  max-width: 900px !important;
+body.kind-home main,
+body.kind-home .main {
+  max-width: calc(900px + var(--gap) * 2) !important;
 }
 
 /* Custom homepage wrapper */
@@ -443,13 +443,13 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 .custom-homepage .intro-content {
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-size: var(--base-font-size);
+  line-height: var(--line-height);
   font-family: var(--font-serif);
 }
 
 .custom-homepage .intro-content p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.15rem 0;
   font-family: var(--font-serif);
 }
 
@@ -500,7 +500,7 @@ body.dark .notes-page .notes-content blockquote {
 
 .custom-homepage .post-date {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--secondary);
   flex-shrink: 0;
   min-width: 0rem;
@@ -511,7 +511,7 @@ body.dark .notes-page .notes-content blockquote {
   text-decoration: none;
   color: var(--primary);
   transition: color 0.2s;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: normal;
   font-family: var(--font-serif);
 }
@@ -532,22 +532,22 @@ body.dark .notes-page .notes-content blockquote {
 
 /* Category colors - light candy theme */
 .custom-homepage .post-category.essay {
-  background-color: #FFB3D9;  /* light candy pink */
+  background-color: rgba(255, 179, 217, 0.6);  /* light candy pink */
   color: #8B0040;  /* darker pink for text */
 }
 
 .custom-homepage .post-category.start-up {
-  background-color: #FFF4A3;  /* light candy yellow */
+  background-color: rgba(255, 244, 163, 0.6);  /* light candy yellow */
   color: #806B00;  /* darker yellow/gold for text */
 }
 
 .custom-homepage .post-category.engineering {
-  background-color: #A3D5FF;  /* light candy blue */
+  background-color: rgba(163, 213, 255, 0.6);  /* light candy blue */
   color: #003D7A;  /* darker blue for text */
 }
 
 .custom-homepage .post-category.career {
-  background-color: #B3F5B3;  /* light candy green */
+  background-color: rgba(179, 245, 179, 0.6);  /* light candy green */
   color: #006B00;  /* darker green for text */
 }
 
@@ -564,22 +564,22 @@ body.dark .custom-homepage .post-category {
 }
 
 body.dark .custom-homepage .post-category.essay {
-  background-color: #8B0040;  /* darker pink background */
+  background-color: rgba(139, 0, 64, 0.6);  /* darker pink background */
   color: #FFB3D9;  /* lighter pink text */
 }
 
 body.dark .custom-homepage .post-category.start-up {
-  background-color: #806B00;  /* darker yellow background */
+  background-color: rgba(128, 107, 0, 0.6);  /* darker yellow background */
   color: #FFF4A3;  /* lighter yellow text */
 }
 
 body.dark .custom-homepage .post-category.engineering {
-  background-color: #003D7A;  /* darker blue background */
+  background-color: rgba(0, 61, 122, 0.6);  /* darker blue background */
   color: #A3D5FF;  /* lighter blue text */
 }
 
 body.dark .custom-homepage .post-category.career {
-  background-color: #006B00;  /* darker green background */
+  background-color: rgba(0, 107, 0, 0.6);  /* darker green background */
   color: #B3F5B3;  /* lighter green text */
 }
 
@@ -592,7 +592,7 @@ body.dark .custom-homepage .post-category.career {
   font-family: var(--font-serif);
   font-size: 1rem;
   color: var(--secondary);
-  line-height: 1.6;
+  line-height: var(--line-height);
 }
 
 .custom-homepage .home-social-links a {
