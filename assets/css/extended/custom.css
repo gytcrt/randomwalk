@@ -376,8 +376,8 @@ footer a:focus {
   padding: 1rem 1rem 1rem 1.5rem;
   margin: 1.5rem 0;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-size: var(--base-font-size);
+  line-height: var(--line-height);
   background-color: var(--code-bg);
   border-radius: 4px;
   transition: background-color 0.2s ease;
