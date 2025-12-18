@@ -130,6 +130,24 @@ samp {
 /*--------------------------------------------------------------
 # HEADER & NAVIGATION
 --------------------------------------------------------------*/
+/* Sticky Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--theme);
+}
+
+/* List pages (Posts, Archives, etc.) use different background in light mode */
+.list-page .header {
+  background-color: var(--code-bg);
+}
+
+/* Dark mode list pages use --theme */
+.dark.list-page .header {
+  background-color: var(--theme);
+}
+
 /* Site Logo */
 .logo a {
   font-size: 28px;
