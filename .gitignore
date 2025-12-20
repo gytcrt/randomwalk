@@ -1,6 +1,9 @@
 # Hugo default output directory
 /public/
 
+# cursor files
+.cursor/
+
 # Hugo cache directory
 /resources/_gen/
 /assets/jsconfig.json

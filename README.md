@@ -1,20 +1,14 @@
 # Random Walk
 
-My personal website built with [Hugo](https://gohugo.io/) and the [PaperModX](https://github.com/reorx/hugo-PaperModX) theme. The site features a clean, minimalist design for sharing thoughts and ideas.
-
-## Features
-
-- Responsive design optimized for all device sizes
-- Dark/light mode toggle
-- Profile mode with animated GIF support
-- Blog posts with reading time, tags, and sharing options
-- Search functionality
-- Clean, accessible navigation
+A personal website and public notebook by Andrea Gao. Built with [Hugo](https://gohugo.io/) and the [PaperModX](https://github.com/reorx/hugo-PaperModX) theme.
 
 ## Local Development
 
-1. Clone this repository
-2. Install Hugo (extended version)
+1. Clone this repository (with submodules):
+   ```bash
+   git clone --recurse-submodules <repo-url>
+   ```
+2. Install [Hugo](https://gohugo.io/installation/) (extended version)
 3. Run the development server:
    ```bash
    hugo server -D
@@ -23,34 +17,33 @@ My personal website built with [Hugo](https://gohugo.io/) and the [PaperModX](ht
 
 ## Project Structure
 
-- `/archetypes/`: Default content templates
-- `/assets/`: CSS, JavaScript, and other assets
-- `/content/`: Contains all the content
-  - `/posts/`: Blog posts
-  - `/about/`: About page
-  - `/home/`: Home page content
-- `/data/`: Configuration data files
-- `/layouts/`: Custom layout templates
-- `/static/`: Static files like images and favicon
-- `/themes/`: Contains the PaperModX theme
-- `config.yml`: Main configuration file
+- `content/` — Site content
+  - `posts/` — Blog posts (each post is a folder with `index.md` + images)
+  - `notes/` — Short-form notes
+  - `about/` — About page
+- `assets/css/extended/` — Custom CSS overrides
+- `layouts/` — Custom template overrides
+- `static/` — Static files (favicon, images)
+- `config.yml` — Site configuration
 
-## Configuration
+## Features
 
-The site is configured through `config.yml`, which includes:
+### Comments
+[Giscus](https://giscus.app/) for GitHub Discussions-based comments. Lazy-loaded via a "Load comments" button to improve page performance. Configuration in `layouts/partials/giscus.html`.
 
-- Site metadata (title, description, author)
-- Theme configuration
-- Navigation menu setup
-- Social icons and links
-- Analytics settings
-- Content display preferences
+### Analytics
+- **Umami** (self-hosted) — Privacy-friendly analytics at `analytics.andreagao.com`
+- **Google Analytics 4** — Configured in `config.yml`
+
+### AI / LLM Support
+- I use AI coding tool to develop this website but all posts and notes are written by me with no AI. 
+- Generates `llms.txt` at build time for AI crawlers and LLM indexing. See `layouts/_default/home.llms.txt` for the template.
 
 ## Deployment
 
-The site is deployed to GitHub Pages using GitHub Actions. Any push to the main branch triggers an automatic build and deployment process.
+Deployed to GitHub Pages via GitHub Actions. Pushes to `main` trigger automatic builds.
 
 ## Credits
 
 - Theme: [PaperModX](https://github.com/reorx/hugo-PaperModX)
-- Built with [Hugo](https://gohugo.io/) 
+- Built with [Hugo](https://gohugo.io/)
