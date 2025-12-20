@@ -30,7 +30,7 @@ Luckily, I didn't spend too much time on LeetCode questions when I interviewed f
 
 In 2024 and 2025, nevertheless, I have encountered a few prospective jobs that require a candidate to pass a LeetCode style interview. I was initially hesitant to consider accepting a LeetCode style interview since it requires me to invest a decent amount of time to prepare. However, I later accepted the interviews given how bleak the job market has been since 2023 and how much I was interested in the roles.
 
-{{< figurelightbox src="lsat" caption="7Sage LSAT prep dashboard looks very similar to LeetCode dashboard" align="center" width="100%" >}}
+{{< figurelightbox src="lsat.png" caption="7Sage LSAT prep dashboard looks very similar to LeetCode dashboard" align="center" width="100%" >}}
 
 It took me months (on and off) to review Data Structure and Algorithm concepts and follow popular structured online roadmap (like {{< newtabref href="https://neetcode.io/" title="Neetcode" >}}) to feel comfortable with LeetCode questions. Meanwhile, my girlfriend Laura was preparing for her LSAT test, and we talked about our feelings and learning throughout the process. I passed almost all LeetCode rounds in interviews and I have some new takes on standardized tests.
 
