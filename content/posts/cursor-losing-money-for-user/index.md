@@ -2,7 +2,7 @@
 date: 2025-12-25
 draft: false
 title: "How much money is Cursor losing to keep users?"
-description: ""
+description: "Estimate Cursor’s 2025 LLM API costs from token usage reports (Claude pricing + discounts) and compare to subscription revenue to examine sustainability."
 tags: ["AI", "vibe coding", "start-up"] # does this actually show up in tag/search section?
 category: "start-up"
 ShowToc: true
