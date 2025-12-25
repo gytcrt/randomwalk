@@ -20,35 +20,35 @@ Cursor has published a 2025 report for every user, and I enjoyed reviewing it. I
 
 ## Introduction
 
-AI has changed my workflow as an engineer in the last 3 years. Instead of digging through Google results and Stackoverflow, I "chat" with Cursor and ChatGPT for coding problems, or directly assign tasks to AI coding agents. Below is a screenshot of my Cursor usage in 2025.  
+AI has changed my workflow as an engineer in the last 3 years. [Instead of digging through Google results and Stackoverflow](https://andreagao.com/posts/ai-challenge-after-stack-overflow-died/), I "chat" with Cursor and ChatGPT for coding problems, or directly assign tasks to AI coding agents. Below is a screenshot of my Cursor usage in 2025.  
 
 {{< figurelightbox src="cursor-2025.png" caption="My 2025 Cursor usage report showing 252 million tokens consumed." align="center" width="65%" >}}
 
 
 When I first read my Cursor 2025 report, I was pretty shocked that I've used 252 million tokens within a year. I proudly texted my friend: "I'm sure Cursor is losing money on me, and I'm a power user."  However, when I looked up the Cursor 2025 report on X, I realized the top 10% Cursor users generally consume more than 5 billion tokens in 2025\. From a token consumption perspective, I might be an average user for Cursor. 
 
-*How could Cursor make money if an average user like me consumes more than 250 million tokens?* 
+*How could Cursor justify their business model if an average user like me consumes more than 250 million tokens?* 
 
 I could not wrap my head around the question, so I decided to guesstimate the economics behind Cursor. 
 
 ## My assumptions
 
-If I want to comprehensively calculate my cost as a user for Cursor, I need to consider both variable costs and fixed costs. The variable costs include LLM API inference and Cloud infra; the fixed costs like employee salary and R\&D investment. In this article, I only want to estimate LLM API inference cost per user, since it's directly linked to each user's token usage and less than the total cost of a user by definition. 
+If I want to comprehensively calculate my cost as a user for Cursor, I need to consider both variable costs and fixed costs. The variable costs include LLM API inference and Cloud infra; the fixed costs include employee salary and R\&D investment. In this article, I will only estimate LLM API inference cost per user, since it's directly linked to each user's token usage and less than the total cost of a user by definition. 
 
-I also made a few more assumptions about token price, LLM model, and token mixture to build the estimation. 
+Before we dig in to the estimation, we need a few assumptions about token price, LLM model, and token mixture. 
 
 ### Token price
 
-Cursor enables users to choose major LLMs at their will, but Anthropic Claude is the most popular model family among users (including me). Therefore, I assume the standard token price based on [Anthropic's website](https://claude.com/pricing\#api).
+Cursor enables users to choose major LLMs at their will, but Anthropic Claude is the most popular model family among users (including me). Therefore, I will anchor the standard token price on [Anthropic's official API price](https://claude.com/pricing\#api).
 
 * Input: $3 per million token  
 * Output: $15 per million token
 
 ### Enterprise price discount 
 
-Cursor is a major customer of Anthropic's, even their relationship can be very complicated – Anthropic likes to directly own AI coding use cases via Claude Code. It's safe to assume Cursor is paying less than the public price for each token by signing enterprise deals with LLM providers, owning dedicated instances, and using token caching. 
+Cursor is a major customer of Anthropic's, even their relationship can be very complicated – Anthropic likes to directly own AI coding use cases via [Claude Code](https://www.claude.com/product/claude-code). It's safe to assume Cursor is paying less than the public price for each token by signing enterprise deals with LLM providers, owning dedicated instances, and using token caching. 
 
-Unless I work at Cursor and manage their operation cost, I won't know the price per million token for them. But I will continue my analysis with 3 price scenarios:
+Unless I work at Cursor and manage their operation cost, I won't know the real price per million token for them. But I will continue my analysis with 3 price scenarios:
 
 * 30% off  
   * Input: $2.1 per million token  
@@ -62,7 +62,7 @@ Unless I work at Cursor and manage their operation cost, I won't know the price 
 
 ### Input/output mixture
 
-Given input and output tokens are priced differently, but the Cursor 2025 report doesn't break my 252 million token down by its type, I need to estimate an input/output distribution. Obviously, users like me want to input simple but sufficient instructions and expect AI agents on Cursor to output quality code. For a more conservative estimate, I will assume my input makes up 30% of the token. 
+Given input and output tokens are priced differently, but the Cursor 2025 report doesn't break my 252 million token down by type, I need to estimate an input/output distribution. Obviously, users like me want to input simple but sufficient instructions and expect AI agents on Cursor to output quality code. For a more conservative estimate, I will assume my input makes up 30% of the tokens. 
 
 * Input token: 30%  
 * Output token: 70%
@@ -101,9 +101,17 @@ Based on my assumptions and equation above, the estimated API cost is
 
 If Cursor wants to make the revenue and API cost break-even in my case, the discount rate has to be 93%. It means they must ensure P\_input is below 0.21$ per 1M input tokens and P\_output is below $1.05 per 1M output tokens.
 
+I think Cursor is spending a lot more money on me than my subscription fee.
+
 ## Other user data I found online
 
-As I mentioned in the first part of the post, I am not a power user based on the Cursor's own report. If I tried to plug in some top 10% user's token consumption in my calculation, the number will be:   
+As I mentioned in the first part of the post, I am not a power user based on the Cursor's own report. Here is a top 6% user from X.   
+
+{{< figurelightbox src="cursor_x_user.jpg" caption="A top 6% Cursor user consumed 6.24 billion tokens in 2025." align="center" width="65%" >}}
+
+Source: [X post from @jcruzfff](https://x.com/jcruzfff/status/2002257937679737079)
+
+Now I plug in this user's token consumption in my calculation, the estimated API cost for Cursor is: 
 
 <div align="center">
 
@@ -115,7 +123,7 @@ As I mentioned in the first part of the post, I am not a power user based on the
 
 </div>
 
-{{< figurelightbox src="cursor_x_user.jpg" caption="A top 6% Cursor user consumed 6.24 billion tokens in 2025.<br>Source: [X post](https://x.com/jcruzfff/status/2002257937679737079)" align="center" width="65%" >}}
+
 
 
 I'm not sure what tier of subscription this user has been on in 2025, but even they have subscribed to [the highest tier](https://cursor.com/pricing), they would only pay Cursor $200 \* 12 \= $2,400 for 2025 unless they have enabled the "On-demand usage" option. It's unlikely Cursor is making a profit on this user. I guess the real question should be: how much money is Cursor losing to keep users?
@@ -125,7 +133,7 @@ I'm not sure what tier of subscription this user has been on in 2025, but even t
 
 ## Conclusion
 
-My estimation in this post is based on a rough assumption of LLM API price and does not include any cost from platform infra or fixed cost. However, it still demonstrates that Cursor users like me are using way more resources than they are paying for the subscription. 
+My estimation in this post is based on a rough assumption of LLM API price and does not include any cost from platform infra or fixed cost. However, it still demonstrates that Cursor users like me are using way more resources than they are paying for their subscriptions. 
 
 So who's paying for the users? Investors. 
 
@@ -133,4 +141,4 @@ While everyone else is now paying more for Uber, Amazon, and food delivery servi
 
 How long can this last? Is this sustainable? I don't know. 
 
-While AI is driving a significant part of GDP growth in the US, there's still a long way to turn investment into profit.
+In 2025, AI has contributed a significant part of GDP growth in the US. AI coding is currently the crown jewel of broader AI adoption. Given my estimation in this article, there's still a long way to turn investment into profit.
