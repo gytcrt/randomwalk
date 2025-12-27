@@ -139,6 +139,8 @@ My estimation in this post is based on a rough assumption of LLM API price and d
 
 So who's paying for the users? Investors. 
 
+The same incentive pressure shows up inside companies too—why “996/007” culture is spreading in AI is something I unpacked in [Working 996 or 007 is not a competitive advantage for AI companies](https://andreagao.com/posts/ai-company-overwork-culture-996/).
+
 While everyone else is now paying more for Uber, Amazon, and food delivery services than they were 10 years ago, engineers and vibe coders can technically take advantage of this AI cycle. 
 
 How long can this last? Is this sustainable? I don't know. 
