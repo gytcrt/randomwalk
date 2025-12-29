@@ -152,14 +152,23 @@ function toggleThemeListener() {
             
             <!-- Custom icon section -->
             <div class="header-icons">
-                <a href="/search/" title="Search (Alt + /)" class="header-icon" data-no-instant accesskey="/">
-                    <span>🔍</span>
+                <a href="/search/" title="Search (Alt + /)" class="header-icon" data-no-instant accesskey="/" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
                 </a>
-                <a href="/archives/" title="Archives" class="header-icon">
-                    <span>📦</span>
+                <a href="/archives/" title="Archives" class="header-icon" aria-label="Archives">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
                 </a>
-                <a href="/index.xml" title="RSS Feed" class="header-icon">
-                    <span>📡</span>
+                <a href="/index.xml" title="RSS Feed" class="header-icon" aria-label="RSS Feed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 11a9 9 0 0 1 9 9"></path>
+                        <path d="M4 4a16 16 0 0 1 16 16"></path>
+                        <circle cx="5" cy="19" r="1"></circle>
+                    </svg>
                 </a>
             </div>
         </div>

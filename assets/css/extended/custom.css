@@ -235,16 +235,19 @@ body.dark .nav-separator {
   border: none;
   box-shadow: none !important;
   transition: 0.15s;
-  font-size: 20px;
   line-height: 1;
+  color: var(--secondary);
 }
 
 .header-icon:hover {
   transform: scale(1.1);
+  color: var(--primary);
 }
 
-.header-icon span {
+.header-icon svg {
   display: block;
+  width: 20px;
+  height: 20px;
 }
 
 /*--------------------------------------------------------------
