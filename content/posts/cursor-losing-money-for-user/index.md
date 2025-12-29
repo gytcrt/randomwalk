@@ -20,7 +20,7 @@ Cursor has published a 2025 report for every user, and I enjoyed reviewing it. I
 
 ## Introduction
 
-AI has changed my workflow as an engineer in the last 3 years. [Instead of digging through Google results and Stackoverflow](https://andreagao.com/posts/ai-challenge-after-stack-overflow-died/), I "chat" with Cursor and ChatGPT for coding problems, or directly assign tasks to AI coding agents. Below is a screenshot of my Cursor usage in 2025.  
+AI has changed my workflow as an engineer in the last 3 years. {{< newtabref href="https://andreagao.com/posts/ai-challenge-after-stack-overflow-died/" title="Instead of digging through Google results and Stackoverflow" >}}, I "chat" with Cursor and ChatGPT for coding problems, or directly assign tasks to AI coding agents. Below is a screenshot of my Cursor usage in 2025.  
 
 {{< figurelightbox src="cursor-2025.png" caption="My 2025 Cursor usage report showing 252 million tokens consumed." align="center" width="65%" >}}
 
@@ -39,14 +39,14 @@ Before we dig in to the estimation, we need a few assumptions about token price,
 
 ### Token price
 
-Cursor enables users to choose major LLMs at their will, but Anthropic Claude is the most popular model family among users (including myself). Therefore, I will anchor the standard token price on [Anthropic's official API price](https://claude.com/pricing\#api).
+Cursor enables users to choose major LLMs at their will, but Anthropic Claude is the most popular model family among users (including myself). Therefore, I will anchor the standard token price on {{< newtabref href="https://claude.com/pricing#api" title="Anthropic's official API price" >}}.
 
 * Input: $3 per million token  
 * Output: $15 per million token
 
 ### Enterprise price discount 
 
-Cursor is a major customer of Anthropic's. Even their relationship can be very complicated—Anthropic prefers to directly own AI coding use cases via [Claude Code](https://www.claude.com/product/claude-code). It's safe to assume Cursor is paying less than the public price for each token by signing enterprise deals with LLM providers, owning dedicated instances, and using token caching. 
+Cursor is a major customer of Anthropic's. Even their relationship can be very complicated—Anthropic prefers to directly own AI coding use cases via {{< newtabref href="https://www.claude.com/product/claude-code" title="Claude Code" >}}. It's safe to assume Cursor is paying less than the public price for each token by signing enterprise deals with LLM providers, owning dedicated instances, and using token caching. 
 
 Unless I work at Cursor and manage their operation cost, I won't know the real price per million token for them. But I will continue my analysis with 3 price scenarios:
 
@@ -111,7 +111,7 @@ As I mentioned in the first part of the post, I am not a power user based on the
 
 {{< figurelightbox src="cursor_x_user.jpg" caption="A top 6% Cursor user consumed 6.24 billion tokens in 2025." align="center" width="65%" >}}
 
-Source: [X post from @jcruzfff](https://x.com/jcruzfff/status/2002257937679737079)
+Source: {{< newtabref href="https://x.com/jcruzfff/status/2002257937679737079" title="X post from @jcruzfff" >}}
 
 If I plug this user's token consumption into my calculation, the estimated API cost for Cursor is: 
 
@@ -128,7 +128,7 @@ If I plug this user's token consumption into my calculation, the estimated API c
 
 
 
-Even if they were subscribed to [the highest tier](https://cursor.com/pricing), they would only pay Cursor $200 \* 12 \= $2,400 for 2025 (unless they have enabled the "On-demand usage" option). It's unlikely Cursor is making a profit on this user. I guess the real question should be: how much money is Cursor losing to keep users?
+Even if they were subscribed to {{< newtabref href="https://cursor.com/pricing" title="the highest tier" >}}, they would only pay Cursor $200 \* 12 \= $2,400 for 2025 (unless they have enabled the "On-demand usage" option). It's unlikely Cursor is making a profit on this user. I guess the real question should be: how much money is Cursor losing to keep users?
 
 {{< figurelightbox src="cursor-tier.png" caption="Cursor pricing tiers in 2025" align="center" width="100%" >}}
 
@@ -139,7 +139,7 @@ My estimation in this post is based on a rough assumption of LLM API price and d
 
 So who's paying for the users? Investors. 
 
-The same incentive pressure shows up inside companies too—why “996/007” culture is spreading in AI is something I unpacked in [Working 996 or 007 is not a competitive advantage for AI companies](https://andreagao.com/posts/ai-company-overwork-culture-996/).
+The same incentive pressure shows up inside companies too—why “996/007” culture is spreading in AI is something I unpacked in {{< newtabref href="https://andreagao.com/posts/ai-company-overwork-culture-996/" title="Working 996 or 007 is not a competitive advantage for AI companies" >}}.
 
 While everyone else is now paying more for Uber, Amazon, and food delivery services than they were 10 years ago, engineers and vibe coders can technically take advantage of this AI cycle. 
 
