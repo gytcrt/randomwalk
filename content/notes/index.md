@@ -13,6 +13,9 @@ sitemap:
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
 
+> I set up a miniflux server locally today, which will help me read more via RSS. Installing miniflux locally requires Docker, a database, and server configuration. Even though ChatGPT made the installation process quite easy for me, it would be quite challenging for non-technical users. I wonder whether there are more easily accessible open-source software like Signal. Or is the enshitification of the internet unavoidable? 
+<img src="miniflux.png" alt="local miniflux set up" width="100%" style="margin: 10px 0;"/>  - 2025.12.29
+
 > Even as a solo developer in a start-up environment, writing technical tutorials/documents is critical for efficiency. It's so easy to forget what(a technical implementation) I did and why I did it just 2 weeks ago.  - 2025.12.08
 
 > NYC is still full of serendipity after years...  
