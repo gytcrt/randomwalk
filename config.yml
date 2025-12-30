@@ -44,9 +44,6 @@ outputs:
         - HTML
         - RSS
 
-# Remove old GA configuration and add new GA4 configuration
-googleAnalytics: "G-RYKYMVK6VG"
-
 minify:
   disableXML: false
   minifyOutput: true
@@ -159,8 +156,6 @@ params:
     
 
   analytics:
-    google:
-      ID: G-RYKYMVK6VG
     bing:
       SiteVerificationTag: "XYZabc"
     yandex:
