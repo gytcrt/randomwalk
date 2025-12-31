@@ -13,6 +13,8 @@ sitemap:
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
 
+> I was in an independent used bookstore in a Texan suburban town yesterday. The bookstore is converted from a two-story house, which the owner might still live in with his family. My experience in the bookstore was surreal. The layout of the book store is labyrinthine; its book collection is time-transcendent; the owner's dog is aging and serves as a guard for a older time. I miss the older time, when I spent a whole day or afternoon in a bookstore tirelessly as a kid. I feel conflicted. Is this hermitic book store in a modern society that prioritizes efficiency a heaven or hell?  - 2025.12.31
+
 > I set up a miniflux server locally today, which will help me read more via RSS. Installing miniflux locally requires Docker, a database, and server configuration. Even though ChatGPT made the installation process quite easy for me, it would be quite challenging for non-technical users. I wonder whether there are more easily accessible open-source software like Signal. Or is the enshitification of the internet unavoidable? 
 <img src="miniflux.png" alt="local miniflux set up" width="100%" style="margin: 10px 0;"/>  - 2025.12.29
 
