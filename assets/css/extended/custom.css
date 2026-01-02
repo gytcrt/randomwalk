@@ -633,6 +633,16 @@ body.dark .custom-homepage .post-category.career {
 # RESPONSIVE DESIGN - MOBILE (768px and below)
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
+  /* Base mobile typography */
+  body {
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+  
+  li {
+    margin-bottom: 0.6em;
+  }
+
   /* Homepage mobile adjustments */
   .custom-homepage {
     padding: 0 1rem;
