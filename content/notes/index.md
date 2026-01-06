@@ -12,6 +12,7 @@ sitemap:
     changefreq: daily
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
+> "Syntax, then, is an app that uses a *tree* of phrases to translate a *web* of thoughts into a *string* of words."  - 2026.01.06
 
 > "The guiding metaphor of classic style is seeing the world. The writer can see something that the reader has not yet noticed, and he orients the reader’s gaze so that she can see it for herself. The purpose, of writing is presentation, and its motive is disinterested truth. It succeeds when it aligns language with the truth, the proof of success being clarity and simplicity. The truth can be known, and is not the same as the language that reveals it; prose is a window onto the world. The writer knows the truth before putting it into words; he is not using the occasion of writing to sort out what he thinks. Nor does the writer of classic prose have to argue for the truth; he just needs to present it. This is because the reader is competent and can recognize the truth when she sees it, as long as she is given an unobstructed view. The writer and the reader are equals, and the process of directing the reader’s gaze takes the form of a conversation."  - 2026.01.02
 
