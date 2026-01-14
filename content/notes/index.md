@@ -11,7 +11,10 @@ sitemap:
     priority: 0.5
     changefreq: daily
 ---
-Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone. 
+Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone.
+
+> Yesterday I watched *Solaris* in a theater for the first time. I realized I feel quite differently when I rewatch some classic sci-fi movies like *Solaris* and *Her* after the rise of ChatGPT. On the one hand, I don’t think superhuman-level Artificial General Intelligence (AGI) can be reached with current deep-learning architectures; on the other hand, today’s AI is closer to sci-fi characters than ever before. It may be time to rewatch The *Matrix* now.  - 2026.01.14
+
 > "Syntax, then, is an app that uses a *tree* of phrases to translate a *web* of thoughts into a *string* of words."  - 2026.01.06
 
 > "The guiding metaphor of classic style is seeing the world. The writer can see something that the reader has not yet noticed, and he orients the reader’s gaze so that she can see it for herself. The purpose, of writing is presentation, and its motive is disinterested truth. It succeeds when it aligns language with the truth, the proof of success being clarity and simplicity. The truth can be known, and is not the same as the language that reveals it; prose is a window onto the world. The writer knows the truth before putting it into words; he is not using the occasion of writing to sort out what he thinks. Nor does the writer of classic prose have to argue for the truth; he just needs to present it. This is because the reader is competent and can recognize the truth when she sees it, as long as she is given an unobstructed view. The writer and the reader are equals, and the process of directing the reader’s gaze takes the form of a conversation."  - 2026.01.02
@@ -31,7 +34,7 @@ Short notes from what I read or what pops up in my head when I am in front of my
 
 > "Annuities" are not often discussed in personal finance comparing with 401K. Based on a [WSJ article](https://www.wsj.com/personal-finance/vanguard-401k-regular-payout-170fd8f6?st=SYc1Df&reflink=desktopwebshare_permalink), major providers like Vanguard have started offering annuity payouts along with their 401k plans. Annuities still don’t seem to be a mainstream retirement vehicle in the US, and I’m very curious about the historical and societal reasons behind that.  - 2025.12.04
 
-> I recently noticed that the word "algorithm" has lost its original meaning in daily life: most non-tech people use "algorithm" as a synonym for recommendation system in conversations or in the news media. Unfortunately, recommendation systems are so pervasive and addictive nowadays, that it makes "algorithm" a native word.  - 2025.12.03
+> I recently noticed that the word "algorithm" has lost its original meaning in daily life: most non-tech people use "algorithm" as a synonym for recommendation system in conversations or in the news media. Unfortunately, recommendation systems are so pervasive and addictive nowadays, that it makes "algorithm" a negative word.  - 2025.12.03
 
 > "Alternative data offers the opportunity to work with truly unique,hard-to-process
 datasets. Remember, data that is hard to store, manipulate, and operate is always the
