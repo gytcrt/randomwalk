@@ -13,6 +13,8 @@ sitemap:
 ---
 Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone.
 
+> There’s a Mexican food truck between my home and my gym, which is my go-to place when I feel lazy after a workout. Similar to Chinese food, tacos from a Mexican food truck can be as good as a Michigan star restaurant. I think their beef tacos were as delicious as those at Casa Enrique in Long Island city, at one-third of the price. Unfortunately, the food truck disappeared last year. I don’t know where the owner and staff went nor what happened to the business in the 2025’s environment. I still have their number on Zelle; I wonder whether I should text or call them to check in…  - 2026.01.15
+
 > Yesterday I watched *Solaris* in a theater for the first time. I realized I feel quite differently when I rewatch some classic sci-fi movies like *Solaris* and *Her* after the rise of ChatGPT. On the one hand, I don’t think superhuman-level Artificial General Intelligence (AGI) can be reached with current deep-learning architectures; on the other hand, today’s AI is closer to sci-fi characters than ever before. It may be time to rewatch The *Matrix* now.  - 2026.01.14
 
 > "Syntax, then, is an app that uses a *tree* of phrases to translate a *web* of thoughts into a *string* of words."  - 2026.01.06
