@@ -37,6 +37,8 @@ Recently, I noticed someone in Singapore could not access my website via his int
 
 When I need to configure infrastructure on providers like AWS, NameCheap and Cloudflare, I like to upload a screenshot and have AI explain and guide me through the process. Let us be honest, many engineers feel overwhelmed and intimidated by the AWS console - most of use do not need to deal with cloud infrastructure if there is a dedicated team for that and the AWS console is labyrinthine.
 
+{{< figurelightbox src="cloudflare.png" caption="Cloudflare instruction is hard to follow without context" align="center" width="80%" >}}
+
 Nevertheless, I must call out that you need to be careful when using AI tools on infrastructure changes since it could be expensive or even fatal to your project. Unlike front-end and back-end which you can test in a dev environment before deployment, unexpected changes in infrastructure can be more costly.
 
 ### Front-end
@@ -65,13 +67,17 @@ Coding is not typing in strings following the syntax of a programming language, 
 
 ChatGPT and Google Gemini are very helpful brainstorming tools. I use them to research the context of a problem, identify popular technical frameworks, and find reference materials. This is particularly useful if you start working on a new topic. For example, I am generally a passive investor, but I decided to spend some time on developing Bitcoin quantitative trading strategy in 2025. ChatGPT and Gemini helped me quickly find initial directions and valuable reference books.
 
-However, as I picked up foundational knowledge and started solving more complex problems in quant research, ChatGPT and Gemini became less reliable. When I asked them to provide feedback on my strategy backtesting results, they could produce seemingly convincing but illogic advice. Embarrassingly, both my coworker and I have been fooled by AI in situations like this, and we have had retrospective conversations (https://www.coursera.org/articles/what-is-retrospective) on how to avoid being misled by AI.
+However, as I picked up foundational knowledge and started solving more complex problems in quant research, ChatGPT and Gemini became less reliable. When I asked them to provide feedback on my strategy backtesting results, they could produce seemingly convincing but illogic advice. Embarrassingly, both my coworker and I have been fooled by AI in situations like this, and we have had retrospective conversations ({{< newtabref href="https://www.coursera.org/articles/what-is-retrospective" title="Coursera" >}}) on how to avoid being misled by AI.
 
 Frankly, I have not found a silver bullet to avoid being misled by AI yet, and I think this struggle will continue given the nondeterministic nature of AI (precisely Generative AI). Critical thinking, expertise and continuous learning are more important than before when working with AI.
 
 ### Analytics
 
-To start with this section, I want to quote Citadel's founder Ken Griffin: "GenAI fails to help hedge funds generate alpha." (https://www.bloomberg.com/news/articles/2025-10-15/ken-griffin-says-genai-fails-to-help-hedge-funds-produce-alpha) I found it difficult to use AI to produce quantitative analysis, which is a shared view by my other statistician friends.
+To start with this section, I want to quote Citadel's founder Ken Griffin: "GenAI fails to help hedge funds generate alpha." ({{< newtabref href="https://www.bloomberg.com/news/articles/2025-10-15/ken-griffin-says-genai-fails-to-help-hedge-funds-produce-alpha" title="Bloomberg" >}}) I found it difficult to use AI to produce quantitative analysis, which is a shared view by my other statistician friends.
+
+{{< figurelightbox src="citadel.jpg" caption="" align="center" width="60%" >}}
+
+
 
 "Quantitative analysis" means solving a problem by analyzing given structured or unstructured data independently. For example, if I have per-minute OHLC (Open, High, Low, Close) data of Bitcoin in 2025, and I want to know the frequency of Bitcoin price falling 3% within an hour in 2025, an AI coding agent will struggle with producing code and solving the problem on its own. In my experience, I need to give AI step by step instructions and review code produced by AI line by line to ensure its accuracy for the example question.
 
@@ -89,7 +95,7 @@ Similar to my ideas in other sections of the article, you need to know your goal
 
 In my previous blog, How do LLMs and AI coding tools solve new problems when Stack Overflow is dead? I have questioned how AI addresses new coding problems. Now I have more lived experience to add more color on this topic. AI is more helpful with common languages and packages like Python and Pandas than specialized packages.
 
-When I use the inline question feature to ask Cursor for some quick analysis in Pandas, it usually produces decent and accurate code. However, when I ask Cursor to change parameters for functions from vectorbt (https://vectorbt.dev/) or freqtrade (https://www.freqtrade.io/en/stable/), it is usually worse than me directly looking up package documentation. I think it is due to lack of enough trading data for those nicher packages.
+When I use the inline question feature to ask Cursor for some quick analysis in Pandas, it usually produces decent and accurate code. However, when I ask Cursor to change parameters for functions from vectorbt ({{< newtabref href="https://vectorbt.dev/" title="vectorbt" >}}) or freqtrade ({{< newtabref href="https://www.freqtrade.io/en/stable/" title="freqtrade" >}}), it is usually worse than me directly looking up package documentation. I think it is due to lack of enough trading data for those nicher packages.
 
 I have found a workaround: pass the documentation page to AI and ask AI to plan its answer based on the documentation. It is not perfect, but better than asking AI for help without context.
 
