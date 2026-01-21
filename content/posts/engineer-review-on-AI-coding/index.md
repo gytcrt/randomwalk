@@ -19,9 +19,9 @@ Coding with AI tools feels like raising a kitten or playing a competitive game -
 
 I enjoy the thrills of solving a complex problem by giving clear instruction, combining multiple techniques and pressure testing with several AI tools. But I have also lost one or two days of work due to misjudgement of mine and poor performance of AI tools. Nevertheless, it is very exciting.
 
-Giving a comprehensive review on AI coding is impossible, since it will be similar to thoroughly reviewing all cloud services and their products. This article means to share my experience and what works or does not work for me. Therefore, I think it is worthy of sharing my past coding experience, so that you can calibrate my thoughts based on your experience.
+Giving a comprehensive review on AI coding is impossible, since it would be similar to thoroughly reviewing all cloud service providers and their products. This article is meant to share my experience and what works or does not work for me. Therefore, I think it is worth sharing my past coding experience, so that you can calibrate my thoughts based on your experience.
 
-In the past, I majorly coded with Python and SQL for backend development, ML modeling, analytics, database management. I am fluent with major cloud services, devops and MLops. I deliver production solutions along with my team or on my own depending on the scope of the solution.
+In the past, I've majorly coded in Python and SQL for backend development, ML modeling, analytics, database management. I am fluent in major cloud services, DevOps and MLops. I deliver production solutions along with my team or on my own depending on the scope of the solution.
 
 ## Where in a system
 
