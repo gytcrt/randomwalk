@@ -11,7 +11,7 @@ ShowToc: true
 #   width: 100%
 ---
 
-I have coded a lot with the help of AI/LLM in 2025. These AI tools have dramatically changed how I code and my workflow, which I have been doing for more than 10 years. If you take a look at my blog list, it is full of AI related content. I have been writing about AI not because I treat it as part of my job, but rather because my working style and daily life has been constantly evolving with AI. I found it fascinating to think and write about it.
+I have coded a lot with the help of AI/LLM in 2025. These AI tools have dramatically changed how I code and my workflow, which I have been doing for more than 10 years. If you take a look at my blog list, it is full of AI related content. My blog is taken over by AI not because I treat it as part of my job, but rather because my working style and daily life has been constantly evolving with AI. I found it fascinating to think and write about it.
 
 I will focus on AI coding in this blog. AI coding in this blog means using conversational AI like ChatGPT and AI coding IDE/agent like Cursor to facilitate coding.
 
@@ -19,13 +19,13 @@ Coding with AI tools feels like raising a kitten or playing a competitive game -
 
 I enjoy the thrills of solving a complex problem by giving clear instruction, combining multiple techniques and pressure testing with several AI tools. But I have also lost one or two days of work due to misjudgement of mine and poor performance of AI tools. Nevertheless, it is very exciting.
 
-Giving a comprehensive review on AI coding is not possible, since it will be similar to thoroughly reviewing all cloud services and their products. This article means to share my experience and what works or does not work for me. Therefore, I think it is worthy of sharing my past coding experience, so that you can calibrate my review based on your different experience.
+Giving a comprehensive review on AI coding is impossible, since it will be similar to thoroughly reviewing all cloud services and their products. This article means to share my experience and what works or does not work for me. Therefore, I think it is worthy of sharing my past coding experience, so that you can calibrate my thoughts based on your experience.
 
 In the past, I majorly coded with Python and SQL for backend development, ML modeling, analytics, database management. I am fluent with major cloud services, devops and MLops. I deliver production solutions along with my team or on my own depending on the scope of the solution.
 
 ## Where in a system
 
-When we talk about modern softwares deployed on cloud, they commonly consist of 3 main layers: infrastructure that provides foundations like compute resources, internet connection and security; front-end that interacts with users; back-end that manages user's data and complex logic.
+When we talk about modern softwares deployed on cloud, they commonly consist of 3 main layers: infrastructure that provides foundations like compute resources, internet connection and security; front-end that interacts with users; back-end that manages data, ML models and other complex logics.
 
 In any sizable company, the three layers are managed by different engineers or teams. But for independent developers or start-ups, one person might own everything.
 
