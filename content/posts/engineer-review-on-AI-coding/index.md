@@ -13,13 +13,13 @@ cover:
 
 I have coded a lot with the help of AI/LLM in 2025. These AI tools have dramatically changed how I code and my workflow, which I have been doing for more than 10 years. If you take a look at my blog list, it is full of AI related content. My blog is taken over by AI not because I treat it as part of my job, but rather because my working style and daily life has been constantly evolving with AI. I found it fascinating to think and write about it.
 
-I will focus on AI coding in this blog. AI coding in this blog means using conversational AI like ChatGPT and AI coding IDE/agent like Cursor to facilitate coding.
+This article will be focused on AI coding. In the context of this blog, AI coding means using conversational AI like ChatGPT and AI coding IDE/agent like Cursor to facilitate coding.
 
 Coding with AI tools feels like raising a kitten or playing a competitive game - the dynamics between you and the subject grow and change together. Sometimes I wonder whether the experience is more similar to raising a human baby. AI companies are tirelessly launching new models and features; users test their ideas on the new features, impressed or annoyed, and jump between different AI products for better performance or to save money. Coders around me commonly switch between Cursor, OpenAI Codex, Microsoft Copilot or Google's AI coding tools.
 
 I enjoy the thrills of solving a complex problem by giving clear instruction, combining multiple techniques and pressure testing with several AI tools. But I have also lost one or two days of work due to misjudgement of mine and poor performance of AI tools. Nevertheless, it is very exciting.
 
-Giving a comprehensive review on AI coding is impossible, since it would be similar to thoroughly reviewing all cloud service providers and their products. This article is meant to share my experience and what works or does not work for me. Therefore, I think it is worth sharing my past coding experience, so that you can calibrate my thoughts based on your experience.
+Giving a comprehensive review on AI coding is impossible, since it would be similar to thoroughly reviewing all cloud service providers and their products. This article is meant to share my experience and what works or does not work for me. Therefore, I think it is worth sharing my background in coding, so that you can calibrate my thoughts based on your experience.
 
 In the past, I've majorly coded in Python and SQL for backend development, ML modeling, analytics, database management. I am fluent in major cloud services, DevOps and MLops. I deliver production solutions along with my team or on my own depending on the scope of the solution.
 
@@ -39,7 +39,7 @@ Recently, I noticed someone in Singapore could not access my website via his int
 
 When I need to configure infrastructure on providers like AWS, NameCheap and Cloudflare, I usually upload a screenshot of the context and have AI explain and guide me through the process. Let us be honest, many engineers feel overwhelmed and intimidated by the AWS console - most of us do not need to deal with cloud infrastructure when there is a dedicated CloudOps team and the AWS console is labyrinthine.
 
-Nevertheless, I must call out that you need to be careful when using AI tools on infrastructure changes since it could be expensive or even fatal to your project. Unlike front-end and back-end which you can test in a dev environment before deployment, unexpected changes in infrastructure can be more costly.
+Nevertheless, I must stress caution when using AI tools on infrastructure changes since it could be expensive or even fatal to your project. Unlike front-end and back-end which you can test in a dev environment before deployment, unexpected changes in infrastructure can be more costly.
 
 ### Front-end
 
@@ -53,7 +53,7 @@ You must know the objectives of your solutions, the plan to get there, and an id
 
 Why do I insist on that?
 
-Last year I spent a few days on building a data ingestion pipeline with Cursor, and felt pretty good after finishing it. However, I almost never use the pipeline afterwards. Why? I thought I needed the data pipeline and I could build it fairly quickly with Cursor, then I rushed into developing. Later on, I realized I could use some open source packages to pull similar data without maintaining the data pipeline code. Leveraging the widely used open source packages is significantly easier than using my pipeline for my project at the initial phase. When it comes to the later phase of the project, the data pipeline is not useful either because we have developed new constraints on the data and they need to be reflected in the data ingestion process as well.
+Last year I spent a few days on building a data ingestion pipeline with Cursor, and felt pretty good after finishing it. However, I almost never use the pipeline afterwards. I thought I needed the data pipeline and I could build it fairly quickly with Cursor, then I rushed into developing. Later on, I realized I could use some open source packages to pull similar data without maintaining the data pipeline code. Leveraging the widely used open source packages is significantly easier than using my pipeline for my project at the initial phase. When it comes to the later phase of the project, the data pipeline is not useful either because we have developed new constraints on the data and they need to be reflected in the data ingestion process as well.
 
 AI code agents can deliver back-end code, but the tasks need to be modular and well-defined within the context of a project. Uncontroversially, developing tests and ensuring output from AI code agents passes the tests is another good QA method.
 
@@ -85,7 +85,7 @@ AI is good at generating SQL queries much like it generates natural language, bu
 
 ### Code review/refactoring
 
-I am pretty happy with using AI for code review and refactoring. Code review and refactoring are essential to quality code base, but they are less enjoyable than developing a new feature or solving a problem for most engineers. It means they are suitable for AI augmentation - humans should be free from tedious tasks and delegate them to AIs.
+I am pretty happy with using AI for code review and refactoring. Code review and refactoring are essential to quality code base, but most engineers find them less enjoyable than developing a new feature or solving a problem. It means they are suitable for AI augmentation - humans should be free from tedious tasks and delegate them to AIs.
 
 Similar to my ideas in other sections of the article, you need to know your goals of review/refactoring and guide AI with some pre-defined principles, especially when you work on a large or enterprise codebase.
 
@@ -107,4 +107,4 @@ As a rule of thumb, when I encounter an unfamiliar bug, I start by asking the AI
 
 ## Conclusion
 
-Thanks for reading to the end of this post, which serves as a good reflection on my interaction (collaboration?) with AI. It's possible many shortcomings of AI in this post will be solved in a couple of years
+Thanks for reading to the end of this post, which serves as a good reflection on my interaction (collaboration?) with AI. It's possible that many of the shortcomings of AI coding in this post will be solved in a couple of years, but it's fun to be an active participant and thinker throughout this process. 
