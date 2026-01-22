@@ -1,8 +1,8 @@
 ---
 date: 2026-01-16
 draft: true
-title: "Personal review on AI coding"
-description: ""
+title: "A year of coding with AI"
+description: "A senior engineer reflects on a year of coding with AI tools like ChatGPT and Cursor—what worked, what failed, and how AI actually fits into real-world infrastructure, frontend, backend, and analytical workflows."
 tags: ["AI", "vibe coding", "engineering"]
 category: "engineering"
 ShowToc: true
@@ -10,6 +10,8 @@ cover:
   image: "musicforprogramming.png"
   width: 100%
 ---
+
+## Introduction
 
 I have coded a lot with the help of AI/LLM in 2025. These AI tools have dramatically changed how I code and my workflow, which I have been doing for more than 10 years. If you take a look at my blog list, it is full of AI related content. My blog is taken over by AI not because I treat it as part of my job, but rather because my working style and daily life has been constantly evolving with AI. I found it fascinating to think and write about it.
 
@@ -19,11 +21,13 @@ Coding with AI tools feels like raising a kitten or playing a competitive game -
 
 I enjoy the thrills of solving a complex problem by giving clear instruction, combining multiple techniques and pressure testing with several AI tools. But I have also lost one or two days of work due to misjudgement of mine and poor performance of AI tools. Nevertheless, it is very exciting.
 
+## My background
+
 Giving a comprehensive review on AI coding is impossible, since it would be similar to thoroughly reviewing all cloud service providers and their products. This article is meant to share my experience and what works or does not work for me. Therefore, I think it is worth sharing my background in coding, so that you can calibrate my thoughts based on your experience.
 
 In the past, I've majorly coded in Python and SQL for backend development, ML modeling, analytics, database management. I am fluent in major cloud services, DevOps and MLops. I deliver production solutions along with my team or on my own depending on the scope of the solution.
 
-## Where in a system
+## AI in a software system
 
 When we talk about modern softwares deployed on cloud, they commonly consist of 3 main layers: infrastructure that provides foundations including computing resources, internet connection and security; front-end that interacts with users; back-end that manages data, ML models and other complex logic.
 
@@ -57,11 +61,11 @@ Last year I spent a few days on building a data ingestion pipeline with Cursor, 
 
 AI code agents can deliver back-end code, but the tasks need to be modular and well-defined within the context of a project. Uncontroversially, developing tests and ensuring output from AI code agents passes the tests is another good QA method.
 
-## Functions of my work
+## How I work with AI
 
 <div class="tenor-gif-embed" data-postid="1747207714643625346" data-share-method="host" data-aspect-ratio="1.79104" data-width="100%"><a href="https://tenor.com/view/ngoding-mulu-gif-1747207714643625346">Ngoding Mulu GIF</a>from <a href="https://tenor.com/search/ngoding+mulu-gifs">Ngoding Mulu GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-Coding is not typing in strings following the syntax of a programming language, but a means to solve a defined problem. Let us assume the problem is well defined, for the sake of this post, since finding and defining a valuable problem is an important topic of its own. When you solve a problem, you generally follow an iterative process that consists of brainstorming, analyzing the situations, engineering and reviewing the solutions. In this section, I will break the problem solving process down to 3 parts and discuss how I view the usage of AI in each of the processes.
+Coding is not typing in strings following the syntax of a programming language, but a means to solve a defined problem. For the sake of this post, let us assume the problem is well defined (since finding and defining a valuable problem is an important subject of its own). When you solve a problem, you generally follow an iterative process that consists of brainstorming, analyzing the situations, engineering and reviewing the solutions. In this section, I will break the problem solving process down to 3 parts and discuss how I view the usage of AI in each of the processes.
 
 ### Brainstorming
 
@@ -83,15 +87,15 @@ To start this section, I want to quote Citadel's founder Ken Griffin: {{< newtab
 
 AI is good at generating SQL queries much like it generates natural language, but it does not apply logic the way humans do. I would advise you to be careful with AI in analytics.
 
-### Code review/refactoring
+### Code review and refactoring
 
 I am pretty happy with using AI for code review and refactoring. Code review and refactoring are essential to quality code base, but most engineers find them less enjoyable than developing a new feature or solving a problem. It means they are suitable for AI augmentation - humans should be free from tedious tasks and delegate them to AIs.
 
 Similar to my ideas in other sections of the article, you need to know your goals of review/refactoring and guide AI with some pre-defined principles, especially when you work on a large or enterprise codebase.
 
-### Misc
+### Limitations and failure modes
 
-#### Common packages vs Niche packages
+#### Common vs Niche packages
 
 In my previous blog, How do LLMs and AI coding tools solve new problems when Stack Overflow is dead? I have questioned how AI addresses new coding problems. Now I have more lived experience to add more color on this topic. AI is more helpful with common languages and packages like Python and Pandas than specialized packages.
 
