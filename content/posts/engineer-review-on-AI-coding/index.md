@@ -1,6 +1,6 @@
 ---
-date: 2026-01-16
-draft: true
+date: 2026-01-22
+draft: false
 title: "A year of coding with AI"
 description: "A senior engineer reflects on a year of coding with AI tools like ChatGPT and Cursor—what worked, what failed, and how AI actually fits into real-world infrastructure, frontend, backend, and analytical workflows."
 tags: ["AI", "vibe coding", "engineering"]
@@ -97,7 +97,7 @@ Similar to my ideas in other sections of the article, you need to know your goal
 
 #### Common vs Niche packages
 
-In my previous blog, How do LLMs and AI coding tools solve new problems when Stack Overflow is dead? I have questioned how AI addresses new coding problems. Now I have more lived experience to add more color on this topic. AI is more helpful with common languages and packages like Python and Pandas than specialized packages.
+In my previous blog, *{{< newtabref href="https://andreagao.com/posts/ai-challenge-after-stack-overflow-died/" title="How do LLMs and AI coding tools solve new problems when Stack Overflow is dead?" >}}*, I have questioned how AI addresses new coding problems. Now I have more lived experience to add more color on this topic. AI is more helpful with common languages and packages like Python and Pandas than specialized packages.
 
 When I use the inline question feature to ask Cursor for some quick analysis in Pandas, it usually produces decent and accurate code. However, when I ask Cursor to change parameters for functions from {{< newtabref href="https://vectorbt.dev/" title="vectorbt" >}} or {{< newtabref href="https://www.freqtrade.io/en/stable/" title="freqtrade" >}}, it is usually worse than me directly looking up package documentation. I think it is due to lack of enough trading data for those nicher packages.
 
