@@ -63,8 +63,6 @@ AI code agents can deliver back-end code, but the tasks need to be modular and w
 
 ## How I work with AI
 
-<div class="tenor-gif-embed" data-postid="1747207714643625346" data-share-method="host" data-aspect-ratio="1.79104" data-width="100%"><a href="https://tenor.com/view/ngoding-mulu-gif-1747207714643625346">Ngoding Mulu GIF</a>from <a href="https://tenor.com/search/ngoding+mulu-gifs">Ngoding Mulu GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-
 Coding is not typing in strings following the syntax of a programming language, but a means to solve a defined problem. For the sake of this post, let us assume the problem is well defined (since finding and defining a valuable problem is an important subject of its own). When you solve a problem, you generally follow an iterative process that consists of brainstorming, analyzing the situations, engineering and reviewing the solutions. In this section, I will break the problem solving process down to 3 parts and discuss how I view the usage of AI in each of the processes.
 
 ### Brainstorming
