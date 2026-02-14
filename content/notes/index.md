@@ -12,7 +12,7 @@ sitemap:
     priority: 0.5
     changefreq: daily
 ---
-Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone.
+Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone
 
 > ["less is more"](https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools)  - 2026.01.19
 
