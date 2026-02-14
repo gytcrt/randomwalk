@@ -98,32 +98,4 @@
 
 </article>
 
-{{/* --- Article structured data (JSON-LD) for SEO --- */}}
-{{- if .IsPage }}
-  {{- $image := "" -}}
-  {{- with .Params.cover.image }}
-    {{- $image = . | absURL -}}
-  {{- end }}
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": {{ .Title | jsonify }},
-    "description": {{ .Description | default (.Summary | plainify | truncate 160) | jsonify }},
-    "image": {{ if $image }}{{ $image | jsonify }}{{ else }}null{{ end }},
-    "datePublished": "{{ with .PublishDate }}{{ . }}{{ else }}{{ .Date }}{{ end }}",
-    "dateModified": "{{ .Lastmod }}",
-    "author": {
-      "@type": "Person",
-      "name": "Andrea Gao"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ .Permalink }}"
-    }
-  }
-  </script>
-{{- end }}
-
 {{- end }}{{/* end main */}}

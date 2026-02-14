@@ -156,10 +156,13 @@ params:
     
 
   analytics:
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+    # Google Search Console — replace with your verification code from
+    # https://search.google.com/search-console → Settings → Ownership verification → HTML tag
+    googleSiteVerificationTag: ""
+    # Bing Webmaster Tools — replace with your verification code
+    bingSiteVerificationTag: ""
+    # Yandex Webmaster — replace with your verification code (optional)
+    yandexSiteVerificationTag: ""
 
   cover:
     hidden: false

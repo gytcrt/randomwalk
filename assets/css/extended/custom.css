@@ -808,3 +808,15 @@ body.dark .custom-homepage .post-category.career {
     margin: 0;
   }
 }
+
+/* "View all posts" link on homepage */
+.view-all-posts {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.view-all-posts:hover {
+  color: var(--primary);
+}

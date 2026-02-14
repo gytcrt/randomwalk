@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Andrea Gao is a founder who builds ML/AI systems from proof-of-concept to production."
 draft: false
 ShowWordCount: false
 ShowReadingTime: false

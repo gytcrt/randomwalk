@@ -1,5 +1,6 @@
 ---
 title: "Notes"
+description: "Short notes and observations on books, technology, food, and life in New York City."
 date: 2025-12-03
 layout: single
 ShowWordCount: false
