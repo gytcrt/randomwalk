@@ -9,27 +9,51 @@
   {{- $footerOwner = replaceRE "^\\s*(&copy;|©)\\s*" "" $footerOwner }}
   {{- $footerOwner = replaceRE "^\\d{4}([\\-–]\\d{4})?\\s*" "" $footerOwner }}
 {{- end }}
+{{- $emailURL := "" }}
+{{- $linkedinURL := "" }}
+{{- $githubURL := "" }}
+{{- range site.Params.socialIcons }}
+  {{- $name := lower (trim .name " ") }}
+  {{- $url := trim .url " " }}
+  {{- if eq $name "email" }}
+    {{- if eq $url "email" }}
+      {{- $emailAddress := site.Params.Email | default site.Params.MaskedEmail }}
+      {{- if $emailAddress }}
+        {{- $emailURL = printf "mailto:%s" $emailAddress }}
+      {{- end }}
+    {{- else if hasPrefix $url "mailto:" }}
+      {{- $emailURL = $url }}
+    {{- else if $url }}
+      {{- $emailURL = printf "mailto:%s" $url }}
+    {{- end }}
+  {{- else if eq $name "linkedin" }}
+    {{- $linkedinURL = $url }}
+  {{- else if eq $name "github" }}
+    {{- $githubURL = $url }}
+  {{- end }}
+{{- end }}
 
 {{- if not (.Param "hideFooter") }}
-<footer class="footer" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-  {{- if .IsHome }}
-  {{- if $footerOwner }}
-  <span>{{ printf "&copy; %s %s" $yearText $footerOwner | markdownify }}</span>
-  {{- else }}
-  <span>&copy; {{ $yearText }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
-  {{- end -}}
-  {{- else }}
-  <div class="footer-social-icons">
-    {{- partial "social_icons.html" (dict "icons" site.Params.socialIcons "svg" $.Site.Data.svg "MaskedEmail" site.Params.MaskedEmail "Email" site.Params.Email) -}}
-  </div>
-  <div class="footer-copyright">
+<footer class="footer">
+  <div class="footer-inline-links">
     {{- if $footerOwner }}
     <span>{{ printf "&copy; %s %s" $yearText $footerOwner | markdownify }}</span>
     {{- else }}
     <span>&copy; {{ $yearText }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
     {{- end -}}
+    {{- with $emailURL }}
+    <span class="footer-separator" aria-hidden="true">&middot;</span>
+    <a href="{{ . }}">Email</a>
+    {{- end }}
+    {{- with $linkedinURL }}
+    <span class="footer-separator" aria-hidden="true">&middot;</span>
+    <a href="{{ . }}" target="_blank" rel="noopener noreferrer me">LinkedIn</a>
+    {{- end }}
+    {{- with $githubURL }}
+    <span class="footer-separator" aria-hidden="true">&middot;</span>
+    <a href="{{ . }}" target="_blank" rel="noopener noreferrer me">GitHub</a>
+    {{- end }}
   </div>
-  {{- end }}
 </footer>
 {{- end }}
 

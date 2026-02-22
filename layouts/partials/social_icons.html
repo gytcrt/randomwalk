@@ -1,6 +1,7 @@
 <div class="social-icons">
     {{- range .icons }}
     {{- $icon_name := ( trim .name " " | lower )}}
+    {{- if and (ne $icon_name "twitter") (ne $icon_name "x") }}
 
     {{- if (eq .url "email") }}
     <a href="mailto:{{ $.MaskedEmail | default $.Email }}" title="{{ .name | title }}">
@@ -20,5 +21,6 @@
     </a>
     {{- end }}
 
+    {{- end }}
     {{- end }}
 </div> 

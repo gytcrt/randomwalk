@@ -14,9 +14,9 @@ sitemap:
 
 <img src="images/profile.jpg" alt="about me" width="500"/>
 
-I’m Andrea Gao (she/her), currently a startup founder in NYC.
+I’m Andrea Gao (she/her), a startup founder based in NYC.
 
-I spent most of my career helping organizations turn data into better decisions. As my work has increasingly focused on applying LLMs and GenAI to transform businesses’ daily operations, I believe AI is more than hype. My current venture is to build AI-native solutions that benefit both people and businesses. 
+I spent most of my career helping organizations turn data into better decisions. As my work has increasingly focused on applying LLMs and GenAI to transform businesses’ daily operations, I believe AI is more than hype. My current venture is building AI-native solutions that work outside of demos and benefit both people and businesses. 
 
 I love writing, which serves as a medium to present intriguing problems or shed light on unspeakable feelings.
 

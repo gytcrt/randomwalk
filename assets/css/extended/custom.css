@@ -376,13 +376,42 @@ figure > figcaption,
   margin-top: 5px;
 }
 
-/* Footer link styling override */
-footer a,
-footer a:hover,
-footer a:focus {
-  text-decoration: none !important;
-  border-bottom: none !important;
+/* Minimal inline footer links */
+.footer-inline-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+  line-height: 1.6;
+}
+
+.footer-inline-links span {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.footer-inline-links .footer-separator {
+  color: var(--secondary);
+  opacity: 0.8;
+}
+
+.footer-inline-links a {
+  font-weight: 400;
   box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.footer-inline-links a:hover,
+.footer-inline-links a:focus {
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.footer-inline-links a:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 /*--------------------------------------------------------------
@@ -718,47 +747,12 @@ body.dark .custom-homepage .post-category.career {
   footer.footer {
     white-space: normal !important;
     text-align: center;
+  }
+
+  footer.footer .footer-inline-links {
     display: flex;
-    flex-direction: column;
-  }
-
-  footer.footer span {
-    display: block;
-    text-align: center;
-    margin: 3px 0;
-  }
-
-  footer.footer span:first-of-type {
-    order: 2;
-  }
-
-  footer.footer span:last-of-type {
-    order: 1;
-  }
-
-  footer.footer .footer-separator {
-    display: none;
-  }
-
-  /* Footer social icons mobile adjustments */
-  .footer-social-icons {
-    margin-bottom: 8px;
-  }
-
-  .footer-social-icons .social-icons {
-    flex-wrap: wrap;
-  }
-
-  .footer-social-icons .social-icons a {
-    margin: 4px 8px;
-  }
-
-  footer.footer .footer-social-icons {
-    order: 1;
-  }
-
-  footer.footer .footer-copyright {
-    order: 2;
+    white-space: normal;
+    gap: 0.15rem;
   }
 
   /* Header navigation mobile alignment */
