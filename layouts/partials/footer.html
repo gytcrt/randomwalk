@@ -1,20 +1,32 @@
+{{- $currentYear := now.Year }}
+{{- $sinceYear := (site.Params.footer.since | default $currentYear) | int }}
+{{- $yearText := printf "%d" $currentYear }}
+{{- if lt $sinceYear $currentYear }}
+  {{- $yearText = printf "%d-%d" $sinceYear $currentYear }}
+{{- end }}
+{{- $footerOwner := site.Params.footer.copyright | default site.Copyright }}
+{{- if $footerOwner }}
+  {{- $footerOwner = replaceRE "^\\s*(&copy;|©)\\s*" "" $footerOwner }}
+  {{- $footerOwner = replaceRE "^\\d{4}([\\-–]\\d{4})?\\s*" "" $footerOwner }}
+{{- end }}
+
 {{- if not (.Param "hideFooter") }}
 <footer class="footer" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
   {{- if .IsHome }}
-  {{- if site.Copyright }}
-  <span>{{ site.Copyright | markdownify }}</span>
+  {{- if $footerOwner }}
+  <span>{{ printf "&copy; %s %s" $yearText $footerOwner | markdownify }}</span>
   {{- else }}
-  <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
+  <span>&copy; {{ $yearText }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
   {{- end -}}
   {{- else }}
   <div class="footer-social-icons">
     {{- partial "social_icons.html" (dict "icons" site.Params.socialIcons "svg" $.Site.Data.svg "MaskedEmail" site.Params.MaskedEmail "Email" site.Params.Email) -}}
   </div>
   <div class="footer-copyright">
-    {{- if site.Copyright }}
-    <span>{{ site.Copyright | markdownify }}</span>
+    {{- if $footerOwner }}
+    <span>{{ printf "&copy; %s %s" $yearText $footerOwner | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
+    <span>&copy; {{ $yearText }} <a href="{{ "" | absURL }}">{{ site.Title }}</a></span>
     {{- end -}}
   </div>
   {{- end }}
@@ -55,4 +67,3 @@
     button.addEventListener('click', toggleThemeListener)
   })();
 </script>
-

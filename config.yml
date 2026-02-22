@@ -50,7 +50,7 @@ minify:
 
 # RSS Configuration
 rssLimit: 20  # Number of entries in RSS feed
-copyright: "© 2025 Andrea Gao"
+copyright: "© Andrea Gao"
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
