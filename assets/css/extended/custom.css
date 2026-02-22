@@ -663,9 +663,14 @@ body.dark .custom-homepage .post-category.career {
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
   /* Base mobile typography */
+  :root {
+    --base-font-size: 16.5px;
+    --line-height: 1.6;
+  }
+
   body {
-    font-size: 16.5px;
-    line-height: 1.6;
+    font-size: var(--base-font-size);
+    line-height: var(--line-height);
   }
   
   li {
@@ -689,7 +694,7 @@ body.dark .custom-homepage .post-category.career {
   
   .custom-homepage .intro-content {
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: var(--line-height);
   }
   
   .custom-homepage .recent-posts h2 {
