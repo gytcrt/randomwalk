@@ -12,7 +12,10 @@ sitemap:
     priority: 0.5
     changefreq: daily
 ---
-Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway or waiting for someone
+Short notes from what I read or what pops up in my head when I am in front of my task, walking out side, taking subway, or waiting for someone
+
+> I finished [Neon Genesis Evangelion](https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion) two days ago -- an anime series I've heard of over and over again in middle school but never watched. It took me more than 15 hours to watch the base series and a subsequent movie. I confess I felt sleepy on the first a few nights while trying to understand the worldview of the anime and its popularity across the globe. The series gets psychological over time, leading me to start dreaming about its plot at night. In the end, I got attached to the characters, as if I was 14 years old again. Despite the intriguing storyline and abstract allegory of Neon Genesis Evangelion, it reminds me of myself as a teenager, exploring my sense of self through anime, music, and books. The future seemed so bright but fragile to this teenage version of me...  - 2026.02.22
+
 
 > ["less is more"](https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools)  - 2026.01.19
 
