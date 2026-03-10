@@ -14,7 +14,7 @@ Feedback can be scary—it can be a critique from a reader, a complaint from a c
 
 In this article, I will focus on good feedback practices in a professional setting, though I have found them quite valuable in my personal life as well – effectively communicating one's needs and feelings is a critical part of any human relationship. 
 
-## Why feedback is powerful and necessary?
+## Why is feedback powerful and necessary?
 
 When we pursue a goal or advance our career, we need guidance along the way. Nothing feels worse than working hard for your dream but realizing you're moving in the wrong direction, farther away from your end goal. 
 
@@ -26,7 +26,7 @@ In professional settings, both the giver and recipient of feedback need to make 
 
 Similar to Tolstoy's famous quote in Anna Karenina: **All good feedback is alike; bad feedback is bad in its own way.**
 
-**A piece of good feedback must have a concrete observation and an actionable plan to back it.** In principle, feedback should focus on the recipient's behavior, the impact of the behavior, and an action plan. Importantly, when you give comments on someone's work, there are usually positive comments too; positive comments give the recipient a morale boost and direction as well. Delivering positive and constructive feedback in one conversation is usually more effective – psychologically, the recipient would not feel attacked and tends to be more accepting of the feedback.  
+**A piece of good feedback must have a concrete observation and an actionable plan to back it.** In principle, feedback should focus on the recipient's behavior, the impact of the behavior, and an action plan. Importantly, when you give comments on someone's work, there are usually positive comments too; positive comments give the recipient a morale boost and direction. Delivering positive and constructive feedback in one conversation is usually more effective – psychologically, it helps the recipient feel less defensive and more accepting.  
 
 Here are some examples of good practices:  
  
@@ -54,7 +54,7 @@ The following is an example of general good practice between manager and team me
      
    **Example**: A manager can set aside five minutes to provide feedback after a team member presents in a client meeting. 
 
-## Feedback conversation should be a dialogue
+## Feedback should be a dialogue
 
 In an ideal world, all the good practices discussed above should be a dialogue: managers give feedback to team members, and vice versa. However, let's be honest, it can be hard for team members to give honest and constructive feedback to managers. I'd advise junior team members to build friendly, trusting relationships with their manager and follow good feedback practices when giving constructive feedback. Unfortunately, jerk managers exist, but you can always choose to prioritize yourself and walk away from a toxic environment.
 
