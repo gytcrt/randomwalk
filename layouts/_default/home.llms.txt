@@ -1,16 +1,14 @@
 # Random Walk (https://andreagao.com/)
 
-> Welcome to the personal blog of Andrea Gao, a full-stack AI practitioner sharing insights on technology, GenAI, work culture, and life. This blog is a space to document thoughts and ideas as they randomly walk through my mind.
+> Personal blog of Andrea Gao, a startup founder building AI-native solutions in NYC. Covers GenAI applications, AI/ML systems, tech work culture, and personal essays.
 
 ## About author
 
-My name is Andrea Gao (she/her). I am a full-stack AI practitioner.
+Andrea Gao (she/her) is a startup founder based in NYC.
 
-I am interested in bringing data and ML/AI systems together to solve valuable problems. Over the past two years, I have been particularly focused on developing GenAI use cases and their iterations.
+She spent most of her career helping organizations turn data into better decisions. As her work has increasingly focused on applying LLMs and GenAI to transform businesses' daily operations, she believes AI is more than hype. Her current venture builds AI-native solutions that work outside of demos and benefit both people and businesses.
 
-I have worked on every step in modern ML/AI systems, from proof-of-concept to pilot to production, as both an engineer and a leader. I find it thrilling to innovate and change the status quo with cutting-edge or mature technologies.
-
-As I stepped into leadership roles, I found myself a bit rusty in coding in recent years. So I decided to rebuild my personal website to brush up on the latest tools and frameworks. I believe it's important for leaders to stay close to their domain when they guide their team and organization.
+She loves writing, which serves as a medium to present intriguing problems or shed light on unspeakable feelings. In her spare time, she is a big movie fan — a regular at the New York Film Festival and independent movie theaters.
 
 This blog covers topics including:
 - Artificial Intelligence and GenAI applications
@@ -20,10 +18,24 @@ This blog covers topics including:
 - Writing and creative pursuits
 - Personal essays and reflections
 
+## Articles
+
+{{- $sections := site.Params.mainSections }}
+{{- $pages := where (where site.RegularPages "Section" "in" $sections) "Params.hidden" "!=" true }}
+{{- range $pages.ByDate.Reverse }}
+### [{{ .Title }}]({{ .Permalink }})
+{{- if .Description }}
+> {{ .Description }}
+{{- end }}
+- Published: {{ .Date | time.Format "January 2, 2006" }}
+{{- if .Params.tags }}
+- Tags: {{ delimit .Params.tags ", " }}
+{{- end }}
+{{ end }}
 ## Licensing
 
-© 2025 Andrea Gao.
- 
+© {{ now.Year }} Andrea Gao.
+
 ## Languages supported
 
 English
