@@ -211,6 +211,16 @@ markup:
     renderer:
       unsafe: true  # This enables raw HTML in markdown content
 
+related:
+  includeNewer: true
+  threshold: 40
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: category
+      weight: 80
+
 sitemap:
   changeFreq: monthly
   priority: 0.5

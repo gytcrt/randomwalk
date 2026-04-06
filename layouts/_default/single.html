@@ -73,11 +73,7 @@
 
   {{/* --- Related posts section for internal linking & SEO --- */}}
   {{- if eq .Type "posts" }}
-    {{- $related := site.RegularPages }}
-    {{- if .Params.tags }}
-      {{- $related = where $related "Params.tags" "intersect" .Params.tags }}
-    {{- end }}
-    {{- $related = where $related "Permalink" "ne" .Permalink | first 3 }}
+    {{- $related := where (.Site.RegularPages.Related .) "Type" "posts" | first 3 }}
 
     {{- if gt (len $related) 0 }}
     <section class="post-related">
