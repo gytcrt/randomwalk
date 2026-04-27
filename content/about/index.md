@@ -14,7 +14,7 @@ sitemap:
 
 <img src="images/profile.jpg" alt="about me" width="500"/>
 
-I’m Andrea Gao (she/her), a startup founder based in NYC.
+I’m Andrea Gao (she/her), a {{< newtabref href="https://signalanalytics.co" title="startup">}}  founder based in NYC.
 
 I spent most of my career helping organizations turn data into better decisions. As my work has increasingly focused on applying LLMs and GenAI to transform businesses’ daily operations, I believe AI is more than hype. My current venture is building AI-native solutions that work outside of demos and benefit both people and businesses. 
 
