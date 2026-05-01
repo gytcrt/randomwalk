@@ -481,6 +481,25 @@ body.dark .notes-page .notes-content blockquote {
   text-underline-offset: 4px;
 }
 
+/* List pagination (post listing pages) — match in-article paginav title style */
+.pagination {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.pagination a {
+  background: transparent;
+  color: var(--content);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0;
+  border-radius: 0;
+  line-height: 1.6;
+}
+
 /*--------------------------------------------------------------
 # HOMEPAGE LAYOUT
 --------------------------------------------------------------*/
