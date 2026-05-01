@@ -66,11 +66,6 @@
       </div>
     {{- end }}
 
-  {{- if not (.Param "noComments") }}
-    <div class="comments-separator"></div>
-    {{- partial "comments.html" . }}
-  {{- end }}
-
   {{/* --- Related posts section for internal linking & SEO --- */}}
   {{- if eq .Type "posts" }}
     {{- $related := where (.Site.RegularPages.Related .) "Type" "posts" | first 3 }}

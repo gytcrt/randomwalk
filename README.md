@@ -28,8 +28,8 @@ A personal website and public notebook by Andrea Gao. Built with [Hugo](https://
 
 ## Features
 
-### Comments
-[Giscus](https://giscus.app/) for GitHub Discussions-based comments. Lazy-loaded via a "Load comments" button to improve page performance. Configuration in `layouts/partials/giscus.html`.
+### Replies
+Each post ends with a "Reply by email" link instead of an inline comment system. Implemented in `layouts/partials/post_nav_links.html` (rendered as the centre column of a prev / reply / next grid).
 
 ### Analytics
 - **Umami** (self-hosted) — Privacy-friendly analytics at `analytics.andreagao.com`

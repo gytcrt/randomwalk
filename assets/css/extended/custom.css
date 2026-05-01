@@ -447,16 +447,37 @@ body.dark .notes-page .notes-content blockquote {
 }
 
 /*--------------------------------------------------------------
-# POST NAVIGATION & COMMENTS
+# POST NAVIGATION (prev / reply / next)
 --------------------------------------------------------------*/
-/* Spacing between post navigation and comments */
 .paginav {
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-.comments-separator {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+.paginav .prev,
+.paginav .reply,
+.paginav .next {
+  width: auto;
+  margin-inline-start: 0;
+}
+
+.paginav .prev { text-align: left; }
+.paginav .reply { text-align: center; }
+.paginav .next { text-align: right; }
+
+.paginav .title {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--content);
+  font-weight: 700;
+}
+
+.paginav .reply .title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /*--------------------------------------------------------------
