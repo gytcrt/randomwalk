@@ -1,6 +1,6 @@
 ---
 date: 2026-05-31
-draft: true 
+draft: false 
 title: 'Paris is less AI centric than NYC'
 description: "Notes from a week in Paris: why Google's AI search summaries, weird AI subway ads, and the general AI hype feel lighter here than in NYC — and what EU regulation has to do with it."
 tags: ["Paris", "AI", "NYC"]
