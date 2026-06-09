@@ -55,7 +55,7 @@ Then, I installed the latest LTS(long-term support) Ubuntu server from {{< newta
 
 #### Internet connection
 
-After installing Ubuntu on my old laptop, it’s essentially a headless computer except it was not connected with the Internet yet. Ideally, it would be quite easy if I had Ethernet and a proper Ethernet cable, but I didn’t have the cable nor did I want to buy one. So I used my phone as a hotspot to upgrade my Ubuntu system and set up Wi-Fi to connect to my home network. 
+After installing Ubuntu on my old laptop, it’s essentially a headless computer except it was not connected with the Internet yet. Ideally, it would be quite easy if I had Ethernet and a proper Ethernet cable, but I didn’t have the cable nor did I want to buy one. So I used my phone as a hotspot to upgrade my Ubuntu system and set up Wi-Fi to connect to my home network. ChatGPT/Claude was heavily leveraged during this process. 
 
 #### Set up Docker
 
@@ -93,6 +93,18 @@ rsync -avh --progress ~/02_Areas/movie/[movie_name] andrea@6street:/home/andrea/
 - `andrea@6street` is the user name and server name.
 - `/home/andrea/movies/` is the path on the server.
 
+#### Set up battery charge threshold
+
+After I post this article on {{< newtabref href="https://www.reddit.com/r/selfhosted/comments/1s72q8q/turned_my_old_2014_macbook_pro_into_a_small_home/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" title="Reddit" >}}, someone asked me whether I left the laptop charged to 100% since they worried the battery would be a fire hazard. Honestly, I thought this was a legit point. Even if the always charging battery is not a fire hazard, its lifespan might be very limited. Therefore, I found a {{< newtabref href="https://github.com/c---/applesmc-next?tab=readme-ov-file#applesmc-next" title="patch" >}} to Linux kernel to allow battery charge thresholds on Apple devices. It works perfectly on my server, as shown in the output below.
+
+```bash
+upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|percentage"
+```
+
+```text
+state:         fully-charged
+percentage:    80.8022%
+```
 
 ## Finally 
 

@@ -12,6 +12,14 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+# Use git history for dates. .Lastmod resolves from the last commit that
+# touched a page's file, so "last updated" auto-populates on every change.
+# Order: a manual `lastmod:` in front matter wins; else the git commit date;
+# else fall back to the publish date.
+enableGitInfo: true
+frontmatter:
+  lastmod: ['lastmod', ':git', 'date', ':default']
+
 caches:
   images:
     dir: :cacheDir/images
@@ -77,6 +85,11 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
+
+  # "Last updated" tracking begins on this date. Edits committed before it
+  # (e.g. pre-launch site-wide restyles) are ignored so they don't show a
+  # misleading "Updated" line. Bump only if you ever want to reset the baseline.
+  lastmodMinDate: "2026-06-09"
 
   ShowReadingTime: true
   ShowShareButtons: true

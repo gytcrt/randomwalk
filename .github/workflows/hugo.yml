@@ -46,6 +46,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          fetch-depth: 0 # full history so enableGitInfo can read per-file commit dates
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
