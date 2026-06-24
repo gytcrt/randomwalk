@@ -1,6 +1,6 @@
 ---
 date: 2026-06-24
-draft: true
+draft: false
 title: "How to use an under-utilized Claude Max plan to save API cost"
 description: "Use \"claude -p\" headless mode as a pseudo Anthropic API to run requests through an idle Claude Max plan, and the trade-offs that come with it."
 tags: ["tech", "engineering", "AI", "claude"]
