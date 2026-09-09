@@ -118,7 +118,7 @@ Cons:
 
 - It's slow. Anthropic is actively throttling my session when I use `claude -p` to run a batch of classification jobs. In my experience, what takes 10 mins to run via API with a single thread would take 60 minutes to run via `claude -p`.
 
-- Anthropic is actively monitoring usage of `claude -p` and might limit this usage anytime. {{< newtabref href="https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan" title="Here" >}} is the evidence from Anthropic's own website.
+- Anthropic is actively monitoring usage of `claude -p` and might limit this usage anytime. They initially announced a change to cap `claude -p` usage by user's subscription plan on June 15, 2026, but walked back from it before that day. As of the latest updated date of this article, `claude -p` still drew from your Claude subscription limit. See {{< newtabref href="https://web.archive.org/web/20260909160846/https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan" title="Anthropic's announcement archived on September 9, 2026" >}}.
 
 ## Conclusion
 
