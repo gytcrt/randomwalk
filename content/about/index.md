@@ -16,7 +16,7 @@ sitemap:
 
 I’m Andrea Gao (she/her), a {{< newtabref href="https://signalanalytics.co" title="startup">}}  founder based in NYC.
 
-I grew up in Chongqing, China and spent my 20s in tech and consulting in the US (majorly). Then I decided to go touch grass—-start a company and see what real world problem I can solve. 
+I grew up in {{< newtabref href="https://en.wikipedia.org/wiki/Chongqing" title="Chongqing, China">}} and spent my 20s in tech and consulting in the US (majorly). Then I decided to go touch grass--start a company and see what real world problem I can solve. 
 
 I love writing, which serves as a medium to present intriguing problems or shed light on unspeakable feelings.
 
