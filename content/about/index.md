@@ -16,8 +16,8 @@ sitemap:
 
 I’m Andrea Gao (she/her), a {{< newtabref href="https://signalanalytics.co" title="startup">}}  founder based in NYC.
 
-I spent most of my career helping organizations turn data into better decisions. As my work has increasingly focused on applying LLMs and GenAI to transform businesses’ daily operations, I believe AI is more than hype. My current venture is building AI-native solutions that work outside of demos and benefit both people and businesses. 
+I grew up in Chongqing, China and spent my 20s in tech and consulting in the US (majorly). Then I decided to go touch grass—-start a company and see what real world problem I can solve. 
 
 I love writing, which serves as a medium to present intriguing problems or shed light on unspeakable feelings.
 
-In my spare time, I'm also a big movie fan - a regular at the New York Film Festival and independent movie theaters. 
+In my spare time, I'm also a big movie fan--a regular at the New York Film Festival and independent movie theaters. 
