@@ -15,27 +15,33 @@ This post is a continuation of an early post (andreagao.com/posts/setup-home-ser
 
 After almost a year of using and managing my home server, I'm quite happy with it and I've made a series of upgrades to it over time. I started treating my home server as a hobby--it's a every evolving project depending on my interest and needs.  
 
-Basic specs:
+## Basic specs
 
-- Machine: MacBook Pro (Retina, 13-inch, Mid 2014), `MacBookPro11,1`
-- CPU: Intel Core i5-4278U, 2 cores / 4 threads, 2.6 GHz (up to 3.1 GHz), Haswell
-- Memory: 8 GB
-- Internal storage: 256 GB Apple SSD
-- OS: Ubuntu 24.04.5 LTS 
-- Internet: Verizon 5G wireless, up to 300 Mbps download
+```text
+Machine   : MacBook Pro (Retina, 13-inch, Mid 2014)
+CPU       : Intel Core i5-4278U, 2 cores / 4 threads, 2.6 GHz
+Memory    : 8 GB
+Storage   : 256 GB Apple SSD
+OS        : Ubuntu 24.04.5 LTS
+Internet  : Verizon 5G wireless, up to 300 Mbps download
+```
 
-Initial setting:
-
-- Docker
-- Apps: Plex and miniflux
+## Initial setting
+### Network
+- Wifi
 - Tailscale
-- Internet: wifi
-- Hardware protection: cap battery charge to 80%
-- Hard drive: I started with and am still using two 10-year old portable drives
-    - 1 TB Seagate Expansion
-    - 500 GB Toshiba 
+### Storage
+I started two 10-year old portable drives:
+- 1 TB Seagate Expansion
+- 500 GB Toshiba  
+### Apps
+- Docker
+- Plex
+- miniflux
+### Security & maintenance
+- Hardware protection: cap battery charge to 80% 
 
-Why and what do I want to improve?
+## Why and what did I want to improve?
 
 - Internet speed: 
     - 4K movie on Plex: I have collected some 4K movies, but failed to play them smoothly on TV with Plex--streaming keeps buffering. I suspected it's due to network bandwidth since both my TV and server were connected to the Internet through Wifi. 
@@ -44,8 +50,9 @@ Why and what do I want to improve?
 - Data backup: I'm pretty confident that my hard drives are over 10 years old and they've been moving around aross the globe multiple times. It's simply unwise if I don't back up my data in them. 
 - Security and upgrade routine:
     - Hackers exploited/are exploiting 4 vulneralibities of in October 2026(https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/). 
+    - I wanted to self-host my server since I prioritze privacy and control over convinience. But none of them matters if security is at risk, which urges me to strengthen my server and set up an upgrade routine. 
 
-Upgrades:
+## Upgrades
 
 - Apps: 
     - pi-hole: block ad and tracking
