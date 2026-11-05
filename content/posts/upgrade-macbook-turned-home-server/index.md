@@ -32,18 +32,35 @@ Battery   : Capped at 80%
 
 ## Why and what I upgraded
 
-### Network: switch from Wifi to Ethernet for better speed
-- 4K movie on Plex: I have collected some 4K movies, but failed to play them smoothly on TV with Plex--streaming keeps buffering. I suspected it's due to network bandwidth since both my TV and server were connected to the Internet through Wifi. 
-- Transfer files between my devices: It took up to 10 minutes to copy a movie from my laptop to server, which is quite annoying. 
+### Network: switch from Wi-Fi to Ethernet for better speed
+
+#### Problems
+- **4K movie buffering on Plex**: I have collected some 4K movies, but failed to play them smoothly on TV with Plex--streaming keeps buffering. I suspected it's due to network bandwidth since both my TV and server were connected to the Internet through Wifi. 
+- **Transfer files between my devices**: It took up to 10 minutes to copy a movie from my laptop to server, which is quite annoying. 
+
+#### Solution: 
+
+I got two Ethernet cables--one from Amazon and one from Taobao. The one from Taobao is less than $1 USD. It was shipped to my friend's address in China, and I picked up during a wedding trip in September. 
+
+Unfortunately, I didn't plan well and had to buy a second cable from Amazon after my China trip, which I paid more than $8 USD. 
+
+Other than paying extra on Amazon, switching from Wi-Fi to cable was fairly easy for both server and TV. I mostly just put the server next to my router and plugged the cables in both devices. After confirming my server was connected to the internet via Ethernet, I disabled its Wi-Fi connection to keep the network setting of the server simple.  
+
+The 4K movie buffering issue was solved immediately after the TV was hooked up with the router. File transferring between my server and laptop is also 10 times faster than using Wi-Fi.
+
+{{< figurelightbox src="ethernet-taobao.png" caption="My $1 USD Chinese cable from Taobao" align="center" width="100%" >}}
+
+{{< figurelightbox src="ethernet.png" caption="My $8 USD cable from Amazon" align="center" width="100%" >}}
 
 ### Storage: more space and data safety
 I'm pretty confident that my hard drives are over 10 years old and they've been moving around aross the globe multiple times. It's simply unwise if I don't back up my data in them. 
 
-### Apps: 
+### Apps: pi-hole + plex
 
 - Pi-hole
 
 - Plex media collection clean up: I have hundreds of movies and TV series in my hard drives, which I acquired over last 2 decades. Not surprisingly, their names and all other metadata were messy. I often struggled to find a movie on Plex even though I know it exact name. Therefore, I knew it would be nice to clean up the metadata of my media collection. 
+
 ### Security & maintenance
 - Hackers exploited/are exploiting 4 vulneralibities of in October 2026(https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/). 
 - I wanted to self-host my server since I prioritze privacy and control over convinience. But none of them matters if security is at risk, which urges me to strengthen my server and set up an upgrade routine. 
