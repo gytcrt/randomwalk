@@ -73,11 +73,24 @@ I plan to buy two 4TB hard drives(one for daily operation and one for backup) to
 
 {{< figurelightbox src="seagate-price.png" caption="Price of Seagate IronWolf 4TB skyrocketed thanks to AI booms" align="center" width="100%" >}}
 
-### Apps: pi-hole + plex
+### Apps: pi-hole + Plex clean up
 
-- Pi-hole
+#### Problem
 
-- Plex media collection clean up: I have hundreds of movies and TV series in my hard drives, which I acquired over last 2 decades. Not surprisingly, their names and all other metadata were messy. I often struggled to find a movie on Plex even though I know it exact name. Therefore, I knew it would be nice to clean up the metadata of my media collection. 
+- **Plex cluttering**: I have hundreds of movies and TV series in my hard drives, which I acquired over the years. Not surprisingly, their names and all other metadata were messy. I often struggled to find a movie on Plex even though I know it exact name. Therefore, I knew it would be nice to clean up the metadata of my media collection.
+
+- **Ads**: I've been using ad-blocker on my browser, which works pretty well. But I still saw ads on Apps like Reedit, NYTimes and WSJ on my phone. The ads bother me, and I want to further block them.
+
+#### Upgrade
+
+- **Plex decluttering**
+
+This is a great task for AI--tedious and repetitive, but with manageable risk. I briefed Claude on the task and my risk tolerance (I don't want to accidently delete any of the media files). Claude came up a plan with fallback option. I accepted the plan and reviewed the output in each step, which declusttered my media collection within an hour. 
+
+Honestly, it might take me a whole day or weekend to decluster my media files without AI, and I might never start doing it. 
+
+- **pi-hole**
+
 
 ### Security & maintenance
 - Hackers exploited/are exploiting 4 vulneralibities of in October 2026(https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/). 
