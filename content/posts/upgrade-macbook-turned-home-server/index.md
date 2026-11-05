@@ -38,7 +38,7 @@ Battery   : Capped at 80%
 - **4K movie buffering on Plex**: I have collected some 4K movies, but failed to play them smoothly on TV with Plex--streaming keeps buffering. I suspected it's due to network bandwidth since both my TV and server were connected to the Internet through Wifi. 
 - **Transfer files between my devices**: It took up to 10 minutes to copy a movie from my laptop to server, which is quite annoying. 
 
-#### Solution: 
+#### Upgrade: 
 
 I got two Ethernet cables--one from Amazon and one from Taobao. The one from Taobao is less than $1 USD. It was shipped to my friend's address in China, and I picked up during a wedding trip in September. 
 
@@ -53,7 +53,25 @@ The 4K movie buffering issue was solved immediately after the TV was hooked up w
 {{< figurelightbox src="ethernet.png" caption="My $8 USD cable from Amazon" align="center" width="100%" >}}
 
 ### Storage: more space and data safety
-I'm pretty confident that my hard drives are over 10 years old and they've been moving around aross the globe multiple times. It's simply unwise if I don't back up my data in them. 
+
+#### Problem
+I'm pretty confident that my hard drives are over 10 years old and they've been moving around aross the globe multiple times. I have decades of photos on the drives--it's unwise if I don't back up my data with some new hard drive ASAP. 
+
+#### Upgrade
+
+- **Hard drive enclosure**
+
+Before I purchase a new hard drive, I've ordered two hard drive enclosure from Taobao to pick up during the same trip in China. For the same brand and the same model, the price on Taobao is about 1/3 to 1/2 on Amazon. 
+
+{{< figurelightbox src="enclosure.png" caption="UGREEN enclosure cost me $13 USD on Taobao" align="center" width="100%" >}}
+
+{{< figurelightbox src="enclosure-amazon.png" caption="The same UGREEN enclosure is $30 USD on Amazon" align="center" width="100%" >}}
+
+- **Hard drive**
+
+I plan to buy two 4TB hard drives(one for daily operation and one for backup) to replace my old portable ones, but the price of hard drive has raised almost 100% in last 12 months. I'm still holding off and waiting for Black Friday deals. In the worst case scenario, I will only buy one and wait for a future deal. 
+
+{{< figurelightbox src="seagate-price.png" caption="Price of Seagate IronWolf 4TB skyrocketed thanks to AI booms" align="center" width="100%" >}}
 
 ### Apps: pi-hole + plex
 
@@ -70,13 +88,5 @@ I'm pretty confident that my hard drives are over 10 years old and they've been 
 - Apps: 
     - pi-hole: block ad and tracking
     - Plex: re-formated and indexed my movie and TV collections
-- Internet:
-    - Server to router: Ethernet. 
-    - TV to router: Ethernet. 
-- Hard drive: 
-    - I've bought 
-    - I plan to buy one or two 4TB hard drive to replace my old portable ones, but the price of hard drive has raised almost 100% in last 12 months. I'm still holding off and waiting for Black Friday deals. In the worst case scenario, I will only buy one 
-
-{{< figurelightbox src="seagate-price.png" caption="Price of Seagate IronWolf 4TB skyrocketed thanks to AI booms" align="center" width="100%" >}}
 
 - Upgrade routine
