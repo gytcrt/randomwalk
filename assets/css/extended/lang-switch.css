@@ -1,0 +1,51 @@
+/* English / 中文 toggle — see layouts/shortcodes/langswitch.html and lang.html.
+   Styled like the post meta line (.meta-item): mono, small, secondary colour, no chrome. */
+
+.post-lang-switch {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
+  margin: 0 0 1.75rem;
+  /* Exception to the site-wide Song fallback: a sans CJK face sits better next to Space Mono. */
+  font-family: "Space Mono", monospace, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: -0.02em;
+  color: var(--secondary);
+}
+
+.post-lang-switch button {
+  padding: 0 0 2px;
+  border: 0;
+  background: none;
+  font: inherit;
+  letter-spacing: inherit;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.post-lang-switch button:hover {
+  color: var(--primary);
+}
+
+.post-lang-switch button[aria-pressed="true"] {
+  color: var(--primary);
+  box-shadow: 0 1px 0 var(--primary);
+  cursor: default;
+}
+
+.post-lang-switch button:focus-visible {
+  outline: 1px dotted var(--secondary);
+  outline-offset: 3px;
+}
+
+.post-lang-switch .sep {
+  opacity: 0.5;
+  user-select: none;
+}
+
+/* Only hide once the script has chosen a language; without JS both show. */
+html[data-post-lang="en"] .lang-block[data-lang="zh"],
+html[data-post-lang="zh"] .lang-block[data-lang="en"] {
+  display: none;
+}

@@ -1,0 +1,14 @@
+{{- /*
+  Wrap one language's version of a passage. Pair with {{< langswitch >}} at the top of the post.
+  Use the % form so the page renders the inner markdown once (nested shortcodes such as
+  figurelightbox are left untouched — re-rendering their indented HTML turns it into code blocks):
+    {{% lang en %}} English markdown {{% /lang %}}
+    {{% lang zh %}} 中文 markdown {{% /lang %}}
+  Without JS every block shows, so feeds and crawlers still get both languages.
+*/ -}}
+{{- $l := .Get 0 | default "en" -}}
+<div class="lang-block" data-lang="{{ $l }}" lang="{{ $l }}">
+
+{{ .InnerDeindent }}
+
+</div>

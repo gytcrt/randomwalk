@@ -8,8 +8,15 @@
 # GLOBAL VARIABLES
 --------------------------------------------------------------*/
 :root {
-  --font-serif: "Tinos", serif;
-  --font-mono: "Space Mono", monospace;
+  /* Chinese: system Song/serif faces, listed AFTER the generic family on purpose. These fonts
+     also contain Latin glyphs, so placing them before `serif`/`monospace` would restyle English
+     text and digits whenever Tinos / Space Mono aren't available. After the generic, they are
+     only reached for characters the generic font lacks, i.e. Chinese. Phones without a serif
+     CJK font fall back to their default sans. No web font: too heavy, and Google Fonts is
+     unreachable in mainland China. */
+  --font-cjk-serif: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", "SimSun";
+  --font-serif: "Tinos", serif, var(--font-cjk-serif);
+  --font-mono: "Space Mono", monospace, var(--font-cjk-serif);
   --code-font: Menlo, Monaco, Consolas, "Courier New", monospace;
   --base-font-size: 1.25rem;
   --line-height: 1.7;

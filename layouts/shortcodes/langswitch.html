@@ -1,0 +1,42 @@
+{{- /*
+  EN / 中文 toggle for posts that wrap passages in {{% lang en %}} / {{% lang zh %}}.
+  Choice order: URL hash (#en / #zh, for sharing) > saved choice > browser language.
+*/ -}}
+<div class="post-lang-switch" role="group" aria-label="Language / 语言">
+  <button type="button" data-lang="en" aria-pressed="false">English</button>
+  <span class="sep" aria-hidden="true">/</span>
+  <button type="button" data-lang="zh" lang="zh" aria-pressed="false">中文</button>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, KEY = 'post-lang';
+  function valid(l) { return l === 'en' || l === 'zh'; }
+  function pick() {
+    var h = location.hash.slice(1);
+    if (valid(h)) return h;
+    try { var s = localStorage.getItem(KEY); if (valid(s)) return s; } catch (e) {}
+    return (navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+  }
+  function set(l, save) {
+    root.setAttribute('data-post-lang', l);
+    document.querySelectorAll('.post-lang-switch button').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === l ? 'true' : 'false');
+    });
+    if (save) {
+      try { localStorage.setItem(KEY, l); } catch (e) {}
+      history.replaceState(null, '', location.pathname + location.search + '#' + l);
+    }
+  }
+  set(pick());
+  if (window.__langSwitchBound) return;
+  window.__langSwitchBound = true;
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.post-lang-switch button');
+    if (b) set(b.getAttribute('data-lang'), true);
+  });
+  window.addEventListener('hashchange', function () {
+    var h = location.hash.slice(1);
+    if (valid(h)) set(h);
+  });
+})();
+</script>
