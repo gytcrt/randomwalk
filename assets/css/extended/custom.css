@@ -488,6 +488,41 @@ body.dark .notes-page .notes-content blockquote {
   text-underline-offset: 4px;
 }
 
+/* Arrow sits close to its label (was a non-breaking space plus a space). */
+.paginav .prev svg { margin-inline-end: 0.4em; }
+.paginav .next svg { margin-inline-start: 0.4em; }
+
+/* The theme underlines any non-.title span on hover; the "article" word shouldn't get its own underline. */
+.paginav a:hover span.paginav-long {
+  box-shadow: none;
+}
+
+/* Phones: drop "article", shrink slightly, and space the three links evenly
+   (equal gaps between them) so all fit on one line. */
+@media (max-width: 600px) {
+  .paginav {
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+  }
+
+  /* First / last article: one side is an empty placeholder, so keep Reply centred instead. */
+  .paginav:has(> span.prev),
+  .paginav:has(> span.next) {
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: normal;
+  }
+
+  .paginav .title {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+  .paginav .paginav-long {
+    display: none;
+  }
+}
+
 /* List pagination (post listing pages) — match in-article paginav title style */
 .pagination {
   margin-top: 4rem;
