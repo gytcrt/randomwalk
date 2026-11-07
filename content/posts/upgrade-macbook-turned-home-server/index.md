@@ -98,13 +98,27 @@ Pi-hole makes me feel good, since it not only blocks ads, but also allows me to 
 {{< figurelightbox src="pi-hole.jpg" caption="My pi-hole blocks 17.5% of all queries" align="center" width="100%" >}}
 
 ### Security & maintenance
-- Hackers exploited/are exploiting 4 vulneralibities of in October 2026(https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/). 
+
+#### Problem
+- Hackers exploited/are exploiting {{< newtabref href="https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/)" title="4 vulneralibities of Plex in October 2026" >}}. 
 - I wanted to self-host my server since I prioritze privacy and control over convinience. But none of them matters if security is at risk, which urges me to strengthen my server and set up an upgrade routine. 
 
-## Upgrades
+#### Upgrades
 
-- Apps: 
-    - pi-hole: block ad and tracking
-    - Plex: re-formated and indexed my movie and TV collections
+**A routine on sticker**
 
-- Upgrade routine
+Upgrading applications on my server(actually any device including phone and laptop) regularly can lower security risk. By the time the Plex exploitation happened, if I had not upgraded my Plex to 1.43.3 or above, I might be a target of hackers. 
+
+I created a upgrade routine sticker for my server. I don't want to set up an automatic upgrade job since I don't have that many apps and I dislike unnecessary overheads. 
+
+{{< figurelightbox src="upgrade.png" caption="This sticker is on my laptop and I go through the steps every month" align="center" width="100%" >}}
+
+**Network access**
+
+I used to host a Umami server on Digital ocean to track my website traffic, but it was attacked and down a few months in. Therefore, I have gone extra mile to ensure my home server is not accessible to the public internet. The following list is example steps I took to control the network access to my server:
+
+- UPnP disabled
+- Router firewalls enabled
+- No port forwarding
+- Plex remote access diabled
+- Tailscale funnel inactive
