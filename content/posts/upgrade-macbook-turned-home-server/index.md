@@ -73,7 +73,7 @@ I plan to buy two 4TB hard drives(one for daily operation and one for backup) to
 
 {{< figurelightbox src="seagate-price.png" caption="Price of Seagate IronWolf 4TB skyrocketed thanks to AI booms" align="center" width="100%" >}}
 
-### Apps: pi-hole + Plex clean up
+### Apps: Pi-hole + Plex clean up
 
 #### Problem
 
@@ -89,8 +89,13 @@ This is a great task for AI--tedious and repetitive, but with manageable risk. I
 
 Honestly, it might take me a whole day or weekend to decluster my media files without AI, and I might never start doing it. 
 
-- **pi-hole**
+- **Pi-hole**
 
+Pi-hole is a network-wide ad blocker on Linux hardware--it's popular among folks hosting server at home. Pi-hole serves as a light-weighted {{< newtabref href="https://en.wikipedia.org/wiki/Domain_Name_System" title="DNS" >}}, which looks up IP addresses and blocks ads, tracking, device telemetry and malwares. Users can define what they want to block, but it's easy to use open-sourced blocklists as well. For example, I use this {{< newtabref href="https://github.com/stevejenkins/pi-hole-lists" title="pi-hole-lists" >}}. 
+
+Pi-hole makes me feel good, since it not only blocks ads, but also allows me to be tracked less online. I am nostalgic for the internet in the 90s and early 2000s.
+
+{{< figurelightbox src="pi-hole.jpg" caption="My pi-hole blocks 17.5% of all queries" align="center" width="100%" >}}
 
 ### Security & maintenance
 - Hackers exploited/are exploiting 4 vulneralibities of in October 2026(https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/). 
