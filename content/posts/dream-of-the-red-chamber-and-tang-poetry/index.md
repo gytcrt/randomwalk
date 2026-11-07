@@ -53,7 +53,7 @@ Therefore, I created two small sites to help readers understand the verses in Ho
 
 {{% lang en %}}
 
-The goal is to provide easy access to digest verses in Honglou Meng and learn the other crown jewel of Chinese literature: Tang poetry. 
+The goal is to provide easy access to digest verses in Honglou Meng and learn the other crown jewel of Chinese literature: {{< newtabref href="https://en.wikipedia.org/wiki/Tang_poetry" title="Tang poetry" >}}. 
 
 {{% /lang %}}
 
