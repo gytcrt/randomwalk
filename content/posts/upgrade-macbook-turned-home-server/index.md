@@ -1,5 +1,5 @@
 ---
-date: 2026-11-01
+date: 2026-11-14
 draft: true
 title: "Upgrade my old Macbook turned home server"
 description: ""
@@ -11,7 +11,7 @@ cover:
 ---
 
 
-This post is a continuation of an early post--[why and how to turn a dusty old MacBook into a home server](andreagao.com/posts/setup-home-server-on-mac/). If you are interested in initial set up of a home server with an old macbook, you can refer to that post. 
+This post is a continuation of my previous post--{{< newtabref href="https://andreagao.com/posts/setup-home-server-on-mac/" title="why and how to turn a dusty old MacBook into a home server" >}}. If you are interested in the initial setup of a home server with an old Macbook, you can refer to that post. 
 
 After almost a year of using and managing my home server, I'm quite happy with it and I've made a series of upgrades to it over time. I started treating my home server as a hobby--it's an ever evolving project depending on my interest and needs.  
 
@@ -34,19 +34,19 @@ Battery   : Capped at 80%
 
 ## Why and what I upgraded
 
-### Network: switch from Wi-Fi to Ethernet for better speed
+### Network: switched from Wi-Fi to Ethernet for better speed
 
 #### Problems
 - **4K movie buffering on Plex**: I have collected some 4K movies, but failed to play them smoothly on TV due to insufferable buffering. I suspected it's due to network bandwidth since both my TV and server were connected to the Internet through Wifi. 
-- **Transfer files between my devices**: It took up to 10 minutes to copy a 4K movie from my laptop to server, which is quite annoying. 
+- **Transfer files between my devices**: It took up to 10 minutes to copy a 4K movie from my laptop to the server, which is quite annoying. 
 
 #### Upgrade: 
 
-I got two Ethernet cables--one from Amazon and one from Taobao. The one from Taobao is less than $1 USD. It was shipped to my friend's address in China, and I picked up during a wedding trip in September. 
+I got two Ethernet cables--one from Amazon and one from Taobao. The one from Taobao is less than $1 USD. It was shipped to my friend's address in China, and I picked it up during a wedding trip in September. 
 
-Unfortunately, I didn't plan well and had to buy a second cable from Amazon after my China trip, which I paid more than $8 USD. 
+Unfortunately, I didn't plan well and had to buy a second cable from Amazon after my China trip, which cost more than $8 USD. 
 
-Other than paying extra on Amazon, switching from Wi-Fi to cable was fairly easy for both server and TV. I mostly just put the server next to my router and plugged the cable in both devices. After confirming my server was connected to the internet via Ethernet, I disabled its Wi-Fi connection to keep the network setting of the server simple.  
+Other than paying extra on Amazon, switching from Wi-Fi to cable was fairly easy for both the server and the TV. I mostly just put the server next to my router and plugged the cable in both devices. After confirming my server was connected to the internet via Ethernet, I disabled its Wi-Fi connection to keep the network setting of the server simple.  
 
 The 4K movie buffering issue was solved immediately after the TV was hooked up with the router. File transferring between my server and laptop is also 10 times faster than using Wi-Fi.
 
@@ -57,13 +57,13 @@ The 4K movie buffering issue was solved immediately after the TV was hooked up w
 ### Storage: more space and data safety
 
 #### Problem
-I'm pretty confident that my hard drives are over 10 years old and they've been moving around aross the globe multiple times. I have decades of photos on the drives--it's unwise if I don't back up my data with some new hard drive ASAP. 
+My hard drives are over 10 years old and have moved with me across the globe multiple times. I have decades of photos on the drives--it's unwise if I don't back up my data with some new hard drive ASAP. 
 
 #### Upgrade
 
 - **Hard drive enclosure**
 
-Before I purchase a new hard drive, I've ordered two hard drive enclosure from Taobao to pick up during the same trip in China. For the same brand and the same model, the price on Taobao is about 1/3 to 1/2 on Amazon. 
+Before purchasing a new hard drive, I ordered two hard drive enclosures from Taobao to pick up during my same trip in China. For the same brand and the same model, the price on Taobao is about 1/3 to 1/2 the cost on Amazon. 
 
 {{< figurelightbox src="enclosure.png" caption="UGREEN enclosure cost me $13 USD on Taobao" align="center" width="100%" >}}
 
@@ -71,9 +71,9 @@ Before I purchase a new hard drive, I've ordered two hard drive enclosure from T
 
 - **Hard drive**
 
-I plan to buy two 4TB hard drives (one for daily operation and one for backup) to replace my old portable ones, but the price of hard drive has raised almost 100% in last 12 months. I'm still holding off and waiting for Black Friday deals. In the worst case scenario, I will only buy one and wait for a future deal. 
+I plan to buy two 4TB hard drives (one for daily operation and one for backup) to replace my old portable ones, but the price of a hard drive has risen almost 100% in the last 12 months. I'm still holding off and waiting for Black Friday deals. In the worst case scenario, I will only buy one and wait for a future deal. 
 
-If AI bubble bursts, I hope at least the price of hard drives will go down.
+If the AI bubble bursts, I hope at least the price of hard drives will go down.
 
 {{< figurelightbox src="seagate-price.png" caption="Price of Seagate IronWolf 4TB skyrocketed thanks to AI booms" align="center" width="100%" >}}
 
@@ -81,7 +81,7 @@ If AI bubble bursts, I hope at least the price of hard drives will go down.
 
 #### Problem
 
-- **Plex cluttering**: I have hundreds of movies and TV series in my hard drives, which I acquired over the years. Not surprisingly, their names and all other metadata were messy. I often struggled to find a movie on Plex even though I know it exact name. Therefore, I reckoned it would be nice to clean up the metadata of my media collection.
+- **Plex cluttering**: I have hundreds of movies and TV series in my hard drives, which I acquired over the years. Not surprisingly, their names and all other metadata were messy. I would often struggle to find a movie on Plex even though I know its exact name. Therefore, I reckoned it would be nice to clean up the metadata of my media collection.
 
 - **Ads**: I've been using ad-blocker on my browser, which works pretty well. But I still saw ads on Apps like Reedit, NYTimes and WSJ on my phone. The ads bother me.
 
@@ -89,13 +89,13 @@ If AI bubble bursts, I hope at least the price of hard drives will go down.
 
 - **Plex decluttering**
 
-This is a great task for AI--tedious and repetitive, but with manageable risk. I briefed Claude on the task and my risk tolerance (I don't want to accidently delete any of the media files). Claude came up a plan with a fallback option. I accepted the plan and reviewed the output in each step, which declusttered my media collection within an hour. 
+This is a great task for AI--tedious and repetitive, but with manageable risk. I briefed Claude on the task and my risk tolerance (I don't want to accidently delete any of the media files). Claude came up with a plan and a fallback option. I accepted the plan and reviewed the output in each step, which decluttered my media collection within an hour. 
 
-Honestly, it might take me a whole day or weekend to decluster my media files without AI, and I might never start doing it. 
+Honestly, it might have taken me a whole day or weekend to declutter my media files without AI, and I might never have started doing it. 
 
 - **Pi-hole**
 
-Pi-hole is a network-wide ad blocker on Linux hardware--it's popular among folks hosting server at home. Pi-hole serves as a light-weighted {{< newtabref href="https://en.wikipedia.org/wiki/Domain_Name_System" title="DNS" >}}, which looks up IP addresses and blocks ads, tracking, device telemetry and malwares. Users can define what they want to block, but it's easy to use open-sourced blocklists as well. For example, I use this {{< newtabref href="https://github.com/stevejenkins/pi-hole-lists" title="pi-hole-lists" >}}. 
+Pi-hole is a network-wide ad blocker on Linux hardware--it's popular among folks hosting servers at home. Pi-hole serves as a light-weighted {{< newtabref href="https://en.wikipedia.org/wiki/Domain_Name_System" title="DNS" >}}, which looks up IP addresses and blocks ads, tracking, device telemetry and malwares. Users can define what they want to block, but it's easy to use open-sourced blocklists as well. For example, I use this {{< newtabref href="https://github.com/stevejenkins/pi-hole-lists" title="pi-hole-lists" >}}. 
 
 Pi-hole makes me feel good, since it not only blocks ads, but also allows me to be tracked less online. I am nostalgic for the internet in the 90s and early 2000s.
 
@@ -104,27 +104,27 @@ Pi-hole makes me feel good, since it not only blocks ads, but also allows me to 
 ### Security & maintenance
 
 #### Problem
-- Hackers exploited/are exploiting {{< newtabref href="https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/)" title="4 vulneralibities of Plex in October 2026" >}}. 
-- I wanted to self-host my server since I prioritze privacy and control over convinience. But none of them matters if security is at risk, which urges me to strengthen my server and set up an upgrade routine. 
+- Hackers exploited/are exploiting {{< newtabref href="https://www.reddit.com/r/DataHoarder/comments/vnxwbi/how_long_do_external_hard_drives_last_on_average/" title="4 vulneralibities of Plex in October 2026" >}}. 
+- I wanted to self-host my server since I prioritize privacy and control over convenience. But none of that matters if security is at risk, which urges me to strengthen my server and set up an upgrade routine. 
 
 #### Upgrade
 
 **A routine on sticker**
 
-Upgrading applications on my server (actually any device including phone and laptop) regularly can lower security risk. By the time the Plex exploitation happened, if I had not upgraded my Plex to 1.43.3 or above, I might be a target of hackers. 
+Upgrading applications on my server (actually any device including phone and laptop) regularly can lower security risk. By the time the Plex exploitation happened, if I had not upgraded my Plex to 1.43.3 or above, I might have been a target of hackers. 
 
-I created a upgrade routine sticker for my server. It's manual and I plan to execute it once a month since I don't have that many apps and I dislike unnecessary overheads. 
+I created an upgrade routine sticker for my server. It's manual and I plan to execute it once a month since I don't have that many apps and I dislike unnecessary overheads. 
 
 {{< figurelightbox src="upgrade.png" caption="This sticker is on my laptop and I go through the steps every month" align="center" width="100%" >}}
 
 **Network access**
 
-I used to host a Umami server on Digital ocean to track my website traffic, but it was attacked and down a few months in. Therefore, I have gone extra mile to ensure my home server is not accessible to the public internet. The following list is example steps I took to control the network access to my server:
+I used to host a Umami server on Digital ocean to track my website traffic, but it was attacked and went down a few months in. Therefore, I have gone the extra mile to ensure my home server is not accessible to the public internet. The following lists example steps I took to control the network access to my server:
 
 - UPnP disabled
 - Router firewalls enabled
 - No port forwarding
-- Plex remote access diabled
+- Plex remote access disabled
 - Tailscale funnel inactive
 
-Through this processes, I picked up some network engineering knowledge, and it's fun.
+Through these processes, I picked up some network engineering knowledge, and it's also fun.
