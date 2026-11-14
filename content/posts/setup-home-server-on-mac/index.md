@@ -3,12 +3,14 @@ date: 2026-03-29
 draft: false
 title: "Why and how to turn a dusty old MacBook into a home server"
 description: "Repurpose your dusty old Mac as a home server: install Ubuntu Server, set up Docker, run Plex and Miniflux, and access your services securely from anywhere"
-tags: ["tech", "engineering", "personal"]
+tags: ["tech", "personal", "home server"]
 category: "engineering"
 ShowToc: true
 cover:
   image: "plex-on-tv.jpg"
 ---
+
+> Update, November 2026: 9 months later, I wrote {{< newtabref href="https://andreagao.com/posts/upgrade-macbook-turned-home-server/" title="a follow-up on what I upgraded since this post" >}} — Ethernet, storage, Pi-hole and security. It might provide some inspiration for your next project.
 
 ## Why?
 
@@ -55,7 +57,9 @@ Then, I installed the latest LTS(long-term support) Ubuntu server from {{< newta
 
 #### Internet connection
 
-After installing Ubuntu on my old laptop, it’s essentially a headless computer except it was not connected with the Internet yet. Ideally, it would be quite easy if I had Ethernet and a proper Ethernet cable, but I didn’t have the cable nor did I want to buy one. So I used my phone as a hotspot to upgrade my Ubuntu system and set up Wi-Fi to connect to my home network. ChatGPT/Claude was heavily leveraged during this process. 
+After installing Ubuntu on my old laptop, it’s essentially a headless computer except it was not connected with the Internet yet. Ideally, it would be quite easy if I had Ethernet and a proper Ethernet cable, but I didn’t have the cable nor did I want to buy one. So I used my phone as a hotspot to upgrade my Ubuntu system and set up Wi-Fi to connect to my home network. ChatGPT/Claude was heavily leveraged during this process.
+
+> Update: I did end up buying the cable. Here is {{< newtabref href="https://andreagao.com/posts/upgrade-macbook-turned-home-server/#network-switched-from-wi-fi-to-ethernet-for-better-speed" title="why I switched from Wi-Fi to Ethernet" >}}.
 
 #### Set up Docker
 
@@ -81,7 +85,9 @@ Since Miniflux serves as my personal news feed, ideally I can access it outside 
 #### Mount an external hard drive 
 
 
-I mounted a 1TB hard drive to my server, which contains most of my movie collections. 
+I mounted a 1TB hard drive to my server, which contains most of my movie collections.
+
+> Update: that drive is over 10 years old, so I’m {{< newtabref href="https://andreagao.com/posts/upgrade-macbook-turned-home-server/#storage-more-space-and-data-safety" title="replacing it and adding a backup" >}}.
 
 #### Migrate data and movies to my new home server
 

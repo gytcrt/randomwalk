@@ -11,7 +11,7 @@
 {{- /**/ -}}
 <a href="{{ .Get "src" }}" class="glightbox" data-gallery="gallery1" data-title="{{ .Get "caption" }}" data-type="image" data-effect="fade" data-zoomable="true">
 {{- /**/ -}}
-<img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async"
+<img src="{{ .Get "src" }}" alt="{{ .Get "alt" | default (.Get "caption") }}" loading="lazy" decoding="async"
   {{- if gt (len $imgStyle) 0 }} style="{{ delimit $imgStyle ";" }};"{{- end -}}
 >
 {{- /**/ -}}
