@@ -77,6 +77,12 @@ If the AI bubble bursts, I hope at least the price of hard drives will go down.
 
 {{< figurelightbox src="seagate-price.png" caption="Price of Seagate IronWolf 4TB skyrocketed thanks to AI booms" align="center" width="100%" >}}
 
+> Update: I bought a 4TB Seagate BarraCuda for $149.99 from Newegg during the week of Thanksgiving. It's not the fanciest hard drive or cheapest price I can get, but I'm pleased I can migrate my data away from my 10 year old hard drives.  
+
+
+{{< figurelightbox src="barracuda-front.jpg" caption="My new 4TB Seagate BarraCuda, $149.99 from Newegg" align="center" width="100%" >}}
+{{< figurelightbox src="barracuda-back.jpg" caption="The back of the BarraCuda" align="center" width="100%" >}}
+
 ### Apps: Pi-hole + Plex clean up
 
 #### Problem
